@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TCH Works</title>
+  <meta name="robots" content="noindex"/>
+  <script>
+    (function () {
+      var p = location.pathname.replace(/\/+$/, "") || "/";
+      if (p === "/files" || p === "/login" || p === "/shop" || p.indexOf("/p/") === 0) {
+        var q = location.search || "";
+        if (p === "/files") location.replace("/files.html" + q);
+        else location.replace("/" + q);
+        return;
+      }
+    })();
+  </script>
+  <style>
+    html,body { margin:0; background:#0B1C2C; color:#F4F0E8; font-family: Georgia, serif; }
+    main { max-width: 28rem; margin: 0 auto; padding: 3rem 1.25rem; }
+    a { color: #C4A35A; }
+  </style>
+</head>
+<body>
+<main>
+  <p>That page is not on this shop.</p>
+  <p><a href="/">TCH Works</a></p>
+</main>
+</body>
+</html>
