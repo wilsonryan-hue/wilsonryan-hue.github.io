@@ -1,0 +1,17 @@
+{
+  "app": "TCH Works shop",
+  "shop": "https://wilsonryan-hue.github.io/",
+  "updated": "2026-08-23T21:50:00Z",
+  "cash": "£39.99 one livemode charge. Not a market.",
+  "note": "This door is the shop. Pay is live Stripe. Paper is emailed after pay. No Replit. No desk. No tokens.",
+  "tills": {
+    "late-pay": "https://buy.stripe.com/28EfZga4C4aN7bWc2l2880e",
+    "admin-pack": "https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d",
+    "the-desk": "https://buy.stripe.com/3cI5kCdgO7mZ53O1nH2880f",
+    "concierge": "https://buy.stripe.com/fZu5kC4KigXzdAkc2l2880c",
+    "vat-week": "https://buy.stripe.com/8x214m90y8r38g0c2l28808",
+    "site-paper": "https://buy.stripe.com/dRm6oGb8G4aN2VG2rL2880b",
+    "content-kit": "https://buy.stripe.com/eVq5kC4Kiazb2VGgiB28806",
+    "prompt-pack": "https://buy.stripe.com/8x200i4Kiazb9k42rL2880a"
+  }
+}
