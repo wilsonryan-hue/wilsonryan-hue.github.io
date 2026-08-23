@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Your paper · TCH Works</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <meta name="theme-color" content="#0B1C2C"/>
+  <style>
+    :root { --navy:#0B1C2C; --gold:#C4A35A; --cream:#F4F0E8; --ink:#1C1B18; --muted:#5C5850; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--navy); color: #F4F0E8; font-family: Georgia, "Times New Roman", serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.15rem 5rem; }
+    .kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+    h1 { font-size: 1.9rem; margin: .5rem 0 0; }
+    p, label { font-family: ui-sans-serif, system-ui, sans-serif; }
+    .lead { color: #C5D0D6; line-height: 1.5; }
+    .bar { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.25rem; }
+    button, .btn { min-height: 44px; padding: .65rem 1rem; border-radius: 8px; border: 0; background: var(--gold); color: var(--navy); font-weight: 600; font-family: ui-sans-serif, system-ui, sans-serif; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+    button.ghost, .btn.ghost { background: transparent; color: #F4F0E8; border: 1px solid #1F3344; }
+    .sheet { background: var(--cream); color: var(--ink); border-radius: 12px; padding: 1.35rem 1.2rem; }
+    .sheet h2 { margin: 0 0 .8rem; font-size: 1.2rem; }
+    .grid { display: grid; gap: .7rem; }
+    label { display: block; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    input, textarea { width: 100%; margin-top: .25rem; padding: .55rem .6rem; border: 0; border-bottom: 1px solid #C9C2B4; background: transparent; font: 1rem Georgia, serif; color: var(--ink); }
+    textarea { min-height: 4.5rem; resize: vertical; }
+    .fine { font-size: .75rem; color: #7A8B94; margin-top: 1.5rem; }
+    a { color: var(--gold); }
+    .locked { max-width: 28rem; }
+    @media print {
+      body { background: #fff; }
+      main { padding: 0; max-width: none; }
+      .no-print { display: none !important; }
+      .sheet { box-shadow: none; border-radius: 0; padding: 12mm; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <p class="kicker no-print">TCH Works</p>
+  <div id="app"></div>
+  <p class="fine no-print">Not legal advice. Not a certified HMRC filing. Drafts to check. <a href="./">Shop</a></p>
+</main>
+<script>
+const KEYS = {
+  "late-pay": "2144b38ce897827b02e9775f",
+  "admin-pack": "dd37a92454a13964b67e50f6",
+  "the-desk": "645c5f82d2ad7297fdc40dee",
+  "concierge": "62c51cb69980248c32e553df",
+  "vat-week": "1f33373364d86976d95f8f48",
+  "site-paper": "bfb958e0ed2c0be1baa7509c",
+  "content-kit": "5ebfb7d623e2c6e80b9b704e",
+  "prompt-pack": "d3080e1b8a348cf8277b951b"
+};
+const NAMES = {
+  "late-pay": "Late Pay Recovery",
+  "admin-pack": "Small Business Admin Pack",
+  "the-desk": "The Desk",
+  "concierge": "First Invoice Call",
+  "vat-week": "VAT Week Desk",
+  "site-paper": "Site Paper Pack",
+  "content-kit": "Content-to-Cash Kit",
+  "prompt-pack": "Trades Prompt Pack"
+};
+const q = new URLSearchParams(location.search);
+const sku = q.get("sku") || localStorage.getItem("tch-files-sku") || "";
+const k = q.get("k") || localStorage.getItem("tch-files-k") || "";
+const ok = !!(sku && KEYS[sku] && k === KEYS[sku]);
+if (ok) {
+  localStorage.setItem("tch-files-sku", sku);
+  localStorage.setItem("tch-files-k", k);
+}
+const ink = (id, def) => {
+  const key = "tch-ink:" + id;
+  return `<label>${id.replace(/^[a-z]+-/, "").replace(/-/g, " ")}<input data-ink="${key}" value="${(localStorage.getItem(key) || def).replace(/"/g, """)}"/></label>`;
+};
+function bind() {
+  document.querySelectorAll("[data-ink]").forEach((el) => {
+    el.addEventListener("input", () => localStorage.setItem(el.getAttribute("data-ink"), el.value));
+  });
+}
+const app = document.getElementById("app");
+if (!ok) {
+  app.innerHTML = `<div class="locked"><h1>This file opens after you pay.</h1><p class="lead">Pay once. This page unlocks. Fill it. Print or save PDF.</p><p><a class="btn" href="./">Open the shop</a></p></div>`;
+} else {
+  const title = NAMES[sku] || sku;
+  let paper = "";
+  if (sku === "late-pay" || sku === "the-desk") {
+    paper += `<article class="sheet"><h2>Late invoice reminder</h2><div class="grid">
+      ${ink("me-name", "Your name / trading name")}
+      ${ink("me-address", "Address for legal documents")}
+      ${ink("late-to", "Client name")}
+      ${ink("late-inv", "Invoice number")}
+      ${ink("late-amt", "Amount outstanding £")}
+      ${ink("late-due", "Original due date")}
+      ${ink("me-bank", "Bank / sort / account")}
+      <label>Body<textarea data-ink="tch-ink:late-body">This amount is still outstanding. Please pay using the details on this page.</textarea></label>
+    </div></article>`;
+  }
+  if (sku === "admin-pack" || sku === "the-desk" || sku === "concierge") {
+    paper += `<article class="sheet" style="margin-top:1rem"><h2>Invoice</h2><div class="grid">
+      ${ink("me-name", "Your name")}
+      ${ink("me-trade", "Trading name")}
+      ${ink("me-address", "Address for legal documents")}
+      ${ink("inv-to", "Client")}
+      ${ink("inv-no", "Invoice number")}
+      ${ink("inv-date", "Invoice date")}
+      ${ink("inv-supply", "Supply date")}
+      ${ink("inv-desc", "Description of work")}
+      ${ink("inv-net", "Net £")}
+      ${ink("inv-vat", "VAT if registered")}
+      ${ink("inv-total", "Total £")}
+      ${ink("me-bank", "How to pay")}
+    </div></article>`;
+  }
+  if (sku === "vat-week") {
+    paper += `<article class="sheet"><h2>VAT week</h2><div class="grid">
+      ${ink("me-name", "Your name")}
+      ${ink("vat-from", "Week commencing")}
+      ${ink("vat-issued", "Invoices issued £")}
+      ${ink("vat-owed", "Still owed £")}
+      ${ink("vat-receipts", "Receipts this week")}
+      ${ink("vat-miles", "Mileage")}
+    </div></article>`;
+  }
+  if (sku === "site-paper") {
+    paper += `<article class="sheet"><h2>Site paper · drafts to check</h2><div class="grid">
+      ${ink("me-name", "Contractor")}
+      ${ink("site-job", "Job / site")}
+      ${ink("site-rams", "RAMS notes")}
+      ${ink("site-var", "Variation")}
+    </div><p style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem;color:#5C5850">Not legal advice. Not a certified HSE document.</p></article>`;
+  }
+  if (sku === "content-kit" || sku === "prompt-pack") {
+    paper += `<article class="sheet"><h2>${title}</h2><p style="font-family:ui-sans-serif,system-ui,sans-serif">Copy. Paste. Use. No income claim.</p><div class="grid">
+      ${ink("kit-idea", "One idea this month")}
+      ${ink("kit-offer", "The page they buy")}
+      <label>Notes<textarea data-ink="tch-ink:kit-notes"></textarea></label>
+    </div></article>`;
+  }
+  app.innerHTML = `<h1>${title}</h1><p class="lead no-print">Paid. Fill on this page. Print or save PDF. It stays on this device.</p>
+    <div class="bar no-print"><button type="button" onclick="window.print()">Print / save PDF</button><a class="btn ghost" href="./">Shop</a></div>${paper}`;
+  bind();
+}
+</script>
+</body>
+</html>
