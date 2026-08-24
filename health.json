@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "asOf": "2026-08-24T01:20:00+01:00",
+  "shop": "https://wilsonryan-hue.github.io/",
+  "primary": "admin-pack",
+  "priceGbp": 39.99,
+  "checkout": "https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d",
+  "verifiedExternalGbp": 0,
+  "revenue": "NO VERIFIED EXTERNAL REVENUE — £0",
+  "livemodeUnqualifiedGbp": 39.99,
+  "livemodeQualifies": false,
+  "webhook": "disabled",
+  "domainTemplatevault": "404"
+}
