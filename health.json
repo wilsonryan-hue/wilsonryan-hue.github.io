@@ -1,14 +1,40 @@
 {
   "ok": true,
-  "asOf": "2026-08-24T01:20:00+01:00",
+  "asOf": "2026-08-27T19:45:00+01:00",
   "shop": "https://wilsonryan-hue.github.io/",
-  "primary": "admin-pack",
-  "priceGbp": 39.99,
-  "checkout": "https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d",
-  "verifiedExternalGbp": 0,
-  "revenue": "NO VERIFIED EXTERNAL REVENUE — £0",
-  "livemodeUnqualifiedGbp": 39.99,
-  "livemodeQualifies": false,
+  "identity": "tch-works-wave1",
   "webhook": "disabled",
-  "domainTemplatevault": "404"
+  "verifiedExternalGbp": 0,
+  "revenue": "NO VERIFIED EXTERNAL REVENUE \u2014 \u00a30",
+  "fulfilment": "email-within-hour",
+  "magnets": {
+    "sunday-reset": "/free/sunday-reset",
+    "meal-grid": "/free/meal-grid"
+  },
+  "paid": {
+    "life-admin-checklist": {
+      "gbp": 4.99,
+      "url": "https://buy.stripe.com/00w5kCfoW4aN53Od6p2880g"
+    },
+    "reset-routine": {
+      "gbp": 11.99,
+      "url": "https://buy.stripe.com/aFabJ06SqfTveEofex2880h"
+    },
+    "weekly-planner": {
+      "gbp": 12.99,
+      "url": "https://buy.stripe.com/fZu4gyfoWePrdAkd6p2880i"
+    },
+    "grocery-list": {
+      "gbp": 4.99,
+      "url": "https://buy.stripe.com/6oU00i1y6gXz3ZKd6p2880k"
+    },
+    "meal-planner": {
+      "gbp": 12.99,
+      "url": "https://buy.stripe.com/9B68wO4KifTvbsc1nH2880l"
+    },
+    "life-admin-bundle": {
+      "gbp": 21.99,
+      "url": "https://buy.stripe.com/9B6dR86SqfTv0Ny7M52880j"
+    }
+  }
 }

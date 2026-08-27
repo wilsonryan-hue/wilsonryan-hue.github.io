@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" width="480" height="180" role="img" aria-label="TCH Works. Made Useful.">
+  <title>TCH Works</title>
+  <rect width="480" height="180" fill="#0D1323"/>
+  <rect x="36" y="32" width="68" height="12" fill="#F7F7F8"/>
+  <rect x="64" y="32" width="12" height="76" fill="#F7F7F8"/>
+  <path d="M186 44 A 42 42 0 1 0 186 96" fill="none" stroke="#F7F7F8" stroke-width="12" stroke-linecap="round"/>
+  <rect x="228" y="32" width="12" height="76" fill="#F7F7F8"/>
+  <rect x="276" y="32" width="12" height="76" fill="#F7F7F8"/>
+  <rect x="228" y="64" width="60" height="12" fill="#F7F7F8"/>
+  <rect x="118" y="64" width="86" height="12" fill="#2563EB"/>
+  <text x="36" y="136" fill="#9CA3AF" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="650" letter-spacing="10">WORKS</text>
+  <text x="36" y="160" fill="#2563EB" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600">Made Useful.</text>
+</svg>

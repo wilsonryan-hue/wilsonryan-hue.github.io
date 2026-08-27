@@ -1,82 +1,12 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Draft a UK sole trader invoice | TCH Works</title>
-  <meta name="description" content="Fill a draft invoice. Print it. Admin Pack £39.99 prints without DRAFT. Live Stripe."/>
-  <link rel="canonical" href="https://wilsonryan-hue.github.io/write.html"/>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml"/>
-  <style>
-    :root { --navy:#0B1C2C; --gold:#C4A35A; --cream:#F4F0E8; --ink:#1C1B18; }
-    * { box-sizing: border-box; }
-    html,body { margin:0; background:var(--navy); color:#F4F0E8; font-family: ui-sans-serif, system-ui, sans-serif; }
-    main { max-width: 56rem; margin: 0 auto; padding: 2rem 1.15rem 4rem; }
-    .kicker { font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); }
-    h1 { font-family: Georgia, serif; font-size: 2rem; margin:.5rem 0 0; }
-    p.lead { color:#C5D0D6; line-height:1.5; }
-    .grid { display:grid; gap:1.5rem; }
-    @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
-    label { display:block; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#7A8B94; margin-top:.7rem; }
-    input { width:100%; margin-top:.25rem; min-height:44px; padding:.55rem .7rem; border:0; border-radius:8px; background:#122333; color:#F4F0E8; }
-    .row { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1rem; }
-    .btn { display:inline-flex; align-items:center; min-height:48px; padding:.7rem 1.1rem; border-radius:8px; background:var(--gold); color:var(--navy); text-decoration:none; font-weight:600; border:0; cursor:pointer; }
-    .ghost { background:transparent; color:#F4F0E8; border:1px solid #1F3344; }
-    .sheet { position:relative; background:var(--cream); color:var(--ink); border-radius:12px; padding:1.3rem 1.2rem; min-height:22rem; }
-    .sheet h2 { font-family:Georgia,serif; margin:0; }
-    .sheet p, .sheet dd { font-size:.95rem; margin:.35rem 0 0; }
-    .mark { position:absolute; right:1rem; top:1.4rem; transform:rotate(12deg); font-family:Georgia,serif; font-size:2rem; color:rgba(28,27,24,.2); }
-    .fine { color:#7A8B94; font-size:.75rem; margin-top:2rem; }
-    a { color:var(--gold); }
-    @media print {
-      body { background:#fff; }
-      main { padding:0; max-width:none; }
-      .no-print { display:none !important; }
-      .sheet { box-shadow:none; }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=/">
+  <link rel="canonical" href="https://wilsonryan-hue.github.io/">
+  <title>Shop moved | TCH Works</title>
 </head>
 <body>
-<main>
-  <p class="kicker no-print">TCH Works · draft invoice</p>
-  <h1 class="no-print">Fill it. Print it. Send it as yourself.</h1>
-  <p class="lead no-print">DRAFT stays on the page. Admin Pack £39.99 prints without it. Names stay in this browser. Not legal advice.</p>
-  <div class="grid">
-    <form class="no-print" id="f">
-      <label>Your name <input id="from" placeholder="Your name / trading name"/></label>
-      <label>Client <input id="client" placeholder="Who you invoiced"/></label>
-      <label>Invoice number <input id="number" placeholder="TCH-0041"/></label>
-      <label>The work <input id="work" placeholder="What you did"/></label>
-      <label>Amount £ <input id="amount" placeholder="840"/></label>
-      <label>Due <input id="due" placeholder="14 days / date"/></label>
-      <div class="row">
-        <button class="btn" type="button" onclick="window.print()">Print draft</button>
-        <a class="btn ghost" href="https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d">Admin Pack · £39.99</a>
-      </div>
-    </form>
-    <article class="sheet">
-      <p class="mark">DRAFT</p>
-      <p class="kicker" style="color:#6b655c">Draft invoice</p>
-      <h2>Invoice</h2>
-      <p><strong>From</strong> <span id="o-from">Your name</span></p>
-      <p><strong>To</strong> <span id="o-client">Client</span></p>
-      <p><strong>Number</strong> <span id="o-number">—</span> · <strong>Due</strong> <span id="o-due">—</span></p>
-      <p><strong>Work</strong> <span id="o-work">Description of the work</span></p>
-      <p style="font-size:1.6rem;font-family:Georgia,serif;margin-top:1rem">£<span id="o-amount">0</span></p>
-      <p style="font-size:.75rem;color:#6b655c;margin-top:1.5rem">Draft. Not a VAT invoice unless you add the line. Not legal advice. TCH Works.</p>
-    </article>
-  </div>
-  <p class="fine no-print"><a href="./">Shop</a> · <a href="./chase.html">Chase an invoice</a> · Not Treun Roc. Not Replit.</p>
-</main>
-<script>
-  function sync() {
-    var map = [["from","o-from","Your name"],["client","o-client","Client"],["number","o-number","—"],["work","o-work","Description of the work"],["amount","o-amount","0"],["due","o-due","—"]];
-    map.forEach(function (row) {
-      var v = document.getElementById(row[0]).value.trim();
-      document.getElementById(row[1]).textContent = v || row[2];
-    });
-  }
-  document.getElementById("f").addEventListener("input", sync);
-</script>
+  <p>This pack is off the shop. <a href="/">TCH Works</a>.</p>
 </body>
 </html>

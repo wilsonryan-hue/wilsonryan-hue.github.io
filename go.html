@@ -1,41 +1,12 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Opening checkout · TCH Works</title>
-  <meta name="robots" content="noindex"/>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml"/>
-  <style>
-    body { margin:0; background:#0B1C2C; color:#F4F0E8; font-family: ui-sans-serif, system-ui, sans-serif; padding:2.5rem 1.2rem; }
-    a { color:#C4A35A; }
-  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=/">
+  <link rel="canonical" href="https://wilsonryan-hue.github.io/">
+  <title>Shop moved | TCH Works</title>
 </head>
 <body>
-<p>Opening Stripe…</p>
-<p><a id="fallback" href="./">Back to the shop</a></p>
-<script>
-  var tills = {
-    "admin-pack": "https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d",
-    "late-pay": "https://buy.stripe.com/28EfZga4C4aN7bWc2l2880e",
-    "the-desk": "https://buy.stripe.com/3cI5kCdgO7mZ53O1nH2880f",
-    "vat-week": "https://buy.stripe.com/8x214m90y8r38g0c2l28808",
-    "content-kit": "https://buy.stripe.com/eVq5kC4Kiazb2VGgiB28806",
-    "prompt-pack": "https://buy.stripe.com/8x200i4Kiazb9k42rL2880a",
-    "site-paper": "https://buy.stripe.com/dRm6oGb8G4aN2VG2rL2880b",
-    "concierge": "https://buy.stripe.com/fZu5kC4KigXzdAkc2l2880c"
-  };
-  var q = new URLSearchParams(location.search);
-  var sku = q.get("sku") || "admin-pack";
-  var pay = tills[sku];
-  if (!pay) { location.replace("./"); }
-  else {
-    var dest = new URL(pay);
-    var ref = ["gh", sku, q.get("utm_source") || "direct", q.get("utm_campaign") || ""].filter(Boolean).join("-").slice(0, 200);
-    dest.searchParams.set("client_reference_id", ref);
-    document.getElementById("fallback").href = dest.toString();
-    location.replace(dest.toString());
-  }
-</script>
+  <p>This pack is off the shop. <a href="/">TCH Works</a>.</p>
 </body>
 </html>
