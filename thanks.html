@@ -1,66 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>You're paid · TCH Works</title>
-  <meta name="robots" content="noindex"/>
-  <meta name="theme-color" content="#0B1C2C"/>
-  <style>
-    :root { --navy:#0B1C2C; --gold:#C4A35A; --cream:#F4F0E8; --ink:#1C1B18; }
-    * { box-sizing: border-box; }
-    html,body { margin:0; background:var(--navy); color:#F4F0E8; font-family: Georgia, "Times New Roman", serif; }
-    main { max-width: 36rem; margin: 0 auto; padding: 2.75rem 1.25rem 4rem; }
-    .kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin: 0; }
-    h1 { font-weight: 600; font-size: 2rem; line-height: 1.15; margin: .7rem 0 0; }
-    p { color: #C5D0D6; font-family: ui-sans-serif, system-ui, sans-serif; line-height: 1.55; }
-    .paper { background: var(--cream); color: var(--ink); border-radius: 12px; padding: 1.25rem 1.2rem; margin-top: 1.5rem; }
-    .paper p { color: var(--ink); margin: .4rem 0 0; }
-    .paper p:first-child { margin-top: 0; }
-    a { color: var(--gold); }
-    .fine { font-size: .75rem; color: #7A8B94; margin-top: 2rem; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thanks | TCH Works</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-<main>
-  <p class="kicker">TCH Works</p>
-  <h1>You're paid. The paper is on its way.</h1>
-  <p id="sku-line">Check the email on the card. Stripe sends the invoice. TCH emails the paper within the hour (07:00–23:00 London). If you paid after 23:00, it goes at 07:00.</p>
-  <article class="paper">
-    <p><strong>What to do</strong></p>
-    <p>1. Open the email. The paper is in the body. That is the file.</p>
-    <p>2. Or copy the blank below into Word now, if you do not want to wait for the hour.</p>
-    <p>3. Fill your names. Print or save PDF. Send it as yourself. Not legal advice. Drafts to check.</p>
-  </article>
-  <article class="paper">
-    <p><strong>Late Pay — blank</strong></p>
-    <p>LATE INVOICE REMINDER</p>
-    <p>From: (your name / trading name)<br/>Address for legal documents:<br/>To:<br/>Invoice number:<br/>Invoice date:<br/>Supply date:<br/>Amount outstanding: £<br/>Due date:<br/>Bank: name / sort / account</p>
-    <p>This amount is still outstanding. Please pay using the details on this page.</p>
-  </article>
-  <article class="paper">
-    <p><strong>Invoice — blank</strong></p>
-    <p>INVOICE</p>
-    <p>From: (your name / trading name)<br/>Address for legal documents:<br/>To:<br/>Invoice number:<br/>Invoice date:<br/>Supply date:<br/>Description:<br/>VAT if registered:<br/>Total: £<br/>Due:<br/>How to pay:</p>
-  </article>
-  <p class="fine">TCH Works · made useful. <a href="./">Back to the shop</a></p>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="TCH Works home">
+      <span class="logo-stack">
+        <span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span>
+        <span class="logo-works">Works</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/">Shop</a>
+      <a href="/daily/">Daily</a>
+      <a href="/free/sunday-reset">Free</a>
+    </nav>
+  </div>
+</header>
+<main class="section">
+  <div class="wrap">
+    <p class="kicker">Paid</p>
+    <h1>The file is on its way.</h1>
+    <p class="lede">Pay received. We email the PDF (or zip) to the address you used at checkout, within the hour. Check spam if it is quiet. Reply to the Stripe receipt if it still has not landed.</p>
+    <p><a class="btn btn-primary" href="/">Back to the shop</a></p>
+  </div>
 </main>
-<script>
-  var names = {
-    "late-pay": "Late Pay Recovery · £12",
-    "admin-pack": "Small Business Admin Pack · £39.99",
-    "the-desk": "The Desk · £49",
-    "concierge": "First Invoice Call · £99",
-    "vat-week": "VAT Week Desk · £9",
-    "site-paper": "Site Paper Pack · £29",
-    "content-kit": "Content-to-Cash Kit · £19",
-    "prompt-pack": "Trades Prompt Pack · £15"
-  };
-  var sku = new URLSearchParams(location.search).get("sku");
-  if (sku && names[sku]) {
-    document.getElementById("sku-line").textContent =
-      names[sku] + ". Check the email on the card. Stripe sends the invoice. TCH emails the paper within the hour (07:00–23:00 London).";
-  }
-</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <p style="margin:0;color:#e5e7eb">Made Useful. Tools. Content. Help.</p>
+    <div class="legal">
+      <p style="margin:0">Instant PDF download. Not a subscription. Not advice.</p>
+      <p style="margin:0">File-defect refunds under the Consumer Rights Act 2015.</p>
+      <p style="margin:0">Digital cooling-off is waived once the file is supplied.</p>
+      <p style="margin:0.6rem 0 0">© 2026 TCH Works. Ryan Wilson. England and Wales. hello@tch.works</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
