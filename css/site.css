@@ -215,7 +215,134 @@ h1, h2, h3, h4 {
 .thanks-box[hidden] { display: none; }
 .error { color: #991b1b; }
 
+
+/* Magnet email gate (Email Funnel S1) */
+.magnet-gate {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.25rem 1.35rem 1.4rem;
+  margin: 1.25rem 0 0;
+  max-width: 28rem;
+}
+.magnet-gate label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0.75rem 0 0.3rem;
+}
+.magnet-gate label:first-of-type { margin-top: 0; }
+.magnet-gate input[type="text"],
+.magnet-gate input[type="email"] {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--paper);
+}
+.magnet-gate .consent {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.magnet-gate .consent input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.magnet-gate .actions { margin-top: 1rem; }
+.magnet-download { margin-top: 1.1rem; }
+.magnet-download[hidden] { display: none !important; }
+
 @media (max-width: 800px) {
   .steps, .grid { grid-template-columns: 1fr; }
   .hero { padding: 2.4rem 0 2.6rem; }
+}
+
+/* Magnet email capture (Lane B) */
+.magnet-capture {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.25rem 1.3rem 1.35rem;
+  margin: 1.25rem 0 0;
+  max-width: 28rem;
+  position: relative;
+  overflow: hidden;
+}
+.magnet-capture::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: var(--yellow);
+}
+.magnet-capture h2 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+.magnet-capture .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.85rem;
+}
+.magnet-capture label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+.magnet-capture input[type="text"],
+.magnet-capture input[type="email"] {
+  min-height: 2.6rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--white);
+}
+.magnet-capture input:focus {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 1px;
+}
+.magnet-capture .consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+.magnet-capture .consent input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.magnet-capture .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+.magnet-capture .btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.magnet-capture[data-kit-ready="false"] .kit-pending {
+  display: block;
+}
+.magnet-capture .kit-pending {
+  display: none;
+  font-size: 0.8rem;
+  color: #92400e;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  margin-top: 0.75rem;
 }

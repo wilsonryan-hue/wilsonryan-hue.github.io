@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>This Week’s Meal Grid | TCH Works</title>
-  <meta name="description" content="Free one-page week: seven dinners, leftovers, snacks and a grocery column. Instant PDF.">
+  <meta name="description" content="Free one-page week: seven dinners, leftovers, snacks and a grocery column. Email for the PDF.">
   <link rel="canonical" href="https://www.tchworks.co.uk/free/meal-grid">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/site.css">
-  
 </head>
 <body>
 <header class="site-header">
@@ -34,8 +33,46 @@
     <h1>This Week’s Meal Grid</h1>
     <p class="lede">You need a usable dinner plan for the next seven days, not a 12-week system yet. One undated week on one page: seven dinners, leftover box, snack line, grocery column.</p>
     <p>Three named starter dinners as samples: pasta bake, traybake, soup and bread. Ten minutes on Sunday. Hungry people do not plan. They order.</p>
-    <p><a class="btn btn-yellow" href="/free/tch-free-this-weeks-meal-grid.pdf" download>Download the free PDF</a></p>
-    <p class="note">Public magnet. Instant PDF. Not a subscription. Not advice.</p>
+
+    <!-- Lane B S1: Kit form placeholder. Swap __KIT_FORM_ID__ + set data-kit-ready="true" before go-live. -->
+    <div class="magnet-capture" id="magnet-capture" data-kit-ready="false" data-magnet="meal-grid">
+      <h2>Get the free PDF</h2>
+      <p class="note" style="margin-top:0.4rem">Name and email. We send the file. Unsubscribe in every message.</p>
+
+      <div class="thanks-box" id="magnet-thanks" hidden>
+        <p class="kicker">On its way</p>
+        <p style="margin:0.5rem 0 0;font-weight:600;color:var(--navy)">Check your inbox for This Week’s Meal Grid PDF.</p>
+        <p class="note">If it is quiet, check spam. From TCH Works on tchworks.co.uk.</p>
+      </div>
+
+      <form
+        id="kit-magnet-form"
+        class="seva-form formkit-form"
+        action="https://app.kit.com/forms/__KIT_FORM_ID__/subscriptions"
+        method="post"
+        data-sv-form="__KIT_FORM_ID__"
+        data-uid="__KIT_FORM_UID__"
+        data-magnet="meal-grid"
+      >
+        <input type="hidden" name="tags[]" value="magnet:meal-grid">
+        <input type="hidden" name="tags[]" value="source:tchworks-free">
+        <div class="field">
+          <label for="magnet-first-name">First name</label>
+          <input id="magnet-first-name" type="text" name="fields[first_name]" autocomplete="given-name" required placeholder="Alex">
+        </div>
+        <div class="field">
+          <label for="magnet-email">Email</label>
+          <input id="magnet-email" type="email" name="email_address" autocomplete="email" required placeholder="you@example.com">
+        </div>
+        <label class="consent">
+          <input id="magnet-consent" type="checkbox" name="fields[consent_marketing]" value="yes" required>
+          <span>I agree to receive this download and occasional TCH Works emails about similar planners. I can unsubscribe any time. See the <a href="/privacy.html">privacy notice</a>.</span>
+        </label>
+        <p class="kit-pending" role="status">Inbox wiring in progress — form goes live once Kit is connected. Your details are not sent yet.</p>
+        <button type="submit" class="btn btn-yellow" id="magnet-submit" disabled>Send my free PDF</button>
+        <p class="note">Consent unticked on purpose. Marketing email needs a clear yes under PECR.</p>
+      </form>
+    </div>
   </div>
   <div class="wrap">
     <aside class="upsell">
@@ -68,9 +105,40 @@
       <p style="margin:0">Instant PDF download. Not a subscription. Not advice.</p>
       <p style="margin:0">File-defect refunds under the Consumer Rights Act 2015.</p>
       <p style="margin:0">Digital cooling-off is waived once the file is supplied.</p>
-      <p style="margin:0.6rem 0 0">© 2026 TCH Works. Ryan Wilson. England and Wales. hello@tch.works</p>
+      <p style="margin:0.6rem 0 0">© 2026 TCH Works. Ryan Wilson. England and Wales. hello@tchworks.co.uk</p>
     </div>
   </div>
 </footer>
+<script>
+(function () {
+  var root = document.getElementById("magnet-capture");
+  var form = document.getElementById("kit-magnet-form");
+  var consent = document.getElementById("magnet-consent");
+  var btn = document.getElementById("magnet-submit");
+  var thanks = document.getElementById("magnet-thanks");
+  if (!root || !form || !consent || !btn) return;
+  var ready = root.getAttribute("data-kit-ready") === "true";
+  function sync() {
+    btn.disabled = !(ready && consent.checked);
+  }
+  consent.addEventListener("change", sync);
+  sync();
+  form.addEventListener("submit", function (e) {
+    if (!ready) {
+      e.preventDefault();
+      return;
+    }
+    if (!consent.checked) {
+      e.preventDefault();
+      return;
+    }
+    // Kit may redirect; if it stays on-page, show thanks.
+    window.setTimeout(function () {
+      form.hidden = true;
+      if (thanks) thanks.hidden = false;
+    }, 400);
+  });
+})();
+</script>
 </body>
 </html>
