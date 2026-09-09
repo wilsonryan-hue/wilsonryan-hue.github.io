@@ -346,3 +346,35 @@ h1, h2, h3, h4 {
   padding: 0.55rem 0.7rem;
   margin-top: 0.75rem;
 }
+
+/* Soft Stripe sticky cash bar — MD existential 2026-09-10 */
+.soft-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: #0D1323;
+  border-bottom: 2px solid #F5C518;
+  padding: 0.65rem 0;
+}
+.soft-sticky .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.soft-sticky p {
+  margin: 0;
+  color: #F7F7F8;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.soft-sticky .soft-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.soft-sticky .btn {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+}
