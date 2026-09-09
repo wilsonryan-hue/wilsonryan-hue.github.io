@@ -36,8 +36,8 @@
 
     <!-- Lane B capture: data-capture-mode=interim (Formspree) | kit. Set data-capture-ready=true when endpoint live. -->
     <div class="magnet-capture" id="magnet-capture"
-      data-capture-mode="interim"
-      data-capture-ready="false"
+      data-capture-mode="web3forms"
+      data-capture-ready="true"
       data-kit-ready="false"
       data-magnet="meal-grid">
       <h2>Get the free PDF</h2>
@@ -47,17 +47,21 @@
         <p class="kicker">Got it</p>
         <p style="margin:0.5rem 0 0;font-weight:600;color:var(--navy)">You’re on the list. We’ll email This Week’s Meal Grid PDF shortly.</p>
         <p class="note">If the inbox is quiet, check spam. Soft next steps are below if you want them now.</p>
+        <p style="margin-top:1rem"><a class="btn btn-yellow" href="/free/tch-free-this-weeks-meal-grid.pdf" download>Download your Meal Grid PDF</a></p>
       </div>
 
       <form
         id="kit-magnet-form"
         class="seva-form formkit-form"
-        action="__FORMSPREE_ENDPOINT__"
+        action="https://api.web3forms.com/submit"
         method="POST"
         data-sv-form="__KIT_FORM_ID__"
         data-uid="__KIT_FORM_UID__"
         data-magnet="meal-grid"
       >
+        <input type="hidden" name="access_key" value="9a6dc5f4-b4e1-42a4-adca-855b4ed33876">
+        <input type="hidden" name="from_name" value="TCH Works">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
         <input type="hidden" name="_subject" value="TCH magnet: meal-grid">
         <input type="hidden" name="magnet" value="meal-grid">
         <input type="hidden" name="source" value="tchworks-free">
@@ -129,6 +133,8 @@
   var mode = root.getAttribute("data-capture-mode") || "kit";
   var ready = root.getAttribute("data-capture-ready") === "true"
     || root.getAttribute("data-kit-ready") === "true";
+  var pending = root.querySelector(".kit-pending");
+  if (pending && ready) pending.style.display = "none";
   function sync() {
     btn.disabled = !(ready && consent.checked);
   }
@@ -139,7 +145,7 @@
       e.preventDefault();
       return;
     }
-    if (mode === "interim") {
+    if (mode === "interim" || mode === "web3forms") {
       e.preventDefault();
       var fd = new FormData(form);
       fetch(form.action, {
