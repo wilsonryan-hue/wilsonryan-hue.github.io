@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Treun Roc Connect</title>
+    <link rel="icon" href="https://wilsonryan-hue.github.io/tr-connect/tr-logo.svg" />
+    <style>
+      :root { --bg:#0a0a0a; --card:#141414; --line:#2a2a2a; --gold:#c6a15b; --fg:#f3f0e6; --mute:#9a9588; }
+      * { box-sizing: border-box; }
+      html, body { margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, sans-serif; }
+      .wrap { max-width:720px; margin:0 auto; padding:28px 18px 48px; }
+      .brand { display:flex; align-items:center; gap:12px; margin-bottom:22px; }
+      .mark { width:40px; height:40px; border:1px solid var(--gold); display:grid; place-items:center; color:var(--gold); font-size:11px; letter-spacing:.18em; }
+      .kicker { color:var(--gold); font-size:11px; letter-spacing:.28em; text-transform:uppercase; }
+      h1 { font-family: Georgia, serif; font-weight:500; font-size:26px; margin:4px 0 0; }
+      .note { color:var(--mute); font-size:13px; line-height:1.5; margin:8px 0 20px; }
+      .tabs { display:flex; gap:8px; margin-bottom:16px; }
+      .tabs a { flex:1; text-align:center; text-decoration:none; color:var(--mute); border:1px solid var(--line); padding:10px; font-size:13px; }
+      .tabs a.on { color:var(--gold); border-color:var(--gold); }
+      .card { background:var(--card); border:1px solid var(--line); padding:16px; margin:0 0 10px; }
+      button.person { width:100%; display:flex; justify-content:space-between; background:#1a1a1a; color:var(--fg); border:1px solid #3a3a3a; padding:12px 14px; margin:0 0 8px; cursor:pointer; font:inherit; }
+      button.person span { color:var(--mute); font-size:12px; }
+      label { display:block; color:var(--mute); font-size:12px; margin:12px 0 6px; }
+      input { width:100%; background:#0e0e0e; color:var(--fg); border:1px solid var(--line); padding:11px 12px; font:inherit; }
+      .row { display:flex; gap:8px; margin-top:12px; }
+      .btn { flex:1; background:var(--gold); color:#111; border:0; padding:11px 12px; font-weight:600; cursor:pointer; }
+      .btn.ghost { background:transparent; color:var(--fg); border:1px solid var(--line); }
+      .err { color:#e7a0a0; font-size:13px; margin-top:8px; }
+      .job { border-bottom:1px solid var(--line); padding:12px 0; }
+      .job h3 { margin:0 0 4px; font-size:16px; }
+      .meta { color:var(--mute); font-size:12px; }
+      .gold { color:var(--gold); }
+      header.desk { display:flex; justify-content:space-between; gap:12px; margin-bottom:18px; }
+      .out { background:transparent; color:var(--mute); border:1px solid var(--line); padding:8px 10px; cursor:pointer; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap" id="app"></div>
+    <script src="./door.js"></script>
+    <script>TRConnect.mount("office");</script>
+  </body>
+</html>
