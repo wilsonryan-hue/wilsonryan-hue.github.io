@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sunday Reset (90 min) | TCH Works</title>
-  <meta name="description" content="Free 90-minute Sunday sequence: kitchen, clothes, calendar, bags, ten-minute digital. Email for the PDF.">
+  <meta name="description" content="The week starts in a mess and a full reset system is more than you will do tonight. This is 90 minutes: kitchen, clothes, calendar, bags, te">
   <link rel="canonical" href="https://www.tchworks.co.uk/free/sunday-reset">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,41 +34,48 @@
     <p class="lede">The week starts in a mess and a full reset system is more than you will do tonight. This is 90 minutes: kitchen, clothes, calendar, bags, ten-minute digital. Stop when the timer ends.</p>
     <p>Not a four-hour purge. Not a new personality. A timed pass so Monday is not a crime scene. Food and calendar before decorative tidying.</p>
 
-    <!-- Lane B S1: Kit form placeholder. Swap __KIT_FORM_ID__ + set data-kit-ready="true" before go-live. -->
-    <div class="magnet-capture" id="magnet-capture" data-kit-ready="false" data-magnet="sunday-reset">
+    <!-- Lane B capture: data-capture-mode=interim (Formspree) | kit. Set data-capture-ready=true when endpoint live. -->
+    <div class="magnet-capture" id="magnet-capture"
+      data-capture-mode="interim"
+      data-capture-ready="false"
+      data-kit-ready="false"
+      data-magnet="sunday-reset">
       <h2>Get the free PDF</h2>
       <p class="note" style="margin-top:0.4rem">Name and email. We send the file. Unsubscribe in every message.</p>
 
       <div class="thanks-box" id="magnet-thanks" hidden>
-        <p class="kicker">On its way</p>
-        <p style="margin:0.5rem 0 0;font-weight:600;color:var(--navy)">Check your inbox for the Sunday Reset PDF.</p>
-        <p class="note">If it is quiet, check spam. From TCH Works on tchworks.co.uk.</p>
+        <p class="kicker">Got it</p>
+        <p style="margin:0.5rem 0 0;font-weight:600;color:var(--navy)">You’re on the list. We’ll email the Sunday Reset PDF shortly.</p>
+        <p class="note">If the inbox is quiet, check spam. Soft next steps are below if you want them now.</p>
       </div>
 
       <form
         id="kit-magnet-form"
         class="seva-form formkit-form"
-        action="https://app.kit.com/forms/__KIT_FORM_ID__/subscriptions"
-        method="post"
+        action="__FORMSPREE_ENDPOINT__"
+        method="POST"
         data-sv-form="__KIT_FORM_ID__"
         data-uid="__KIT_FORM_UID__"
         data-magnet="sunday-reset"
       >
+        <input type="hidden" name="_subject" value="TCH magnet: sunday-reset">
+        <input type="hidden" name="magnet" value="sunday-reset">
+        <input type="hidden" name="source" value="tchworks-free">
         <input type="hidden" name="tags[]" value="magnet:sunday-reset">
         <input type="hidden" name="tags[]" value="source:tchworks-free">
         <div class="field">
           <label for="magnet-first-name">First name</label>
-          <input id="magnet-first-name" type="text" name="fields[first_name]" autocomplete="given-name" required placeholder="Alex">
+          <input id="magnet-first-name" type="text" name="name" autocomplete="given-name" required placeholder="Alex">
         </div>
         <div class="field">
           <label for="magnet-email">Email</label>
-          <input id="magnet-email" type="email" name="email_address" autocomplete="email" required placeholder="you@example.com">
+          <input id="magnet-email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
         </div>
         <label class="consent">
-          <input id="magnet-consent" type="checkbox" name="fields[consent_marketing]" value="yes" required>
+          <input id="magnet-consent" type="checkbox" name="consent_marketing" value="yes" required>
           <span>I agree to receive this download and occasional TCH Works emails about similar planners. I can unsubscribe any time. See the <a href="/privacy.html">privacy notice</a>.</span>
         </label>
-        <p class="kit-pending" role="status">Inbox wiring in progress — form goes live once Kit is connected. Your details are not sent yet.</p>
+        <p class="kit-pending" role="status">Capture wiring in progress — submit unlocks once the form endpoint is connected.</p>
         <button type="submit" class="btn btn-yellow" id="magnet-submit" disabled>Send my free PDF</button>
         <p class="note">Consent unticked on purpose. Marketing email needs a clear yes under PECR.</p>
       </form>
@@ -76,11 +83,13 @@
   </div>
   <div class="wrap">
     <aside class="upsell">
-      <p class="kicker">Paid next step</p>
+      <p class="kicker">Start here · £4.99</p>
       <h2>Life Admin Checklist · £4.99</h2>
       <p>After the free 90-minute pass, keep a standing checklist for the boring admin that still slips: appointments, renewals, paperwork, and the small jobs that pile up. One page you can tick without rebuilding Sunday from scratch.</p>
       <p><a class="btn btn-yellow" href="https://buy.stripe.com/00w5kCfoW4aN53Od6p2880g">Pay £4.99 for Life Admin Checklist</a></p>
-      <h2 style="margin-top:1.25rem">Weekly Planner · £12.99</h2>
+      <p class="kicker" style="margin-top:1.25rem;opacity:.85">Then · £12.99</p>
+      <h2>Weekly Planner · £12.99</h2>
+      
       <p>When one checklist is not enough, run the whole week on paper: days, priorities, and a Friday shutdown so Monday is not a scavenger hunt.</p>
       <p><a class="btn btn-primary" href="https://buy.stripe.com/fZu4gyfoWePrdAkd6p2880i">Pay £12.99 for Weekly Planner</a></p>
     </aside>
@@ -117,22 +126,35 @@
   var btn = document.getElementById("magnet-submit");
   var thanks = document.getElementById("magnet-thanks");
   if (!root || !form || !consent || !btn) return;
-  var ready = root.getAttribute("data-kit-ready") === "true";
+  var mode = root.getAttribute("data-capture-mode") || "kit";
+  var ready = root.getAttribute("data-capture-ready") === "true"
+    || root.getAttribute("data-kit-ready") === "true";
   function sync() {
     btn.disabled = !(ready && consent.checked);
   }
   consent.addEventListener("change", sync);
   sync();
   form.addEventListener("submit", function (e) {
-    if (!ready) {
+    if (!ready || !consent.checked) {
       e.preventDefault();
       return;
     }
-    if (!consent.checked) {
+    if (mode === "interim") {
       e.preventDefault();
+      var fd = new FormData(form);
+      fetch(form.action, {
+        method: "POST",
+        body: fd,
+        headers: { "Accept": "application/json" }
+      }).then(function (res) {
+        if (!res.ok) throw new Error("submit failed");
+        form.hidden = true;
+        if (thanks) thanks.hidden = false;
+      }).catch(function () {
+        form.submit();
+      });
       return;
     }
-    // Kit may redirect; if it stays on-page, show thanks.
     window.setTimeout(function () {
       form.hidden = true;
       if (thanks) thanks.hidden = false;
