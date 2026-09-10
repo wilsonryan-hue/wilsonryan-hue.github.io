@@ -333,7 +333,11 @@ h1, h2, h3, h4 {
   opacity: 0.55;
   cursor: not-allowed;
 }
-.magnet-capture[data-kit-ready="false"] .kit-pending {
+/* MD 2026-09-10: Web3Forms live via data-capture-ready — do not scare users with kit-pending */
+.magnet-capture[data-capture-ready="true"] .kit-pending {
+  display: none !important;
+}
+.magnet-capture[data-kit-ready="false"][data-capture-ready="false"] .kit-pending {
   display: block;
 }
 .magnet-capture .kit-pending {

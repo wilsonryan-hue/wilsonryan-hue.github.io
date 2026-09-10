@@ -48,7 +48,7 @@
     <div class="magnet-capture" id="magnet-capture"
       data-capture-mode="web3forms"
       data-capture-ready="true"
-      data-kit-ready="false"
+      data-kit-ready="true"
       data-magnet="sunday-reset">
       <h2>Get the free PDF</h2>
       <p class="note" style="margin-top:0.4rem">Name and email. We send the file. Unsubscribe in every message.</p>
@@ -89,7 +89,7 @@
           <input id="magnet-consent" type="checkbox" name="consent_marketing" value="yes" required>
           <span>I agree to receive this download and occasional TCH Works emails about similar planners. I can unsubscribe any time. See the <a href="/privacy.html">privacy notice</a>.</span>
         </label>
-        <p class="kit-pending" role="status">Capture wiring in progress — submit unlocks once the form endpoint is connected.</p>
+        <p class="kit-pending" role="status" hidden></p>
         <button type="submit" class="btn btn-yellow" id="magnet-submit" disabled>Send my free PDF</button>
         <p class="note">Consent unticked on purpose. Marketing email needs a clear yes under PECR.</p>
       </form>
