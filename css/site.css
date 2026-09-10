@@ -340,16 +340,7 @@ h1, h2, h3, h4 {
 .magnet-capture[data-kit-ready="false"][data-capture-ready="false"] .kit-pending {
   display: block;
 }
-.magnet-capture .kit-pending {
-  display: none;
-  font-size: 0.8rem;
-  color: #92400e;
-  background: #fffbeb;
-  border: 1px solid #fcd34d;
-  border-radius: 8px;
-  padding: 0.55rem 0.7rem;
-  margin-top: 0.75rem;
-}
+
 
 /* Soft Stripe sticky cash bar — MD existential 2026-09-10 */
 .soft-sticky {
