@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /f/
-
-User-agent: *
 Disallow: /free/dl/
+
+Sitemap: https://www.tchworks.co.uk/sitemap.xml
