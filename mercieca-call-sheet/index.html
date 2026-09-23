@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mercieca call sheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Figtree:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --paper:#f6f1e8; --card:#fffdf8; --ink:#1a1814; --muted:#5c564c; --line:#e4d9c8; --green:#1b4332; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.45 Figtree, sans-serif; }
+    main { max-width:680px; margin:0 auto; padding:28px 16px 72px; }
+    h1,h2 { font-family:Fraunces, serif; font-weight:560; letter-spacing:-.02em; margin:0; }
+    h1 { font-size:2.5rem; }
+    h2 { font-size:1.7rem; }
+    p { margin:0; }
+    button,input,select { font:inherit; color:inherit; }
+    button { cursor:pointer; }
+    .top { display:flex; justify-content:space-between; align-items:flex-end; gap:12px; }
+    .eyebrow { font-size:.75rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+    .btn { display:inline-flex; align-items:center; height:44px; padding:0 14px; border-radius:8px; border:0; background:var(--green); color:#f4f0e8; font-weight:600; text-decoration:none; }
+    .ghost { background:transparent; color:var(--ink); border:1px solid var(--line); }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; margin-top:14px; }
+    .muted { color:var(--muted); }
+    .small { font-size:.92rem; }
+    .row { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .score button { width:36px; height:36px; border-radius:8px; border:1px solid var(--line); background:transparent; }
+    .score button.on { background:var(--green); color:#f4f0e8; border-color:var(--green); }
+    .panel { margin-top:14px; padding-top:14px; border-top:1px solid var(--line); }
+    .script { white-space:pre-wrap; background:var(--paper); border-radius:10px; padding:12px; margin-top:8px; }
+    input[type=range] { width:100%; accent-color:var(--green); }
+    input[type=url] { width:100%; height:44px; margin-top:8px; border:1px solid var(--line); border-radius:8px; background:var(--paper); padding:0 12px; }
+    select { height:36px; border:1px solid var(--line); border-radius:8px; background:var(--paper); padding:0 8px; }
+    a { color:var(--green); }
+    #note { min-height:1.2em; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <div>
+      <p class="eyebrow">Mercieca</p>
+      <h1>Call sheet</h1>
+      <p class="muted" id="summary" style="margin-top:6px"></p>
+    </div>
+    <button class="btn" id="send" type="button">Send link</button>
+  </header>
+  <p class="small" id="linkbox" hidden style="margin-top:10px"></p>
+  <ol id="list" style="list-style:none;padding:0;margin:8px 0 0"></ol>
+
+  <section class="card">
+    <div class="row" style="justify-content:space-between">
+      <h2 style="font-size:1.35rem">Find more</h2>
+      <strong id="matchLabel">100%</strong>
+    </div>
+    <input id="match" type="range" min="50" max="100" step="10" value="100" aria-label="How close a match" />
+    <p class="small muted" id="matchHint"></p>
+    <div class="row" style="margin-top:12px">
+      <a class="btn" id="linkedin" target="_blank" rel="noreferrer">Search LinkedIn</a>
+    </div>
+    <p class="small muted" id="note" style="margin-top:8px">This opens LinkedIn. Sign in there yourself. The two people above stay on this page.</p>
+  </section>
+
+  <section class="card">
+    <h2 style="font-size:1.35rem">First interview</h2>
+    <ol id="questions" style="margin:10px 0 0;padding-left:1.2rem"></ol>
+  </section>
+</main>
+<script>
+const ROLE = "Account Director, consumer PR";
+const STARTERS = [
+  { id:"alex", name:"Alex Watherston", title:"Account Director", employer:"PrettyGreen", status:"IN_ROLE", tenure:"Appointed 29 October 2025", rating:0, why:"Account director on Homesense, ROLI and Lebara. Previously an account director at MSL.", evidence:"PrettyGreen announced him as account director on 29 October 2025.", sourceUrl:"https://lbbonline.com/news/PrettyGreen-Appoints-Alex-Watherston-as-Account-Director", sourceLabel:"LBB", cvUrl:"" },
+  { id:"james", name:"James Brown", title:"Account Director", employer:"Hope & Glory", status:"IN_ROLE", tenure:"Unknown", rating:0, why:"Account director at Hope & Glory in London. The page does not name his clients.", evidence:"His public LinkedIn about says he is an Account Director at Hope & Glory. No start date is on that page.", sourceUrl:"https://uk.linkedin.com/in/jamesbrown1992", sourceLabel:"LinkedIn", cvUrl:"" }
+];
+const QUESTIONS = [
+  "Talk me through the account you spend most of your week on. Who is the client, and what do you actually do for them?",
+  "Tell me about a story you got away that the client did not expect.",
+  "A client is unhappy. What do you do in the first hour?",
+  "How do you work with social and content, not just the press office?",
+  "Who have you managed, and what does a good week from them look like?",
+  "What would make an account director role worth moving for?"
+];
+const PITCH = "You'd be the account director on consumer brands. You run the client day to day, you've got a small team, and the press work sits next to the social and content. London, and hybrid is fine. It's a senior seat. You're not coordinating other people's accounts.";
+const keyOf = (name) => (name || "").toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]/g, "");
+const first = (name) => (name || "there").split(" ")[0];
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "\u0026amp;")
+    .replace(/</g, "\u0026lt;")
+    .replace(/>/g, "\u0026gt;")
+    .replace(/"/g, "\u0026quot;");
+}
+function hint(match) {
+  if (match >= 100) return "Exact brief. Account director, consumer PR, London.";
+  if (match >= 80) return "Close. One step either side of account director, still consumer PR.";
+  if (match >= 60) return "Wider. Nearby titles, plus lifestyle, brand and trade.";
+  return "Broad. Nearby titles and nearby sectors. Still UK agency people.";
+}
+function linkedinUrl(match) {
+  const q = match >= 90 ? "Account Director consumer PR London" : "Account Director OR Senior Account Manager consumer OR lifestyle PR London";
+  return "https://www.linkedin.com/search/results/people/?keywords=" + encodeURIComponent(q);
+}
+function scriptFor(person) {
+  const name = first(person.name);
+  if (person.status === "AVAILABLE") {
+    return "Hi " + name + ", it's Frankie at Mercieca. Have you got a minute? I'll keep it short. We're hiring an " + ROLE + ". I saw that you might be open to a conversation, so I wanted to ring you rather than just send a message. If now's a bad time, tell me when is better.";
+  }
+  return "Hi " + name + ", it's Frankie at Mercieca. Have you got a minute? I'll keep it short. We're hiring an " + ROLE + ". I came across your work as " + person.title + " at " + person.employer + ". I'm not calling because I think you're looking. I'm calling because the job looks close to what you already do. If it's not for you, just say so.";
+}
+function load() {
+  let match = 100;
+  let extra = [];
+  try {
+    const saved = JSON.parse(localStorage.getItem("mercieca-sheet-v2") || "null");
+    if (saved) { match = Number(saved.match) || 100; extra = saved.extra || []; }
+  } catch (e) {}
+  const people = STARTERS.map((p) => Object.assign({}, p));
+  const seen = new Set(people.map((p) => keyOf(p.employer)));
+  extra.forEach((p) => {
+    if (!p || !p.name || !p.sourceUrl || seen.has(keyOf(p.employer))) return;
+    seen.add(keyOf(p.employer));
+    people.push(p);
+  });
+  return { match: [50,60,70,80,90,100].includes(match) ? match : 100, people };
+}
+let state = load();
+let openId = "";
+function save() {
+  const extra = state.people.filter((p) => p.id !== "alex" && p.id !== "james");
+  localStorage.setItem("mercieca-sheet-v2", JSON.stringify({ match: state.match, extra }));
+}
+function draw() {
+  document.getElementById("summary").textContent = ROLE + ". " + state.people.length + (state.people.length === 1 ? " person." : " people.");
+  document.getElementById("match").value = state.match;
+  document.getElementById("matchLabel").textContent = state.match + "%";
+  document.getElementById("matchHint").textContent = hint(state.match);
+  document.getElementById("linkedin").href = linkedinUrl(state.match);
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  state.people.forEach((person) => {
+    const li = document.createElement("li");
+    li.className = "card";
+    const scores = [1,2,3,4,5].map((n) => '<button type="button" data-score="' + n + '"' + (person.rating == n ? ' class="on"' : "") + ">" + n + "</button>").join("");
+    const show = openId === person.id;
+    li.innerHTML =
+      "<h2>" + escapeHtml(person.name) + "</h2>" +
+      "<p style='margin-top:4px'>" + escapeHtml(person.title) + " <span class='muted'>, " + escapeHtml(person.employer) + "</span></p>" +
+      "<p class='small muted' style='margin-top:8px'>" + escapeHtml(person.why) + "</p>" +
+      "<p class='small' style='margin-top:6px'>Time in role: " + escapeHtml(person.tenure || "Unknown") + "</p>" +
+      "<p class='small' style='margin-top:4px'><a href='" + escapeHtml(person.sourceUrl) + "' target='_blank' rel='noreferrer'>" + escapeHtml(person.sourceLabel || "Source") + "</a></p>" +
+      "<div class='row' style='margin-top:12px'><span class='small muted'>Score</span><span class='score row'>" + scores + "</span>" +
+      "<select data-status><option value='IN_ROLE'>In a job</option><option value='AVAILABLE'>Available</option><option value='UNKNOWN'>Not stated</option></select></div>" +
+      "<div class='row' style='margin-top:12px'><button class='btn' type='button' data-contact>Contact candidate</button><button class='btn ghost' type='button' data-cv>CV</button></div>" +
+      (show ? "<div class='panel'><p class='small muted'>Say this</p><p class='script'>" + escapeHtml(scriptFor(person)) + "</p><p class='small muted' style='margin-top:12px'>If they stay on the line</p><p class='script'>" + escapeHtml(PITCH) + "</p><div class='row' style='margin-top:12px'><button class='btn' type='button' data-copy>Copy the opening</button><a class='btn ghost' href='" + escapeHtml(person.sourceUrl) + "' target='_blank' rel='noreferrer'>Open their page</a></div><p class='small muted' style='margin-top:14px'>" + (person.cvUrl ? "CV link saved on this phone." : "No CV on file.") + "</p><input data-cv-url type='url' placeholder='Paste a CV link' value='" + escapeHtml(person.cvUrl || "") + "' />" + (person.cvUrl ? "<a class='btn' style='margin-top:8px' href='" + escapeHtml(person.cvUrl) + "' target='_blank' rel='noreferrer'>Open CV</a>" : "") + "</div>" : "");
+    li.querySelector("[data-status]").value = person.status || "IN_ROLE";
+    li.querySelector("[data-status]").onchange = (e) => { person.status = e.target.value; save(); draw(); };
+    li.querySelectorAll("[data-score]").forEach((btn) => { btn.onclick = () => { person.rating = Number(btn.dataset.score); save(); draw(); }; });
+    li.querySelector("[data-contact]").onclick = () => { openId = openId === person.id ? "" : person.id; draw(); };
+    li.querySelector("[data-cv]").onclick = () => { openId = person.id; draw(); const input = document.querySelector("[data-cv-url]"); if (input) input.focus(); };
+    const copy = li.querySelector("[data-copy]");
+    if (copy) copy.onclick = async () => { try { await navigator.clipboard.writeText(scriptFor(person)); copy.textContent = "Copied"; } catch (e) { alert(scriptFor(person)); } };
+    const cv = li.querySelector("[data-cv-url]");
+    if (cv) cv.onchange = () => { const value = cv.value.trim(); person.cvUrl = /^https?:\/\//i.test(value) ? value : ""; save(); draw(); };
+    list.appendChild(li);
+  });
+  document.getElementById("questions").innerHTML = QUESTIONS.map((q) => "<li style='margin-top:8px'>" + escapeHtml(q) + "</li>").join("");
+}
+document.getElementById("match").oninput = (e) => { state.match = Number(e.target.value); save(); draw(); };
+document.getElementById("send").onclick = async () => {
+  const url = location.origin + location.pathname;
+  try { await navigator.clipboard.writeText(url); document.getElementById("send").textContent = "Link copied"; }
+  catch (e) { document.getElementById("linkbox").hidden = false; document.getElementById("linkbox").textContent = url; }
+  setTimeout(() => { document.getElementById("send").textContent = "Send link"; }, 1600);
+};
+draw();
+</script>
+</body>
+</html>
