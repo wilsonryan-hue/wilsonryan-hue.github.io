@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Content Hub//MD Bot Factory//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Exam Revision Blocks
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+UID:tch-rev-weekday@thecontenthub
+DTSTAMP:20260924T030607Z
+DTSTART:20260928T190000
+DTEND:20260928T194500
+SUMMARY:Revision block (45 min + break)
+DESCRIPTION:Phone away. One subject. 45 min deep work then 10 min break. Tick timetable.
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;COUNT=40
+END:VEVENT
+BEGIN:VEVENT
+UID:tch-rev-sat-paper@thecontenthub
+DTSTAMP:20260924T030607Z
+DTSTART:20261003T100000
+DTEND:20261003T120000
+SUMMARY:Practice paper session
+DESCRIPTION:Timed past paper under exam conditions. Mark with scheme afterwards.
+RRULE:FREQ=WEEKLY;BYDAY=SA;COUNT=8
+END:VEVENT
+BEGIN:VEVENT
+UID:tch-rev-sun-light@thecontenthub
+DTSTAMP:20260924T030607Z
+DTSTART:20261004T170000
+DTEND:20261004T173000
+SUMMARY:Light review / flashcards
+DESCRIPTION:30 min flashcards or notes tidy. Keep Sunday mostly rest.
+RRULE:FREQ=WEEKLY;BYDAY=SU;COUNT=8
+END:VEVENT
+END:VCALENDAR

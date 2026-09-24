@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Content Hub//MD Bot Factory//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Life Admin Sunday
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+UID:tch-admin-sunday@thecontenthub
+DTSTAMP:20260924T030607Z
+DTSTART:20260927T100000
+DTEND:20260927T113000
+SUMMARY:Life admin Sunday block
+DESCRIPTION:Bills & inbox · meal plan · shopping list · bags/uniforms · bin night check · calendar scan for week ahead.
+RRULE:FREQ=WEEKLY;BYDAY=SU;COUNT=16
+END:VEVENT
+BEGIN:VEVENT
+UID:tch-admin-sunday-reset@thecontenthub
+DTSTAMP:20260924T030607Z
+DTSTART:20260927T160000
+DTEND:20260927T162000
+SUMMARY:Quick home reset (20 min)
+DESCRIPTION:Surfaces · dishwasher · laundry on · tomorrow outfit ready.
+RRULE:FREQ=WEEKLY;BYDAY=SU;COUNT=16
+END:VEVENT
+END:VCALENDAR
