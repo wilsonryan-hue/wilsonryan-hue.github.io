@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letter before action unpaid invoice UK small trader · TCH Works · £12</title>
+  <meta name="description" content="UK sole trader letter before action for an unpaid invoice. Fill the fields. Print or post. Not legal advice. TCH Works Late Pay £12.">
+  <link rel="canonical" href="https://www.tchworks.co.uk/lba.html">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --navy: #0B1C2C; --gold: #C4A35A; --bg: #F7F4EF; --ink: #1A1A1A; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.5; }
+    header { background: var(--navy); color: #fff; padding: 1rem 1.25rem; }
+    header a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); }
+    .wrap { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    .kicker { font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold); margin: 0 0 0.35rem; }
+    .lede { font-size: 1.05rem; margin: 0.75rem 0 1.25rem; }
+    .price { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 0.5rem 0; }
+    .btn { display: inline-block; background: var(--gold); color: var(--navy); font-weight: 700; padding: 0.75rem 1.4rem; border-radius: 4px; text-decoration: none; border: none; cursor: pointer; font-size: 1rem; }
+    .btn:hover { filter: brightness(1.05); }
+    .fields { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1.25rem; margin: 1.5rem 0; }
+    .fields label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--navy); margin: 0.75rem 0 0.2rem; }
+    .fields input, .fields textarea, .fields select { width: 100%; padding: 0.5rem 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+    .fields textarea { min-height: 3.5rem; resize: vertical; }
+    .note { font-size: 0.9rem; color: #444; margin: 1rem 0; }
+    footer { font-size: 0.85rem; color: #555; margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 1rem; }
+    footer a { color: var(--navy); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./">TCH Works</a> · Late Pay
+  </header>
+  <div class="wrap">
+    <p class="kicker">UK sole trader · unpaid invoice</p>
+    <h1>Letter before action</h1>
+    <p class="lede">Named buyer: you, the UK small trader. Named problem: the invoice is overdue and polite chases have not been paid. Fill this page. Print it. Post it. Keep a copy. Not legal advice. £12. One payment. The paper is emailed.</p>
+    <p class="price">£12</p>
+    <p><a class="btn" href="https://buy.stripe.com/28EfZga4C4aN7bWc2l2880e?client_reference_id=lba-late-pay">Pay £12</a></p>
+
+    <div class="fields">
+      <h2 style="margin-top:0;font-size:1.15rem;">Fill these</h2>
+      <label for="from">From (your name / trading name and address)</label>
+      <textarea id="from" placeholder="Your name&#10;Your address"></textarea>
+      <label for="email">Your email / phone</label>
+      <input id="email" type="text" placeholder="so they can reply in writing">
+      <label for="letterdate">Date of this letter</label>
+      <input id="letterdate" type="text" placeholder="DD Month YYYY">
+      <label for="to">To (their legal name and address)</label>
+      <textarea id="to" placeholder="Ltd: registered office from Companies House&#10;Individual / sole trader: last known address"></textarea>
+      <label for="who">Who owes you</label>
+      <select id="who">
+        <option value="">Choose</option>
+        <option>Limited company / LLP (B2B — 14 days is typical)</option>
+        <option>Individual or sole trader (Debt PAP — 30 days and annexes)</option>
+      </select>
+      <label for="job">Work done / goods supplied</label>
+      <input id="job" type="text" placeholder="e.g. 12 High Street bathroom first fix">
+      <label for="inv">Invoice number</label>
+      <input id="inv" type="text" placeholder="e.g. INV-2026-014">
+      <label for="invdate">Invoice date</label>
+      <input id="invdate" type="text" placeholder="DD Month YYYY">
+      <label for="due">Original due date</label>
+      <input id="due" type="text" placeholder="DD Month YYYY">
+      <label for="amt">Invoice amount still unpaid (£)</label>
+      <input id="amt" type="text" placeholder="0.00">
+      <label for="chases">Reminders already sent (dates)</label>
+      <textarea id="chases" placeholder="e.g. email 3 Sep · email 10 Sep · phone 12 Sep"></textarea>
+      <label for="deadline">Pay-by deadline on this letter</label>
+      <input id="deadline" type="text" placeholder="14 days from letter date (company) or 30 days (individual / sole trader)">
+      <label for="interest">Interest / compensation you are claiming (if any)</label>
+      <textarea id="interest" placeholder="Leave blank if you are only claiming the invoice total. If you claim Late Payment Act interest, write the rate, days, and £ figure you calculated. Do not invent a figure."></textarea>
+      <label for="total">Total now demanded (£)</label>
+      <input id="total" type="text" placeholder="Invoice + any interest/compensation you actually calculated">
+      <label for="bank">How to pay</label>
+      <textarea id="bank" placeholder="Account name, sort code, account number, payment reference = invoice number"></textarea>
+      <label for="encl">What you will enclose</label>
+      <textarea id="encl" placeholder="Copy of the invoice. Copy of the quote or order. Proof of delivery or completion. If the debtor is an individual or sole trader: Debt PAP Information Sheet, Reply Form and Financial Statement from GOV.UK."></textarea>
+    </div>
+
+    <p class="note">This letter says: the named invoice is unpaid; pay the total by the deadline using the bank details; if you dispute it, reply in writing by the same deadline; if there is no payment and no reply, a County Court claim may follow. Check the rules that apply to you on GOV.UK before you send it.</p>
+    <p class="note">If they are an individual or a sole trader, the Pre-Action Protocol for Debt Claims applies: use the official Information Sheet and Reply Form, and allow at least 30 days. If they are a limited company, the general pre-action conduct rules apply; 14 days is common for a straightforward invoice. This page is a draft to fill, not a solicitor letter.</p>
+    <p class="note">Not legal advice. Not a court form. Drafts to check. No income claim. Keep proof of postage. Do not inflate the debt.</p>
+    <p><a class="btn" href="https://buy.stripe.com/28EfZga4C4aN7bWc2l2880e?client_reference_id=lba-late-pay">Pay £12 — get the paper</a></p>
+    <p class="note"><a href="https://wilsonryan-hue.github.io/">Shop</a></p>
+    <footer>
+      <p>TCH Works. Standalone paper for UK sole traders. Not legal advice. <a href="https://wilsonryan-hue.github.io/">Shop</a></p>
+    </footer>
+  </div>
+</body>
+</html>
