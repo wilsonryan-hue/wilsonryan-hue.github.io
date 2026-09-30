@@ -75,7 +75,39 @@ No P2/P3 work should delay a P0/P1 task.
 
 ## Current active task
 
-None recorded here. Do not invent one. If Ryan activates work in this repository, create one task record above before substantial development.
+Set by MD Bot (Grok) on Ryan's instruction, 30 Sep 2026 23:05 UK. Read this before ANY change to TCH Works or TR Connect.
+
+### Hard rules (all agents)
+- NEVER make this repo (wilsonryan-hue.github.io) private: it serves www.tchworks.co.uk via free GitHub Pages; private = the shop goes offline.
+- If sensitive files must go, delete them in a commit and keep the repo public. Never re-publish the scrubbed TR Connect bundle.
+- After any push, verify: home page, every shop page, every buy.stripe.com link = HTTP 200, and /mercieca-recruitment/ = 200.
+- Record what you changed here in the handoff log (standard update format) so the other AIs know.
+
+```text
+TASK_ID: TRC-DOOR-01
+PRIORITY: P0
+OWNER: TR Connect Bot (Grok box)
+REVIEWER: MD Bot
+STATUS: ACTIVE
+ACCEPTANCE_CRITERIA: connect.treunroccontracts.com returns 200 with a closed door page (new public repo tr-connect-door: closed pages + logos/icons + CSS only, no scripts, no data). tr-connect stays PRIVATE.
+STOP_CONDITION: 200 proven + screenshot.
+```
+
+```text
+TASK_ID: TRC-AUTH-02
+PRIORITY: P1
+OWNER: TR Connect Bot
+STATUS: BLOCKED (NEEDS_RYAN: Render API key via the Grok secure box)
+ACCEPTANCE_CRITERIA: staff login served by server-side auth on Render; desk front end rebuilt from source (not the scrubbed bundle); staff login works end to end.
+```
+
+```text
+TASK_ID: TCH-SHOP-GUARD
+PRIORITY: P0
+OWNER: TCH Bot (Grok box)
+STATUS: ACTIVE (standing)
+ACCEPTANCE_CRITERIA: shop + 29 Stripe links + mercieca-recruitment all 200 after every change. Verified 200 at 30 Sep 22:45 / 23:02 UK.
+```
 
 ## Deferred
 
@@ -84,3 +116,5 @@ Keep this section short. Deferred items are not authorised work.
 ## Agent handoff log
 
 Add only material handoffs or reviews. Do not append acknowledgements.
+
+- 2026-09-30 23:05 UK, MD Bot: tr-connect repo was made private tonight (containment); its GitHub Pages died -> connect.treunroccontracts.com 404. Fix in progress per TRC-DOOR-01. Coding agents on Ryan's PC: coordinate here, do not change repo visibility.
