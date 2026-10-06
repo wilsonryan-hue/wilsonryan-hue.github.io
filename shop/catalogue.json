@@ -1,0 +1,274 @@
+{
+ "weekly-planner": {
+  "title": "Weekly Planner",
+  "price": "12.99",
+  "buy": "https://buy.stripe.com/fZu4gyfoWePrdAkd6p2880i",
+  "page": "https://www.tchworks.co.uk/shop/weekly-planner/",
+  "pages": 14,
+  "category": "life"
+ },
+ "life-admin-checklist": {
+  "title": "Life Admin Checklist",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/00w5kCfoW4aN53Od6p2880g",
+  "page": "https://www.tchworks.co.uk/shop/life-admin-checklist/",
+  "pages": 7,
+  "category": "life"
+ },
+ "life-admin-bundle": {
+  "title": "Life Admin Bundle",
+  "price": "21.99",
+  "buy": "https://buy.stripe.com/9B6dR86SqfTv0Ny7M52880j",
+  "page": "https://www.tchworks.co.uk/shop/life-admin-bundle/",
+  "pages": 46,
+  "category": "life"
+ },
+ "sunday-reset-workbook": {
+  "title": "Sunday Reset Workbook",
+  "price": "9.99",
+  "buy": "https://buy.stripe.com/dRm8wOccK36J7bWeat2880m",
+  "page": "https://www.tchworks.co.uk/shop/sunday-reset-workbook/",
+  "pages": 12,
+  "category": "life"
+ },
+ "reset-routine": {
+  "title": "Reset Routine",
+  "price": "11.99",
+  "buy": "https://buy.stripe.com/aFabJ06SqfTveEofex2880h",
+  "page": "https://www.tchworks.co.uk/shop/reset-routine/",
+  "pages": 15,
+  "category": "life"
+ },
+ "habit-tracker": {
+  "title": "Habit Tracker",
+  "price": "5.99",
+  "buy": "https://buy.stripe.com/6oU3cuekS4aNeEoaYh2880y",
+  "page": "https://www.tchworks.co.uk/shop/habit-tracker/",
+  "pages": 7,
+  "category": "life"
+ },
+ "habit-mood-90-day": {
+  "title": "Habit and Mood 90-Day Tracker",
+  "price": "6.99",
+  "buy": "https://buy.stripe.com/6oUeVc7Wu7mZ53O6I12880N",
+  "page": "https://www.tchworks.co.uk/shop/habit-mood-90-day/",
+  "pages": 17,
+  "category": "life"
+ },
+ "waiting-on-tracker": {
+  "title": "Waiting-On Tracker",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/aFa00i1y65eRdAkaYh2880o",
+  "page": "https://www.tchworks.co.uk/shop/waiting-on-tracker/",
+  "pages": 7,
+  "category": "life"
+ },
+ "family-week-command": {
+  "title": "Family Week Command",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/dRm7sKb8GgXzdAk8Q92880r",
+  "page": "https://www.tchworks.co.uk/shop/family-week-command/",
+  "pages": 11,
+  "category": "life"
+ },
+ "adhd-weekend-reset-mini": {
+  "title": "ADHD Weekend Reset Mini",
+  "price": "9.99",
+  "buy": "https://buy.stripe.com/5kQ8wO0u2ePr2VG3vP2880s",
+  "page": "https://www.tchworks.co.uk/shop/adhd-weekend-reset-mini/",
+  "pages": 6,
+  "category": "life"
+ },
+ "monthly-life-admin-calendar": {
+  "title": "Monthly Life Admin Calendar",
+  "price": "12.99",
+  "buy": "https://buy.stripe.com/8x228qccK8r353Od6p2880t",
+  "page": "https://www.tchworks.co.uk/shop/monthly-life-admin-calendar/",
+  "pages": 14,
+  "category": "life"
+ },
+ "monthly-wall-calendar": {
+  "title": "Monthly Wall Calendar",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/9B64gy5Om9v7fIs2rL2880H",
+  "page": "https://www.tchworks.co.uk/shop/monthly-wall-calendar/",
+  "pages": 14,
+  "category": "life"
+ },
+ "book-tbr-reading-log": {
+  "title": "Book TBR and Reading Log",
+  "price": "5.99",
+  "buy": "https://buy.stripe.com/aFa8wO6Sq8r31RC7M52880O",
+  "page": "https://www.tchworks.co.uk/shop/book-tbr-reading-log/",
+  "pages": 22,
+  "category": "life"
+ },
+ "meal-planner": {
+  "title": "Meal Planner",
+  "price": "12.99",
+  "buy": "https://buy.stripe.com/9B68wO4KifTvbsc1nH2880l",
+  "page": "https://www.tchworks.co.uk/shop/meal-planner/",
+  "pages": 17,
+  "category": "meals"
+ },
+ "school-night-teas-under-30": {
+  "title": "School-Night Teas Under 30",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/00w3cudgO7mZao86I12880p",
+  "page": "https://www.tchworks.co.uk/shop/school-night-teas-under-30/",
+  "pages": 9,
+  "category": "meals"
+ },
+ "grocery-list": {
+  "title": "Grocery List",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/6oU00i1y6gXz3ZKd6p2880k",
+  "page": "https://www.tchworks.co.uk/shop/grocery-list/",
+  "pages": 8,
+  "category": "meals"
+ },
+ "fridge-first-meal-system": {
+  "title": "Fridge-First Meal System",
+  "price": "9.99",
+  "buy": "https://buy.stripe.com/28E6oG0u27mZ8g01nH2880n",
+  "page": "https://www.tchworks.co.uk/shop/fridge-first-meal-system/",
+  "pages": 11,
+  "category": "meals"
+ },
+ "overlapping-bag-planner": {
+  "title": "Overlapping Bag Planner",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/7sYfZg7WubDfgMwd6p2880q",
+  "page": "https://www.tchworks.co.uk/shop/overlapping-bag-planner/",
+  "pages": 12,
+  "category": "meals"
+ },
+ "shopping-planner": {
+  "title": "Shopping Planner",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/5kQ00ib8G6iVbscgiB2880B",
+  "page": "https://www.tchworks.co.uk/shop/shopping-planner/",
+  "pages": 8,
+  "category": "meals"
+ },
+ "uk-payday-budget-pack": {
+  "title": "UK Payday Budget Pack",
+  "price": "9.99",
+  "buy": "https://buy.stripe.com/fZubJ01y67mZ8g00jD2880S",
+  "page": "https://www.tchworks.co.uk/shop/uk-payday-budget-pack/",
+  "pages": 10,
+  "category": "money"
+ },
+ "52-week-savings-challenge-uk": {
+  "title": "52-Week Savings Challenge UK",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/bJe28qgt0bDf53O7M52880K",
+  "page": "https://www.tchworks.co.uk/shop/52-week-savings-challenge-uk/",
+  "pages": 6,
+  "category": "money"
+ },
+ "debt-snowball-payoff-uk": {
+  "title": "Debt Snowball Payoff Pack",
+  "price": "9.99",
+  "buy": "https://buy.stripe.com/eVq14m5OmcHj53O2rL2880L",
+  "page": "https://www.tchworks.co.uk/shop/debt-snowball-payoff-uk/",
+  "pages": 8,
+  "category": "money"
+ },
+ "sinking-funds-tracker-bundle": {
+  "title": "Sinking Funds Tracker Bundle",
+  "price": "7.99",
+  "buy": "https://buy.stripe.com/cNifZg90ydLnao81nH2880M",
+  "page": "https://www.tchworks.co.uk/shop/sinking-funds-tracker-bundle/",
+  "pages": 8,
+  "category": "money"
+ },
+ "revision-timetable": {
+  "title": "Revision Timetable",
+  "price": "7.99",
+  "buy": "https://buy.stripe.com/8x2dR83GeePr2VGfex2880z",
+  "page": "https://www.tchworks.co.uk/shop/revision-timetable/",
+  "pages": 11,
+  "category": "study"
+ },
+ "exam-countdown": {
+  "title": "Exam Countdown",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/fZu14ma4C6iV9k43vP2880A",
+  "page": "https://www.tchworks.co.uk/shop/exam-countdown/",
+  "pages": 8,
+  "category": "study"
+ },
+ "training-plan-weekly": {
+  "title": "Weekly Training Plan",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/bJeaEW5OmePr3ZK7M52880D",
+  "page": "https://www.tchworks.co.uk/shop/training-plan-weekly/",
+  "pages": 16,
+  "category": "fitness"
+ },
+ "quote-template": {
+  "title": "Quote Template",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/eVq28qgt022FeEo5DX2880F",
+  "page": "https://www.tchworks.co.uk/shop/quote-template/",
+  "pages": 6,
+  "category": "work"
+ },
+ "invoice-tracker": {
+  "title": "Invoice Tracker",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/aFa8wO3Ge8r3bsc6I12880E",
+  "page": "https://www.tchworks.co.uk/shop/invoice-tracker/",
+  "pages": 7,
+  "category": "work"
+ },
+ "project-tracker": {
+  "title": "Project Tracker",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/dRmaEWfoW6iV1RC4zT2880C",
+  "page": "https://www.tchworks.co.uk/shop/project-tracker/",
+  "pages": 11,
+  "category": "work"
+ },
+ "freelancer-starter": {
+  "title": "Freelancer Invoice Starter",
+  "price": "7.00",
+  "buy": "https://buy.stripe.com/14A8wO6SqePrao81nH2880P",
+  "page": "https://www.tchworks.co.uk/shop/freelancer-starter/",
+  "pages": 4,
+  "category": "work"
+ },
+ "ltd-invoice-swipe": {
+  "title": "UK Ltd Invoice Chase Swipe File",
+  "price": "14.99",
+  "buy": "https://buy.stripe.com/5kQfZg90ybDf2VGd6p2880Q",
+  "page": "https://www.tchworks.co.uk/shop/ltd-invoice-swipe/",
+  "pages": 6,
+  "category": "work"
+ },
+ "freelancer-ai-invoice": {
+  "title": "UK Freelancer AI Invoice and Proposals Pack",
+  "price": "29.00",
+  "buy": "https://buy.stripe.com/7sY00ia4CcHjdAkeat2880w",
+  "page": "https://www.tchworks.co.uk/shop/freelancer-ai-invoice/",
+  "pages": 9,
+  "category": "work"
+ },
+ "ltd-ai-admin": {
+  "title": "UK Ltd AI Admin Prompt Pack",
+  "price": "37.00",
+  "buy": "https://buy.stripe.com/eVq5kCa4C22F2VG8Q92880u",
+  "page": "https://www.tchworks.co.uk/shop/ltd-ai-admin/",
+  "pages": 9,
+  "category": "work"
+ },
+ "ai-tips-pack": {
+  "title": "AI Tips Pack",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/6oU14m1y6bDfcwg2rL2880G",
+  "page": "https://www.tchworks.co.uk/shop/ai-tips-pack/",
+  "pages": 7,
+  "category": "work"
+ }
+}

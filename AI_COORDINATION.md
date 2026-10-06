@@ -106,8 +106,32 @@ TASK_ID: TCH-SHOP-GUARD
 PRIORITY: P0
 OWNER: TCH Bot (Grok box)
 STATUS: ACTIVE (standing)
-ACCEPTANCE_CRITERIA: shop + 29 Stripe links + mercieca-recruitment all 200 after every change. Verified 200 at 30 Sep 22:45 / 23:02 UK.
+ACCEPTANCE_CRITERIA: `python3 scripts/verify_shop.py` passes before every push; after every push the home page, /shop/, every /shop/<slug>/ page, every buy.stripe.com link in shop/catalogue.json and /mercieca-recruitment/ return 200.
 ```
+
+```text
+TASK_ID: TCH-SHOP-REBUILD
+PRIORITY: P0
+OWNER: Claude
+STATUS: DONE 2026-10-06
+CHANGED: all 35 template PDFs rebuilt (fillable, real page counts, no internal text); new homepage, /shop/,
+  34 product pages with real page previews, /free/ pages that download instantly, a download page per product
+  (/f/<token>/), Stripe confirmation pages switched to those download pages, Daily guides end on a template card,
+  contact email fixed to hello@tchworks.co.uk.
+```
+
+### TCH shop rules (all agents, from 6 Oct 2026)
+- The shop is GENERATED. Do not hand-edit index.html, shop/, free/ or f/*/index.html. Change the source in the
+  private repo wilsonryan-hue/tch-works (shop_site/catalogue.py for listings, templates/ for the PDFs), then run
+  `python3 templates/build.py --out <stage>` and `python3 shop_site/build_site.py --stage <stage> --site <this repo>`.
+- Never upload a PDF by hand. Every customer file comes out of templates/build.py, which refuses internal words.
+- Customer pages and files never show internal words: magnet, bait, upsell, tripwire, funnel, ladder, SKU, "Soft",
+  "Content Hub", price ranges, "door", "till". Write for the customer.
+- New Daily guide: end it with `<aside class="upsell">` containing a link to /shop/<slug>/ (or /free/...). The build
+  turns that into a template card with a real preview. Link to the product page, not straight to Stripe.
+- New product = new Stripe payment link whose Confirmation page is "redirect to https://www.tchworks.co.uk/f/<token>/".
+  Ask Ryan before creating or changing anything in Stripe.
+- Contact email on the site is hello@tchworks.co.uk. tch.works is NOT our domain.
 
 ## Deferred
 
@@ -118,4 +142,5 @@ Keep this section short. Deferred items are not authorised work.
 Add only material handoffs or reviews. Do not append acknowledgements.
 
 - 2026-09-30 23:05 UK, MD Bot: tr-connect repo was made private tonight (containment); its GitHub Pages died -> connect.treunroccontracts.com 404. Fix in progress per TRC-DOOR-01. Coding agents on Ryan's PC: coordinate here, do not change repo visibility.
+- 2026-10-06 21:15 UK, Claude: TCH-SHOP-REBUILD done (see task record and shop rules above). Bots: read the shop rules before your next change.
 - 2026-10-06 20:10 UK, Claude (project thread): on Ryan's yes, mercieca-recruitment/index.html replaced with the v2 desk from wilsonryan-hue/mercieca-call-sheet main (PR #1 merged, feb7f3d). Source of truth is that repo; deploy = copy its index.html here. Shop files untouched.
