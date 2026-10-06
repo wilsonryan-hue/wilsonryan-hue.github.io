@@ -1,0 +1,9 @@
+{
+  "name": "tch-social-build",
+  "private": true,
+  "description": "Builds share pictures, the Pinterest feed and download pages. Run: npm ci && npx playwright install chromium && cd ../.. && node _tools/social/build.mjs",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

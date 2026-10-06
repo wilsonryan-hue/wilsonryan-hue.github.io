@@ -16,7 +16,11 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 const { chromium } = (() => {
-  try { return require('playwright'); } catch { return require(execFileSync('npm', ['root', '-g']).toString().trim() + '/playwright'); }
+  // Playwright is declared in _tools/social/package.json: run `npm ci` there once,
+  // then `npx playwright install chromium` (or set CHROMIUM_PATH to an existing Chromium).
+  try { return createRequire(new URL('./package.json', import.meta.url))('playwright'); } catch {}
+  try { return require(execFileSync('npm', ['root', '-g']).toString().trim() + '/playwright'); } catch {}
+  throw new Error('Playwright not found. Run: cd _tools/social && npm ci && npx playwright install chromium');
 })();
 
 const ROOT = process.cwd();
@@ -109,11 +113,16 @@ li:before{content:"";position:absolute;left:0;border-radius:4px;background:#2563
 .btn{background:#2563EB;color:#fff;border-radius:14px;font-weight:700}
 `;
 
+// Services (over PIN_MAX_PRICE) are done-for-you work, not downloads.
+const isService = (it) => it.kind === 'shop' && it.priceNum > PIN_MAX_PRICE;
+const productKicker = (it) => (isService(it) ? 'Done-for-you service · UK' : 'Printable PDF · UK');
+const productButton = (it) => (isService(it) ? 'Book now' : 'Instant PDF');
+
 function fit(text, max) { return text.length > max ? text.slice(0, max - 1).replace(/\s+\S*$/, '') + '…' : text; }
 
 function pinHtml(it) {
   const big = it.kind === 'shop';
-  const kicker = big ? 'Printable PDF · UK' : `TCH Daily · ${it.kicker || 'How-to'}`;
+  const kicker = big ? productKicker(it) : `TCH Daily · ${it.kicker || 'How-to'}`;
   const sub = fit(big ? it.lede : it.description, 170);
   const list = it.bullets || [];
   return `<style>${CSS}
@@ -126,7 +135,7 @@ ul{display:flex;flex-direction:column;gap:34px;margin-top:10px}li{font-size:40px
 </style><div class="card"><div class="top"><div class="logo"><b>TCH</b><span>Works</span></div>${big && it.price ? `<div class="chip">${esc(it.price)}</div>` : ''}</div>
 <div class="body"><div class="kick">${esc(kicker)}</div><h1>${esc(fit(it.title, 90))}</h1>${big && list.length >= 2 ? '' : `<p>${esc(sub)}</p>`}${!big && list.length ? '<div class="kick" style="margin-top:16px;color:#6B7280">Inside</div>' : ''}
 ${list.length ? `<ul>${list.map((b) => `<li>${esc(fit(b, 90))}</li>`).join('')}</ul>` : ''}
-<div class="foot"><span>tchworks.co.uk</span><span class="btn">${big ? 'Instant PDF' : 'Read free'}</span></div></div></div>`;
+<div class="foot"><span>tchworks.co.uk</span><span class="btn">${big ? productButton(it) : 'Read free'}</span></div></div></div>`;
 }
 
 function shareHtml(it) {
@@ -139,8 +148,8 @@ function shareHtml(it) {
 .kick{font-size:24px}h1{font-size:${it.title.length > 48 ? 54 : 64}px}p{font-size:28px}
 .foot{font-size:26px}.btn{font-size:28px;padding:16px 26px}
 </style><div class="card"><div class="top"><div class="logo"><b>TCH</b><span>Works</span></div>${big && it.price ? `<div class="chip">${esc(it.price)}</div>` : ''}</div>
-<div class="body"><div class="kick">${esc(big ? 'Printable PDF · UK' : `TCH Daily · ${it.kicker || 'How-to'}`)}</div><h1>${esc(fit(it.title, 80))}</h1>
-<p>${esc(fit(big ? it.lede : it.description, 130))}</p><div class="foot"><span>tchworks.co.uk</span><span class="btn">${big ? 'Instant PDF' : 'Read free'}</span></div></div></div>`;
+<div class="body"><div class="kick">${esc(big ? productKicker(it) : `TCH Daily · ${it.kicker || 'How-to'}`)}</div><h1>${esc(fit(it.title, 80))}</h1>
+<p>${esc(fit(big ? it.lede : it.description, 130))}</p><div class="foot"><span>tchworks.co.uk</span><span class="btn">${big ? productButton(it) : 'Read free'}</span></div></div></div>`;
 }
 
 fs.mkdirSync(path.join(ROOT, 'img/pins'), { recursive: true });
@@ -240,6 +249,7 @@ for (const token of fs.readdirSync(path.join(ROOT, 'f'))) {
     if (shopBySlug.has(s)) { product = shopBySlug.get(s); name = product.title; break; }
   }
   name = name || 'Your TCH Works files';
+  const free = files.some((f) => f.startsWith('tch-free-'));
   const label = (f) => f.endsWith('.ics') ? `${f} (calendar reminders)` : f.endsWith('.zip') ? `${f} (all files, zipped)` : f;
   const page = `<!DOCTYPE html>
 <html lang="en-GB">
@@ -254,14 +264,15 @@ for (const token of fs.readdirSync(path.join(ROOT, 'f'))) {
 <body>
 <header class="site-header"><div class="wrap nav"><a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a></div></header>
 <main class="section"><div class="wrap prose">
- <p class="kicker">Thank you</p>
+ <p class="kicker">${free ? 'Free download' : 'Thank you'}</p>
  <h1>${esc(name)}</h1>
  <p class="lede">Your file is ready. Tap to download, then print on A4 or fill it in on screen.</p>
  <ul class="dl">
 ${files.map((f) => `  <li><a href="./${encodeURIComponent(f)}" download>${esc(label(f))}<small>${human(fs.statSync(path.join(ROOT, dir, f)).size)}</small></a></li>`).join('\n')}
  </ul>
- <p>Bookmark this page if you want the file again later. Stripe also emails your receipt.</p>
- <p>Problem with the file? Reply to the Stripe receipt and we will put it right.</p>
+${free
+    ? ' <p>Bookmark this page if you want the file again later.</p>\n <p>Problem with the file? Email hello@tch.works and we will put it right.</p>'
+    : ' <p>Bookmark this page if you want the file again later. Stripe also emails your receipt.</p>\n <p>Problem with the file? Reply to the Stripe receipt and we will put it right.</p>'}
  <p><a href="/">Back to the shop</a></p>
 </div></main>
 </body>
