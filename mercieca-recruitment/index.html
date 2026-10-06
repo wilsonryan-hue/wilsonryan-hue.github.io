@@ -4,57 +4,106 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mercieca Recruitment Desk</title>
-  <meta name="description" content="Mercieca recruitment call sheet for an Account Director, Consumer PR role in London.">
+  <meta name="description" content="Mercieca recruitment desk: searches, job descriptions, job boards, pay check and ready-written messages for a PR and marketing agency.">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <link rel="canonical" href="https://www.tchworks.co.uk/mercieca-recruitment/">
   <style>
     :root{
-      --ink:#111111;--muted:#686868;--line:#dedede;--paper:#ffffff;--soft:#f6f6f3;
+      --ink:#111111;--muted:#5f5f5f;--line:#dedede;--paper:#ffffff;--soft:#f6f6f3;
       --red:#ff3340;--yellow:#f2f454;--aqua:#a8dcdf;--dark:#101010;--green:#176c4f;
       --shadow:0 10px 30px rgba(0,0,0,.07)
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 Arial,Helvetica,sans-serif}
-    button,input,select,textarea{font:inherit}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Arial,Helvetica,sans-serif}
+    button,input,select,textarea{font:inherit;color:inherit}
     button,a{touch-action:manipulation}
     a{color:inherit}
-    .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-    header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:30}
-    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-weight:900;font-size:25px;letter-spacing:-1.5px;text-transform:uppercase}
-    .brand span{display:inline-block;background:var(--red);padding:7px 9px}
-    .nav-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-    .btn{border:0;border-radius:999px;padding:10px 15px;background:var(--dark);color:#fff;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px;cursor:pointer}
+    :focus-visible{outline:3px solid #1a5fd0;outline-offset:2px}
+    [tabindex="-1"]:focus,[tabindex="-1"]:focus-visible{outline:none}
+    .skip{position:absolute;left:-999px;top:0;background:#111;color:#fff;padding:10px 14px;z-index:100}
+    .skip:focus{left:0}
+    .wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+
+    header.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:30}
+    .nav-row{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:900;font-size:24px;letter-spacing:-1.5px;text-transform:uppercase;text-decoration:none}
+    .brand span{display:inline-block;background:var(--red);padding:6px 9px}
+    .top-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+
+    .btn{border:0;border-radius:999px;padding:11px 18px;background:var(--dark);color:#fff;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px;cursor:pointer;min-height:44px}
     .btn:hover{opacity:.88}
-    .btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+    .btn.secondary{background:#fff;color:var(--ink);border:1px solid #bdbdbd}
     .btn.yellow{background:var(--yellow);color:#111}
     .btn.red{background:var(--red);color:#111}
-    .hero{padding:34px 0 25px;background:linear-gradient(90deg,var(--yellow) 0 34%,var(--aqua) 34% 67%,var(--red) 67% 100%)}
-    .hero-panel{background:#fff;padding:30px;border:1px solid rgba(0,0,0,.14);box-shadow:var(--shadow);max-width:860px}
+    .btn.small{padding:7px 13px;min-height:36px;font-size:14px}
+    .btn.danger{background:#fff;color:#9e1d1d;border:1px solid #d9a3a3}
+
+    .shell{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0;max-width:1240px;margin:0 auto;align-items:start}
+    nav#nav{position:sticky;top:69px;padding:20px 14px 20px 22px;align-self:start;max-height:calc(100vh - 69px);overflow:auto}
+    nav#nav a{display:block;text-decoration:none;padding:10px 12px;border-radius:12px;margin-bottom:4px;border:1px solid transparent}
+    nav#nav a strong{display:block;font-size:16px}
+    nav#nav a span{display:block;font-size:12.5px;color:var(--muted);line-height:1.3}
+    nav#nav a:hover{background:var(--soft)}
+    nav#nav a[aria-current="page"]{background:var(--yellow);border-color:#111}
+    nav#nav a[aria-current="page"] span{color:#222}
+    main#main{padding:24px 22px 70px;min-width:0;outline:0}
+
+    h1{font-size:clamp(32px,4.6vw,54px);line-height:1;letter-spacing:-.04em;margin:0}
+    h2{margin:0;font-size:23px;letter-spacing:-.025em}
+    h3{margin:0;font-size:19px;letter-spacing:-.02em}
     .eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800;margin:0 0 8px}
-    h1{font-size:clamp(34px,5vw,62px);line-height:.98;letter-spacing:-.045em;margin:0}
-    .lede{font-size:18px;max-width:720px;margin:16px 0 0}
-    .brief-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-    .chip{background:#111;color:#fff;padding:7px 10px;border-radius:999px;font-size:13px;font-weight:700}
+    .small:not(.btn){font-size:13.5px;color:var(--muted)}
+    .muted{color:var(--muted)}
+    .pagehelp{margin:10px 0 0;font-size:17px;max-width:760px}
+    .pagehead{margin-bottom:22px}
+    .pagehead h1{font-size:clamp(28px,3.2vw,40px);line-height:1.1}
+    .section{margin-top:30px}
+    .section>h2{margin-bottom:12px}
+
+    .hero{background:linear-gradient(90deg,var(--yellow) 0 34%,var(--aqua) 34% 67%,var(--red) 67% 100%);padding:26px;border-radius:18px}
+    .hero-panel{background:#fff;padding:28px;border:1px solid rgba(0,0,0,.14);box-shadow:var(--shadow);max-width:900px;border-radius:14px}
+    .lede{font-size:18px;max-width:720px;margin:14px 0 0}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .chip{background:#111;color:#fff;padding:6px 11px;border-radius:999px;font-size:13px;font-weight:700}
     .chip.light{background:#f2f2ef;color:#111;border:1px solid #ddd}
-    main{padding:28px 0 70px}
-    .grid{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:start}
-    .side{position:sticky;top:92px}
+    .chip.good{background:#e1f3ea;color:#0f4d36;border:1px solid #b8dcc9}
+    .stats{display:flex;gap:26px;flex-wrap:wrap;margin:18px 0 4px}
+    .stat b{display:block;font-size:30px;letter-spacing:-1px;line-height:1}
+    .stat span{font-size:13px;color:var(--muted)}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+    .tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .tile{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.04);min-height:112px}
+    .tile:hover{border-color:#111;transform:translateY(-1px)}
+    .tile .dot{display:block;width:28px;height:6px;border-radius:3px;background:var(--yellow);margin-bottom:12px}
+    .tile:nth-child(3n+2) .dot{background:var(--aqua)}
+    .tile:nth-child(3n) .dot{background:var(--red)}
+    .tile strong{display:block;font-size:18px;letter-spacing:-.02em}
+    .tile span.t{display:block;font-size:14px;color:var(--muted);margin-top:3px}
+
     .card{border:1px solid var(--line);background:#fff;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.04)}
     .card+.card{margin-top:14px}
-    h2{margin:0;font-size:22px;letter-spacing:-.025em}
-    h3{margin:0;font-size:19px;letter-spacing:-.02em}
-    .small{font-size:13px;color:var(--muted)}
-    .muted{color:var(--muted)}
-    .range-row{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:12px 0 5px}
-    .range-value{font-size:28px;font-weight:900;letter-spacing:-1px}
+    .list>.card+.card,.board-grid>.card+.card,.side>.card+.card{margin-top:0}
+    .side{display:grid;gap:14px}
+    .grid{display:grid;grid-template-columns:330px minmax(0,1fr);gap:24px;align-items:start}
+    .side{position:sticky;top:90px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .list{display:grid;gap:12px}
+    .row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .row .grow{flex:1;min-width:220px}
+
+    label.f{display:block;font-size:13.5px;font-weight:700;margin:12px 0 4px}
+    input[type=text],input[type=url],input[type=email],input[type=number],input:not([type]),select,textarea{
+      width:100%;border:1px solid #bdbdbd;border-radius:10px;background:#fff;padding:10px 12px
+    }
+    textarea{min-height:90px;resize:vertical}
     input[type=range]{width:100%;accent-color:#111}
-    .search-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
-    .search-actions .btn{padding:9px 10px}
-    .candidate-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
-    .counter{font-weight:800}
-    .candidate-list{display:grid;gap:14px}
+    input[type=checkbox]{width:22px;height:22px;accent-color:#111;vertical-align:middle}
+    .check{display:flex;gap:10px;align-items:center;font-weight:700}
+    .range-row{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:12px 0 5px}
+    .range-value{font-size:30px;font-weight:900;letter-spacing:-1px}
+
     .candidate{border:1px solid var(--line);border-radius:16px;padding:19px;background:#fff}
     .candidate-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
     .candidate-name{font-size:23px;font-weight:900;letter-spacing:-.025em;margin:0}
@@ -62,566 +111,1066 @@
     .match{min-width:64px;text-align:center;padding:8px 10px;border-radius:10px;background:var(--soft);font-weight:900}
     .match.exact{background:var(--yellow)}
     .match.close{background:var(--aqua)}
-    .match.adjacent{background:#eee}
     .why{margin:13px 0 0}
-    .evidence{margin:10px 0 0;padding:10px 12px;background:var(--soft);border-radius:10px;font-size:13px}
+    .evidence{margin:10px 0 0;padding:10px 12px;background:var(--soft);border-radius:10px;font-size:14px}
     .source-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
     .source-link{font-weight:800;text-decoration:underline;text-underline-offset:2px}
-    .controls{display:grid;grid-template-columns:160px 1fr;gap:10px;margin-top:16px}
-    .controls select,.controls input,.controls textarea,.add-grid input,.add-grid select,.add-grid textarea{
-      width:100%;border:1px solid #ccc;border-radius:9px;background:#fff;padding:9px 10px
-    }
+    .controls{display:grid;grid-template-columns:170px 1fr;gap:10px;margin-top:16px}
     .scorebar{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
-    .scorebar button{width:34px;height:34px;border-radius:9px;border:1px solid #ccc;background:#fff;font-weight:800;cursor:pointer}
+    .scorebar button{width:40px;height:40px;border-radius:10px;border:1px solid #aaa;background:#fff;font-weight:800;cursor:pointer}
     .scorebar button.on{background:#111;color:#fff;border-color:#111}
-    .notes{grid-column:1/-1;min-height:68px;resize:vertical}
+    .notes{grid-column:1/-1;min-height:68px}
     .candidate-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .panel{margin-top:12px;border-top:1px solid var(--line);padding-top:12px;display:none}
-    .panel.open{display:block}
-    .script{white-space:pre-wrap;background:#111;color:#fff;padding:14px;border-radius:11px;margin-top:8px}
-    .message{white-space:pre-wrap;background:#f3f3f0;padding:14px;border-radius:11px;margin-top:8px}
-    .interview-list{padding-left:20px;margin:10px 0 0}
-    .interview-list li{margin:7px 0}
-    .add-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    .panel{margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+    .message{white-space:pre-wrap;background:#f3f3f0;padding:14px;border-radius:11px;margin-top:8px;overflow-wrap:anywhere}
+    .qlist{padding-left:20px;margin:10px 0 0}
+    .qlist li{margin:8px 0}
+    .add-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;margin-top:4px}
     .add-grid .full{grid-column:1/-1}
-    .notice{padding:11px 12px;border-radius:10px;background:#fff4d6;margin-top:12px;font-size:13px}
-    .privacy{padding:11px 12px;border-radius:10px;background:#edf7f2;margin-top:12px;font-size:13px}
-    .hidden{display:none!important}
+
+    .notice{padding:12px 14px;border-radius:12px;background:#fff4d6;margin-top:12px;font-size:14px}
+    .privacy{padding:12px 14px;border-radius:12px;background:#edf7f2;margin-top:12px;font-size:14px}
+    .err{color:#9e1d1d;font-size:14px;margin:8px 0 0;min-height:1em}
+    .empty{padding:26px;border:2px dashed #cfcfcf;border-radius:16px;text-align:center}
+
+    .search-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+    .tag{display:inline-block;font-size:12px;font-weight:800;padding:3px 9px;border-radius:999px;background:#eee;margin-right:6px}
+    .tag.open{background:#e1f3ea;color:#0f4d36}
+    .tag.closed{background:#eee;color:#555}
+    .tag.pending{background:#fff4d6;color:#6b4a00}
+
+    .jd-body{white-space:pre-wrap;background:var(--soft);border-radius:12px;padding:14px;margin-top:10px;font-size:15px;overflow-wrap:anywhere}
+    .jd-edit textarea{min-height:360px;font-size:15px}
+    .jd-more{margin-top:10px}.jd-more summary{cursor:pointer;font-weight:800;padding:6px 0}
+
+    .board-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .board h3{margin-bottom:2px}
+    .board .acct{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+    .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+
+    .ladder{margin-top:14px}
+    .lad-row{display:grid;grid-template-columns:190px minmax(0,1fr) 150px;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid #eee}
+    .lad-row.on{background:#fffde0}
+    .lad-track{position:relative;height:22px;background:#f1f1ee;border-radius:6px}
+    .lad-bar{position:absolute;top:3px;height:16px;background:var(--aqua);border:1px solid #6aa9ad;border-radius:5px}
+    .lad-row.on .lad-bar{background:var(--yellow);border-color:#111}
+    .lad-line{position:absolute;top:-4px;bottom:-4px;width:3px;background:var(--red);z-index:2}
+    .lad-wrap{position:relative}
+    .result{font-size:19px;font-weight:700}
+
+    .tpl-card textarea{min-height:230px;font-size:15px}
+    .field-chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+    .field-chips button{border:1px solid #bbb;background:#fff;border-radius:999px;padding:5px 11px;cursor:pointer;font-weight:700;font-size:13px}
+
+    .steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px}
+    .steps li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+    .steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px}
+    .steps li:nth-child(3n+2)::before{background:var(--aqua)}
+    .steps li:nth-child(3n)::before{background:var(--red)}
+    .steps strong{font-size:18px}
+    .faq details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;margin-bottom:10px}
+    .faq summary{cursor:pointer;font-weight:800;font-size:17px}
+    .faq p{margin:10px 0 0}
+    .kbd{display:inline-block;border:1px solid #999;border-bottom-width:3px;border-radius:6px;padding:0 7px;background:#fafafa;font-weight:700}
+
+    #toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#111;color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60;max-width:90vw}
+    #toast.show{opacity:1}
     footer{border-top:1px solid var(--line);padding:24px 0 42px;color:var(--muted);font-size:13px}
     .foot-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-    @media(max-width:850px){
-      header{position:static}.grid{grid-template-columns:1fr}.side{position:static}.hero{padding-top:22px}
-      .hero-panel{padding:23px}.controls{grid-template-columns:1fr}.search-actions{grid-template-columns:1fr}
+    .hidden{display:none!important}
+
+    @media(max-width:1000px){
+      .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .grid{grid-template-columns:1fr}.side{position:static;display:contents}
+      .f-close{order:1}.f-where{order:2}.f-list{order:3}.f-add{order:4}.f-questions{order:5}.f-privacy{order:6}
+      .grid>*{margin:0!important}
+    }
+    @media(max-width:900px){
+      header.top{position:static}
+      .shell{grid-template-columns:1fr}
+      nav#nav{position:static;max-height:none;display:flex;gap:6px;overflow-x:auto;padding:10px 14px;border-bottom:1px solid var(--line);background:#fff;scroll-snap-type:x proximity;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+      nav#nav a{flex:0 0 auto;margin:0;padding:8px 14px}
+      nav#nav a span{display:none}
+      main#main{padding:18px 14px 60px}
+      .controls{grid-template-columns:1fr}
+      .two,.board-grid{grid-template-columns:1fr}
+      .lad-row{grid-template-columns:1fr}
     }
     @media(max-width:560px){
-      .wrap{padding:0 14px}.nav{align-items:flex-start;padding-top:13px;padding-bottom:13px}.nav-actions{width:100%}
-      .nav{flex-direction:column}.nav-actions .btn{flex:1}.candidate-head{grid-template-columns:1fr}
-      .match{justify-self:start}.add-grid{grid-template-columns:1fr}.add-grid .full{grid-column:auto}
+      .wrap{padding:0 14px}
+      .nav-row{flex-direction:column;align-items:flex-start;padding:12px 0}
+      .top-actions{width:100%}.top-actions .btn{flex:1;min-height:40px;padding:8px 12px}.top-actions .long{display:none}
+      .nav-row{gap:10px}
+      .tiles{grid-template-columns:1fr 1fr!important;gap:10px}.tile{min-height:0;padding:14px}
+      .candidate-head{grid-template-columns:1fr}.match{justify-self:start}
+      .add-grid{grid-template-columns:1fr}.add-grid .full{grid-column:auto}
+      .hero{padding:12px}.hero-panel{padding:20px}
     }
   </style>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <div class="brand"><span>Mercieca</span> Recruitment Desk</div>
-    <div class="nav-actions">
-      <button class="btn secondary" id="copyLink" type="button">Copy tool link</button>
-      <button class="btn yellow" id="exportCsv" type="button">Export shortlist</button>
+<a class="skip" href="#main" data-act="skip">Skip to the main part of the page</a>
+<header class="top">
+  <div class="wrap nav-row">
+    <a class="brand" href="#home" aria-label="Mercieca Recruitment Desk, go to the home page"><span>Mercieca</span> Recruitment Desk</a>
+    <div class="top-actions">
+      <a class="btn secondary" href="#help"><span><span class="long">Need help? </span>How to use</span></a>
+      <button class="btn secondary" type="button" data-act="copy-link"><span>Copy <span class="long">tool </span>link</span></button>
     </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-panel">
-      <p class="eyebrow">Current search brief</p>
-      <h1>Account Director<br>Consumer PR · London</h1>
-      <p class="lede">A practical call sheet for Frankie to review, approach and track real potential candidates for Mercieca. The initial shortlist is pre-verified from current public professional sources.</p>
-      <div class="brief-chips">
-        <span class="chip">Account Director level</span>
-        <span class="chip">Consumer PR / earned media</span>
-        <span class="chip">London / commutable</span>
-        <span class="chip light">FMCG / lifestyle / food &amp; drink helpful</span>
-        <span class="chip light">Client &amp; team leadership</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<main>
-  <div class="wrap grid">
-    <aside class="side">
-      <section class="card">
-        <p class="eyebrow">How close</p>
-        <div class="range-row">
-          <div>
-            <h2>Match threshold</h2>
-            <p class="small" id="matchHint">Exact brief only.</p>
-          </div>
-          <div class="range-value"><span id="matchValue">100</span>%</div>
-        </div>
-        <input id="matchRange" type="range" min="50" max="100" step="10" value="100" aria-label="Match threshold">
-        <div class="search-actions">
-          <a class="btn" id="linkedinSearch" target="_blank" rel="noopener noreferrer">Search LinkedIn</a>
-          <a class="btn secondary" id="googleSearch" target="_blank" rel="noopener noreferrer">Search Google</a>
-        </div>
-        <p class="small" style="margin:10px 0 0">100% shows the closest verified matches. Lowering the threshold reveals adjacent seniority or sectors. It never creates names.</p>
-      </section>
-
-      <section class="card">
-        <p class="eyebrow">First interview</p>
-        <h2>Questions</h2>
-        <ol class="interview-list">
-          <li>Talk me through the account you spend most of your week on. Who is the client, and what do you actually do for them?</li>
-          <li>Tell me about a story you got away that the client did not expect.</li>
-          <li>A client is unhappy. What do you do in the first hour?</li>
-          <li>How do you work with social and content, not just the press office?</li>
-          <li>Who have you managed, and what does a good week from them look like?</li>
-          <li>What would make an Account Director role worth moving for?</li>
-        </ol>
-      </section>
-
-      <section class="card">
-        <p class="eyebrow">Add someone you find</p>
-        <h2>Manual candidate</h2>
-        <form id="addForm">
-          <div class="add-grid">
-            <input id="addName" placeholder="Name" required>
-            <input id="addEmployer" placeholder="Employer" required>
-            <input id="addTitle" placeholder="Current title" required>
-            <select id="addMatch" aria-label="Match">
-              <option value="100">100% exact</option>
-              <option value="90" selected>90% close</option>
-              <option value="80">80%</option>
-              <option value="70">70%</option>
-              <option value="60">60%</option>
-              <option value="50">50%</option>
-            </select>
-            <input class="full" id="addSource" type="url" placeholder="Public source URL" required>
-            <textarea class="full" id="addWhy" placeholder="Why they may fit"></textarea>
-          </div>
-          <button class="btn red" type="submit" style="margin-top:10px">Add candidate</button>
-          <p id="addError" class="small" style="color:#9e1d1d;margin:8px 0 0"></p>
-        </form>
-      </section>
-
-      <div class="privacy">
-        <strong>Private working notes:</strong> status, rating, notes and CV links stay in this browser only. They are not added to the tool URL.
-        <br><a href="https://www.mercieca.co.uk/privacy-policy" target="_blank" rel="noopener noreferrer">Mercieca privacy policy</a>
-      </div>
-    </aside>
-
-    <section>
-      <div class="candidate-toolbar">
-        <div>
-          <p class="eyebrow">Pre-verified shortlist</p>
-          <h2>Candidates</h2>
-        </div>
-        <div class="counter" id="counter"></div>
-      </div>
-      <div class="candidate-list" id="candidateList"></div>
-    </section>
-  </div>
-</main>
+<div class="shell">
+  <nav id="nav" aria-label="Sections of the desk"></nav>
+  <main id="main" tabindex="-1">
+    <div id="app"><noscript>This desk needs JavaScript switched on in your browser.</noscript></div>
+  </main>
+</div>
 
 <footer>
   <div class="wrap foot-row">
     <div>Mercieca Ltd · 10 Greenland St · London NW1 0ND</div>
-    <div>Candidate sources last checked 24 September 2026 · Internal recruitment working tool</div>
+    <div>Candidate sources last checked 24 September 2026 · Pay figures: PR Futures, January 2026 · Internal recruitment working tool</div>
   </div>
 </footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="importFile" accept="application/json,.json" class="hidden" aria-label="Choose a backup file">
 
 <script>
 (function(){
   "use strict";
 
   var CANONICAL_URL = "https://www.tchworks.co.uk/mercieca-recruitment/";
-  var STORAGE_KEY = "mercieca-recruitment-v1";
+  var KEY = "mercieca-recruitment-v2";
+  var OLD_KEY = "mercieca-recruitment-v1";
+  var DEFAULT_ID = "sch-default";
 
-  var verifiedCandidates = [
-    {
-      id:"alex-watherston",
-      name:"Alex Watherston",
-      title:"Account Director",
-      employer:"PrettyGreen",
-      location:"London",
-      match:100,
-      why:"Direct Account Director-level consumer agency experience. PrettyGreen appointed him as Account Director in late 2025; the public professional record places him in a London marketing and PR agency.",
-      evidence:"LBB lists Alex Watherston as an Account Director working with PrettyGreen and records his appointment on 29 October 2025.",
-      sourceLabel:"LBB",
-      sourceUrl:"https://lbbonline.com/people/Alex-Watherston",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"ciara-jenkins",
-      name:"Ciara Jenkins",
-      title:"Account Director",
-      employer:"Hope&Glory",
-      location:"London",
-      match:100,
-      why:"Account Director-level experience at a London consumer PR agency, with current campaign credits including Carlsberg.",
-      evidence:"LBB identifies Ciara Jenkins as an Account Director and shows current/recent work with Hope&Glory, including Carlsberg work dated July 2026.",
-      sourceLabel:"LBB",
-      sourceUrl:"https://lbbonline.com/people/ciara-jenkins",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"maddie-pay",
-      name:"Maddie Pay",
-      title:"Account Director",
-      employer:"The Romans",
-      location:"London",
-      match:100,
-      why:"Direct Account Director experience in a London consumer/brand PR environment, with recent Heineken campaign work.",
-      evidence:"LBB lists Maddie Pay as an Account Director and shows work with The Romans, including Heineken campaign activity in 2026.",
-      sourceLabel:"LBB",
-      sourceUrl:"https://lbbonline.com/people/Maddie-Pay/work",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"chloe-gipson",
-      name:"Chloe Gipson",
-      title:"Account Director",
-      employer:"Tin Man",
-      location:"London",
-      match:100,
-      why:"Current Account Director with seven-plus years in consumer communications; strong earned-media and consumer-agency relevance.",
-      evidence:"Her public LinkedIn profile identifies Tin Man as her current employer and describes her as an Account Director with 7+ years in consumer comms.",
-      sourceLabel:"LinkedIn",
-      sourceUrl:"https://uk.linkedin.com/in/chloe-gipson",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"charlotte-gooch",
-      name:"Charlotte Gooch",
-      title:"Senior Account Director",
-      employer:"Ogilvy UK",
-      location:"London",
-      match:90,
-      why:"One level above the brief, but highly relevant consumer background across lifestyle and FMCG brands.",
-      evidence:"Her public LinkedIn profile identifies Ogilvy UK as her current employer and describes senior account director experience across leading lifestyle brands and FMCG.",
-      sourceLabel:"LinkedIn",
-      sourceUrl:"https://uk.linkedin.com/in/charlotte-gooch-666923148",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"antonia-robinson",
-      name:"Antonia Robinson",
-      title:"Senior Account Director",
-      employer:"MSL UK",
-      location:"London",
-      match:90,
-      why:"Senior agency-side communications experience at MSL with current London profile and consumer-brand relevance.",
-      evidence:"Her public LinkedIn profile identifies her as Senior Account Director at MSL in London; recent activity includes consumer snack-brand work.",
-      sourceLabel:"LinkedIn",
-      sourceUrl:"https://uk.linkedin.com/in/antonia-robinson-3847ab105",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"francesca-morgan",
-      name:"Francesca Morgan",
-      title:"Senior Account Director",
-      employer:"Ready10",
-      location:"Greater London",
-      match:90,
-      why:"One level above the brief but explicitly consumer-PR focused, with current senior agency experience in London.",
-      evidence:"Her public LinkedIn profile identifies Ready10 as her current employer and describes her as a Senior Account Director working in consumer PR.",
-      sourceLabel:"LinkedIn",
-      sourceUrl:"https://uk.linkedin.com/in/francesca-morgan-103110136",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"tiffany-king",
-      name:"Tiffany King",
-      title:"Account Director",
-      employer:"W Communications",
-      location:"London",
-      match:90,
-      why:"Exact title and current London PR-agency experience; sector leans fashion, lifestyle and culture rather than FMCG.",
-      evidence:"Her public LinkedIn profile identifies W Communications as her current employer and describes her as an Account Director.",
-      sourceLabel:"LinkedIn",
-      sourceUrl:"https://uk.linkedin.com/in/tiffany-king-11a56882",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"victoria-hourigan",
-      name:"Victoria Hourigan",
-      title:"Account Director, Corporate",
-      employer:"Grayling",
-      location:"London",
-      match:60,
-      why:"Strong London agency client counsel and account leadership, but currently corporate rather than core consumer PR.",
-      evidence:"Grayling's own April 2026 employee spotlight identifies Victoria Hourigan as Account Director in its Corporate team in London.",
-      sourceLabel:"Grayling",
-      sourceUrl:"https://grayling.com/news-and-views/employee-spotlight-victoria-hourigan-account-director-corporate/",
-      verified:"24 Sep 2026"
-    },
-    {
-      id:"imogen-lancaster",
-      name:"Imogen Lancaster",
-      title:"Account Director, Corporate & Tech",
-      employer:"Red Consultancy",
-      location:"London",
-      match:60,
-      why:"Current PR Account Director with London agency leadership; discipline is corporate and tech, so this is a wider-match option.",
-      evidence:"Her public LinkedIn profile identifies her as Account Director at Red Consultancy in the Corporate & Tech division.",
-      sourceLabel:"LinkedIn",
-      sourceUrl:"https://uk.linkedin.com/in/imogen-lancaster-8b3465144",
-      verified:"24 Sep 2026"
-    }
+  /* ---------- Fixed data ---------- */
+
+  var VERIFIED = [
+    {id:"alex-watherston",name:"Alex Watherston",title:"Account Director",employer:"PrettyGreen",location:"London",match:100,
+     why:"Direct Account Director-level consumer agency experience. PrettyGreen appointed him as Account Director in late 2025; the public professional record places him in a London marketing and PR agency.",
+     evidence:"LBB lists Alex Watherston as an Account Director working with PrettyGreen and records his appointment on 29 October 2025.",
+     sourceLabel:"LBB",sourceUrl:"https://lbbonline.com/people/Alex-Watherston",verified:"24 Sep 2026"},
+    {id:"ciara-jenkins",name:"Ciara Jenkins",title:"Account Director",employer:"Hope&Glory",location:"London",match:100,
+     why:"Account Director-level experience at a London consumer PR agency, with current campaign credits including Carlsberg.",
+     evidence:"LBB identifies Ciara Jenkins as an Account Director and shows current/recent work with Hope&Glory, including Carlsberg work dated July 2026.",
+     sourceLabel:"LBB",sourceUrl:"https://lbbonline.com/people/ciara-jenkins",verified:"24 Sep 2026"},
+    {id:"maddie-pay",name:"Maddie Pay",title:"Account Director",employer:"The Romans",location:"London",match:100,
+     why:"Direct Account Director experience in a London consumer/brand PR environment, with recent Heineken campaign work.",
+     evidence:"LBB lists Maddie Pay as an Account Director and shows work with The Romans, including Heineken campaign activity in 2026.",
+     sourceLabel:"LBB",sourceUrl:"https://lbbonline.com/people/Maddie-Pay/work",verified:"24 Sep 2026"},
+    {id:"chloe-gipson",name:"Chloe Gipson",title:"Account Director",employer:"Tin Man",location:"London",match:100,
+     why:"Current Account Director with seven-plus years in consumer communications; strong earned-media and consumer-agency relevance.",
+     evidence:"Her public LinkedIn profile identifies Tin Man as her current employer and describes her as an Account Director with 7+ years in consumer comms.",
+     sourceLabel:"LinkedIn",sourceUrl:"https://uk.linkedin.com/in/chloe-gipson",verified:"24 Sep 2026"},
+    {id:"charlotte-gooch",name:"Charlotte Gooch",title:"Senior Account Director",employer:"Ogilvy UK",location:"London",match:90,
+     why:"One level above the brief, but highly relevant consumer background across lifestyle and FMCG brands.",
+     evidence:"Her public LinkedIn profile identifies Ogilvy UK as her current employer and describes senior account director experience across leading lifestyle brands and FMCG.",
+     sourceLabel:"LinkedIn",sourceUrl:"https://uk.linkedin.com/in/charlotte-gooch-666923148",verified:"24 Sep 2026"},
+    {id:"antonia-robinson",name:"Antonia Robinson",title:"Senior Account Director",employer:"MSL UK",location:"London",match:90,
+     why:"Senior agency-side communications experience at MSL with current London profile and consumer-brand relevance.",
+     evidence:"Her public LinkedIn profile identifies her as Senior Account Director at MSL in London; recent activity includes consumer snack-brand work.",
+     sourceLabel:"LinkedIn",sourceUrl:"https://uk.linkedin.com/in/antonia-robinson-3847ab105",verified:"24 Sep 2026"},
+    {id:"francesca-morgan",name:"Francesca Morgan",title:"Senior Account Director",employer:"Ready10",location:"Greater London",match:90,
+     why:"One level above the brief but explicitly consumer-PR focused, with current senior agency experience in London.",
+     evidence:"Her public LinkedIn profile identifies Ready10 as her current employer and describes her as a Senior Account Director working in consumer PR.",
+     sourceLabel:"LinkedIn",sourceUrl:"https://uk.linkedin.com/in/francesca-morgan-103110136",verified:"24 Sep 2026"},
+    {id:"tiffany-king",name:"Tiffany King",title:"Account Director",employer:"W Communications",location:"London",match:90,
+     why:"Exact title and current London PR-agency experience; sector leans fashion, lifestyle and culture rather than FMCG.",
+     evidence:"Her public LinkedIn profile identifies W Communications as her current employer and describes her as an Account Director.",
+     sourceLabel:"LinkedIn",sourceUrl:"https://uk.linkedin.com/in/tiffany-king-11a56882",verified:"24 Sep 2026"},
+    {id:"victoria-hourigan",name:"Victoria Hourigan",title:"Account Director, Corporate",employer:"Grayling",location:"London",match:60,
+     why:"Strong London agency client counsel and account leadership, but currently corporate rather than core consumer PR.",
+     evidence:"Grayling's own April 2026 employee spotlight identifies Victoria Hourigan as Account Director in its Corporate team in London.",
+     sourceLabel:"Grayling",sourceUrl:"https://grayling.com/news-and-views/employee-spotlight-victoria-hourigan-account-director-corporate/",verified:"24 Sep 2026"},
+    {id:"imogen-lancaster",name:"Imogen Lancaster",title:"Account Director, Corporate & Tech",employer:"Red Consultancy",location:"London",match:60,
+     why:"Current PR Account Director with London agency leadership; discipline is corporate and tech, so this is a wider-match option.",
+     evidence:"Her public LinkedIn profile identifies her as Account Director at Red Consultancy in the Corporate & Tech division.",
+     sourceLabel:"LinkedIn",sourceUrl:"https://uk.linkedin.com/in/imogen-lancaster-8b3465144",verified:"24 Sep 2026"}
   ];
 
-  var statuses = ["Not contacted","Contacted","Replied","Interested","Interview","Hold","Not suitable","Declined"];
+  var STATUSES = ["Not contacted","Contacted","Replied","Interested","Interview","Hold","Not suitable","Declined"];
 
-  function loadState(){
-    try{
-      var parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-      if(!parsed.work) parsed.work = {};
-      if(!Array.isArray(parsed.custom)) parsed.custom = [];
-      if(typeof parsed.threshold !== "number") parsed.threshold = 100;
-      return parsed;
-    }catch(e){
-      return {work:{},custom:[],threshold:100};
+  var LEVELS = ["Account Executive","Senior Account Executive","Account Manager","Senior Account Manager","Account Director","Senior Account Director","Associate Director","Director","Managing Director"];
+
+  /* PR Futures, UK PR and Communications Salary Survey 2026 (agency tables), £ thousands: [low, high] per level in LEVELS order */
+  var PAY = {
+    consumer:{label:"Consumer PR",rows:[[27,30],[30,35],[36,42],[42,48],[50,58],[60,70],[75,85],[85,110],[100,150]]},
+    corporate:{label:"Technology, professional services and corporate PR",rows:[[28,32],[32,36],[37,45],[45,50],[55,65],[65,75],[75,85],[80,115],[100,180]]},
+    finance:{label:"Financial services, healthcare / life sciences and public affairs",rows:[[28,32],[33,37],[38,46],[46,55],[60,65],[70,80],[80,90],[85,140],[135,200]]}
+  };
+  var PAY_SOURCE = "https://prfutures.co.uk/blog/article-120-pr-and-communications-salary-survey-2026";
+
+  var NAV = [
+    {id:"home",label:"Home",hint:"Start here"},
+    {id:"find",label:"Find people",hint:"Search and keep a shortlist"},
+    {id:"searches",label:"My searches",hint:"Roles you have looked for"},
+    {id:"jobs",label:"Job descriptions",hint:"Your bank of roles"},
+    {id:"boards",label:"Job boards",hint:"Where to advertise and look"},
+    {id:"pay",label:"Pay check",hint:"Is the pay right?"},
+    {id:"messages",label:"Messages",hint:"Ready-written introductions"},
+    {id:"help",label:"How to use",hint:"Simple step-by-step help"}
+  ];
+
+  /* Job boards. Prices are only shown where they were seen on the board's own page. */
+  var BOARDS = [
+    {id:"campaign",name:"Campaign Jobs",group:"PR and marketing specialists",
+     why:"Run by Campaign magazine. Strong for advertising, media and creative agency people.",
+     site:"https://jobs.campaignlive.co.uk/",post:"https://jobs.campaignlive.co.uk/",
+     price:"Could not be opened on 6 Oct 2026. PRWeek Jobs (same publisher) has closed, so check this board is still running before you pay."},
+    {id:"thedots",name:"The Dots",group:"PR and marketing specialists",
+     why:"A creative community. You can post a job and also search people (paid plan).",
+     site:"https://the-dots.com/jobs/search",post:"https://the-dots.com/jobs/create",
+     price:"Seen 5 Oct 2026: one job post £195, three for £525, five for £775. Recruiter Pro £75 a month to search members. Check on the site before buying."},
+    {id:"creativepool",name:"Creativepool",group:"PR and marketing specialists",
+     why:"Best for creative, design and content roles. Less PR-specific.",
+     site:"https://www.creativepool.com/",post:"https://www.creativepool.com/",
+     price:"Price not checked. Look on the site."},
+    {id:"linkedin",name:"LinkedIn",group:"Big general job sites",
+     why:"Where most PR people already have a profile. You search people yourself while signed in.",
+     site:"https://www.linkedin.com/jobs/",post:"https://www.linkedin.com/talent/post-a-job",
+     price:"Searching people is free. LinkedIn shows the price when you post a job."},
+    {id:"reed",name:"Reed",group:"Big general job sites",
+     why:"Large general site. Useful for seeing live adverts and what other agencies pay.",
+     site:"https://www.reed.co.uk/jobs/pr-jobs",post:"https://www.reed.co.uk/recruiter/post-a-job",
+     price:"Price not checked here. Check on the site."},
+    {id:"totaljobs",name:"Totaljobs",group:"Big general job sites",
+     why:"Large general site with a paid CV search for employers.",
+     site:"https://www.totaljobs.com/jobs/public-relations",post:"https://www.totaljobs.com/recruiters/",
+     price:"Price not checked here. Check on the site."},
+    {id:"indeed",name:"Indeed",group:"Big general job sites",
+     why:"Very large reach. Its paid Smart Sourcing suggests CVs that match your advert.",
+     site:"https://uk.indeed.com/",post:"https://uk.indeed.com/hire/advertise-a-job",
+     price:"Price not checked here. Check on the site."},
+    {id:"guardian",name:"Guardian Jobs",group:"Big general job sites",
+     why:"Has a Marketing and PR section. Smaller, so best for senior or in-house style roles.",
+     site:"https://jobs.theguardian.com/jobs/marketing-and-pr/",post:"https://www.guardianjobsrecruiter.co.uk/",
+     price:"Price not checked here. Check on the site."}
+  ];
+
+  /* Job descriptions */
+  function jdText(role, doing, seeking){
+    return "About Mercieca\nMercieca is a creative services and PR agency in Camden that lives and breathes FMCG, working across consumer, trade and corporate.\n\n" +
+      "The role\nWe are looking for " + (/^[aeiou]/i.test(role) ? "an " : "a ") + role + " to join our London team. [Add one or two lines on the clients and team this person will work with.]\n\n" +
+      "What you will do\n- " + doing.join("\n- ") + "\n\n" +
+      "What we are looking for\n- " + seeking.join("\n- ") + "\n\n" +
+      "What we offer\nSalary: [add salary range]\nWorking pattern: [add office and home days]\n[Add benefits, holiday and anything that makes Mercieca a good place to work]\n\n" +
+      "How to apply\nSend your CV and a short note about the work you are proudest of to [add email address]. All conversations are confidential.";
+  }
+  var AD_QUESTIONS = [
+    "Talk me through the account you spend most of your week on. Who is the client, and what do you actually do for them?",
+    "Tell me about a story you got away that the client did not expect.",
+    "A client is unhappy. What do you do in the first hour?",
+    "How do you work with social and content, not just the press office?",
+    "Who have you managed, and what does a good week from them look like?",
+    "What would make an Account Director role worth moving for?"
+  ];
+  var JD_SEEDS = [
+    {id:"jd-ae",title:"Account Executive",level:"Account Executive",
+     body:jdText("Account Executive",["Support the team with day-to-day media relations for consumer and FMCG clients","Draft press releases and pitches, and write coverage reports","Build and update media lists and track coverage","Help with events, sampling and influencer activity"],["Experience in PR or communications, or a strong internship record","Clear, accurate writing","Real interest in food, drink and lifestyle brands","Organised, and happy to ask questions"]),
+     questions:["Tell me about a piece of coverage you helped win. What was your part in it?","How do you decide which journalist to pitch a story to?","Tell me about a time you spotted a mistake before it reached a client.","Which brands do you admire at the moment, and why?"]},
+    {id:"jd-sae",title:"Senior Account Executive",level:"Senior Account Executive",
+     body:jdText("Senior Account Executive",["Run parts of client accounts with light supervision","Write and pitch stories to consumer and trade journalists","Own coverage tracking and reporting","Support and guide junior colleagues"],["Proven experience at executive level in consumer or FMCG PR","Confident writing and pitching","Good judgement about what makes a story","Calm when deadlines move"]),
+     questions:["Walk me through a campaign you worked on from brief to coverage.","What is the best story idea you have had, and where did it end up?","How do you manage several deadlines at once?","How do you help someone more junior who is struggling?"]},
+    {id:"jd-am",title:"Account Manager",level:"Account Manager",
+     body:jdText("Account Manager",["Lead the day-to-day work on client accounts","Be a trusted point of contact for clients","Manage the account team, timelines and budgets","Bring ideas for campaigns and make them happen"],["A record of placing coverage in national, consumer and trade media","Confident dealing with clients","Experience guiding an executive or two","Interest in FMCG, food and drink, or lifestyle"]),
+     questions:["Tell me about an account you manage. How did you win the client's trust?","Describe a time a campaign did not go to plan. What did you do?","How do you plan a week across several clients?","What do you want to learn in your next role?"]},
+    {id:"jd-sam",title:"Senior Account Manager",level:"Senior Account Manager",
+     body:jdText("Senior Account Manager",["Own important client relationships","Lead campaign planning and creative thinking","Manage and coach the account team","Help win new business and shape pitches"],["Strong consumer PR background, ideally FMCG","Experience leading a team","Commercial awareness, including budgets and profitability","Clear, confident communication with clients"]),
+     questions:["Describe a campaign you led. What did the client value most?","How do you coach someone who is not hitting the standard?","Tell me about a pitch you helped win or lose. What did you learn?","How do you keep a client happy when the budget is tight?"]},
+    {id:"jd-ad",title:"Account Director",level:"Account Director",
+     body:jdText("Account Director",["Lead client accounts and be the senior day-to-day contact","Lead, coach and develop the account team","Shape integrated PR campaigns across earned, social and content","Manage account budgets, profitability and reporting","Contribute to new business and pitches"],["Experience at Account Director level in consumer PR, or a ready Senior Account Manager","A background in FMCG, food and drink or lifestyle","Strong client counsel and a record of ideas that land","Confident leading people"]),
+     questions:AD_QUESTIONS},
+    {id:"jd-social",title:"Social and Influencer Manager",level:"Account Manager",
+     body:jdText("Social and Influencer Manager",["Plan and run social and influencer activity for FMCG clients","Brief, manage and report on creators","Work with the PR team so earned, social and influencer work fit together","Track results and show clients what worked"],["Experience planning influencer or social campaigns for consumer brands","A good understanding of the main creator platforms","Clear, commercial reporting","Good taste and good judgement on brand safety"]),
+     questions:["Tell me about an influencer campaign you ran. How did you choose the creators?","How do you measure whether influencer work was worth the money?","What would you do if a creator posted something that put a client at risk?","How do you make social work with the press office?"]}
+  ];
+  var GENERIC_QUESTIONS = ["Tell me about the work you are proudest of, and your part in it.","Tell me about a time something went wrong. What did you do?","How do you work with clients and with your team?","What would make a move to Mercieca worth it for you?"];
+
+  /* Message templates. Fields: {first_name} {employer} {role} {place} {my_name} */
+  var TPL_SEEDS = [
+    {id:"t-linkedin",name:"First message (LinkedIn)",
+     text:"Hi {first_name},\n\nI'm {my_name} from Mercieca, a creative services and PR agency that lives and breathes FMCG, working across consumer, trade and corporate. I came across your work at {employer} and thought your background could suit the {role} role we are hiring for in {place}.\n\nThere is no pressure at all, but would you be open to a short, confidential chat? I'm very happy to send the details first if you would prefer.\n\nThanks,\n{my_name}"},
+    {id:"t-email",name:"First email",
+     text:"Subject: {role} role at Mercieca, in confidence\n\nHi {first_name},\n\nI hope you don't mind me getting in touch directly. I'm {my_name} at Mercieca, a creative services and PR agency in Camden that lives and breathes FMCG across consumer, trade and corporate. We are looking for a {role} in {place}, and your experience at {employer} stood out.\n\nIf it is of interest, I would love a quick, confidential conversation about what the role involves and what would make a move worthwhile for you. If now is not the right time, I completely understand, and I will keep this between us either way.\n\nWould a 15 minute call this week or next suit you?\n\nKind regards,\n{my_name}\nMercieca"},
+    {id:"t-call",name:"Call opener",
+     text:"Hi {first_name}, {my_name} here from Mercieca. Have you got two minutes?\n\nI'm getting in touch because we're looking for a {role} for our team in {place}, and your background at {employer} caught my eye. We're a creative services and PR agency that lives and breathes FMCG, working across consumer, trade and corporate.\n\nI'm not assuming you're actively looking, but would you be open to a confidential chat about it?\n\nIf yes: what are you working on at the moment, and what would have to be true for you to consider a move?"},
+    {id:"t-nudge",name:"Gentle follow-up (no reply yet)",
+     text:"Hi {first_name},\n\nJust a gentle nudge on my earlier note, in case it got buried. I would still love to tell you about the {role} role at Mercieca, even if only so you know what is on offer. If it is not for you, no problem at all, and I won't keep chasing.\n\nBest wishes,\n{my_name}"},
+    {id:"t-thanks",name:"Thank you after a call",
+     text:"Hi {first_name},\n\nThank you for taking the time to talk today. It was great to hear about your work at {employer}. I'll send over more detail on the {role} role and the team. If you are happy to take it further, the next step is an informal meeting with us at Mercieca. Could you let me know a couple of days that work for you?\n\nThanks again,\n{my_name}"}
+  ];
+  var TPL_FIELDS = ["{first_name}","{employer}","{role}","{place}","{my_name}"];
+
+  /* ---------- Small helpers ---------- */
+
+  function $(sel, root){ return (root || document).querySelector(sel); }
+  function $$(sel, root){ return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+  function esc(v){
+    return String(v == null ? "" : v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
+  }
+  function str(v, max){ return String(v == null ? "" : v).slice(0, max || 400); }
+  function safeId(v){
+    var id = String(v == null ? "" : v).replace(/[^A-Za-z0-9_-]/g,"").slice(0,60);
+    return badKey(id) ? "" : id;
+  }
+  function employerKey(v){
+    var low = String(v || "").toLowerCase().replace(/&/g," and ");
+    return low.replace(/\b(the|ltd|limited|uk|plc|group)\b/g," ").replace(/[^a-z0-9]+/g,"") || low.replace(/[^a-z0-9]+/g,"");
+  }
+  function safeUrl(u){
+    try{ var x = new URL(String(u || "").trim()); return (x.protocol === "http:" || x.protocol === "https:") ? x.href : ""; }
+    catch(e){ return ""; }
+  }
+  function uid(p){ return p + "-" + Date.now().toString(36) + Math.random().toString(36).slice(2,6); }
+  function ownKey(o, k){ return Object.prototype.hasOwnProperty.call(o, k); }
+  function badKey(k){ return k === "__proto__" || k === "constructor" || k === "prototype"; }
+  function people(n){ return n + (n === 1 ? " person" : " people"); }
+  function now(){ return new Date().toISOString(); }
+  function dateText(iso){
+    var d = new Date(iso); if(isNaN(d)) return "";
+    return d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+  }
+  function firstName(n){ return String(n || "there").trim().split(/\s+/)[0]; }
+  function money(n){ return "£" + Math.round(n).toLocaleString("en-GB"); }
+  function parseMoney(v){
+    var s = String(v || "").toLowerCase().replace(/[£,\s]/g,"");
+    if(!s) return 0;
+    var m = /^(\d+(?:\.\d+)?)(k?)$/.exec(s);
+    if(!m) return 0;
+    var n = parseFloat(m[1]); if(m[2] === "k") n *= 1000;
+    return n > 0 && n < 10000000 ? n : 0;
+  }
+  var toastTimer;
+  function toast(msg){
+    var t = $("#toast"); t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastTimer); toastTimer = setTimeout(function(){ t.classList.remove("show"); }, 2200);
+  }
+  function copyText(text, button, doneLabel){
+    function done(){
+      if(button){ var old = button.innerHTML; button.textContent = doneLabel || "Copied"; setTimeout(function(){ button.innerHTML = old; }, 1400); }
+      else toast("Copied");
     }
-  }
-
-  var state = loadState();
-
-  function saveState(){
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  }
-
-  function escapeHtml(v){
-    return String(v == null ? "" : v)
-      .replace(/&/g,"&amp;")
-      .replace(/</g,"&lt;")
-      .replace(/>/g,"&gt;")
-      .replace(/"/g,"&quot;")
-      .replace(/'/g,"&#039;");
-  }
-
-  function firstName(name){
-    return String(name || "there").trim().split(/\s+/)[0];
-  }
-
-  function candidateState(id){
-    if(!state.work[id]){
-      state.work[id] = {status:"Not contacted",rating:0,notes:"",cvUrl:"",open:""};
-    }
-    return state.work[id];
-  }
-
-  function allCandidates(){
-    return verifiedCandidates.concat(state.custom || []);
-  }
-
-  function matchClass(score){
-    if(score >= 100) return "exact";
-    if(score >= 80) return "close";
-    return "adjacent";
-  }
-
-  function matchHint(v){
-    if(v >= 100) return "Exact brief only.";
-    if(v >= 90) return "Adds strong near-matches and one-step seniority.";
-    if(v >= 80) return "Adds adjacent consumer / integrated backgrounds.";
-    if(v >= 70) return "Adds broader agency PR leadership.";
-    if(v >= 60) return "Adds corporate / tech Account Directors with transferable skills.";
-    return "Broadest sensible pool; still real, sourced people only.";
-  }
-
-  function searchQuery(v){
-    if(v >= 100) return '"Account Director" "consumer PR" London FMCG agency';
-    if(v >= 90) return '("Account Director" OR "Senior Account Director") consumer PR London agency FMCG lifestyle';
-    if(v >= 80) return '("Account Director" OR "Senior Account Director") PR social influencer consumer London agency';
-    if(v >= 70) return '("Account Director" OR "Senior Account Manager") PR communications London agency consumer lifestyle';
-    if(v >= 60) return '("Account Director" OR "Senior Account Director") PR communications London agency';
-    return '("Account Director" OR "Senior Account Manager" OR "Senior Account Director") PR communications London';
-  }
-
-  function callScript(c){
-    return "Hi " + firstName(c.name) + ", Frankie Mercieca here from Mercieca. Have you got two minutes?\n\n" +
-      "I'm getting in touch because we're looking for an Account Director for our PR team in Camden and your background at " + c.employer + " caught my eye. " +
-      "We're a creative services and PR agency that lives and breathes FMCG, working across consumer, trade and corporate. " +
-      "The role is senior and client-facing, with responsibility for day-to-day account leadership, the team and integrated PR work.\n\n" +
-      "I'm not assuming you're actively looking, but would you be open to a confidential chat about it?\n\n" +
-      "If yes: what are you working on at the moment, and what would have to be true for you to consider a move?";
-  }
-
-  function messageScript(c){
-    return "Hi " + firstName(c.name) + " — Frankie Mercieca here from Mercieca. I came across your work at " + c.employer +
-      " and thought your background could be relevant to an Account Director role we're hiring for in our London PR team. " +
-      "We're an FMCG-focused creative services and PR agency working across consumer, trade and corporate. " +
-      "Would you be open to a confidential chat this week? Happy to share more detail first. — Frankie";
-  }
-
-  function copyText(text, button){
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(text).then(function(){
-        var old = button.textContent;
-        button.textContent = "Copied";
-        setTimeout(function(){button.textContent = old;},1400);
-      }).catch(function(){window.prompt("Copy this text:",text);});
-    }else{
-      window.prompt("Copy this text:",text);
-    }
+      navigator.clipboard.writeText(text).then(done).catch(function(){ window.prompt("Copy this text:", text); });
+    }else{ window.prompt("Copy this text:", text); }
   }
-
-  function render(){
-    var range = document.getElementById("matchRange");
-    range.value = state.threshold;
-    document.getElementById("matchValue").textContent = state.threshold;
-    document.getElementById("matchHint").textContent = matchHint(state.threshold);
-
-    var q = searchQuery(state.threshold);
-    document.getElementById("linkedinSearch").href = "https://www.linkedin.com/search/results/people/?keywords=" + encodeURIComponent(q);
-    document.getElementById("googleSearch").href = "https://www.google.com/search?q=" + encodeURIComponent('site:linkedin.com/in ' + q);
-
-    var list = document.getElementById("candidateList");
-    list.innerHTML = "";
-
-    var visible = allCandidates()
-      .filter(function(c){return Number(c.match) >= Number(state.threshold);})
-      .sort(function(a,b){return Number(b.match)-Number(a.match) || a.name.localeCompare(b.name);});
-
-    document.getElementById("counter").textContent = visible.length + " shown · " + allCandidates().length + " available";
-
-    visible.forEach(function(c){
-      var w = candidateState(c.id);
-      var statusOptions = statuses.map(function(s){
-        return '<option value="' + escapeHtml(s) + '"' + (w.status === s ? ' selected' : '') + '>' + escapeHtml(s) + '</option>';
-      }).join("");
-
-      var scoreButtons = [1,2,3,4,5].map(function(n){
-        return '<button type="button" data-score="' + n + '" class="' + (Number(w.rating) === n ? 'on' : '') + '">' + n + '</button>';
-      }).join("");
-
-      var customTag = c.custom ? '<span class="chip light">Added by you</span>' : '';
-      var verifiedText = c.custom ? 'Manual source' : 'Verified ' + c.verified;
-
-      var el = document.createElement("article");
-      el.className = "candidate";
-      el.dataset.id = c.id;
-      el.innerHTML =
-        '<div class="candidate-head">' +
-          '<div>' +
-            '<h3 class="candidate-name">' + escapeHtml(c.name) + '</h3>' +
-            '<p class="roleline"><strong>' + escapeHtml(c.title) + '</strong> · ' + escapeHtml(c.employer) + (c.location ? ' · ' + escapeHtml(c.location) : '') + '</p>' +
-          '</div>' +
-          '<div class="match ' + matchClass(c.match) + '">' + escapeHtml(c.match) + '%</div>' +
-        '</div>' +
-        '<p class="why">' + escapeHtml(c.why || "Added manually for review.") + '</p>' +
-        '<div class="evidence"><strong>Evidence:</strong> ' + escapeHtml(c.evidence || "Source supplied manually; verify before approach.") + '</div>' +
-        '<div class="source-row">' +
-          '<a class="source-link" href="' + escapeHtml(c.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open ' + escapeHtml(c.sourceLabel || "source") + '</a>' +
-          '<span class="small">' + escapeHtml(verifiedText) + '</span>' + customTag +
-        '</div>' +
-        '<div class="controls">' +
-          '<div><label class="small" for="status-' + c.id + '">Status</label><select id="status-' + c.id + '" data-status>' + statusOptions + '</select></div>' +
-          '<div><label class="small">Your score</label><div class="scorebar">' + scoreButtons + '<span class="small">1–5</span></div></div>' +
-          '<textarea class="notes" data-notes placeholder="Private notes — stays on this device">' + escapeHtml(w.notes || "") + '</textarea>' +
-          '<div style="grid-column:1/-1"><label class="small">CV / portfolio link (if received)</label><input data-cv type="url" placeholder="https://..." value="' + escapeHtml(w.cvUrl || "") + '"></div>' +
-        '</div>' +
-        '<div class="candidate-actions">' +
-          '<button type="button" class="btn red" data-panel="call">Call script</button>' +
-          '<button type="button" class="btn secondary" data-panel="message">LinkedIn message</button>' +
-          '<a class="btn secondary" href="' + escapeHtml(c.sourceUrl) + '" target="_blank" rel="noopener noreferrer">View profile/source</a>' +
-        '</div>' +
-        '<div class="panel ' + (w.open === "call" ? "open" : "") + '" data-call-panel>' +
-          '<strong>First-call script</strong>' +
-          '<div class="script">' + escapeHtml(callScript(c)) + '</div>' +
-          '<button type="button" class="btn yellow" data-copy-call style="margin-top:8px">Copy call script</button>' +
-        '</div>' +
-        '<div class="panel ' + (w.open === "message" ? "open" : "") + '" data-message-panel>' +
-          '<strong>LinkedIn / email approach</strong>' +
-          '<div class="message">' + escapeHtml(messageScript(c)) + '</div>' +
-          '<button type="button" class="btn yellow" data-copy-message style="margin-top:8px">Copy message</button>' +
-        '</div>';
-
-      list.appendChild(el);
-
-      el.querySelector("[data-status]").addEventListener("change",function(e){
-        w.status = e.target.value; saveState();
-      });
-
-      el.querySelectorAll("[data-score]").forEach(function(b){
-        b.addEventListener("click",function(){
-          w.rating = Number(b.dataset.score); saveState(); render();
-        });
-      });
-
-      var notes = el.querySelector("[data-notes]");
-      notes.addEventListener("input",function(){w.notes = notes.value; saveState();});
-
-      var cv = el.querySelector("[data-cv]");
-      cv.addEventListener("change",function(){
-        var v = cv.value.trim();
-        w.cvUrl = /^https?:\/\//i.test(v) ? v : "";
-        if(v && !w.cvUrl){ alert("Please paste a full http:// or https:// link."); cv.value = ""; }
-        saveState();
-      });
-
-      el.querySelector('[data-panel="call"]').addEventListener("click",function(){
-        w.open = w.open === "call" ? "" : "call"; saveState(); render();
-      });
-
-      el.querySelector('[data-panel="message"]').addEventListener("click",function(){
-        w.open = w.open === "message" ? "" : "message"; saveState(); render();
-      });
-
-      el.querySelector("[data-copy-call]").addEventListener("click",function(e){copyText(callScript(c),e.currentTarget);});
-      el.querySelector("[data-copy-message]").addEventListener("click",function(e){copyText(messageScript(c),e.currentTarget);});
-    });
-
-    if(!visible.length){
-      list.innerHTML = '<div class="card"><strong>No candidates at this threshold.</strong><p class="muted" style="margin:6px 0 0">Lower How close, or use the search buttons to look for more.</p></div>';
-    }
-  }
-
-  document.getElementById("matchRange").addEventListener("input",function(e){
-    state.threshold = Number(e.target.value); saveState(); render();
-  });
-
-  document.getElementById("copyLink").addEventListener("click",function(e){
-    copyText(CANONICAL_URL,e.currentTarget);
-  });
-
-  document.getElementById("exportCsv").addEventListener("click",function(){
-    var rows = [["Name","Title","Employer","Location","Match","Status","Rating","Notes","CV link","Source URL","Verified"]];
-    allCandidates().forEach(function(c){
-      var w = candidateState(c.id);
-      rows.push([c.name,c.title,c.employer,c.location || "",c.match,w.status,w.rating,w.notes,w.cvUrl,c.sourceUrl,c.verified || "manual"]);
-    });
-    function cell(v){return '"' + String(v == null ? "" : v).replace(/"/g,'""') + '"';}
-    var csv = rows.map(function(r){return r.map(cell).join(",");}).join("\r\n");
-    var blob = new Blob([csv],{type:"text/csv;charset=utf-8"});
+  function download(name, mime, content){
+    var blob = new Blob([content], {type: mime});
     var url = URL.createObjectURL(blob);
     var a = document.createElement("a");
-    a.href = url;
-    a.download = "mercieca-recruitment-shortlist.csv";
-    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-  });
+    a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 500);
+  }
 
-  document.getElementById("addForm").addEventListener("submit",function(e){
-    e.preventDefault();
-    var name = document.getElementById("addName").value.trim();
-    var employer = document.getElementById("addEmployer").value.trim();
-    var title = document.getElementById("addTitle").value.trim();
-    var source = document.getElementById("addSource").value.trim();
-    var match = Number(document.getElementById("addMatch").value);
-    var why = document.getElementById("addWhy").value.trim();
-    var err = document.getElementById("addError");
-    err.textContent = "";
+  /* ---------- State ---------- */
 
-    if(!name || !employer || !title || !/^https?:\/\//i.test(source)){
-      err.textContent = "Add name, employer, title and a full public source URL.";
-      return;
-    }
-    if(/mercieca/i.test(employer)){
-      err.textContent = "Mercieca staff are not candidate targets for this sheet.";
-      return;
-    }
-    var duplicate = allCandidates().some(function(c){return c.employer.toLowerCase() === employer.toLowerCase();});
-    if(duplicate){
-      err.textContent = "There is already someone from that employer. Keep one person per employer on this call sheet.";
-      return;
-    }
+  function defaultSearch(){
+    return {id:DEFAULT_ID,title:"Account Director",level:"Account Director",sector:"Consumer PR",place:"London",
+      helpful:"FMCG, lifestyle, food and drink",jdId:"jd-ad",threshold:100,status:"open",created:now(),updated:now(),custom:[]};
+  }
+  function seedJds(){ return JD_SEEDS.map(function(j){ return {id:j.id,title:j.title,level:j.level,body:j.body,questions:j.questions.slice(),seed:true}; }); }
+  function seedTpls(){ var o = {}; TPL_SEEDS.forEach(function(t){ o[t.id] = t.text; }); return o; }
 
-    var id = "manual-" + Date.now();
-    state.custom.push({
-      id:id,name:name,title:title,employer:employer,location:"",match:match,
-      why:why || "Added manually for review.",
-      evidence:"Manual source supplied by Frankie. Verify the source before approach.",
-      sourceLabel:"source",sourceUrl:source,verified:"",custom:true
+  function normSearch(s){
+    var out = {
+      id:safeId(s.id) || uid("sch"), title:str(s.title,120) || "Untitled role", level:LEVELS.indexOf(s.level) > -1 ? s.level : "",
+      sector:str(s.sector,120), place:str(s.place,120), helpful:str(s.helpful,300), jdId:str(s.jdId,60),
+      threshold:[50,60,70,80,90,100].indexOf(Number(s.threshold)) > -1 ? Number(s.threshold) : 100,
+      status:s.status === "closed" ? "closed" : "open", created:str(s.created,40) || now(), updated:str(s.updated,40) || now(), custom:[]
+    };
+    (Array.isArray(s.custom) ? s.custom : []).forEach(function(c){
+      if(!c || !c.name || !c.employer || !safeUrl(c.sourceUrl)) return;
+      out.custom.push({id:safeId(c.id) || uid("manual"),name:str(c.name,120),title:str(c.title,160),employer:str(c.employer,160),location:str(c.location,120),
+        match:Math.max(50,Math.min(100,Number(c.match) || 90)),why:str(c.why,800),evidence:str(c.evidence,800),sourceLabel:str(c.sourceLabel,60) || "source",
+        sourceUrl:safeUrl(c.sourceUrl),verified:"",custom:true});
     });
-    state.threshold = Math.min(state.threshold,match);
-    saveState();
-    e.target.reset();
-    document.getElementById("addMatch").value = "90";
-    render();
+    return out;
+  }
+  function normalize(raw){
+    raw = raw && typeof raw === "object" ? raw : {};
+    var st = {v:2,searches:[],currentId:"",jds:[],boards:{},customBoards:[],templates:seedTpls(),me:{name:"Frankie Mercieca"},work:{},pay:{level:"Account Director",sector:"consumer",offer:""}};
+    var seen = {};
+    (Array.isArray(raw.searches) ? raw.searches : []).forEach(function(s){
+      if(!s || typeof s !== "object") return;
+      var n = normSearch(s);
+      if(seen[n.id]) n.id = uid("sch");
+      seen[n.id] = true; st.searches.push(n);
+    });
+    if(!st.searches.length) st.searches.push(defaultSearch());
+    st.currentId = st.searches.some(function(s){ return s.id === raw.currentId; }) ? raw.currentId : st.searches[0].id;
+    if(Array.isArray(raw.jds)){
+      raw.jds.forEach(function(j){
+        if(!j || !j.title) return;
+        st.jds.push({id:safeId(j.id) || uid("jd"),title:str(j.title,120),level:LEVELS.indexOf(j.level) > -1 ? j.level : "",body:str(j.body,12000),
+          questions:Array.isArray(j.questions) ? j.questions.map(function(q){ return str(q,400); }).filter(Boolean).slice(0,12) : [],seed:!!j.seed});
+      });
+    }
+    if(!Array.isArray(raw.jds)) st.jds = seedJds();
+    if(raw.boards && typeof raw.boards === "object"){
+      Object.keys(raw.boards).forEach(function(k){
+        var b = raw.boards[k]; if(!b || typeof b !== "object" || badKey(k) || !safeId(k)) return;
+        st.boards[safeId(k)] = {use:!!b.use,profile:str(b.profile,300),note:str(b.note,600)};
+      });
+    }
+    (Array.isArray(raw.customBoards) ? raw.customBoards : []).forEach(function(b){
+      var u = safeUrl(b && b.url); if(!b || !b.name || !u) return;
+      st.customBoards.push({id:safeId(b.id) || uid("cb"),name:str(b.name,100),url:u});
+    });
+    // Every person, role and board needs its own id: ids key private notes and page elements.
+    function uniq(list, taken, prefix){ list.forEach(function(x){ while(taken[x.id]) x.id = uid(prefix); taken[x.id] = true; }); }
+    var people = {}; VERIFIED.forEach(function(v){ people[v.id] = true; });
+    st.searches.forEach(function(sr){ uniq(sr.custom, people, "manual"); });
+    uniq(st.jds, {}, "jd");
+    var boards = {}; BOARDS.forEach(function(b){ boards[b.id] = true; });
+    uniq(st.customBoards, boards, "cb");
+    if(raw.templates && typeof raw.templates === "object"){
+      Object.keys(raw.templates).forEach(function(k){ if(ownKey(st.templates, k) && typeof raw.templates[k] === "string") st.templates[k] = raw.templates[k].slice(0,6000); });
+    }
+    if(raw.me && typeof raw.me.name === "string" && raw.me.name.trim()) st.me.name = str(raw.me.name.trim(),100);
+    if(raw.work && typeof raw.work === "object"){
+      Object.keys(raw.work).forEach(function(k){
+        var w = raw.work[k]; if(!w || typeof w !== "object" || badKey(k) || !safeId(k)) return;
+        st.work[safeId(k)] = {status:STATUSES.indexOf(w.status) > -1 ? w.status : "Not contacted",rating:Math.max(0,Math.min(5,Number(w.rating) || 0)),
+          notes:str(w.notes,4000),cvUrl:safeUrl(w.cvUrl),open:w.open === "contact" ? "contact" : "",tpl:str(w.tpl,40)};
+      });
+    }
+    if(raw.pay && typeof raw.pay === "object"){
+      if(LEVELS.indexOf(raw.pay.level) > -1) st.pay.level = raw.pay.level;
+      if(typeof raw.pay.sector === "string" && ownKey(PAY, raw.pay.sector)) st.pay.sector = raw.pay.sector;
+      st.pay.offer = str(raw.pay.offer,20);
+    }
+    return st;
+  }
+  function migrateOld(){
+    try{
+      var old = JSON.parse(localStorage.getItem(OLD_KEY) || "null");
+      if(!old || typeof old !== "object") return null;
+      var s = defaultSearch();
+      if([50,60,70,80,90,100].indexOf(Number(old.threshold)) > -1) s.threshold = Number(old.threshold);
+      return {searches:[Object.assign(s,{custom:Array.isArray(old.custom) ? old.custom : []})],work:old.work || {}};
+    }catch(e){ return null; }
+  }
+  function load(){
+    try{
+      var raw = localStorage.getItem(KEY);
+      if(raw) return normalize(JSON.parse(raw));
+    }catch(e){}
+    return normalize(migrateOld() || {});
+  }
+  var state = load();
+  var ui = {jdEdit:"",newFrom:""};
+
+  function save(){
+    try{ localStorage.setItem(KEY, JSON.stringify(state)); }
+    catch(e){ toast("Could not save. Your browser may be blocking storage."); }
+  }
+  function currentSearch(){
+    var s = state.searches.filter(function(x){ return x.id === state.currentId; })[0];
+    return s || state.searches[0];
+  }
+  function touch(s){ s.updated = now(); }
+  function candidatesOf(s){ return (s.id === DEFAULT_ID ? VERIFIED : []).concat(s.custom); }
+  function workOf(id){
+    if(!ownKey(state.work, id)) state.work[id] = {status:"Not contacted",rating:0,notes:"",cvUrl:"",open:"",tpl:""};
+    return state.work[id];
+  }
+  function jdById(id){ return state.jds.filter(function(j){ return j.id === id; })[0]; }
+  function searchLabel(s){ return s.title + (s.sector ? ", " + s.sector : "") + (s.place ? " · " + s.place : ""); }
+  function stats(s){
+    var c = candidatesOf(s), contacted = 0, interviews = 0;
+    c.forEach(function(p){ var w = state.work[p.id]; if(w && w.status !== "Not contacted") contacted++; if(w && w.status === "Interview") interviews++; });
+    return {people:c.length,contacted:contacted,interviews:interviews};
+  }
+  function levelFromTitle(t){
+    var s = String(t || "").toLowerCase();
+    var order = ["managing director","associate director","senior account director","account director","senior account manager","account manager","senior account executive","account executive","director"];
+    var map = {"managing director":"Managing Director","associate director":"Associate Director","senior account director":"Senior Account Director","account director":"Account Director",
+      "senior account manager":"Senior Account Manager","account manager":"Account Manager","senior account executive":"Senior Account Executive","account executive":"Account Executive","director":"Director"};
+    for(var i = 0; i < order.length; i++){ if(s.indexOf(order[i]) > -1) return map[order[i]]; }
+    return "";
+  }
+
+  /* ---------- Search words ---------- */
+
+  function searchWords(s, v){
+    var t = s.title, i = LEVELS.indexOf(s.level || levelFromTitle(t));
+    var up = i > -1 ? LEVELS[i + 1] : (/^senior/i.test(t) ? "" : "Senior " + t);
+    var down = i > 0 ? LEVELS[i - 1] : "";
+    function any(list){
+      var seen = {}, q = list.filter(function(x){ var k = String(x || "").toLowerCase(); if(!k || seen[k]) return false; seen[k] = true; return true; });
+      return q.length === 1 ? '"' + q[0] + '"' : '("' + q.join('" OR "') + '")';
+    }
+    var sector = s.sector ? " " + s.sector : "", place = s.place ? " " + s.place : "";
+    if(v >= 100) return '"' + t + '"' + sector + place + (s.helpful ? " " + s.helpful.split(",")[0].trim() : "") + " agency";
+    if(v >= 90) return any([t, up]) + sector + place + " agency";
+    if(v >= 80) return any([t, up]) + sector + place + " agency social influencer";
+    if(v >= 70) return any([t, up]) + " PR communications" + place + " agency";
+    if(v >= 60) return any([t, up]) + " PR communications" + place;
+    return any([t, up, down]) + " PR communications" + place;
+  }
+  function matchHint(v){
+    if(v >= 100) return "Exactly this role only.";
+    if(v >= 90) return "Adds strong near-matches and one step up in seniority.";
+    if(v >= 80) return "Adds nearby consumer and integrated backgrounds.";
+    if(v >= 70) return "Adds wider agency PR leadership.";
+    if(v >= 60) return "Adds corporate and tech people with skills that carry over.";
+    return "Widest sensible pool. Still real, sourced people only.";
+  }
+  function plainWords(s){ return [s.title, s.sector, s.place].filter(Boolean).join(" "); }
+  function allBoards(){
+    var list = BOARDS.map(function(b){ return Object.assign({},b); });
+    state.customBoards.forEach(function(c){ list.push({id:c.id,name:c.name,group:"Boards you added",why:"A board you added yourself.",site:c.url,post:c.url,price:"",custom:true}); });
+    return list;
+  }
+  function boardState(id){ return state.boards[id] || {use:false,profile:"",note:""}; }
+
+  /* ---------- Messages ---------- */
+
+  function fill(text, c, s){
+    var map = {first_name:firstName(c.name),employer:c.employer,role:s.title,place:s.place || "London",my_name:state.me.name};
+    return String(text).replace(/\{(\w+)\}/g, function(m,k){ return map.hasOwnProperty(k) ? map[k] : m; });
+  }
+  function tplList(){ return TPL_SEEDS.map(function(t){ return {id:t.id,name:t.name,text:state.templates[t.id]}; }); }
+
+  /* ---------- Views ---------- */
+
+  function pageHead(eyebrow, title, help){
+    return '<div class="pagehead"><p class="eyebrow">' + esc(eyebrow) + '</p><h1 id="pagetitle" tabindex="-1">' + esc(title) + '</h1>' +
+      (help ? '<p class="pagehelp">' + esc(help) + '</p>' : '') + '</div>';
+  }
+
+  function viewHome(){
+    var s = currentSearch(), st = stats(s);
+    var recent = state.searches.slice().sort(function(a,b){ return b.updated.localeCompare(a.updated); }).slice(0,3);
+    var tiles = [
+      ["#find","Find people","Search for candidates and keep your shortlist."],
+      ["#new","Start a new search","Looking for a different role? Begin here."],
+      ["#searches","Previous searches","Go back to a role you have looked for before."],
+      ["#jobs","Job descriptions","Your bank of roles. Add your own."],
+      ["#boards","Job boards","Where to advertise, and your own accounts."],
+      ["#pay","Pay check","See where an offer sits in the market."],
+      ["#messages","Messages","Ready-written introductions you can change."],
+      ["#help","How to use","Simple step-by-step help."]
+    ];
+    var html = '<section class="hero" aria-label="Welcome"><div class="hero-panel">' +
+      '<p class="eyebrow">Welcome</p><h1 id="pagetitle" tabindex="-1">Mercieca Recruitment Desk</h1>' +
+      '<p class="lede">Everything for finding, contacting and keeping track of people for Mercieca, in one place. Pick up where you left off, or start something new.</p>' +
+      '<div class="notice" style="background:#f6f6f3;margin-top:18px"><p class="eyebrow" style="margin-bottom:4px">Your current search</p>' +
+      '<h2>' + esc(searchLabel(s)) + '</h2>' +
+      '<div class="stats"><div class="stat"><b>' + st.people + '</b><span>on the sheet</span></div><div class="stat"><b>' + st.contacted + '</b><span>contacted</span></div><div class="stat"><b>' + st.interviews + '</b><span>at interview</span></div></div>' +
+      '<div class="btn-row" style="margin-top:6px"><a class="btn yellow" href="#find" data-act="open-search" data-id="' + esc(s.id) + '">Continue this search</a><a class="btn secondary" href="#new">Start a new search</a></div></div>' +
+      '</div></section>';
+    html += '<section class="section"><h2>What would you like to do?</h2><div class="tiles">';
+    tiles.forEach(function(t, i){
+      html += '<a class="tile" href="' + t[0] + '"><span class="dot" aria-hidden="true"></span><strong>' + esc(t[1]) + ' <span aria-hidden="true">→</span></strong><span class="t">' + esc(t[2]) + '</span></a>';
+    });
+    html += '</div></section>';
+    html += '<section class="section"><h2>Recent searches</h2><div class="list">';
+    recent.forEach(function(r){
+      var rs = stats(r);
+      html += '<div class="card"><div class="search-row"><div><strong>' + esc(searchLabel(r)) + '</strong><div class="small"><span class="tag ' + r.status + '">' + (r.status === "open" ? "Open" : "Closed") + '</span>' + people(rs.people) + ' · ' + rs.contacted + ' contacted · updated ' + esc(dateText(r.updated)) + '</div></div>' +
+        '<a class="btn small" href="#find" data-act="open-search" data-id="' + esc(r.id) + '">Open</a></div></div>';
+    });
+    html += '</div></section>';
+    html += '<section class="section"><div class="privacy"><strong>Where your work is kept.</strong> Everything is saved on this computer, in this browser, and nowhere else. If you use a different computer, or clear your browsing history, it will not be there. Save a backup file now and then.' +
+      '<div class="btn-row"><button class="btn secondary small" type="button" data-act="export-backup">Save a backup file</button><button class="btn secondary small" type="button" data-act="import-backup">Restore from a backup file</button></div></div></section>';
+    return html;
+  }
+
+  function viewFind(){
+    var s = currentSearch();
+    var opts = state.searches.map(function(x){ return '<option value="' + esc(x.id) + '"' + (x.id === s.id ? " selected" : "") + '>' + esc(searchLabel(x)) + (x.status === "closed" ? " (closed)" : "") + '</option>'; }).join("");
+    var jd = jdById(s.jdId);
+    var qs = jd && jd.questions.length ? jd.questions : GENERIC_QUESTIONS;
+    var lvl = s.level || levelFromTitle(s.title);
+    var html = pageHead("Find people", searchLabel(s), "Search the places where real people are, add the ones you find, then keep notes and contact them. This desk never makes up names.");
+    html += '<div class="card" style="margin-bottom:20px"><div class="row"><div class="grow"><label class="f" for="curSearch" style="margin-top:0">Which search are you working on?</label><select id="curSearch" data-bind="current-search">' + opts + '</select></div>' +
+      '<div class="btn-row" style="margin:0"><a class="btn secondary small" href="#new">Start a new search</a>' +
+      (lvl ? '<a class="btn secondary small" href="#pay" data-act="pay-for" data-level="' + esc(lvl) + '">Check pay for this role</a>' : '') +
+      (jd ? '<a class="btn secondary small" href="#jobs">See the job description</a>' : '') + '</div></div>';
+    html += '<div class="chips">' + (s.sector ? '<span class="chip">' + esc(s.sector) + '</span>' : '') + (s.place ? '<span class="chip">' + esc(s.place) + '</span>' : '') +
+      (s.helpful ? '<span class="chip light">Helpful: ' + esc(s.helpful) + '</span>' : '') + '<span class="chip light">' + (s.status === "open" ? "Open search" : "Closed search") + '</span></div></div>';
+
+    html += '<div class="grid"><aside class="side">' +
+      '<section class="card f-close"><p class="eyebrow">How close</p><div class="range-row"><div><h2>Match threshold</h2><p class="small" id="matchHint">' + esc(matchHint(s.threshold)) + '</p></div><div class="range-value"><span id="matchValue">' + s.threshold + '</span>%</div></div>' +
+      '<input id="matchRange" data-bind="thresh" type="range" min="50" max="100" step="10" value="' + s.threshold + '" aria-label="How close a match to show, from 50 to 100 percent">' +
+      '<p class="small" style="margin:10px 0 0">100% shows the closest matches only. Lower numbers also show people a step away. It never invents anyone.</p></section>' +
+      '<section class="card f-where"><p class="eyebrow">Where to look</p><h2>Search for people</h2><div id="whereList"></div></section>' +
+      '<section class="card f-questions"><p class="eyebrow">First interview</p><h2>Questions</h2><ol class="qlist">' + qs.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join("") + '</ol></section>' +
+      '<section class="card f-add"><p class="eyebrow">Add someone you find</p><h2>Put a person on the sheet</h2>' +
+      '<form data-form="add-cand" novalidate><div class="add-grid">' +
+      '<div><label class="f" for="addName">Name</label><input id="addName" required></div><div><label class="f" for="addEmployer">Agency they work at</label><input id="addEmployer" required></div>' +
+      '<div><label class="f" for="addTitle">Their job title</label><input id="addTitle" required></div>' +
+      '<div><label class="f" for="addMatch">How close a match</label><select id="addMatch"><option value="100">100% exact</option><option value="90" selected>90% close</option><option value="80">80%</option><option value="70">70%</option><option value="60">60%</option><option value="50">50%</option></select></div>' +
+      '<div class="full"><label class="f" for="addSource">Link to their profile</label><input id="addSource" type="url" placeholder="Paste it here: https://..." required></div>' +
+      '<div class="full"><label class="f" for="addWhy">Why they may fit (optional)</label><textarea id="addWhy"></textarea></div></div>' +
+      '<button class="btn red" type="submit" style="margin-top:10px">Add candidate</button><p id="addError" class="err" role="alert"></p></form></section>' +
+      '<div class="privacy f-privacy"><strong>Private working notes:</strong> status, score, notes and CV links stay in this browser only.<br><a href="https://www.mercieca.co.uk/privacy-policy" target="_blank" rel="noopener noreferrer">Mercieca privacy policy</a></div>' +
+      '</aside><section class="f-list"><div class="row" style="margin-bottom:14px"><div><p class="eyebrow">Shortlist</p><h2>Candidates</h2></div><div class="row" style="gap:10px"><div id="counter" style="font-weight:800"></div>' +
+      '<button class="btn yellow small" type="button" data-act="export-csv">Export shortlist</button></div></div><div class="list" id="candList"></div></section></div>';
+    return html;
+  }
+
+  function renderWhere(){
+    var s = currentSearch(), el = $("#whereList"); if(!el) return;
+    var words = searchWords(s, s.threshold);
+    var plain = plainWords(s);
+    var html = '<div class="links" style="margin-top:0"><a class="btn small" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/search/results/people/?keywords=' + encodeURIComponent(words) + '">Search LinkedIn</a>' +
+      '<a class="btn secondary small" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=' + encodeURIComponent("site:linkedin.com/in " + words) + '">Search Google</a></div>' +
+      '<p class="small">LinkedIn opens in a new page. You sign in there yourself.</p>';
+    var mine = allBoards().filter(function(b){ return b.id !== "linkedin" && boardState(b.id).use; });
+    if(mine.length){
+      html += '<p class="eyebrow" style="margin-top:14px">Your job boards</p>';
+      mine.forEach(function(b){
+        html += '<div class="row" style="margin:8px 0"><strong>' + esc(b.name) + '</strong><span><a class="btn secondary small" target="_blank" rel="noopener noreferrer" href="' + esc(b.site) + '">Open</a> ' +
+          '<button class="btn secondary small" type="button" data-act="copy" data-text="' + esc(plain) + '">Copy search words</button></span></div>';
+      });
+      html += '<p class="small">Open the board, paste the search words into its search box.</p>';
+    }else{
+      html += '<p class="small" style="margin-top:12px">No other job boards set up yet. <a href="#boards">Set up your job boards</a> and they will appear here.</p>';
+    }
+    el.innerHTML = html;
+  }
+
+  function candidateHtml(c, s){
+    var w = workOf(c.id);
+    var tpls = tplList();
+    var tplId = tpls.some(function(t){ return t.id === w.tpl; }) ? w.tpl : "t-call";
+    var statusOptions = STATUSES.map(function(x){ return '<option value="' + esc(x) + '"' + (w.status === x ? " selected" : "") + '>' + esc(x) + '</option>'; }).join("");
+    var scores = [1,2,3,4,5].map(function(n){ return '<button type="button" data-act="score" data-id="' + esc(c.id) + '" data-n="' + n + '" aria-label="Score ' + n + ' out of 5" class="' + (Number(w.rating) === n ? "on" : "") + '">' + n + '</button>'; }).join("");
+    var tplOptions = tpls.map(function(t){ return '<option value="' + esc(t.id) + '"' + (t.id === tplId ? " selected" : "") + '>' + esc(t.name) + '</option>'; }).join("");
+    var src = safeUrl(c.sourceUrl);
+    var html = '<article class="candidate" data-cid="' + esc(c.id) + '"><div class="candidate-head"><div><h3 class="candidate-name">' + esc(c.name) + '</h3>' +
+      '<p class="roleline"><strong>' + esc(c.title) + '</strong> · ' + esc(c.employer) + (c.location ? " · " + esc(c.location) : "") + '</p></div>' +
+      '<div class="match ' + (c.match >= 100 ? "exact" : c.match >= 80 ? "close" : "") + '">' + esc(c.match) + '%</div></div>' +
+      '<p class="why">' + esc(c.why || "Added by hand for review.") + '</p>' +
+      '<div class="evidence"><strong>Evidence:</strong> ' + esc(c.evidence || "Source supplied by hand. Check the source before you approach them.") + '</div>' +
+      '<div class="source-row">' + (src ? '<a class="source-link" href="' + esc(src) + '" target="_blank" rel="noopener noreferrer">Open ' + esc(c.sourceLabel || "source") + '</a>' : '') +
+      '<span class="small">' + (c.custom ? "Added by you" : "Verified " + esc(c.verified)) + '</span></div>' +
+      '<div class="controls"><div><label class="small" for="st-' + esc(c.id) + '">Status</label><select id="st-' + esc(c.id) + '" data-bind="status" data-id="' + esc(c.id) + '">' + statusOptions + '</select></div>' +
+      '<div><span class="small">Your score</span><div class="scorebar">' + scores + '<span class="small">1 to 5</span></div></div>' +
+      '<textarea class="notes" data-bind="notes" data-id="' + esc(c.id) + '" aria-label="Private notes" placeholder="Private notes. These stay on this computer.">' + esc(w.notes) + '</textarea>' +
+      '<div style="grid-column:1/-1"><label class="small" for="cv-' + esc(c.id) + '">CV or portfolio link (if you receive one)</label><input id="cv-' + esc(c.id) + '" data-bind="cv" data-id="' + esc(c.id) + '" type="url" placeholder="https://..." value="' + esc(w.cvUrl) + '"></div></div>' +
+      '<div class="candidate-actions"><button type="button" class="btn red" data-act="contact" data-id="' + esc(c.id) + '">Contact candidate</button>' +
+      (c.custom ? '<button type="button" class="btn danger small" data-act="remove-cand" data-id="' + esc(c.id) + '">Remove from the sheet</button>' : '') + '</div>';
+    if(w.open === "contact"){
+      var tp = ownKey(state.templates, tplId) ? state.templates[tplId] : "";
+      html += '<div class="panel"><strong>Ready-written message</strong><label class="f" for="tp-' + esc(c.id) + '">Which message?</label><select id="tp-' + esc(c.id) + '" data-bind="tpl" data-id="' + esc(c.id) + '">' + tplOptions + '</select>' +
+        '<div class="message" id="msg-' + esc(c.id) + '">' + esc(fill(tp, c, s)) + '</div>' +
+        '<div class="btn-row"><button type="button" class="btn yellow" data-act="copy-msg" data-id="' + esc(c.id) + '">Copy message</button><a class="btn secondary small" href="#messages">Change the wording</a></div></div>';
+    }
+    return html + '</article>';
+  }
+
+  function renderCandidates(){
+    var s = currentSearch(), list = $("#candList"); if(!list) return;
+    var all = candidatesOf(s);
+    var visible = all.filter(function(c){ return Number(c.match) >= Number(s.threshold); })
+      .sort(function(a,b){ return Number(b.match) - Number(a.match) || a.name.localeCompare(b.name); });
+    $("#counter").textContent = visible.length + " shown · " + all.length + " available";
+    list.innerHTML = visible.length ? visible.map(function(c){ return candidateHtml(c, s); }).join("") :
+      '<div class="empty"><strong>' + (all.length ? "No one at this closeness." : "No one on this sheet yet.") + '</strong><p class="muted" style="margin:6px 0 0">' +
+      (all.length ? "Lower How close to see more people." : "Press Search LinkedIn on the left, find someone, then add them with Add someone you find.") + '</p></div>';
+  }
+
+  function viewSearches(){
+    var html = pageHead("My searches", "Previous searches", "Every role you have looked for is kept here, with the people you found. Open one to carry on.");
+    html += '<div class="btn-row" style="margin:0 0 18px"><a class="btn yellow" href="#new">Start a new search</a></div><div class="list">';
+    state.searches.slice().sort(function(a,b){ return b.updated.localeCompare(a.updated); }).forEach(function(r){
+      var rs = stats(r);
+      html += '<article class="card"><div class="search-row"><div><h3>' + esc(searchLabel(r)) + '</h3>' +
+        '<div class="small" style="margin-top:4px"><span class="tag ' + r.status + '">' + (r.status === "open" ? "Open" : "Closed") + '</span>' + people(rs.people) + ' · ' + rs.contacted + ' contacted · ' + rs.interviews + ' at interview · started ' + esc(dateText(r.created)) + ' · updated ' + esc(dateText(r.updated)) + '</div></div>' +
+        '<div class="btn-row" style="margin:0"><a class="btn small" href="#find" data-act="open-search" data-id="' + esc(r.id) + '">Open</a>' +
+        '<button class="btn secondary small" type="button" data-act="dup-search" data-id="' + esc(r.id) + '">Copy this search</button>' +
+        '<button class="btn secondary small" type="button" data-act="toggle-search" data-id="' + esc(r.id) + '">' + (r.status === "open" ? "Mark as closed" : "Re-open") + '</button>' +
+        (r.id !== DEFAULT_ID ? '<button class="btn danger small" type="button" data-act="del-search" data-id="' + esc(r.id) + '">Delete</button>' : '') + '</div></div></article>';
+    });
+    return html + '</div>';
+  }
+
+  function viewNew(){
+    var from = ui.newFrom ? jdById(ui.newFrom) : null;
+    var jdOpts = '<option value="">Another role (type it below)</option>' + state.jds.map(function(j){ return '<option value="' + esc(j.id) + '"' + (from && from.id === j.id ? " selected" : "") + '>' + esc(j.title) + '</option>'; }).join("");
+    var lvlOpts = '<option value="">Not sure</option>' + LEVELS.map(function(l){ return '<option' + (from && from.level === l ? " selected" : "") + '>' + esc(l) + '</option>'; }).join("");
+    return pageHead("New search", "Start a new search", "Tell the desk what job you are looking to fill. You can change any of this later by starting a copy.") +
+      '<form class="card" data-form="new-search" novalidate style="max-width:760px">' +
+      '<label class="f" for="nsJd" style="margin-top:0">Pick a role from your job description bank</label><select id="nsJd">' + jdOpts + '</select>' +
+      '<label class="f" for="nsTitle">Job title</label><input id="nsTitle" required value="' + esc(from ? from.title : "") + '" placeholder="For example: Senior Account Manager">' +
+      '<label class="f" for="nsLevel">Level</label><select id="nsLevel">' + lvlOpts + '</select>' +
+      '<label class="f" for="nsSector">Type of PR (optional)</label><input id="nsSector" placeholder="For example: Consumer PR" value="Consumer PR">' +
+      '<label class="f" for="nsPlace">Where is the job?</label><input id="nsPlace" placeholder="For example: London" value="London">' +
+      '<label class="f" for="nsHelp">Helpful experience (optional)</label><input id="nsHelp" placeholder="For example: FMCG, food and drink">' +
+      '<div class="btn-row"><button class="btn yellow" type="submit">Save and start searching</button><a class="btn secondary" href="#home">Cancel</a></div><p id="nsErr" class="err" role="alert"></p></form>';
+  }
+
+  function placeholderCount(t){ return (String(t).match(/\[[^\]]+\]/g) || []).length; }
+
+  function viewJobs(){
+    var html = pageHead("Job descriptions", "Your bank of roles", "Keep job descriptions here, ready to use when you need them. Change the wording, add your own, and start a search for any of them.");
+    html += '<form class="card" data-form="jd-new" novalidate style="margin-bottom:20px"><h2>Add a new role</h2><div class="two"><div><label class="f" for="jdTitle">Job title</label><input id="jdTitle" required placeholder="For example: Head of Social"></div>' +
+      '<div><label class="f" for="jdLevel">Level</label><select id="jdLevel"><option value="">Not sure</option>' + LEVELS.map(function(l){ return '<option>' + esc(l) + '</option>'; }).join("") + '</select></div></div>' +
+      '<div class="btn-row"><button class="btn red" type="submit">Add role with a starting template</button></div><p class="small">You will be able to change every word afterwards.</p><p id="jdErr" class="err" role="alert"></p></form>';
+    html += '<div class="list">';
+    state.jds.forEach(function(j){
+      var ph = placeholderCount(j.body);
+      var editing = ui.jdEdit === j.id;
+      html += '<article class="card"><div class="search-row"><div><h3>' + esc(j.title) + '</h3><div class="small">' + (j.level ? esc(j.level) + " level · " : "") +
+        (ph ? '<span class="tag pending">' + ph + ' blank' + (ph === 1 ? "" : "s") + ' to fill in</span>' : '<span class="tag open">Ready to use</span>') + '</div></div>' +
+        '<div class="btn-row" style="margin:0"><button class="btn small" type="button" data-act="jd-use" data-id="' + esc(j.id) + '">Start a search for this role</button>' +
+        '<button class="btn secondary small" type="button" data-act="jd-copy" data-id="' + esc(j.id) + '">Copy the text</button>' +
+        '<button class="btn secondary small" type="button" data-act="jd-edit" data-id="' + esc(j.id) + '">' + (editing ? "Close" : "Change the wording") + '</button></div></div>';
+      if(editing){
+        html += '<div class="jd-edit"><label class="f" for="jdE-t">Job title</label><input id="jdE-t" value="' + esc(j.title) + '">' +
+          '<label class="f" for="jdE-l">Level</label><select id="jdE-l"><option value="">Not sure</option>' + LEVELS.map(function(l){ return '<option' + (l === j.level ? " selected" : "") + '>' + esc(l) + '</option>'; }).join("") + '</select>' +
+          '<label class="f" for="jdE-b">Job description. Anything in [square brackets] is a blank to fill in.</label><textarea id="jdE-b">' + esc(j.body) + '</textarea>' +
+          '<label class="f" for="jdE-q">Interview questions (one on each line)</label><textarea id="jdE-q" style="min-height:140px">' + esc(j.questions.join("\n")) + '</textarea>' +
+          '<div class="btn-row"><button class="btn yellow" type="button" data-act="jd-save" data-id="' + esc(j.id) + '">Save changes</button><button class="btn danger small" type="button" data-act="jd-del" data-id="' + esc(j.id) + '">Delete this role</button></div></div>';
+      }else{
+        html += '<details class="jd-more"><summary>Read the job description</summary><div class="jd-body">' + esc(j.body) + '</div></details>';
+      }
+      html += '</article>';
+    });
+    html += '</div>';
+    var missing = JD_SEEDS.filter(function(sd){ return !jdById(sd.id); });
+    if(missing.length) html += '<div class="btn-row"><button class="btn secondary small" type="button" data-act="jd-restore">Bring back the ' + missing.length + ' standard role' + (missing.length === 1 ? "" : "s") + ' you deleted</button></div>';
+    return html;
+  }
+
+  function viewBoards(){
+    var html = pageHead("Job boards", "Where to advertise and look", "A job board is a website where jobs are advertised and people look for work. Open each one, create your own profile there, then tick the box here. The desk remembers it and uses it when you search.");
+    html += '<div class="notice">Never type a password here. Only paste the link to your profile, or your user name.</div>';
+    var groups = {}, order = [];
+    allBoards().forEach(function(b){ if(!groups[b.group]){ groups[b.group] = []; order.push(b.group); } groups[b.group].push(b); });
+    order.forEach(function(g){
+      html += '<section class="section"><h2>' + esc(g) + '</h2><div class="board-grid">';
+      groups[g].forEach(function(b){
+        var bs = boardState(b.id);
+        html += '<article class="card board"><h3>' + esc(b.name) + '</h3><span class="tag ' + (bs.use ? "open" : "pending") + '">' + (bs.use ? "Set up" : "Not set up yet") + '</span>' +
+          '<p style="margin:8px 0 0">' + esc(b.why) + '</p>' + (b.price ? '<p class="small">' + esc(b.price) + '</p>' : '') +
+          '<div class="links"><a class="btn small" target="_blank" rel="noopener noreferrer" href="' + esc(b.site) + '">Open ' + esc(b.name) + '</a>' +
+          (b.post && b.post !== b.site ? '<a class="btn secondary small" target="_blank" rel="noopener noreferrer" href="' + esc(b.post) + '">Post a job</a>' : '') + '</div>' +
+          '<div class="acct"><label class="check"><input type="checkbox" data-bind="board-use" data-id="' + esc(b.id) + '"' + (bs.use ? " checked" : "") + '> I have my own profile here</label>' +
+          '<label class="f" for="bp-' + esc(b.id) + '">Link to my profile, or my user name</label><input id="bp-' + esc(b.id) + '" data-bind="board-profile" data-id="' + esc(b.id) + '" value="' + esc(bs.profile) + '" placeholder="Paste it here">' +
+          '<label class="f" for="bn-' + esc(b.id) + '">My notes</label><textarea id="bn-' + esc(b.id) + '" data-bind="board-note" data-id="' + esc(b.id) + '" style="min-height:60px" placeholder="For example: paid until March">' + esc(bs.note) + '</textarea>' +
+          (b.custom ? '<div class="btn-row"><button class="btn danger small" type="button" data-act="board-del" data-id="' + esc(b.id) + '">Remove this board</button></div>' : '') + '</div></article>';
+      });
+      html += '</div></section>';
+    });
+    html += '<section class="section"><form class="card" data-form="board-new" novalidate style="max-width:700px"><h2>Add another job board</h2><div class="two"><div><label class="f" for="cbName">Name</label><input id="cbName" required></div>' +
+      '<div><label class="f" for="cbUrl">Web address</label><input id="cbUrl" type="url" placeholder="https://..." required></div></div><div class="btn-row"><button class="btn red" type="submit">Add this board</button></div><p id="cbErr" class="err" role="alert"></p></form></section>';
+    html += '<div class="privacy"><strong>Checked 6 October 2026.</strong> Prices change, so always check on the board. PRWeek Jobs has closed (PRWeek now asks employers to contact them to promote a vacancy) and Marketing Week no longer runs a job board, so neither is listed.</div>';
+    return html;
+  }
+
+  function payResultHtml(){
+    var p = state.pay, sec = PAY[p.sector], idx = LEVELS.indexOf(p.level);
+    var row = sec.rows[idx], lo = row[0] * 1000, hi = row[1] * 1000, offer = parseMoney(p.offer);
+    var shown = sec.rows;
+    var scaleMin = Math.floor(Math.min.apply(null, shown.map(function(r){ return r[0]; })) * 0.85 / 5) * 5000, scaleMax = Math.max.apply(null, shown.map(function(r){ return r[1]; })) * 1000 * 1.05;
+    function pct(v){ return Math.max(0, Math.min(100, (v - scaleMin) / (scaleMax - scaleMin) * 100)); }
+    var text = "Market range for " + p.level + " (" + sec.label + "): " + money(lo) + " to " + money(hi) + ".";
+    var where = "";
+    if(offer){
+      if(offer < lo) where = "Your figure of " + money(offer) + " is " + money(lo - offer) + " below the bottom of this range. You may find it hard to attract people.";
+      else if(offer > hi) where = "Your figure of " + money(offer) + " is " + money(offer - hi) + " above the top of this range. That should attract strong people.";
+      else {
+        var share = (offer - lo) / (hi - lo);
+        where = "Your figure of " + money(offer) + " sits in the " + (share < 0.34 ? "lower third" : share < 0.67 ? "middle" : "upper third") + " of the range (" + Math.round(share * 100) + "% of the way up).";
+      }
+    }
+    var html = '<p class="result">' + esc(text) + '</p>' + (where ? '<p class="result" style="color:#0f4d36">' + esc(where) + '</p>' : '<p class="small">Type a salary above to see where it sits.</p>');
+    html += '<div class="ladder lad-wrap" aria-label="Salary ranges for each level">';
+    shown.forEach(function(r, i){
+      var l = r[0] * 1000, h = r[1] * 1000;
+      html += '<div class="lad-row' + (i === idx ? " on" : "") + '"><div><strong>' + esc(LEVELS[i]) + '</strong></div><div class="lad-track"><div class="lad-bar" style="left:' + pct(l).toFixed(1) + '%;width:' + Math.max(1.5, pct(h) - pct(l)).toFixed(1) + '%"></div>' +
+        (offer ? '<div class="lad-line" style="left:' + pct(offer).toFixed(1) + '%" title="Your figure"></div>' : '') + '</div><div class="small">' + money(l) + ' to ' + money(h) + '</div></div>';
+    });
+    html += '</div>' + (offer ? '<p class="small">The red line is your figure.</p>' : '');
+    return html;
+  }
+
+  function viewPay(){
+    var p = state.pay;
+    var html = pageHead("Pay check", "Where does the pay sit in the market?", "Choose the role, type the salary you have in mind, and see how it compares with what other PR agencies pay.");
+    html += '<div class="card"><div class="two"><div><label class="f" for="payLevel" style="margin-top:0">Level</label><select id="payLevel" data-bind="pay-level">' + LEVELS.map(function(l){ return '<option' + (l === p.level ? " selected" : "") + '>' + esc(l) + '</option>'; }).join("") + '</select></div>' +
+      '<div><label class="f" for="paySector" style="margin-top:0">Type of PR</label><select id="paySector" data-bind="pay-sector">' + Object.keys(PAY).map(function(k){ return '<option value="' + k + '"' + (k === p.sector ? " selected" : "") + '>' + esc(PAY[k].label) + '</option>'; }).join("") + '</select></div></div>' +
+      '<label class="f" for="payOffer">The salary you have in mind (optional)</label><input id="payOffer" data-bind="pay-offer" inputmode="numeric" placeholder="For example: 55000 or 55k" value="' + esc(p.offer) + '" style="max-width:320px">' +
+      '<div id="payResult" aria-live="polite" style="margin-top:14px">' + payResultHtml() + '</div></div>';
+    html += '<div class="notice"><strong>Please read.</strong> These are UK figures for PR agencies, from the PR Futures UK PR and Communications Salary Survey (January 2026). PR Futures is a London recruiter and its tables do not split London from the rest of the UK, so treat them as a guide, not a rule. Check them against live adverts before you decide.' +
+      '<div class="links"><a class="btn secondary small" target="_blank" rel="noopener noreferrer" href="' + esc(PAY_SOURCE) + '">Read the full PR Futures survey</a>' +
+      '<a class="btn secondary small" target="_blank" rel="noopener noreferrer" href="https://www.hays.co.uk/salary-guide/salary-checker/">Hays salary checker</a>' +
+      '<a class="btn secondary small" target="_blank" rel="noopener noreferrer" href="https://www.reed.co.uk/jobs/pr-jobs">Live PR adverts on Reed</a></div></div>';
+    return html;
+  }
+
+  function viewMessages(){
+    var html = pageHead("Messages", "Ready-written introductions", "Professional, friendly messages for PR and FMCG people. Click in any box and change the wording. It saves by itself.");
+    html += '<div class="card" style="margin-bottom:18px"><label class="f" for="meName" style="margin-top:0">Your name, as it should appear in messages</label><input id="meName" data-bind="me-name" value="' + esc(state.me.name) + '" style="max-width:360px">' +
+      '<p class="small">The words in curly brackets, like {first_name}, are filled in for you when you press Contact candidate. Leave them as they are.</p></div><div class="list">';
+    tplList().forEach(function(t){
+      html += '<article class="card tpl-card"><h3>' + esc(t.name) + '</h3><div class="field-chips" aria-label="Add a field">' +
+        TPL_FIELDS.map(function(f){ return '<button type="button" data-act="tpl-insert" data-id="' + esc(t.id) + '" data-field="' + esc(f) + '">' + esc(f) + '</button>'; }).join("") + '</div>' +
+        '<textarea id="tpl-' + esc(t.id) + '" data-bind="tpl-text" data-id="' + esc(t.id) + '" aria-label="' + esc(t.name) + '">' + esc(t.text) + '</textarea>' +
+        '<div class="btn-row"><button class="btn secondary small" type="button" data-act="tpl-copy" data-id="' + esc(t.id) + '">Copy with an example name</button><button class="btn secondary small" type="button" data-act="tpl-reset" data-id="' + esc(t.id) + '">Put back the original wording</button></div></article>';
+    });
+    return html + '</div>';
+  }
+
+  function viewHelp(){
+    var html = pageHead("How to use", "How to use this desk", "Short, simple steps. You do not need to be good with computers. Take your time.");
+    html += '<section><h2 style="margin-bottom:12px">Your first search, step by step</h2><ol class="steps">' +
+      '<li><div><strong>Go to Home.</strong><br>Press <a href="#home">Home</a> in the list on the left (or the word Mercieca at the top left of the screen). The yellow button <em>Continue this search</em> takes you back to the role you were working on.</div></li>' +
+      '<li><div><strong>Look for a different job? Press Start a new search.</strong><br>Pick a job from your list, or type a new job title. Say where the job is. Press <em>Save and start searching</em>.</div></li>' +
+      '<li><div><strong>Find real people.</strong><br>On <a href="#find">Find people</a>, press <em>Search LinkedIn</em>. A new page opens. When you see someone who might suit, click their name, then click once in the address bar at the very top of the screen, hold <span class="kbd">Ctrl</span> and tap <span class="kbd">C</span> to copy it.</div></li>' +
+      '<li><div><strong>Put them on your sheet.</strong><br>Come back to this page. Under <em>Add someone you find</em>, type their name, employer and job title. Click in the web address box, hold <span class="kbd">Ctrl</span> and tap <span class="kbd">V</span> to paste. Press <em>Add candidate</em>.</div></li>' +
+      '<li><div><strong>Keep notes.</strong><br>For each person, choose a <em>Status</em> (such as Contacted), give a score from 1 to 5, and write a note. It saves by itself.</div></li>' +
+      '<li><div><strong>Say hello.</strong><br>Press <em>Contact candidate</em>. A message is already written, with their name in it. Press <em>Copy message</em>, then paste it into LinkedIn or an email. You can change the wording any time on the <a href="#messages">Messages</a> page.</div></li>' +
+      '<li><div><strong>Check the pay.</strong><br>On <a href="#pay">Pay check</a>, choose the level, type the salary, and see where it sits compared with other PR agencies.</div></li>' +
+      '<li><div><strong>Keep a copy of your work.</strong><br>On Home, press <em>Save a backup file</em> now and then. Press <em>Export shortlist</em> on Find people to get your list as a spreadsheet.</div></li></ol></section>';
+    html += '<section class="section"><h2 style="margin-bottom:12px">What each page is for</h2><div class="tiles">' +
+      NAV.filter(function(n){ return n.id !== "help"; }).map(function(n){ return '<a class="tile" href="#' + n.id + '"><strong>' + esc(n.label) + '</strong><span class="t">' + esc(n.hint) + '</span></a>'; }).join("") + '</div></section>';
+    html += '<section class="section faq"><h2 style="margin-bottom:12px">Questions people ask</h2>' +
+      '<details><summary>Does the desk find people by itself?</summary><p>No. It never makes up a name. It helps you search the places where real people are, and keeps your notes in one place.</p></details>' +
+      '<details><summary>Where is my work kept?</summary><p>On this computer, in this browser. It is not on the internet and nobody else can see it. If you use another computer, or clear your history, it will not be there. Use <em>Save a backup file</em> on Home, and <em>Restore from a backup file</em> to bring it back.</p></details>' +
+      '<details><summary>What does How close mean?</summary><p>100% shows people who match the job exactly. A lower number also shows people who are a step away, for example one level more senior. It never makes people up.</p></details>' +
+      '<details><summary>What is a job board?</summary><p>A website where jobs are advertised and people look for work. On the Job boards page you can open each one, create your own profile, and the desk remembers it.</p></details>' +
+      '<details><summary>How do I change a message?</summary><p>Go to Messages, click in the box, and type. It saves by itself. The words in curly brackets, like {first_name}, are filled in for you. Press <em>Put back the original wording</em> if you want to start again.</p></details>' +
+      '<details><summary>Can I add my own job description?</summary><p>Yes. On Job descriptions, type a job title and press <em>Add role with a starting template</em>. Change the words in the box. Anything in [square brackets] is a blank to fill in.</p></details>' +
+      '<details><summary>Where do the pay figures come from?</summary><p>From the PR Futures UK PR and Communications Salary Survey 2026. They are UK figures for PR agencies and do not split London from the regions. Always check against live adverts.</p></details>' +
+      '<details><summary>Something looks wrong.</summary><p>Press the refresh button in your browser (a round arrow near the address bar), or hold <span class="kbd">Ctrl</span> and tap <span class="kbd">R</span>. Your work is saved, so you will not lose it.</p></details></section>';
+    return html;
+  }
+
+  /* ---------- Rendering and routing ---------- */
+
+  var VIEWS = {home:viewHome,find:viewFind,searches:viewSearches,"new":viewNew,jobs:viewJobs,boards:viewBoards,pay:viewPay,messages:viewMessages,help:viewHelp};
+  var route = "home";
+
+  function renderNav(){
+    $("#nav").innerHTML = NAV.map(function(n){
+      return '<a href="#' + n.id + '"' + (n.id === route ? ' aria-current="page"' : '') + '><strong>' + esc(n.label) + '</strong><span>' + esc(n.hint) + '</span></a>';
+    }).join("");
+  }
+  function render(focusTitle){
+    var r = (location.hash || "#home").replace("#","");
+    route = VIEWS[r] ? r : "home";
+    if(route !== "new") ui.newFrom = "";
+    $("#app").innerHTML = VIEWS[route]();
+    renderNav();
+    if(route === "find"){ renderWhere(); renderCandidates(); }
+    if(focusTitle){
+      window.scrollTo(0,0);
+      var h = $("#pagetitle"); if(h) h.focus({preventScroll:true});
+    }
+    document.title = (route === "home" ? "" : NAV.filter(function(n){ return n.id === route; }).map(function(n){ return n.label + " · "; }).join("")) + "Mercieca Recruitment Desk";
+  }
+  window.addEventListener("hashchange", function(){ render(true); });
+
+  /* ---------- Actions ---------- */
+
+  function go(r){ if(location.hash === "#" + r) render(true); else location.hash = "#" + r; }
+
+  function exportCsv(){
+    var s = currentSearch();
+    function cell(v){
+      var t = String(v == null ? "" : v);
+      if(/^[=+\-@\t\r]/.test(t)) t = "'" + t;
+      return '"' + t.replace(/"/g,'""') + '"';
+    }
+    var rows = [["Name","Title","Employer","Location","Match","Status","Rating","Notes","CV link","Source URL","Verified"]];
+    candidatesOf(s).forEach(function(c){ var w = workOf(c.id); rows.push([c.name,c.title,c.employer,c.location || "",c.match,w.status,w.rating,w.notes,w.cvUrl,c.sourceUrl,c.verified || "manual"]); });
+    download("mercieca-" + s.title.toLowerCase().replace(/[^a-z0-9]+/g,"-") + "-shortlist.csv","text/csv;charset=utf-8", rows.map(function(r){ return r.map(cell).join(","); }).join("\r\n"));
+  }
+  function exportBackup(){
+    download("mercieca-backup-" + new Date().toISOString().slice(0,10) + ".json","application/json", JSON.stringify(state, null, 2));
+    toast("Backup file saved to your Downloads");
+  }
+
+  document.addEventListener("click", function(e){
+    var el = e.target.closest("[data-act]"); if(!el) return;
+    var act = el.getAttribute("data-act"), id = el.getAttribute("data-id"), s = currentSearch();
+    if(act === "skip"){ e.preventDefault(); $("#main").focus(); return; }
+    if(act === "copy-link"){ copyText(CANONICAL_URL, el); return; }
+    if(act === "copy"){ copyText(el.getAttribute("data-text") || "", el); return; }
+    if(act === "open-search"){ state.currentId = id; save(); return; }
+    if(act === "pay-for"){ state.pay.level = el.getAttribute("data-level"); save(); return; }
+    if(act === "export-csv"){ exportCsv(); return; }
+    if(act === "export-backup"){ exportBackup(); return; }
+    if(act === "import-backup"){ $("#importFile").click(); return; }
+    if(act === "score"){
+      var w = workOf(id), n = Number(el.getAttribute("data-n")); w.rating = w.rating === n ? 0 : n; touch(s); save(); renderCandidates(); return;
+    }
+    if(act === "contact"){ var wc = workOf(id); wc.open = wc.open === "contact" ? "" : "contact"; save(); renderCandidates(); return; }
+    if(act === "copy-msg"){
+      var c = candidatesOf(s).filter(function(x){ return x.id === id; })[0]; if(!c) return;
+      var w2 = workOf(id), tid = ownKey(state.templates, w2.tpl) ? w2.tpl : "t-call";
+      copyText(fill(state.templates[tid], c, s), el); return;
+    }
+    if(act === "remove-cand"){
+      if(window.confirm("Remove this person from the sheet?")){ s.custom = s.custom.filter(function(x){ return x.id !== id; }); delete state.work[id]; touch(s); save(); renderCandidates(); renderWhere(); }
+      return;
+    }
+    if(act === "dup-search"){
+      var src = state.searches.filter(function(x){ return x.id === id; })[0]; if(!src) return;
+      var copy = normSearch(Object.assign({},src,{id:uid("sch"),created:now(),updated:now(),status:"open",custom:[]}));
+      copy.title = src.title; state.searches.push(copy); state.currentId = copy.id; save(); toast("Copied. The new search starts with an empty sheet."); go("find"); return;
+    }
+    if(act === "toggle-search"){
+      var t = state.searches.filter(function(x){ return x.id === id; })[0]; if(t){ t.status = t.status === "open" ? "closed" : "open"; touch(t); save(); render(); } return;
+    }
+    if(act === "del-search"){
+      if(window.confirm("Delete this search and the people on it? This cannot be undone.")){
+        var gone = state.searches.filter(function(x){ return x.id === id; })[0];
+        if(gone) gone.custom.forEach(function(c){ delete state.work[c.id]; });
+        state.searches = state.searches.filter(function(x){ return x.id !== id; });
+        if(!state.searches.length) state.searches.push(defaultSearch());
+        if(state.currentId === id) state.currentId = state.searches[0].id;
+        save(); render();
+      }
+      return;
+    }
+    if(act === "jd-edit"){ ui.jdEdit = ui.jdEdit === id ? "" : id; render(); return; }
+    if(act === "jd-save"){
+      var j = jdById(id); if(!j) return;
+      var tt = str($("#jdE-t").value.trim(),120); if(!tt){ toast("Please give the role a title"); return; }
+      var lv = $("#jdE-l").value;
+      if(tt !== j.title && lv === j.level && levelFromTitle(tt)) lv = levelFromTitle(tt);
+      j.title = tt; j.level = LEVELS.indexOf(lv) > -1 ? lv : ""; j.body = str($("#jdE-b").value,12000);
+      j.questions = $("#jdE-q").value.split("\n").map(function(q){ return str(q.trim(),400); }).filter(Boolean).slice(0,12);
+      ui.jdEdit = ""; save(); render(); toast("Saved"); return;
+    }
+    if(act === "jd-del"){
+      if(window.confirm("Delete this job description?")){ state.jds = state.jds.filter(function(x){ return x.id !== id; }); ui.jdEdit = ""; save(); render(); }
+      return;
+    }
+    if(act === "jd-copy"){ var jc = jdById(id); if(jc) copyText(jc.title + "\n\n" + jc.body, el); return; }
+    if(act === "jd-use"){ ui.newFrom = id; go("new"); return; }
+    if(act === "jd-restore"){
+      JD_SEEDS.forEach(function(sd){ if(!jdById(sd.id)) state.jds.push({id:sd.id,title:sd.title,level:sd.level,body:sd.body,questions:sd.questions.slice(),seed:true}); });
+      save(); render(); return;
+    }
+    if(act === "board-del"){
+      if(window.confirm("Remove this board from your list?")){ state.customBoards = state.customBoards.filter(function(x){ return x.id !== id; }); delete state.boards[id]; save(); render(); }
+      return;
+    }
+    if(act === "tpl-insert"){
+      var ta = $("#tpl-" + id); if(!ta) return;
+      var f = el.getAttribute("data-field"), a = ta.selectionStart, b = ta.selectionEnd;
+      ta.value = ta.value.slice(0,a) + f + ta.value.slice(b); ta.focus(); ta.selectionStart = ta.selectionEnd = a + f.length;
+      state.templates[id] = ta.value; save(); return;
+    }
+    if(act === "tpl-reset"){
+      var seed = TPL_SEEDS.filter(function(x){ return x.id === id; })[0];
+      if(seed && window.confirm("Put back the original wording for this message?")){ state.templates[id] = seed.text; save(); render(); }
+      return;
+    }
+    if(act === "tpl-copy"){ copyText(fill(state.templates[id], {name:"Sam Example",employer:"Example Agency"}, s), el); return; }
   });
 
-  render();
+  document.addEventListener("input", function(e){
+    var el = e.target.closest("[data-bind]"); if(!el) return;
+    var bind = el.getAttribute("data-bind"), id = el.getAttribute("data-id"), s = currentSearch();
+    if(bind === "thresh"){
+      s.threshold = Number(el.value); touch(s); save();
+      $("#matchValue").textContent = s.threshold; $("#matchHint").textContent = matchHint(s.threshold); renderWhere(); renderCandidates(); return;
+    }
+    if(bind === "notes"){ workOf(id).notes = str(el.value,4000); touch(s); save(); return; }
+    if(bind === "tpl-text"){ state.templates[id] = str(el.value,6000); save(); return; }
+    if(bind === "me-name"){ var n = el.value.trim(); if(n){ state.me.name = str(n,100); save(); } return; }
+    if(bind === "board-profile"){ (state.boards[id] = state.boards[id] || {use:false,profile:"",note:""}).profile = str(el.value,300); save(); return; }
+    if(bind === "board-note"){ (state.boards[id] = state.boards[id] || {use:false,profile:"",note:""}).note = str(el.value,600); save(); return; }
+    if(bind === "pay-offer"){ state.pay.offer = str(el.value,20); save(); $("#payResult").innerHTML = payResultHtml(); return; }
+  });
+
+  document.addEventListener("change", function(e){
+    var el = e.target;
+    if(el.id === "importFile"){ importBackup(el); return; }
+    el = el.closest("[data-bind]"); if(!el) return;
+    var bind = el.getAttribute("data-bind"), id = el.getAttribute("data-id"), s = currentSearch();
+    if(bind === "current-search"){ state.currentId = el.value; save(); render(); return; }
+    if(bind === "status"){ workOf(id).status = STATUSES.indexOf(el.value) > -1 ? el.value : "Not contacted"; touch(s); save(); return; }
+    if(bind === "cv"){
+      var v = el.value.trim(), w = workOf(id);
+      w.cvUrl = safeUrl(v); touch(s);
+      if(v && !w.cvUrl){ toast("Please paste a full web address that starts with https://"); el.value = ""; }
+      save(); return;
+    }
+    if(bind === "tpl"){
+      workOf(id).tpl = el.value; save();
+      var c = candidatesOf(s).filter(function(x){ return x.id === id; })[0], box = $("#msg-" + id);
+      if(c && box) box.textContent = fill(ownKey(state.templates, el.value) ? state.templates[el.value] : "", c, s); return;
+    }
+    if(bind === "board-use"){ (state.boards[id] = state.boards[id] || {use:false,profile:"",note:""}).use = el.checked; save(); render(); toast(el.checked ? "Saved. This board will be used in your searches." : "Saved"); return; }
+    if(bind === "pay-level"){ state.pay.level = el.value; save(); $("#payResult").innerHTML = payResultHtml(); return; }
+    if(bind === "pay-sector"){ state.pay.sector = el.value; save(); $("#payResult").innerHTML = payResultHtml(); return; }
+  });
+
+  document.addEventListener("submit", function(e){
+    var form = e.target.closest("[data-form]"); if(!form) return;
+    e.preventDefault();
+    var kind = form.getAttribute("data-form"), s = currentSearch();
+    if(kind === "add-cand"){
+      var name = $("#addName").value.trim(), employer = $("#addEmployer").value.trim(), title = $("#addTitle").value.trim();
+      var source = safeUrl($("#addSource").value), match = Number($("#addMatch").value), why = $("#addWhy").value.trim(), err = $("#addError");
+      err.textContent = "";
+      if(!name || !employer || !title || !source){ err.textContent = "Please add a name, employer, job title and the full web address of their profile."; return; }
+      if(/mercieca/i.test(employer)){ err.textContent = "Mercieca's own staff are not candidates for this sheet."; return; }
+      var dup = candidatesOf(s).some(function(c){ return employerKey(c.employer) === employerKey(employer); });
+      if(dup){ err.textContent = "There is already someone from that employer. Keep one person per employer on the sheet."; return; }
+      s.custom.push({id:uid("manual"),name:str(name,120),title:str(title,160),employer:str(employer,160),location:"",match:match,why:str(why,800) || "Added by hand for review.",
+        evidence:"Source supplied by hand. Check the source before you approach them.",sourceLabel:"source",sourceUrl:source,verified:"",custom:true});
+      s.threshold = Math.min(s.threshold, match); touch(s); save(); form.reset(); $("#addMatch").value = "90";
+      $("#matchRange").value = s.threshold; $("#matchValue").textContent = s.threshold; $("#matchHint").textContent = matchHint(s.threshold);
+      renderWhere(); renderCandidates(); toast("Added to the sheet"); return;
+    }
+    if(kind === "new-search"){
+      var t = $("#nsTitle").value.trim(), er = $("#nsErr"); er.textContent = "";
+      if(!t){ er.textContent = "Please type a job title."; return; }
+      var jdId = $("#nsJd").value, lv = $("#nsLevel").value;
+      var ns = normSearch({id:uid("sch"),title:t,level:lv || levelFromTitle(t),sector:$("#nsSector").value.trim(),place:$("#nsPlace").value.trim(),helpful:$("#nsHelp").value.trim(),
+        jdId:jdId && jdById(jdId) ? jdId : "",threshold:100,status:"open",created:now(),updated:now(),custom:[]});
+      state.searches.push(ns); state.currentId = ns.id; ui.newFrom = ""; save(); toast("Search saved"); go("find"); return;
+    }
+    if(kind === "jd-new"){
+      var jt = $("#jdTitle").value.trim(), je = $("#jdErr"); je.textContent = "";
+      if(!jt){ je.textContent = "Please type a job title."; return; }
+      var lvl = $("#jdLevel").value;
+      var nj = {id:uid("jd"),title:str(jt,120),level:lvl,body:jdText(str(jt,120),["[Add what this person will do]","[Add what this person will do]"],["[Add the experience you are looking for]","[Add the skills you are looking for]"]),questions:GENERIC_QUESTIONS.slice(),seed:false};
+      state.jds.unshift(nj); ui.jdEdit = nj.id; save(); render(); toast("Role added. Change the words below."); return;
+    }
+    if(kind === "board-new"){
+      var bn = $("#cbName").value.trim(), bu = safeUrl($("#cbUrl").value), be = $("#cbErr"); be.textContent = "";
+      if(!bn || !bu){ be.textContent = "Please give the board a name and its full web address, starting with https://"; return; }
+      state.customBoards.push({id:uid("cb"),name:str(bn,100),url:bu}); save(); render(); toast("Board added"); return;
+    }
+  });
+
+  document.addEventListener("change", function(e){
+    if(e.target.id !== "nsJd") return;
+    var j = jdById(e.target.value);
+    if(!j){ $("#nsTitle").value = ""; $("#nsLevel").value = ""; return; }
+    $("#nsTitle").value = j.title; if(j.level) $("#nsLevel").value = j.level;
+  });
+
+  function importBackup(input){
+    var f = input.files && input.files[0]; if(!f) return;
+    if(f.size > 2 * 1024 * 1024){ toast("That file is too big to be a backup"); input.value = ""; return; }
+    var r = new FileReader();
+    r.onload = function(){
+      try{
+        var raw = JSON.parse(String(r.result));
+        if(!raw || typeof raw !== "object" || Array.isArray(raw) || raw.v !== 2 || !Array.isArray(raw.searches)) throw new Error("not a desk backup");
+        var next = normalize(raw);
+        if(window.confirm("Replace everything on this computer with the backup file?")){ state = next; save(); render(true); toast("Backup restored"); }
+      }catch(err){ toast("That file does not look like a backup from this desk"); }
+      input.value = "";
+    };
+    r.readAsText(f);
+  }
+
+  render(false);
 })();
 </script>
 </body>
