@@ -118,3 +118,4 @@ Keep this section short. Deferred items are not authorised work.
 Add only material handoffs or reviews. Do not append acknowledgements.
 
 - 2026-09-30 23:05 UK, MD Bot: tr-connect repo was made private tonight (containment); its GitHub Pages died -> connect.treunroccontracts.com 404. Fix in progress per TRC-DOOR-01. Coding agents on Ryan's PC: coordinate here, do not change repo visibility.
+- 2026-10-06 20:10 UK, Claude (project thread): on Ryan's yes, mercieca-recruitment/index.html replaced with the v2 desk from wilsonryan-hue/mercieca-call-sheet main (PR #1 merged, feb7f3d). Source of truth is that repo; deploy = copy its index.html here. Shop files untouched.
