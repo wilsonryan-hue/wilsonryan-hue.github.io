@@ -1,0 +1,43 @@
+:root{--hw-bg:#0d0b12;--hw-panel:#17131f;--hw-ink:#f4f1ea;--hw-mute:#b9b3c6;--hw-orange:#ff6a13;--hw-purple:#8b5cf6;--hw-gold:#f2c14e;--hw-line:#2a2335}
+body.hw{background:var(--hw-bg);color:var(--hw-ink)}
+body.hw .site-header,body.hw .site-footer{background:#08070b;border-color:var(--hw-line)}
+body.hw .site-nav a,body.hw .foot-links a,body.hw .legal,body.hw .legal a,body.hw .foot-tag{color:var(--hw-mute)}
+body.hw a{color:var(--hw-gold)}
+.hw-hero{padding:56px 0 28px;text-align:center}
+.hw-kicker{display:inline-block;background:var(--hw-orange);color:#120a02;font:800 13px/1 Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.hw-hero h1{font:800 clamp(34px,6vw,64px)/1.02 Poppins,sans-serif;margin:18px auto 14px;max-width:16ch;text-transform:uppercase;letter-spacing:-.01em}
+.hw-hero h1 em{font-style:normal;color:var(--hw-orange)}
+.hw-lede{font:500 clamp(17px,2.2vw,21px)/1.5 Inter,sans-serif;color:var(--hw-mute);max-width:60ch;margin:0 auto}
+.hw-count{margin:22px auto 0;display:inline-flex;gap:10px;align-items:center;border:2px solid var(--hw-orange);border-radius:12px;padding:10px 16px;font:700 16px Poppins,sans-serif}
+.hw-count b{color:var(--hw-orange);font-size:22px}
+.hw-trust{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;padding:0;margin:30px 0}
+.hw-trust li{background:var(--hw-panel);border:1px solid var(--hw-line);border-radius:14px;padding:14px 16px;font:500 15px/1.4 Inter,sans-serif;color:var(--hw-mute)}
+.hw-trust b{display:block;color:var(--hw-ink);font:700 16px Poppins,sans-serif;margin-bottom:2px}
+.hw-kits{display:grid;gap:28px;margin:10px 0 40px}
+.hw-kit{display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--hw-panel);border:1px solid var(--hw-line);border-radius:22px;overflow:hidden}
+.hw-kit:nth-child(even) .hw-kit-img{order:2}
+.hw-kit-img{background:#efe9df;display:flex;align-items:center;justify-content:center}
+.hw-kit-img img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:1/1}
+.hw-kit-body{padding:30px 30px 30px 4px}
+.hw-kit:nth-child(even) .hw-kit-body{padding:30px 4px 30px 30px}
+.hw-tag{font:800 12px Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--acc,var(--hw-orange))}
+.hw-kit h2{font:800 clamp(26px,3.4vw,38px)/1.05 Poppins,sans-serif;margin:8px 0 10px;text-transform:uppercase}
+.hw-pitch{font:500 18px/1.5 Inter,sans-serif;color:var(--hw-mute);margin:0 0 14px}
+.hw-incl{list-style:none;padding:0;margin:0 0 18px;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
+.hw-incl li{font:500 15px/1.35 Inter,sans-serif;padding-left:22px;position:relative}
+.hw-incl li:before{content:'';position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:3px;background:var(--acc,var(--hw-orange))}
+.hw-buy{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.hw-price{font:800 40px/1 Poppins,sans-serif}
+.hw-price small{display:block;font:600 13px Inter,sans-serif;color:var(--hw-mute);margin-top:4px}
+.hw-btn{display:inline-block;background:var(--hw-orange);color:#120a02 !important;font:800 18px Poppins,sans-serif;text-decoration:none;padding:16px 26px;border-radius:14px;text-transform:uppercase;letter-spacing:.03em}
+.hw-btn:hover{filter:brightness(1.08)}
+.hw-note{font:500 13px/1.4 Inter,sans-serif;color:var(--hw-mute);margin-top:12px}
+.hw-band{background:var(--hw-orange);color:#120a02;text-align:center;font:800 clamp(20px,3vw,30px)/1.2 Poppins,sans-serif;padding:22px 16px;border-radius:18px;text-transform:uppercase;margin:10px 0 36px}
+.hw-copy{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:36px}
+.hw-copy h2{font:700 22px Poppins,sans-serif;margin:0 0 8px}
+.hw-copy p,.hw-copy li{font:400 16px/1.6 Inter,sans-serif;color:var(--hw-mute)}
+.hw-faq details{background:var(--hw-panel);border:1px solid var(--hw-line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+.hw-faq summary{font:700 17px Poppins,sans-serif;cursor:pointer}
+.hw-faq p{font:400 16px/1.6 Inter,sans-serif;color:var(--hw-mute)}
+.hw-small{font:400 13px/1.5 Inter,sans-serif;color:var(--hw-mute)}
+@media (max-width:820px){.hw-kit{grid-template-columns:1fr}.hw-kit:nth-child(even) .hw-kit-img{order:0}.hw-kit-body,.hw-kit:nth-child(even) .hw-kit-body{padding:22px}.hw-copy{grid-template-columns:1fr}.hw-incl{grid-template-columns:1fr}}
