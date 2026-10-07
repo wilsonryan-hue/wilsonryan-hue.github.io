@@ -1,0 +1,19 @@
+/* TCH Works cards: hub copy, recipient finder, delivery table. Loads after shop.css. */
+.hub-copy h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+.hub-copy p { margin: 0 0 1.4rem; max-width: 40rem; }
+.hub-cols { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2.5rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem 1.8rem; box-shadow: var(--shadow); }
+.recip-list { list-style: none; margin: 0; padding: 0; }
+.recip-list li { display: flex; flex-direction: column; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+.recip-list li:last-child { border-bottom: 0; }
+.recip-list b { font-family: var(--display); color: var(--navy); font-size: .98rem; }
+.recip-list span { font-size: .95rem; }
+.small-print { color: var(--muted); font-size: .9rem; margin-top: .8rem; }
+.info-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: .6rem 0 1.2rem; font-size: .98rem; }
+.info-table th, .info-table td { text-align: left; padding: .7rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.info-table tr:last-child th, .info-table tr:last-child td { border-bottom: 0; }
+.info-table th { width: 9rem; color: var(--navy); font-family: var(--display); font-weight: 600; }
+.prose h2 { font-size: 1.3rem; margin: 2rem 0 .5rem; }
+@media (max-width: 760px) {
+ .hub-cols { grid-template-columns: 1fr; gap: 1rem; padding: 1.2rem; }
+ .info-table th { width: 6.5rem; }
+}
