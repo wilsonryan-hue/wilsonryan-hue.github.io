@@ -17,3 +17,13 @@
  .hub-cols { grid-template-columns: 1fr; gap: 1rem; padding: 1.2rem; }
  .info-table th { width: 6.5rem; }
 }
+/* hero headline + strap */
+.cards-hero { padding: .4rem 0 0; }
+.hero-line { font-family: var(--display); font-weight: 800; color: var(--navy); font-size: clamp(2.2rem, 5.6vw, 3.7rem); line-height: 1.04; letter-spacing: -.02em; margin: 0; max-width: 18ch; }
+.hero-h1 { font-family: var(--display); font-weight: 700; font-size: clamp(1.1rem, 2.2vw, 1.35rem); color: #D9480F; margin: .7rem 0 0; }
+.strap { font-family: var(--display); font-weight: 700; color: var(--navy); margin: .8rem 0 0; font-size: 1rem; }
+.strap-band { background: var(--navy); color: var(--yellow); border-radius: var(--radius); padding: 1rem 1.3rem; margin: 1.8rem 0 0; font-size: clamp(1.1rem, 2.4vw, 1.4rem); display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; }
+.strap-band span { color: #fff; font-family: var(--sans); font-weight: 500; font-size: .95rem; }
+.price-claim { background: var(--yellow); border-radius: var(--radius); padding: 1.1rem 1.3rem; margin: 1.4rem 0 0; }
+.pcl-big { font-family: var(--display); font-weight: 800; color: var(--navy); font-size: clamp(1.15rem, 2.6vw, 1.5rem); margin: 0; }
+.pcl-note { font-size: .82rem; color: #3b3f4a; margin: .4rem 0 0; }
