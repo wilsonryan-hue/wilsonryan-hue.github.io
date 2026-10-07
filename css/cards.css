@@ -1,0 +1,29 @@
+/* TCH Works cards: hub copy, recipient finder, delivery table. Loads after shop.css. */
+.hub-copy h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+.hub-copy p { margin: 0 0 1.4rem; max-width: 40rem; }
+.hub-cols { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2.5rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem 1.8rem; box-shadow: var(--shadow); }
+.recip-list { list-style: none; margin: 0; padding: 0; }
+.recip-list li { display: flex; flex-direction: column; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+.recip-list li:last-child { border-bottom: 0; }
+.recip-list b { font-family: var(--display); color: var(--navy); font-size: .98rem; }
+.recip-list span { font-size: .95rem; }
+.small-print { color: var(--muted); font-size: .9rem; margin-top: .8rem; }
+.info-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: .6rem 0 1.2rem; font-size: .98rem; }
+.info-table th, .info-table td { text-align: left; padding: .7rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.info-table tr:last-child th, .info-table tr:last-child td { border-bottom: 0; }
+.info-table th { width: 9rem; color: var(--navy); font-family: var(--display); font-weight: 600; }
+.prose h2 { font-size: 1.3rem; margin: 2rem 0 .5rem; }
+@media (max-width: 760px) {
+ .hub-cols { grid-template-columns: 1fr; gap: 1rem; padding: 1.2rem; }
+ .info-table th { width: 6.5rem; }
+}
+/* hero headline + strap */
+.cards-hero { padding: .4rem 0 0; }
+.hero-line { font-family: var(--display); font-weight: 800; color: var(--navy); font-size: clamp(2.2rem, 5.6vw, 3.7rem); line-height: 1.04; letter-spacing: -.02em; margin: 0; max-width: 18ch; }
+.hero-h1 { font-family: var(--display); font-weight: 700; font-size: clamp(1.1rem, 2.2vw, 1.35rem); color: #D9480F; margin: .7rem 0 0; }
+.strap { font-family: var(--display); font-weight: 700; color: var(--navy); margin: .8rem 0 0; font-size: 1rem; }
+.strap-band { background: var(--navy); color: var(--yellow); border-radius: var(--radius); padding: 1rem 1.3rem; margin: 1.8rem 0 0; font-size: clamp(1.1rem, 2.4vw, 1.4rem); display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; }
+.strap-band span { color: #fff; font-family: var(--sans); font-weight: 500; font-size: .95rem; }
+.price-claim { background: var(--yellow); border-radius: var(--radius); padding: 1.1rem 1.3rem; margin: 1.4rem 0 0; }
+.pcl-big { font-family: var(--display); font-weight: 800; color: var(--navy); font-size: clamp(1.15rem, 2.6vw, 1.5rem); margin: 0; }
+.pcl-note { font-size: .82rem; color: #3b3f4a; margin: .4rem 0 0; }
