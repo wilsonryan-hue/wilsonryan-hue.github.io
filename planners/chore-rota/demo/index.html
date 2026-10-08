@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fair Rota · TCH Works</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F6F7F9">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Fair Rota">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="base.css">
+<style>
+ :root{--accent:#4F46E5;--accent-soft:#EEF2FF}
+ .person{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+ .person .name{font-weight:700;font-size:17px}
+ .person .pts{margin-left:auto;font-size:13px;color:var(--ink2);font-weight:600}
+ .chore-name{flex:1;min-width:0}
+ .chore-name b{font-weight:600;display:block}
+ .chore-name small{color:var(--ink2);font-size:13px}
+ .pt{font-size:12px;font-weight:700;color:var(--ink2);background:#F1F5F9;border-radius:8px;padding:2px 7px}
+ .day h3{display:flex;justify-content:space-between;font-size:14px;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em;margin:0 0 4px}
+ .day.today h3{color:var(--accent)}
+ .assign{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+ .assign:last-child{border-bottom:0}
+ .assign .who{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;border:0;background:#F8FAFC;border-radius:999px;padding:5px 10px 5px 6px;min-height:34px}
+ .assign .what{flex:1}
+ .assign .what.done{color:var(--muted);text-decoration:line-through}
+ .score-row{margin:12px 0}
+ .score-row .spread{margin-bottom:6px}
+ .hint{font-size:13px;color:var(--ink2)}
+ .preset{border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:#fff;text-align:left;width:100%;margin-bottom:8px;min-height:60px}
+ .preset[aria-pressed=true]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+ .preset b{display:block}
+ .steps{display:flex;gap:6px;margin-bottom:14px}
+ .steps i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+ .steps i.on{background:var(--accent)}
+ .colors{display:flex;gap:8px;flex-wrap:wrap}
+ .colors button{width:34px;height:34px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px var(--line)}
+ .colors button[aria-pressed=true]{box-shadow:0 0 0 2px var(--ink)}
+ .daypick{display:flex;gap:4px}
+ .daypick button{flex:1;border:1px solid var(--line);background:#fff;border-radius:10px;min-height:38px;font-size:13px;font-weight:600;padding:0}
+ .daypick button[aria-pressed=true]{background:var(--accent);color:#fff;border-color:var(--accent)}
+ .big-num{font-size:30px;font-weight:800;letter-spacing:-.02em}
+</style>
+</head>
+<body>
+<div class="app" id="app" aria-live="polite"></div>
+<nav class="tabbar" id="tabs" aria-label="Sections"><div class="in">
+ <button data-tab="today" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Today</button>
+ <button data-tab="week"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Week</button>
+ <button data-tab="scores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20V11M12 20V5M19 20v-6"/></svg>Scores</button>
+ <button data-tab="setup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.8-3 3-4.6 5.5-4.6s4.7 1.6 5.5 4.6"/><path d="M16 6.5h5M16 11h5M18 15.5h3"/></svg>Setup</button>
+</div></nav>
+<script src="config.js"></script>
+<script src="install.js"></script>
+<script src="ics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
