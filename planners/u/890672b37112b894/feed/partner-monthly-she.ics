@@ -1,0 +1,1165 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TCH Works//Planners 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:A fresh small, specific prompt for your partner each day. Fro
+ m TCH Works.
+X-WR-CALNAME:Better Partner Plan Monthly (for her)
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-WR-TIMEZONE:Europe/London
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:Today: Name one specific thing
+DTSTART;TZID=Europe/London:20261001T073000
+DTEND;TZID=Europe/London:20261001T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-01@tchworks.co.uk
+DESCRIPTION:TODAY: Send her a message today naming one specific thing she 
+ did this week that made your life easier. Not 'thanks for everything'. The
+  actual thing: 'Thanks for sorting the car insurance. I know that was fort
+ y minutes on hold.'\n\nWHY IT WORKS: Specific thanks shows you were paying
+  attention. General thanks sounds like politeness.\n\nWeek 1: Notice\n\nTC
+ H Works · Better Partner Plan. Everyday relationship ideas\, not therapy 
+ or counselling. If things feel unsafe or overwhelming\, talk to your GP or
+  a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Name one specific thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Turn towards the small stuff
+DTSTART;TZID=Europe/London:20261002T073000
+DTEND;TZID=Europe/London:20261002T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-02@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, every time she points something out (a headline
+ \, a dog in the street\, a message from a friend) stop and respond properl
+ y. Look up\, put the phone face down\, ask one question about it.\n\nWHY I
+ T WORKS: Relationship researchers call these 'bids for connection'. In a w
+ ell-known study of newlyweds\, couples still together six years later had 
+ turned towards each other's small bids far more often than couples who spl
+ it.\n\nWeek 1: Notice\n\nTCH Works · Better Partner Plan. Everyday relati
+ onship ideas\, not therapy or counselling. If things feel unsafe or overwh
+ elming\, talk to your GP or a relationship counselling service. In an emer
+ gency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Turn towards the small stuff
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: The first five minutes
+DTSTART;TZID=Europe/London:20261003T073000
+DTEND;TZID=Europe/London:20261003T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-03@tchworks.co.uk
+DESCRIPTION:TODAY: When you next see her today\, give the first five minut
+ es to her\, not to logistics. Greet her properly\, ask how the day went\, 
+ listen. Who's picking up whom and what's for tea can wait five minutes.\n
+ \nWHY IT WORKS: Reunions set the tone for the evening. A warm one costs no
+ thing and is easy to make a habit.\n\nWeek 1: Notice\n\nTCH Works · Bette
+ r Partner Plan. Everyday relationship ideas\, not therapy or counselling. 
+ If things feel unsafe or overwhelming\, talk to your GP or a relationship 
+ counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: The first five minutes
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Do one thing from her list
+DTSTART;TZID=Europe/London:20261004T073000
+DTEND;TZID=Europe/London:20261004T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-04@tchworks.co.uk
+DESCRIPTION:TODAY: Find one job that has been sitting on her to-do list (t
+ he dentist booking\, the parcel return\, the form for school) and do it\, 
+ start to finish\, without being asked. Tell her once it's done\, not befor
+ e.\n\nWHY IT WORKS: Taking a whole task off someone's plate is worth more 
+ than offering to 'help with' it.\n\nWeek 1: Notice\n\nTCH Works · Better 
+ Partner Plan. Everyday relationship ideas\, not therapy or counselling. If
+  things feel unsafe or overwhelming\, talk to your GP or a relationship co
+ unselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Do one thing from her list
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask about the thing
+DTSTART;TZID=Europe/London:20261005T073000
+DTEND;TZID=Europe/London:20261005T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-05@tchworks.co.uk
+DESCRIPTION:TODAY: Think back to something she mentioned earlier this week
+ : a meeting\, a worry\, a friend's news. Ask how it went\, using the detai
+ l. 'How did the meeting with Sam go? Did they go for the new rota?'\n\nWHY
+  IT WORKS: Remembering the detail tells her that what she says sticks with
+  you.\n\nWeek 1: Notice\n\nTCH Works · Better Partner Plan. Everyday rela
+ tionship ideas\, not therapy or counselling. If things feel unsafe or over
+ whelming\, talk to your GP or a relationship counselling service. In an em
+ ergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask about the thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Make it exactly right
+DTSTART;TZID=Europe/London:20261006T073000
+DTEND;TZID=Europe/London:20261006T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-06@tchworks.co.uk
+DESCRIPTION:TODAY: Make her a drink or a snack exactly the way she likes i
+ t\, without asking how she takes it. If you're not sure\, that's today's j
+ ob: find out and remember.\n\nWHY IT WORKS: Small acts of care done precis
+ ely land better than big gestures done generally.\n\nWeek 1: Notice\n\nTCH
+  Works · Better Partner Plan. Everyday relationship ideas\, not therapy o
+ r counselling. If things feel unsafe or overwhelming\, talk to your GP or 
+ a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Make it exactly right
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: First weekly check-in (15 minutes)
+DTSTART;TZID=Europe/London:20261007T073000
+DTEND;TZID=Europe/London:20261007T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-07@tchworks.co.uk
+DESCRIPTION:TODAY: Find 15 calm minutes today. Ask two questions and only 
+ listen: 'What's one thing I did this week that you liked?' and 'What's one
+  thing that would make next week easier for you?' Don't defend or explain.
+  Say thanks\, and pick one thing to act on.\n\nWHY IT WORKS: A short\, reg
+ ular check-in keeps small irritations small. It works best when it's routi
+ ne\, not only when something's wrong.\n\nWeek 1: Notice\n\nTCH Works · Be
+ tter Partner Plan. Everyday relationship ideas\, not therapy or counsellin
+ g. If things feel unsafe or overwhelming\, talk to your GP or a relationsh
+ ip counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: First weekly check-in (15 minutes)
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Praise her to someone else
+DTSTART;TZID=Europe/London:20261008T073000
+DTEND;TZID=Europe/London:20261008T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-08@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, say something good about her to someone else: a
+  friend\, your parents\, the kids. Even better if she can hear it.\n\nWHY 
+ IT WORKS: Hearing yourself praised to other people feels different from a 
+ private compliment. It says 'I'm proud of you'\, not just 'thanks'.\n\nWee
+ k 2: Say it out loud\n\nTCH Works · Better Partner Plan. Everyday relatio
+ nship ideas\, not therapy or counselling. If things feel unsafe or overwhe
+ lming\, talk to your GP or a relationship counselling service. In an emerg
+ ency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Praise her to someone else
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Respond to good news properly
+DTSTART;TZID=Europe/London:20261009T073000
+DTEND;TZID=Europe/London:20261009T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-09@tchworks.co.uk
+DESCRIPTION:TODAY: When she shares any good news today\, however small\, r
+ espond with real interest: ask questions\, let her tell the whole story\, 
+ be pleased out loud. 'Hang on\, tell me exactly what she said.'\n\nWHY IT 
+ WORKS: Research on how couples respond to each other's good news found tha
+ t enthusiastic\, engaged responses were linked to happier relationships. A
+  distracted 'nice' can quietly do the opposite.\n\nWeek 2: Say it out loud
+ \n\nTCH Works · Better Partner Plan. Everyday relationship ideas\, not th
+ erapy or counselling. If things feel unsafe or overwhelming\, talk to your
+  GP or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Respond to good news properly
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: A note where she'll find it
+DTSTART;TZID=Europe/London:20261010T073000
+DTEND;TZID=Europe/London:20261010T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-10@tchworks.co.uk
+DESCRIPTION:TODAY: Write one line by hand and leave it where she'll find i
+ t tomorrow: the kettle\, the car seat\, a coat pocket\, a lunch box. Make 
+ it specific: 'You were brilliant with Dad on Sunday.'\n\nWHY IT WORKS: A n
+ ote keeps working after you've written it. Many people keep them for years
+ .\n\nWeek 2: Say it out loud\n\nTCH Works · Better Partner Plan. Everyday
+  relationship ideas\, not therapy or counselling. If things feel unsafe or
+  overwhelming\, talk to your GP or a relationship counselling service. In 
+ an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: A note where she'll find it
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Say what you admire
+DTSTART;TZID=Europe/London:20261011T073000
+DTEND;TZID=Europe/London:20261011T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-11@tchworks.co.uk
+DESCRIPTION:TODAY: Tell her one quality you admire that has nothing to do 
+ with what she does for you. 'I love how patient you are with your mum when
+  she's anxious.' 'You're the funniest person in any room.'\n\nWHY IT WORKS
+ : Appreciating who someone is\, not just what they do\, builds a sense of 
+ being seen.\n\nWeek 2: Say it out loud\n\nTCH Works · Better Partner Plan
+ . Everyday relationship ideas\, not therapy or counselling. If things feel
+  unsafe or overwhelming\, talk to your GP or a relationship counselling se
+ rvice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Say what you admire
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask for her advice
+DTSTART;TZID=Europe/London:20261012T073000
+DTEND;TZID=Europe/London:20261012T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-12@tchworks.co.uk
+DESCRIPTION:TODAY: Ask her opinion on something real you're deciding: work
+ \, a purchase\, how to handle a friend. Listen properly. If you don't take
+  the advice\, explain why.\n\nWHY IT WORKS: Asking for advice is a quiet f
+ orm of respect. It says 'I trust your judgement'.\n\nWeek 2: Say it out lo
+ ud\n\nTCH Works · Better Partner Plan. Everyday relationship ideas\, not 
+ therapy or counselling. If things feel unsafe or overwhelming\, talk to yo
+ ur GP or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask for her advice
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: The 'I remember' message
+DTSTART;TZID=Europe/London:20261013T073000
+DTEND;TZID=Europe/London:20261013T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-13@tchworks.co.uk
+DESCRIPTION:TODAY: Send her a message about a specific happy memory of the
+  two of you. 'I was just thinking about that tiny café in Whitby when the
+  rain came in sideways.'\n\nWHY IT WORKS: Going back over good shared memo
+ ries together is linked to feeling closer. It also tends to start a nice c
+ onversation later.\n\nWeek 2: Say it out loud\n\nTCH Works · Better Partn
+ er Plan. Everyday relationship ideas\, not therapy or counselling. If thin
+ gs feel unsafe or overwhelming\, talk to your GP or a relationship counsel
+ ling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: The 'I remember' message
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Second check-in
+DTSTART;TZID=Europe/London:20261014T073000
+DTEND;TZID=Europe/London:20261014T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-14@tchworks.co.uk
+DESCRIPTION:TODAY: Same 15 minutes as last week. Ask: 'What's been the bes
+ t bit of this week for you?' and 'Is there anything you need from me next 
+ week?' Listen\, thank her\, pick one thing.\n\nWHY IT WORKS: Doing it a se
+ cond time is what turns it into a habit rather than a one-off.\n\nWeek 2: 
+ Say it out loud\n\nTCH Works · Better Partner Plan. Everyday relationship
+  ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Second check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Own a whole job
+DTSTART;TZID=Europe/London:20261015T073000
+DTEND;TZID=Europe/London:20261015T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-15@tchworks.co.uk
+DESCRIPTION:TODAY: Choose one recurring household job and take it over com
+ pletely: the noticing\, planning and doing. Bins\, packed lunches\, the sc
+ hool WhatsApp\, birthday presents for your side of the family. Tell her to
+ day: 'That's mine now. You don't need to think about it again.'\n\nWHY IT 
+ WORKS: A lot of household strain comes from the 'mental load': remembering
+ \, planning and checking\, not just doing. Owning a job entirely removes i
+ t from her head\, not just her hands.\n\nWeek 3: Lighten the load\n\nTCH W
+ orks · Better Partner Plan. Everyday relationship ideas\, not therapy or 
+ counselling. If things feel unsafe or overwhelming\, talk to your GP or a 
+ relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Own a whole job
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Notice before you're asked
+DTSTART;TZID=Europe/London:20261016T073000
+DTEND;TZID=Europe/London:20261016T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-16@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, find three things that need doing that you'd no
+ rmally wait to be told about (the full bin\, the empty loo roll\, the wash
+ ing in the machine). Do them. Don't mention it.\n\nWHY IT WORKS: Being the
+  person who notices is part of the work. It's often the part that goes uns
+ een.\n\nWeek 3: Lighten the load\n\nTCH Works · Better Partner Plan. Ever
+ yday relationship ideas\, not therapy or counselling. If things feel unsaf
+ e or overwhelming\, talk to your GP or a relationship counselling service.
+  In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Notice before you're asked
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Clear the evening
+DTSTART;TZID=Europe/London:20261017T073000
+DTEND;TZID=Europe/London:20261017T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-17@tchworks.co.uk
+DESCRIPTION:TODAY: Tell her this morning that tonight is covered: you're d
+ oing tea\, the washing up and anything else that comes up after 7pm. Then 
+ do it\, without commentary.\n\nWHY IT WORKS: Knowing in the morning that t
+ he evening is free gives her something to look forward to all day.\n\nWeek
+  3: Lighten the load\n\nTCH Works · Better Partner Plan. Everyday relatio
+ nship ideas\, not therapy or counselling. If things feel unsafe or overwhe
+ lming\, talk to your GP or a relationship counselling service. In an emerg
+ ency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Clear the evening
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Plan the week's meals
+DTSTART;TZID=Europe/London:20261018T073000
+DTEND;TZID=Europe/London:20261018T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-18@tchworks.co.uk
+DESCRIPTION:TODAY: Spend ten minutes planning this week's evening meals an
+ d write the shopping list. Then do the shop\, or book the delivery.\n\nWHY
+  IT WORKS: 'What are we having for tea?' is one of the most repeated decis
+ ions in any home. Taking it away for a week is a real gift.\n\nWeek 3: Lig
+ hten the load\n\nTCH Works · Better Partner Plan. Everyday relationship i
+ deas\, not therapy or counselling. If things feel unsafe or overwhelming\,
+  talk to your GP or a relationship counselling service. In an emergency ca
+ ll 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Plan the week's meals
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Book the thing
+DTSTART;TZID=Europe/London:20261019T073000
+DTEND;TZID=Europe/London:20261019T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-19@tchworks.co.uk
+DESCRIPTION:TODAY: There's an appointment or booking that keeps getting pu
+ t off: the MOT\, the boiler service\, the haircut\, the vet. Book it today
+  and put it in both your calendars.\n\nWHY IT WORKS: Unfinished admin take
+ s up head space even when nobody's doing it.\n\nWeek 3: Lighten the load\n
+ \nTCH Works · Better Partner Plan. Everyday relationship ideas\, not ther
+ apy or counselling. If things feel unsafe or overwhelming\, talk to your G
+ P or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Book the thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: An evening to herself
+DTSTART;TZID=Europe/London:20261020T073000
+DTEND;TZID=Europe/London:20261020T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-20@tchworks.co.uk
+DESCRIPTION:TODAY: Arrange an evening this week where she has no responsib
+ ilities at all. You handle the house\, the food\, the kids and the tidying
+ \, and she chooses what to do: a bath\, friends\, the cinema\, nothing at 
+ all. Set it up today. On the night\, don't ring with questions.\n\nWHY IT 
+ WORKS: Time that's genuinely free\, not 'free but on call'\, is rare for m
+ ost adults with families. It's one of the most valued things you can give.
+ \n\nWeek 3: Lighten the load\n\nTCH Works · Better Partner Plan. Everyday
+  relationship ideas\, not therapy or counselling. If things feel unsafe or
+  overwhelming\, talk to your GP or a relationship counselling service. In 
+ an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: An evening to herself
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Third check-in: what am I missing?
+DTSTART;TZID=Europe/London:20261021T073000
+DTEND;TZID=Europe/London:20261021T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-21@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'Is there anything you're carrying at the moment t
+ hat I don't see?' Write down the answer. Pick one thing to take on and tel
+ l her which.\n\nWHY IT WORKS: Asking directly is the fastest way to find t
+ he invisible jobs.\n\nWeek 3: Lighten the load\n\nTCH Works · Better Part
+ ner Plan. Everyday relationship ideas\, not therapy or counselling. If thi
+ ngs feel unsafe or overwhelming\, talk to your GP or a relationship counse
+ lling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Third check-in: what am I missing?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Phones away for one meal
+DTSTART;TZID=Europe/London:20261022T073000
+DTEND;TZID=Europe/London:20261022T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-22@tchworks.co.uk
+DESCRIPTION:TODAY: At one meal today\, both phones go in another room. If 
+ it feels awkward\, ask: 'What's been the best and worst bit of your day?'
+ \n\nWHY IT WORKS: Even having a phone on the table can make a conversation
+  feel less close. Removing it is the simplest upgrade there is.\n\nWeek 4:
+  Time and attention\n\nTCH Works · Better Partner Plan. Everyday relation
+ ship ideas\, not therapy or counselling. If things feel unsafe or overwhel
+ ming\, talk to your GP or a relationship counselling service. In an emerge
+ ncy call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Phones away for one meal
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ten minutes\, not about logistics
+DTSTART;TZID=Europe/London:20261023T073000
+DTEND;TZID=Europe/London:20261023T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-23@tchworks.co.uk
+DESCRIPTION:TODAY: Find ten minutes today to talk about anything except th
+ e kids\, the house\, work admin or money. Try: 'What's on your mind lately
+  that we haven't talked about?'\n\nWHY IT WORKS: Couples with busy lives c
+ an go weeks talking only about logistics. Ten minutes of real conversation
+  keeps you friends\, not just co-managers.\n\nWeek 4: Time and attention\n
+ \nTCH Works · Better Partner Plan. Everyday relationship ideas\, not ther
+ apy or counselling. If things feel unsafe or overwhelming\, talk to your G
+ P or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ten minutes\, not about logistics
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Plan a date\, all of it
+DTSTART;TZID=Europe/London:20261024T073000
+DTEND;TZID=Europe/London:20261024T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-24@tchworks.co.uk
+DESCRIPTION:TODAY: Plan a date in the next fortnight and organise every pa
+ rt: when\, where\, the booking and the childcare or dog-sitting. Then tell
+  her the time to be ready. It doesn't need to cost much. A walk and chips 
+ counts.\n\nWHY IT WORKS: The planning is the gift. Being asked 'what do yo
+ u want to do?' can feel like one more job.\n\nWeek 4: Time and attention\n
+ \nTCH Works · Better Partner Plan. Everyday relationship ideas\, not ther
+ apy or counselling. If things feel unsafe or overwhelming\, talk to your G
+ P or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Plan a date\, all of it
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Walk together
+DTSTART;TZID=Europe/London:20261025T073000
+DTEND;TZID=Europe/London:20261025T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-25@tchworks.co.uk
+DESCRIPTION:TODAY: Suggest a 20-minute walk today\, just the two of you. S
+ ide by side\, no destination needed.\n\nWHY IT WORKS: Walking side by side
+  often makes conversation easier than sitting face to face.\n\nWeek 4: Tim
+ e and attention\n\nTCH Works · Better Partner Plan. Everyday relationship
+  ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Walk together
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: A longer hug
+DTSTART;TZID=Europe/London:20261026T073000
+DTEND;TZID=Europe/London:20261026T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-26@tchworks.co.uk
+DESCRIPTION:TODAY: Next time you hug her today\, don't be the first to let
+  go.\n\nWHY IT WORKS: Unhurried physical affection is a simple\, low-effor
+ t way to feel close. It's easy to make this a daily habit.\n\nWeek 4: Time
+  and attention\n\nTCH Works · Better Partner Plan. Everyday relationship 
+ ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: A longer hug
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask a better question
+DTSTART;TZID=Europe/London:20261027T073000
+DTEND;TZID=Europe/London:20261027T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-27@tchworks.co.uk
+DESCRIPTION:TODAY: Instead of 'How was your day?'\, ask one of these: 'Wha
+ t made you laugh today?'\, 'What's the thing you're most looking forward t
+ o this week?'\, 'What was the most annoying thing today?' Then ask one fol
+ low-up question.\n\nWHY IT WORKS: Specific questions get real answers. Gen
+ eric ones get 'fine'.\n\nWeek 4: Time and attention\n\nTCH Works · Better
+  Partner Plan. Everyday relationship ideas\, not therapy or counselling. I
+ f things feel unsafe or overwhelming\, talk to your GP or a relationship c
+ ounselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask a better question
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Fourth check-in
+DTSTART;TZID=Europe/London:20261028T073000
+DTEND;TZID=Europe/London:20261028T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-28@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'When did you feel most looked after by me this mo
+ nth?' Then: 'What's one thing I could do more of?' Write the answers in yo
+ ur phone.\n\nWHY IT WORKS: The answers are your best guide to what actuall
+ y lands for her.\n\nWeek 4: Time and attention\n\nTCH Works · Better Part
+ ner Plan. Everyday relationship ideas\, not therapy or counselling. If thi
+ ngs feel unsafe or overwhelming\, talk to your GP or a relationship counse
+ lling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Fourth check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Something you don't know yet
+DTSTART;TZID=Europe/London:20261029T073000
+DTEND;TZID=Europe/London:20261029T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-29@tchworks.co.uk
+DESCRIPTION:TODAY: Ask her one of these today and really listen: 'What did
+  you want to be when you were ten?'\, 'What's a smell that takes you strai
+ ght back to childhood?'\, 'What's the best piece of advice you've ever bee
+ n given?'\n\nWHY IT WORKS: However long you've been together\, there's alw
+ ays more to find out. Curiosity is a sign of interest\, and people feel it
+ .\n\nWeek 5: Be curious\n\nTCH Works · Better Partner Plan. Everyday rela
+ tionship ideas\, not therapy or counselling. If things feel unsafe or over
+ whelming\, talk to your GP or a relationship counselling service. In an em
+ ergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Something you don't know yet
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask about her friends
+DTSTART;TZID=Europe/London:20261030T073000
+DTEND;TZID=Europe/London:20261030T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-30@tchworks.co.uk
+DESCRIPTION:TODAY: Ask about one of her friends by name: how they're doing
+ \, what's going on in their life. Remember the answer for next time.\n\nWH
+ Y IT WORKS: Caring about the people who matter to her is a way of caring a
+ bout her.\n\nWeek 5: Be curious\n\nTCH Works · Better Partner Plan. Every
+ day relationship ideas\, not therapy or counselling. If things feel unsafe
+  or overwhelming\, talk to your GP or a relationship counselling service. 
+ In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask about her friends
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: The 'one year off' question
+DTSTART;TZID=Europe/London:20261031T073000
+DTEND;TZID=Europe/London:20261031T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-10-31@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'If money and time didn't matter for one year\, wh
+ at would you do with it?' Ask why. Don't point out why it's impractical.\n
+ \nWHY IT WORKS: Knowing someone's hopes\, even unrealistic ones\, is part 
+ of knowing them well.\n\nWeek 5: Be curious\n\nTCH Works · Better Partner
+  Plan. Everyday relationship ideas\, not therapy or counselling. If things
+  feel unsafe or overwhelming\, talk to your GP or a relationship counselli
+ ng service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: The 'one year off' question
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Warm the car or the bed
+DTSTART;TZID=Europe/London:20261101T073000
+DTEND;TZID=Europe/London:20261101T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-01@tchworks.co.uk
+DESCRIPTION:TODAY: On a cold morning or evening\, do the small warming job
+  before she needs it: scrape the car windscreen\, put the heating on early
+ \, or put a hot water bottle in her side of the bed.\n\nWHY IT WORKS: Bein
+ g thought of before you ask is one of the most noticed kinds of care.\n\nN
+ ovember pack\n\nTCH Works · Better Partner Plan. Everyday relationship id
+ eas\, not therapy or counselling. If things feel unsafe or overwhelming\, 
+ talk to your GP or a relationship counselling service. In an emergency cal
+ l 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Warm the car or the bed
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask about the week ahead
+DTSTART;TZID=Europe/London:20261102T073000
+DTEND;TZID=Europe/London:20261102T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-02@tchworks.co.uk
+DESCRIPTION:TODAY: Tonight\, ask: 'What's the one thing this week you're d
+ reading\, and the one you're looking forward to?' Offer to help with the f
+ irst.\n\nWHY IT WORKS: Knowing what's coming lets you help at the right mo
+ ment\, not after.\n\nNovember pack\n\nTCH Works · Better Partner Plan. Ev
+ eryday relationship ideas\, not therapy or counselling. If things feel uns
+ afe or overwhelming\, talk to your GP or a relationship counselling servic
+ e. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask about the week ahead
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Swap a screen for a story
+DTSTART;TZID=Europe/London:20261103T073000
+DTEND;TZID=Europe/London:20261103T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-03@tchworks.co.uk
+DESCRIPTION:TODAY: Instead of the TV for the first half hour tonight\, ask
+  her to tell you about the best and worst bit of her week so far.\n\nWHY I
+ T WORKS: Unbroken attention is rarer than it should be in most homes.\n\nN
+ ovember pack\n\nTCH Works · Better Partner Plan. Everyday relationship id
+ eas\, not therapy or counselling. If things feel unsafe or overwhelming\, 
+ talk to your GP or a relationship counselling service. In an emergency cal
+ l 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Swap a screen for a story
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Remember a date
+DTSTART;TZID=Europe/London:20261104T073000
+DTEND;TZID=Europe/London:20261104T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-04@tchworks.co.uk
+DESCRIPTION:TODAY: Put her next important date in your calendar now with a
+  reminder a week before: a check-up\, an interview\, a friend's birthday. 
+ Ask about it on the day.\n\nWHY IT WORKS: Following up on what matters to 
+ someone shows it stuck.\n\nNovember pack\n\nTCH Works · Better Partner Pl
+ an. Everyday relationship ideas\, not therapy or counselling. If things fe
+ el unsafe or overwhelming\, talk to your GP or a relationship counselling 
+ service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Remember a date
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Fix the small annoying thing
+DTSTART;TZID=Europe/London:20261105T073000
+DTEND;TZID=Europe/London:20261105T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-05@tchworks.co.uk
+DESCRIPTION:TODAY: Find the small broken thing she has mentioned: the sque
+ aky door\, the lamp that flickers\, the drawer that sticks. Fix it or book
+  someone to.\n\nWHY IT WORKS: Small daily irritations add up. Removing one
+  is a quiet gift.\n\nNovember pack\n\nTCH Works · Better Partner Plan. Ev
+ eryday relationship ideas\, not therapy or counselling. If things feel uns
+ afe or overwhelming\, talk to your GP or a relationship counselling servic
+ e. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Fix the small annoying thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Say 'I'm proud of you'
+DTSTART;TZID=Europe/London:20261106T073000
+DTEND;TZID=Europe/London:20261106T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-06@tchworks.co.uk
+DESCRIPTION:TODAY: Tell her one specific thing you're proud of her for thi
+ s year. 'I'm proud of how you handled the job change.'\n\nWHY IT WORKS: Pr
+ ide is different from praise. It says you see effort over time.\n\nNovembe
+ r pack\n\nTCH Works · Better Partner Plan. Everyday relationship ideas\, 
+ not therapy or counselling. If things feel unsafe or overwhelming\, talk t
+ o your GP or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Say 'I'm proud of you'
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Plan a cosy night in
+DTSTART;TZID=Europe/London:20261107T073000
+DTEND;TZID=Europe/London:20261107T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-07@tchworks.co.uk
+DESCRIPTION:TODAY: Plan a night in this week: food she likes\, a film or s
+ eries you'll both enjoy\, phones away. Do the prep and the clearing up.\n
+ \nWHY IT WORKS: Planned time feels different from time that just happens.
+ \n\nNovember pack\n\nTCH Works · Better Partner Plan. Everyday relationsh
+ ip ideas\, not therapy or counselling. If things feel unsafe or overwhelmi
+ ng\, talk to your GP or a relationship counselling service. In an emergenc
+ y call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Plan a cosy night in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask\, then help
+DTSTART;TZID=Europe/London:20261108T073000
+DTEND;TZID=Europe/London:20261108T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-08@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'Is there anything you've been meaning to do for a
+ ges that I could take off you this week?' Then do it.\n\nWHY IT WORKS: Ask
+ ing directly finds the jobs you'd never guess.\n\nNovember pack\n\nTCH Wor
+ ks · Better Partner Plan. Everyday relationship ideas\, not therapy or co
+ unselling. If things feel unsafe or overwhelming\, talk to your GP or a re
+ lationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask\, then help
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Hold the door\, literally
+DTSTART;TZID=Europe/London:20261109T073000
+DTEND;TZID=Europe/London:20261109T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-09@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, do the old-fashioned small courtesies: hold the
+  door\, carry the heavier bag\, pour her drink first.\n\nWHY IT WORKS: Sma
+ ll courtesies signal respect\, and they're easy to drop over the years.\n
+ \nNovember pack\n\nTCH Works · Better Partner Plan. Everyday relationship
+  ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Hold the door\, literally
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Weekly check-in
+DTSTART;TZID=Europe/London:20261110T073000
+DTEND;TZID=Europe/London:20261110T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-10@tchworks.co.uk
+DESCRIPTION:TODAY: Fifteen minutes. Ask: 'What's been good about this mont
+ h so far?' and 'What do you need more of from me before the end of it?'\n
+ \nWHY IT WORKS: Regular check-ins stop small things becoming big things.\n
+ \nNovember pack\n\nTCH Works · Better Partner Plan. Everyday relationship
+  ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Weekly check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Learn her order
+DTSTART;TZID=Europe/London:20261111T073000
+DTEND;TZID=Europe/London:20261111T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-11@tchworks.co.uk
+DESCRIPTION:TODAY: Make sure you know her exact order at the takeaway\, th
+ e coffee shop and the pub. If you don't\, quietly find out.\n\nWHY IT WORK
+ S: Knowing the details is a form of attention.\n\nNovember pack\n\nTCH Wor
+ ks · Better Partner Plan. Everyday relationship ideas\, not therapy or co
+ unselling. If things feel unsafe or overwhelming\, talk to your GP or a re
+ lationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Learn her order
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: A message at a hard moment
+DTSTART;TZID=Europe/London:20261112T073000
+DTEND;TZID=Europe/London:20261112T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-12@tchworks.co.uk
+DESCRIPTION:TODAY: If she has a tough meeting\, appointment or task today
+ \, send a message just before: 'Thinking of you. You'll be great.'\n\nWHY 
+ IT WORKS: Support timed to the moment lands much harder than support after
+ wards.\n\nNovember pack\n\nTCH Works · Better Partner Plan. Everyday rela
+ tionship ideas\, not therapy or counselling. If things feel unsafe or over
+ whelming\, talk to your GP or a relationship counselling service. In an em
+ ergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: A message at a hard moment
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Make space for her hobby
+DTSTART;TZID=Europe/London:20261113T073000
+DTEND;TZID=Europe/London:20261113T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-13@tchworks.co.uk
+DESCRIPTION:TODAY: Clear time this week for something she loves doing but 
+ rarely gets time for. Handle whatever would otherwise get in the way.\n\nW
+ HY IT WORKS: Protecting someone's interests protects who they are\, not ju
+ st their time.\n\nNovember pack\n\nTCH Works · Better Partner Plan. Every
+ day relationship ideas\, not therapy or counselling. If things feel unsafe
+  or overwhelming\, talk to your GP or a relationship counselling service. 
+ In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Make space for her hobby
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Share one worry
+DTSTART;TZID=Europe/London:20261114T073000
+DTEND;TZID=Europe/London:20261114T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-14@tchworks.co.uk
+DESCRIPTION:TODAY: Tell her one thing that's been on your mind. Not to sol
+ ve it\, just so she knows.\n\nWHY IT WORKS: Letting your partner in builds
+  closeness both ways.\n\nNovember pack\n\nTCH Works · Better Partner Plan
+ . Everyday relationship ideas\, not therapy or counselling. If things feel
+  unsafe or overwhelming\, talk to your GP or a relationship counselling se
+ rvice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Share one worry
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Tidy before she gets home
+DTSTART;TZID=Europe/London:20261115T073000
+DTEND;TZID=Europe/London:20261115T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-15@tchworks.co.uk
+DESCRIPTION:TODAY: Before she gets home today\, clear the kitchen and one 
+ other space she notices. Don't mention it.\n\nWHY IT WORKS: Coming home to
+  calm is a gift that's felt before it's noticed.\n\nNovember pack\n\nTCH W
+ orks · Better Partner Plan. Everyday relationship ideas\, not therapy or 
+ counselling. If things feel unsafe or overwhelming\, talk to your GP or a 
+ relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Tidy before she gets home
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Ask a question you've never asked
+DTSTART;TZID=Europe/London:20261116T073000
+DTEND;TZID=Europe/London:20261116T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-16@tchworks.co.uk
+DESCRIPTION:TODAY: Ask her: 'What's something you were really good at as a
+  child?' or 'Which teacher did you love\, and why?'\n\nWHY IT WORKS: Curio
+ sity keeps a long relationship from going on autopilot.\n\nNovember pack\n
+ \nTCH Works · Better Partner Plan. Everyday relationship ideas\, not ther
+ apy or counselling. If things feel unsafe or overwhelming\, talk to your G
+ P or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Ask a question you've never asked
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Compliment in front of the kids
+DTSTART;TZID=Europe/London:20261117T073000
+DTEND;TZID=Europe/London:20261117T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-17@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, tell the children (or family) something you lov
+ e about her\, where she can hear.\n\nWHY IT WORKS: Children learn how to t
+ reat a partner by watching. So does the partner.\n\nNovember pack\n\nTCH W
+ orks · Better Partner Plan. Everyday relationship ideas\, not therapy or 
+ counselling. If things feel unsafe or overwhelming\, talk to your GP or a 
+ relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Compliment in front of the kids
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Book the winter treat
+DTSTART;TZID=Europe/London:20261118T073000
+DTEND;TZID=Europe/London:20261118T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-18@tchworks.co.uk
+DESCRIPTION:TODAY: Book something small to look forward to before Christma
+ s: a walk with a pub lunch\, a show\, a day out. Tell her the date.\n\nWHY
+  IT WORKS: Anticipation is part of the enjoyment. A date in the diary give
+ s you weeks of it.\n\nNovember pack\n\nTCH Works · Better Partner Plan. E
+ veryday relationship ideas\, not therapy or counselling. If things feel un
+ safe or overwhelming\, talk to your GP or a relationship counselling servi
+ ce. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Book the winter treat
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Take over a dreaded call
+DTSTART;TZID=Europe/London:20261119T073000
+DTEND;TZID=Europe/London:20261119T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-19@tchworks.co.uk
+DESCRIPTION:TODAY: Is there a phone call she has been putting off: the ban
+ k\, the council\, a utility company? Offer to make it\, and then do.\n\nWH
+ Y IT WORKS: Taking the dreaded job is worth more than any present.\n\nNove
+ mber pack\n\nTCH Works · Better Partner Plan. Everyday relationship ideas
+ \, not therapy or counselling. If things feel unsafe or overwhelming\, tal
+ k to your GP or a relationship counselling service. In an emergency call 9
+ 99.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Take over a dreaded call
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Say thank you at bedtime
+DTSTART;TZID=Europe/London:20261120T073000
+DTEND;TZID=Europe/London:20261120T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-20@tchworks.co.uk
+DESCRIPTION:TODAY: Before sleep tonight\, thank her for one thing from tod
+ ay.\n\nWHY IT WORKS: Ending the day on appreciation is a small habit with 
+ a big effect over time.\n\nNovember pack\n\nTCH Works · Better Partner Pl
+ an. Everyday relationship ideas\, not therapy or counselling. If things fe
+ el unsafe or overwhelming\, talk to your GP or a relationship counselling 
+ service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Say thank you at bedtime
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Walk somewhere new
+DTSTART;TZID=Europe/London:20261121T073000
+DTEND;TZID=Europe/London:20261121T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-21@tchworks.co.uk
+DESCRIPTION:TODAY: Find a walk neither of you has done within 20 minutes o
+ f home. Suggest it for the weekend.\n\nWHY IT WORKS: Doing something new t
+ ogether is one of the easiest ways to feel close.\n\nNovember pack\n\nTCH 
+ Works · Better Partner Plan. Everyday relationship ideas\, not therapy or
+  counselling. If things feel unsafe or overwhelming\, talk to your GP or a
+  relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Walk somewhere new
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Today: Let her choose
+DTSTART;TZID=Europe/London:20261122T073000
+DTEND;TZID=Europe/London:20261122T074000
+DTSTAMP:20261008T030000Z
+UID:tch-partner-monthly-she-2026-11-22@tchworks.co.uk
+DESCRIPTION:TODAY: Let her choose tonight's food\, film and plans\, with n
+ o negotiating.\n\nWHY IT WORKS: Being able to just have what you want\, wi
+ thout debate\, feels like a treat.\n\nNovember pack\n\nTCH Works · Better
+  Partner Plan. Everyday relationship ideas\, not therapy or counselling. I
+ f things feel unsafe or overwhelming\, talk to your GP or a relationship c
+ ounselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/890672b37112b894/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Today: Let her choose
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

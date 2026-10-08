@@ -1,0 +1,1348 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TCH Works//Planners 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:60 days of small, specific things to do for your partner. Fro
+ m TCH Works.
+X-WR-CALNAME:Better Partner Plan (for them)
+X-WR-TIMEZONE:Europe/London
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:Nudge 1/60: Name one specific thing
+DTSTART;TZID=Europe/London:20270125T073000
+DTEND;TZID=Europe/London:20270125T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-1@tchworks.co.uk
+DESCRIPTION:TODAY: Send them a message today naming one specific thing the
+ y did this week that made your life easier. Not 'thanks for everything'. T
+ he actual thing: 'Thanks for sorting the car insurance. I know that was fo
+ rty minutes on hold.'\n\nWHY IT WORKS: Specific thanks shows you were payi
+ ng attention. General thanks sounds like politeness.\n\nDay 1 of 60 · Wee
+ k 1: Notice\n\nTCH Works · Better Partner Plan. Everyday relationship ide
+ as\, not therapy or counselling. If things feel unsafe or overwhelming\, t
+ alk to your GP or a relationship counselling service. In an emergency call
+  999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 1/60: Name one specific thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 2/60: Turn towards the small stuff
+DTSTART;TZID=Europe/London:20270126T073000
+DTEND;TZID=Europe/London:20270126T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-2@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, every time they point something out (a headline
+ \, a dog in the street\, a message from a friend) stop and respond properl
+ y. Look up\, put the phone face down\, ask one question about it.\n\nWHY I
+ T WORKS: Relationship researchers call these 'bids for connection'. In a w
+ ell-known study of newlyweds\, couples still together six years later had 
+ turned towards each other's small bids far more often than couples who spl
+ it.\n\nDay 2 of 60 · Week 1: Notice\n\nTCH Works · Better Partner Plan. 
+ Everyday relationship ideas\, not therapy or counselling. If things feel u
+ nsafe or overwhelming\, talk to your GP or a relationship counselling serv
+ ice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 2/60: Turn towards the small stuff
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 3/60: The first five minutes
+DTSTART;TZID=Europe/London:20270127T073000
+DTEND;TZID=Europe/London:20270127T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-3@tchworks.co.uk
+DESCRIPTION:TODAY: When you next see them today\, give the first five minu
+ tes to them\, not to logistics. Greet them properly\, ask how the day went
+ \, listen. Who's picking up whom and what's for tea can wait five minutes.
+ \n\nWHY IT WORKS: Reunions set the tone for the evening. A warm one costs 
+ nothing and is easy to make a habit.\n\nDay 3 of 60 · Week 1: Notice\n\nT
+ CH Works · Better Partner Plan. Everyday relationship ideas\, not therapy
+  or counselling. If things feel unsafe or overwhelming\, talk to your GP o
+ r a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 3/60: The first five minutes
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 4/60: Do one thing from their list
+DTSTART;TZID=Europe/London:20270128T073000
+DTEND;TZID=Europe/London:20270128T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-4@tchworks.co.uk
+DESCRIPTION:TODAY: Find one job that has been sitting on their to-do list 
+ (the dentist booking\, the parcel return\, the form for school) and do it
+ \, start to finish\, without being asked. Tell them once it's done\, not b
+ efore.\n\nWHY IT WORKS: Taking a whole task off someone's plate is worth m
+ ore than offering to 'help with' it.\n\nDay 4 of 60 · Week 1: Notice\n\nT
+ CH Works · Better Partner Plan. Everyday relationship ideas\, not therapy
+  or counselling. If things feel unsafe or overwhelming\, talk to your GP o
+ r a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 4/60: Do one thing from their list
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 5/60: Ask about the thing
+DTSTART;TZID=Europe/London:20270129T073000
+DTEND;TZID=Europe/London:20270129T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-5@tchworks.co.uk
+DESCRIPTION:TODAY: Think back to something they mentioned earlier this wee
+ k: a meeting\, a worry\, a friend's news. Ask how it went\, using the deta
+ il. 'How did the meeting with Sam go? Did they go for the new rota?'\n\nWH
+ Y IT WORKS: Remembering the detail tells them that what they say sticks wi
+ th you.\n\nDay 5 of 60 · Week 1: Notice\n\nTCH Works · Better Partner Pl
+ an. Everyday relationship ideas\, not therapy or counselling. If things fe
+ el unsafe or overwhelming\, talk to your GP or a relationship counselling 
+ service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 5/60: Ask about the thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 6/60: Make it exactly right
+DTSTART;TZID=Europe/London:20270130T073000
+DTEND;TZID=Europe/London:20270130T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-6@tchworks.co.uk
+DESCRIPTION:TODAY: Make them a drink or a snack exactly the way they like 
+ it\, without asking how they take it. If you're not sure\, that's today's 
+ job: find out and remember.\n\nWHY IT WORKS: Small acts of care done preci
+ sely land better than big gestures done generally.\n\nDay 6 of 60 · Week 
+ 1: Notice\n\nTCH Works · Better Partner Plan. Everyday relationship ideas
+ \, not therapy or counselling. If things feel unsafe or overwhelming\, tal
+ k to your GP or a relationship counselling service. In an emergency call 9
+ 99.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 6/60: Make it exactly right
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 7/60: First weekly check-in (15 minutes)
+DTSTART;TZID=Europe/London:20270131T073000
+DTEND;TZID=Europe/London:20270131T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-7@tchworks.co.uk
+DESCRIPTION:TODAY: Find 15 calm minutes today. Ask two questions and only 
+ listen: 'What's one thing I did this week that you liked?' and 'What's one
+  thing that would make next week easier for you?' Don't defend or explain.
+  Say thanks\, and pick one thing to act on.\n\nWHY IT WORKS: A short\, reg
+ ular check-in keeps small irritations small. It works best when it's routi
+ ne\, not only when something's wrong.\n\nDay 7 of 60 · Week 1: Notice\n\n
+ TCH Works · Better Partner Plan. Everyday relationship ideas\, not therap
+ y or counselling. If things feel unsafe or overwhelming\, talk to your GP 
+ or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 7/60: First weekly check-in (15 minutes)
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 8/60: Praise them to someone else
+DTSTART;TZID=Europe/London:20270201T073000
+DTEND;TZID=Europe/London:20270201T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-8@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, say something good about them to someone else: 
+ a friend\, your parents\, the kids. Even better if they can hear it.\n\nWH
+ Y IT WORKS: Hearing yourself praised to other people feels different from 
+ a private compliment. It says 'I'm proud of you'\, not just 'thanks'.\n\nD
+ ay 8 of 60 · Week 2: Say it out loud\n\nTCH Works · Better Partner Plan.
+  Everyday relationship ideas\, not therapy or counselling. If things feel 
+ unsafe or overwhelming\, talk to your GP or a relationship counselling ser
+ vice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 8/60: Praise them to someone else
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 9/60: Respond to good news properly
+DTSTART;TZID=Europe/London:20270202T073000
+DTEND;TZID=Europe/London:20270202T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-9@tchworks.co.uk
+DESCRIPTION:TODAY: When they share any good news today\, however small\, r
+ espond with real interest: ask questions\, let them tell the whole story\,
+  be pleased out loud. 'Hang on\, tell me exactly what she said.'\n\nWHY IT
+  WORKS: Research on how couples respond to each other's good news found th
+ at enthusiastic\, engaged responses were linked to happier relationships. 
+ A distracted 'nice' can quietly do the opposite.\n\nDay 9 of 60 · Week 2:
+  Say it out loud\n\nTCH Works · Better Partner Plan. Everyday relationshi
+ p ideas\, not therapy or counselling. If things feel unsafe or overwhelmin
+ g\, talk to your GP or a relationship counselling service. In an emergency
+  call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 9/60: Respond to good news properly
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 10/60: A note where they'll find it
+DTSTART;TZID=Europe/London:20270203T073000
+DTEND;TZID=Europe/London:20270203T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-10@tchworks.co.uk
+DESCRIPTION:TODAY: Write one line by hand and leave it where they'll find 
+ it tomorrow: the kettle\, the car seat\, a coat pocket\, a lunch box. Make
+  it specific: 'You were brilliant with Dad on Sunday.'\n\nWHY IT WORKS: A 
+ note keeps working after you've written it. Many people keep them for year
+ s.\n\nDay 10 of 60 · Week 2: Say it out loud\n\nTCH Works · Better Partn
+ er Plan. Everyday relationship ideas\, not therapy or counselling. If thin
+ gs feel unsafe or overwhelming\, talk to your GP or a relationship counsel
+ ling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 10/60: A note where they'll find it
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 11/60: Say what you admire
+DTSTART;TZID=Europe/London:20270204T073000
+DTEND;TZID=Europe/London:20270204T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-11@tchworks.co.uk
+DESCRIPTION:TODAY: Tell them one quality you admire that has nothing to do
+  with what they do for you. 'I love how patient you are with your mum when
+  she's anxious.' 'You're the funniest person in any room.'\n\nWHY IT WORKS
+ : Appreciating who someone is\, not just what they do\, builds a sense of 
+ being seen.\n\nDay 11 of 60 · Week 2: Say it out loud\n\nTCH Works · Bet
+ ter Partner Plan. Everyday relationship ideas\, not therapy or counselling
+ . If things feel unsafe or overwhelming\, talk to your GP or a relationshi
+ p counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 11/60: Say what you admire
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 12/60: Ask for their advice
+DTSTART;TZID=Europe/London:20270205T073000
+DTEND;TZID=Europe/London:20270205T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-12@tchworks.co.uk
+DESCRIPTION:TODAY: Ask their opinion on something real you're deciding: wo
+ rk\, a purchase\, how to handle a friend. Listen properly. If you don't ta
+ ke the advice\, explain why.\n\nWHY IT WORKS: Asking for advice is a quiet
+  form of respect. It says 'I trust your judgement'.\n\nDay 12 of 60 · Wee
+ k 2: Say it out loud\n\nTCH Works · Better Partner Plan. Everyday relatio
+ nship ideas\, not therapy or counselling. If things feel unsafe or overwhe
+ lming\, talk to your GP or a relationship counselling service. In an emerg
+ ency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 12/60: Ask for their advice
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 13/60: The 'I remember' message
+DTSTART;TZID=Europe/London:20270206T073000
+DTEND;TZID=Europe/London:20270206T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-13@tchworks.co.uk
+DESCRIPTION:TODAY: Send them a message about a specific happy memory of th
+ e two of you. 'I was just thinking about that tiny café in Whitby when th
+ e rain came in sideways.'\n\nWHY IT WORKS: Going back over good shared mem
+ ories together is linked to feeling closer. It also tends to start a nice 
+ conversation later.\n\nDay 13 of 60 · Week 2: Say it out loud\n\nTCH Work
+ s · Better Partner Plan. Everyday relationship ideas\, not therapy or cou
+ nselling. If things feel unsafe or overwhelming\, talk to your GP or a rel
+ ationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 13/60: The 'I remember' message
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 14/60: Second check-in
+DTSTART;TZID=Europe/London:20270207T073000
+DTEND;TZID=Europe/London:20270207T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-14@tchworks.co.uk
+DESCRIPTION:TODAY: Same 15 minutes as last week. Ask: 'What's been the bes
+ t bit of this week for you?' and 'Is there anything you need from me next 
+ week?' Listen\, thank them\, pick one thing.\n\nWHY IT WORKS: Doing it a s
+ econd time is what turns it into a habit rather than a one-off.\n\nDay 14 
+ of 60 · Week 2: Say it out loud\n\nTCH Works · Better Partner Plan. Ever
+ yday relationship ideas\, not therapy or counselling. If things feel unsaf
+ e or overwhelming\, talk to your GP or a relationship counselling service.
+  In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 14/60: Second check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 15/60: Own a whole job
+DTSTART;TZID=Europe/London:20270208T073000
+DTEND;TZID=Europe/London:20270208T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-15@tchworks.co.uk
+DESCRIPTION:TODAY: Choose one recurring household job and take it over com
+ pletely: the noticing\, planning and doing. Bins\, packed lunches\, the sc
+ hool WhatsApp\, birthday presents for your side of the family. Tell them t
+ oday: 'That's mine now. You don't need to think about it again.'\n\nWHY IT
+  WORKS: A lot of household strain comes from the 'mental load': rememberin
+ g\, planning and checking\, not just doing. Owning a job entirely removes 
+ it from their head\, not just their hands.\n\nDay 15 of 60 · Week 3: Ligh
+ ten the load\n\nTCH Works · Better Partner Plan. Everyday relationship id
+ eas\, not therapy or counselling. If things feel unsafe or overwhelming\, 
+ talk to your GP or a relationship counselling service. In an emergency cal
+ l 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 15/60: Own a whole job
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 16/60: Notice before you're asked
+DTSTART;TZID=Europe/London:20270209T073000
+DTEND;TZID=Europe/London:20270209T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-16@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, find three things that need doing that you'd no
+ rmally wait to be told about (the full bin\, the empty loo roll\, the wash
+ ing in the machine). Do them. Don't mention it.\n\nWHY IT WORKS: Being the
+  person who notices is part of the work. It's often the part that goes uns
+ een.\n\nDay 16 of 60 · Week 3: Lighten the load\n\nTCH Works · Better Pa
+ rtner Plan. Everyday relationship ideas\, not therapy or counselling. If t
+ hings feel unsafe or overwhelming\, talk to your GP or a relationship coun
+ selling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 16/60: Notice before you're asked
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 17/60: Clear the evening
+DTSTART;TZID=Europe/London:20270210T073000
+DTEND;TZID=Europe/London:20270210T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-17@tchworks.co.uk
+DESCRIPTION:TODAY: Tell them this morning that tonight is covered: you're 
+ doing tea\, the washing up and anything else that comes up after 7pm. Then
+  do it\, without commentary.\n\nWHY IT WORKS: Knowing in the morning that 
+ the evening is free gives them something to look forward to all day.\n\nDa
+ y 17 of 60 · Week 3: Lighten the load\n\nTCH Works · Better Partner Plan
+ . Everyday relationship ideas\, not therapy or counselling. If things feel
+  unsafe or overwhelming\, talk to your GP or a relationship counselling se
+ rvice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 17/60: Clear the evening
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 18/60: Plan the week's meals
+DTSTART;TZID=Europe/London:20270211T073000
+DTEND;TZID=Europe/London:20270211T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-18@tchworks.co.uk
+DESCRIPTION:TODAY: Spend ten minutes planning this week's evening meals an
+ d write the shopping list. Then do the shop\, or book the delivery.\n\nWHY
+  IT WORKS: 'What are we having for tea?' is one of the most repeated decis
+ ions in any home. Taking it away for a week is a real gift.\n\nDay 18 of 6
+ 0 · Week 3: Lighten the load\n\nTCH Works · Better Partner Plan. Everyda
+ y relationship ideas\, not therapy or counselling. If things feel unsafe o
+ r overwhelming\, talk to your GP or a relationship counselling service. In
+  an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 18/60: Plan the week's meals
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 19/60: Book the thing
+DTSTART;TZID=Europe/London:20270212T073000
+DTEND;TZID=Europe/London:20270212T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-19@tchworks.co.uk
+DESCRIPTION:TODAY: There's an appointment or booking that keeps getting pu
+ t off: the MOT\, the boiler service\, the haircut\, the vet. Book it today
+  and put it in both your calendars.\n\nWHY IT WORKS: Unfinished admin take
+ s up head space even when nobody's doing it.\n\nDay 19 of 60 · Week 3: Li
+ ghten the load\n\nTCH Works · Better Partner Plan. Everyday relationship 
+ ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 19/60: Book the thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 20/60: An evening to themselves
+DTSTART;TZID=Europe/London:20270213T073000
+DTEND;TZID=Europe/London:20270213T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-20@tchworks.co.uk
+DESCRIPTION:TODAY: Arrange an evening this week where they have no respons
+ ibilities at all. You handle the house\, the food\, the kids and the tidyi
+ ng\, and they choose what to do: a bath\, friends\, the cinema\, nothing a
+ t all. Set it up today. On the night\, don't ring with questions.\n\nWHY I
+ T WORKS: Time that's genuinely free\, not 'free but on call'\, is rare for
+  most adults with families. It's one of the most valued things you can giv
+ e.\n\nDay 20 of 60 · Week 3: Lighten the load\n\nTCH Works · Better Part
+ ner Plan. Everyday relationship ideas\, not therapy or counselling. If thi
+ ngs feel unsafe or overwhelming\, talk to your GP or a relationship counse
+ lling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 20/60: An evening to themselves
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 21/60: Third check-in: what am I missing?
+DTSTART;TZID=Europe/London:20270214T073000
+DTEND;TZID=Europe/London:20270214T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-21@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'Is there anything you're carrying at the moment t
+ hat I don't see?' Write down the answer. Pick one thing to take on and tel
+ l them which.\n\nWHY IT WORKS: Asking directly is the fastest way to find 
+ the invisible jobs.\n\nDay 21 of 60 · Week 3: Lighten the load\n\nTCH Wor
+ ks · Better Partner Plan. Everyday relationship ideas\, not therapy or co
+ unselling. If things feel unsafe or overwhelming\, talk to your GP or a re
+ lationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 21/60: Third check-in: what am I missing?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 22/60: Phones away for one meal
+DTSTART;TZID=Europe/London:20270215T073000
+DTEND;TZID=Europe/London:20270215T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-22@tchworks.co.uk
+DESCRIPTION:TODAY: At one meal today\, both phones go in another room. If 
+ it feels awkward\, ask: 'What's been the best and worst bit of your day?'
+ \n\nWHY IT WORKS: Even having a phone on the table can make a conversation
+  feel less close. Removing it is the simplest upgrade there is.\n\nDay 22 
+ of 60 · Week 4: Time and attention\n\nTCH Works · Better Partner Plan. E
+ veryday relationship ideas\, not therapy or counselling. If things feel un
+ safe or overwhelming\, talk to your GP or a relationship counselling servi
+ ce. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 22/60: Phones away for one meal
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 23/60: Ten minutes\, not about logistics
+DTSTART;TZID=Europe/London:20270216T073000
+DTEND;TZID=Europe/London:20270216T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-23@tchworks.co.uk
+DESCRIPTION:TODAY: Find ten minutes today to talk about anything except th
+ e kids\, the house\, work admin or money. Try: 'What's on your mind lately
+  that we haven't talked about?'\n\nWHY IT WORKS: Couples with busy lives c
+ an go weeks talking only about logistics. Ten minutes of real conversation
+  keeps you friends\, not just co-managers.\n\nDay 23 of 60 · Week 4: Time
+  and attention\n\nTCH Works · Better Partner Plan. Everyday relationship 
+ ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 23/60: Ten minutes\, not about logistics
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 24/60: Plan a date\, all of it
+DTSTART;TZID=Europe/London:20270217T073000
+DTEND;TZID=Europe/London:20270217T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-24@tchworks.co.uk
+DESCRIPTION:TODAY: Plan a date in the next fortnight and organise every pa
+ rt: when\, where\, the booking and the childcare or dog-sitting. Then tell
+  them the time to be ready. It doesn't need to cost much. A walk and chips
+  counts.\n\nWHY IT WORKS: The planning is the gift. Being asked 'what do y
+ ou want to do?' can feel like one more job.\n\nDay 24 of 60 · Week 4: Tim
+ e and attention\n\nTCH Works · Better Partner Plan. Everyday relationship
+  ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 24/60: Plan a date\, all of it
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 25/60: Walk together
+DTSTART;TZID=Europe/London:20270218T073000
+DTEND;TZID=Europe/London:20270218T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-25@tchworks.co.uk
+DESCRIPTION:TODAY: Suggest a 20-minute walk today\, just the two of you. S
+ ide by side\, no destination needed.\n\nWHY IT WORKS: Walking side by side
+  often makes conversation easier than sitting face to face.\n\nDay 25 of 6
+ 0 · Week 4: Time and attention\n\nTCH Works · Better Partner Plan. Every
+ day relationship ideas\, not therapy or counselling. If things feel unsafe
+  or overwhelming\, talk to your GP or a relationship counselling service. 
+ In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 25/60: Walk together
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 26/60: A longer hug
+DTSTART;TZID=Europe/London:20270219T073000
+DTEND;TZID=Europe/London:20270219T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-26@tchworks.co.uk
+DESCRIPTION:TODAY: Next time you hug them today\, don't be the first to le
+ t go.\n\nWHY IT WORKS: Unhurried physical affection is a simple\, low-effo
+ rt way to feel close. It's easy to make this a daily habit.\n\nDay 26 of 6
+ 0 · Week 4: Time and attention\n\nTCH Works · Better Partner Plan. Every
+ day relationship ideas\, not therapy or counselling. If things feel unsafe
+  or overwhelming\, talk to your GP or a relationship counselling service. 
+ In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 26/60: A longer hug
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 27/60: Ask a better question
+DTSTART;TZID=Europe/London:20270220T073000
+DTEND;TZID=Europe/London:20270220T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-27@tchworks.co.uk
+DESCRIPTION:TODAY: Instead of 'How was your day?'\, ask one of these: 'Wha
+ t made you laugh today?'\, 'What's the thing you're most looking forward t
+ o this week?'\, 'What was the most annoying thing today?' Then ask one fol
+ low-up question.\n\nWHY IT WORKS: Specific questions get real answers. Gen
+ eric ones get 'fine'.\n\nDay 27 of 60 · Week 4: Time and attention\n\nTCH
+  Works · Better Partner Plan. Everyday relationship ideas\, not therapy o
+ r counselling. If things feel unsafe or overwhelming\, talk to your GP or 
+ a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 27/60: Ask a better question
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 28/60: Fourth check-in
+DTSTART;TZID=Europe/London:20270221T073000
+DTEND;TZID=Europe/London:20270221T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-28@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'When did you feel most looked after by me this mo
+ nth?' Then: 'What's one thing I could do more of?' Write the answers in yo
+ ur phone.\n\nWHY IT WORKS: The answers are your best guide to what actuall
+ y lands for them.\n\nDay 28 of 60 · Week 4: Time and attention\n\nTCH Wor
+ ks · Better Partner Plan. Everyday relationship ideas\, not therapy or co
+ unselling. If things feel unsafe or overwhelming\, talk to your GP or a re
+ lationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 28/60: Fourth check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 29/60: Something you don't know yet
+DTSTART;TZID=Europe/London:20270222T073000
+DTEND;TZID=Europe/London:20270222T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-29@tchworks.co.uk
+DESCRIPTION:TODAY: Ask them one of these today and really listen: 'What di
+ d you want to be when you were ten?'\, 'What's a smell that takes you stra
+ ight back to childhood?'\, 'What's the best piece of advice you've ever be
+ en given?'\n\nWHY IT WORKS: However long you've been together\, there's al
+ ways more to find out. Curiosity is a sign of interest\, and people feel i
+ t.\n\nDay 29 of 60 · Week 5: Be curious\n\nTCH Works · Better Partner Pl
+ an. Everyday relationship ideas\, not therapy or counselling. If things fe
+ el unsafe or overwhelming\, talk to your GP or a relationship counselling 
+ service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 29/60: Something you don't know yet
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 30/60: Ask about their friends
+DTSTART;TZID=Europe/London:20270223T073000
+DTEND;TZID=Europe/London:20270223T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-30@tchworks.co.uk
+DESCRIPTION:TODAY: Ask about one of their friends by name: how they're doi
+ ng\, what's going on in their life. Remember the answer for next time.\n\n
+ WHY IT WORKS: Caring about the people who matter to them is a way of carin
+ g about them.\n\nDay 30 of 60 · Week 5: Be curious\n\nTCH Works · Better
+  Partner Plan. Everyday relationship ideas\, not therapy or counselling. I
+ f things feel unsafe or overwhelming\, talk to your GP or a relationship c
+ ounselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 30/60: Ask about their friends
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 31/60: The 'one year off' question
+DTSTART;TZID=Europe/London:20270224T073000
+DTEND;TZID=Europe/London:20270224T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-31@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'If money and time didn't matter for one year\, wh
+ at would you do with it?' Ask why. Don't point out why it's impractical.\n
+ \nWHY IT WORKS: Knowing someone's hopes\, even unrealistic ones\, is part 
+ of knowing them well.\n\nDay 31 of 60 · Week 5: Be curious\n\nTCH Works 
+ · Better Partner Plan. Everyday relationship ideas\, not therapy or couns
+ elling. If things feel unsafe or overwhelming\, talk to your GP or a relat
+ ionship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 31/60: The 'one year off' question
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 32/60: Listen first\, fix later
+DTSTART;TZID=Europe/London:20270225T073000
+DTEND;TZID=Europe/London:20270225T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-32@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'What's the hardest thing about work (or life) rig
+ ht now?' Then before you offer any advice\, ask: 'Do you want ideas\, or d
+ o you want me to just listen?' Do whichever they say.\n\nWHY IT WORKS: Jum
+ ping straight to solutions can make people feel unheard. Asking first tell
+ s you which kind of help is wanted.\n\nDay 32 of 60 · Week 5: Be curious
+ \n\nTCH Works · Better Partner Plan. Everyday relationship ideas\, not th
+ erapy or counselling. If things feel unsafe or overwhelming\, talk to your
+  GP or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 32/60: Listen first\, fix later
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 33/60: A good memory from before you met
+DTSTART;TZID=Europe/London:20270226T073000
+DTEND;TZID=Europe/London:20270226T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-33@tchworks.co.uk
+DESCRIPTION:TODAY: Ask them about a happy memory from before you met: a ho
+ liday\, a job\, a friend\, a place. Ask what made it so good.\n\nWHY IT WO
+ RKS: Hearing the stories that shaped someone helps you understand what mat
+ ters to them now.\n\nDay 33 of 60 · Week 5: Be curious\n\nTCH Works · Be
+ tter Partner Plan. Everyday relationship ideas\, not therapy or counsellin
+ g. If things feel unsafe or overwhelming\, talk to your GP or a relationsh
+ ip counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 33/60: A good memory from before you met
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 34/60: What would they love more of?
+DTSTART;TZID=Europe/London:20270227T073000
+DTEND;TZID=Europe/London:20270227T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-34@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'What's something you'd love to have more of in yo
+ ur life right now?' It might be sleep\, friends\, quiet\, adventure. Think
+  about whether you can help make room for it.\n\nWHY IT WORKS: This one of
+ ten surprises people. The answer is rarely what you'd guess.\n\nDay 34 of 
+ 60 · Week 5: Be curious\n\nTCH Works · Better Partner Plan. Everyday rel
+ ationship ideas\, not therapy or counselling. If things feel unsafe or ove
+ rwhelming\, talk to your GP or a relationship counselling service. In an e
+ mergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 34/60: What would they love more of?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 35/60: Fifth check-in
+DTSTART;TZID=Europe/London:20270228T073000
+DTEND;TZID=Europe/London:20270228T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-35@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'What's something you've been thinking about latel
+ y that you haven't said out loud?' Give it time. Silence is fine.\n\nWHY I
+ T WORKS: Regular check-ins make it safer to bring up bigger things.\n\nDay
+  35 of 60 · Week 5: Be curious\n\nTCH Works · Better Partner Plan. Every
+ day relationship ideas\, not therapy or counselling. If things feel unsafe
+  or overwhelming\, talk to your GP or a relationship counselling service. 
+ In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 35/60: Fifth check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 36/60: Try something new together
+DTSTART;TZID=Europe/London:20270301T073000
+DTEND;TZID=Europe/London:20270301T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-36@tchworks.co.uk
+DESCRIPTION:TODAY: Pick something neither of you has done: a new walk\, a 
+ class\, a recipe from a country you've never cooked from\, a different caf
+ é. Put it in the diary for this week.\n\nWHY IT WORKS: Studies on couples
+  doing new and mildly challenging activities together found it boosted how
+  satisfied they felt\, more than doing pleasant but familiar things.\n\nDa
+ y 36 of 60 · Week 6: Play and try new things\n\nTCH Works · Better Partn
+ er Plan. Everyday relationship ideas\, not therapy or counselling. If thin
+ gs feel unsafe or overwhelming\, talk to your GP or a relationship counsel
+ ling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 36/60: Try something new together
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 37/60: Make them laugh
+DTSTART;TZID=Europe/London:20270302T073000
+DTEND;TZID=Europe/London:20270302T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-37@tchworks.co.uk
+DESCRIPTION:TODAY: Send them something today that you know will make them 
+ laugh: a photo\, a memory\, a terrible joke.\n\nWHY IT WORKS: Shared laugh
+ ter is one of the fastest ways to feel on the same side.\n\nDay 37 of 60 
+ · Week 6: Play and try new things\n\nTCH Works · Better Partner Plan. Ev
+ eryday relationship ideas\, not therapy or counselling. If things feel uns
+ afe or overwhelming\, talk to your GP or a relationship counselling servic
+ e. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 37/60: Make them laugh
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 38/60: Cook their favourite
+DTSTART;TZID=Europe/London:20270303T073000
+DTEND;TZID=Europe/London:20270303T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-38@tchworks.co.uk
+DESCRIPTION:TODAY: Make their favourite meal tonight\, or the closest you 
+ can manage. Lay the table properly.\n\nWHY IT WORKS: It says 'I know you' 
+ in a way that's hard to say in words.\n\nDay 38 of 60 · Week 6: Play and 
+ try new things\n\nTCH Works · Better Partner Plan. Everyday relationship 
+ ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 38/60: Cook their favourite
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 39/60: Put the old song on
+DTSTART;TZID=Europe/London:20270304T073000
+DTEND;TZID=Europe/London:20270304T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-39@tchworks.co.uk
+DESCRIPTION:TODAY: Find a song from early in your relationship (or from a 
+ good holiday) and play it while you're both in the room. See what happens.
+ \n\nWHY IT WORKS: Music is a strong memory trigger. It's a cheap way to br
+ ing back a good time.\n\nDay 39 of 60 · Week 6: Play and try new things\n
+ \nTCH Works · Better Partner Plan. Everyday relationship ideas\, not ther
+ apy or counselling. If things feel unsafe or overwhelming\, talk to your G
+ P or a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 39/60: Put the old song on
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 40/60: Go back somewhere
+DTSTART;TZID=Europe/London:20270305T073000
+DTEND;TZID=Europe/London:20270305T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-40@tchworks.co.uk
+DESCRIPTION:TODAY: Suggest revisiting a place that means something to you 
+ both: where you first met\, a favourite pub\, a walk you used to do. Plan 
+ it for this week or next.\n\nWHY IT WORKS: Revisiting shared places remind
+ s you both of your story together.\n\nDay 40 of 60 · Week 6: Play and try
+  new things\n\nTCH Works · Better Partner Plan. Everyday relationship ide
+ as\, not therapy or counselling. If things feel unsafe or overwhelming\, t
+ alk to your GP or a relationship counselling service. In an emergency call
+  999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 40/60: Go back somewhere
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 41/60: Play something
+DTSTART;TZID=Europe/London:20270306T073000
+DTEND;TZID=Europe/London:20270306T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-41@tchworks.co.uk
+DESCRIPTION:TODAY: Suggest a game tonight: cards\, a board game\, a quiz\,
+  twenty questions. Keep it light and a little competitive.\n\nWHY IT WORKS
+ : Play is easy to drop when life gets busy. It's also one of the things co
+ uples miss most.\n\nDay 41 of 60 · Week 6: Play and try new things\n\nTCH
+  Works · Better Partner Plan. Everyday relationship ideas\, not therapy o
+ r counselling. If things feel unsafe or overwhelming\, talk to your GP or 
+ a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 41/60: Play something
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 42/60: Sixth check-in
+DTSTART;TZID=Europe/London:20270307T073000
+DTEND;TZID=Europe/London:20270307T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-42@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'What's been the most fun we've had recently?' and
+  'What should we do more of?' Book or plan one thing from the answer.\n\nW
+ HY IT WORKS: Fun doesn't happen by itself in a busy life. It needs a date 
+ in the diary.\n\nDay 42 of 60 · Week 6: Play and try new things\n\nTCH Wo
+ rks · Better Partner Plan. Everyday relationship ideas\, not therapy or c
+ ounselling. If things feel unsafe or overwhelming\, talk to your GP or a r
+ elationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 42/60: Sixth check-in
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 43/60: Start gently
+DTSTART;TZID=Europe/London:20270308T073000
+DTEND;TZID=Europe/London:20270308T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-43@tchworks.co.uk
+DESCRIPTION:TODAY: If there's something you need to raise today\, start wi
+ th what you feel and what you'd like\, not with what they always do. Inste
+ ad of 'You never put anything away'\, try 'I'm feeling swamped by the clut
+ ter. Could we do ten minutes tonight together?'\n\nWHY IT WORKS: How a dif
+ ficult conversation starts strongly predicts how it ends. A gentle start m
+ akes defensiveness much less likely.\n\nDay 43 of 60 · Week 7: Handle the
+  hard bits well\n\nTCH Works · Better Partner Plan. Everyday relationship
+  ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 43/60: Start gently
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 44/60: Apologise properly for one thing
+DTSTART;TZID=Europe/London:20270309T073000
+DTEND;TZID=Europe/London:20270309T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-44@tchworks.co.uk
+DESCRIPTION:TODAY: Think of one thing you've done recently that annoyed or
+  hurt them. Apologise properly: name it\, say how it might have felt\, say
+  what you'll do differently. No 'but'.\n\nWHY IT WORKS: A real apology is 
+ specific and doesn't come with an excuse attached.\n\nDay 44 of 60 · Week
+  7: Handle the hard bits well\n\nTCH Works · Better Partner Plan. Everyda
+ y relationship ideas\, not therapy or counselling. If things feel unsafe o
+ r overwhelming\, talk to your GP or a relationship counselling service. In
+  an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 44/60: Apologise properly for one thing
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 45/60: Assume the best
+DTSTART;TZID=Europe/London:20270310T073000
+DTEND;TZID=Europe/London:20270310T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-45@tchworks.co.uk
+DESCRIPTION:TODAY: Next time something they do annoys you today\, pause an
+ d think of the most generous explanation before reacting. Tired? Didn't no
+ tice? Trying to help?\n\nWHY IT WORKS: Happier couples tend to give each o
+ ther the benefit of the doubt. It's a habit\, and it can be practised.\n\n
+ Day 45 of 60 · Week 7: Handle the hard bits well\n\nTCH Works · Better P
+ artner Plan. Everyday relationship ideas\, not therapy or counselling. If 
+ things feel unsafe or overwhelming\, talk to your GP or a relationship cou
+ nselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 45/60: Assume the best
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 46/60: Agree how to take a break
+DTSTART;TZID=Europe/London:20270311T073000
+DTEND;TZID=Europe/London:20270311T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-46@tchworks.co.uk
+DESCRIPTION:TODAY: At a calm moment\, agree a way to pause an argument tha
+ t's getting heated: a word or phrase either of you can use\, and a promise
+  to come back to it within the hour. Agree on at least 20 minutes apart to
+  calm down.\n\nWHY IT WORKS: When people are flooded with stress mid-argum
+ ent\, they can't listen well. A planned break\, with a promise to return\,
+  helps more than pushing on.\n\nDay 46 of 60 · Week 7: Handle the hard bi
+ ts well\n\nTCH Works · Better Partner Plan. Everyday relationship ideas\,
+  not therapy or counselling. If things feel unsafe or overwhelming\, talk 
+ to your GP or a relationship counselling service. In an emergency call 999
+ .
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 46/60: Agree how to take a break
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 47/60: Say yes
+DTSTART;TZID=Europe/London:20270312T073000
+DTEND;TZID=Europe/London:20270312T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-47@tchworks.co.uk
+DESCRIPTION:TODAY: Think of something small they have asked for before tha
+ t you pushed back on: a different film\, a weekend plan\, moving the sofa.
+  Say yes to it today\, happily.\n\nWHY IT WORKS: Being open to your partne
+ r's influence is one of the habits most linked to stable relationships.\n
+ \nDay 47 of 60 · Week 7: Handle the hard bits well\n\nTCH Works · Better
+  Partner Plan. Everyday relationship ideas\, not therapy or counselling. I
+ f things feel unsafe or overwhelming\, talk to your GP or a relationship c
+ ounselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 47/60: Say yes
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 48/60: Back them up
+DTSTART;TZID=Europe/London:20270313T073000
+DTEND;TZID=Europe/London:20270313T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-48@tchworks.co.uk
+DESCRIPTION:TODAY: Today\, in front of the kids\, family or friends\, back
+  up their decision or opinion\, even if you'd have done it differently. Di
+ scuss any disagreement later\, in private.\n\nWHY IT WORKS: Feeling like a
+  team in public matters\, especially in front of children.\n\nDay 48 of 60
+  · Week 7: Handle the hard bits well\n\nTCH Works · Better Partner Plan.
+  Everyday relationship ideas\, not therapy or counselling. If things feel 
+ unsafe or overwhelming\, talk to your GP or a relationship counselling ser
+ vice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 48/60: Back them up
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 49/60: Seventh check-in: anything left over?
+DTSTART;TZID=Europe/London:20270314T073000
+DTEND;TZID=Europe/London:20270314T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-49@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'Is there anything from the last month that's stil
+ l bothering you?' Listen without defending. Thank them for saying it. Agre
+ e one thing to do about it.\n\nWHY IT WORKS: Things left unsaid don't go a
+ way. They just come out later\, at worse times.\n\nDay 49 of 60 · Week 7:
+  Handle the hard bits well\n\nTCH Works · Better Partner Plan. Everyday r
+ elationship ideas\, not therapy or counselling. If things feel unsafe or o
+ verwhelming\, talk to your GP or a relationship counselling service. In an
+  emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 49/60: Seventh check-in: anything left over?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 50/60: Start a small ritual
+DTSTART;TZID=Europe/London:20270315T073000
+DTEND;TZID=Europe/London:20270315T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-50@tchworks.co.uk
+DESCRIPTION:TODAY: Suggest one tiny ritual you could both keep: a cup of t
+ ea in bed on Saturdays\, a walk after Sunday lunch\, a goodnight text when
+  one of you is away. Start it this week.\n\nWHY IT WORKS: Small\, predicta
+ ble rituals give a relationship rhythm. They're easy to keep because they'
+ re small.\n\nDay 50 of 60 · Week 8: Make it stick\n\nTCH Works · Better 
+ Partner Plan. Everyday relationship ideas\, not therapy or counselling. If
+  things feel unsafe or overwhelming\, talk to your GP or a relationship co
+ unselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 50/60: Start a small ritual
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 51/60: Talk about next year
+DTSTART;TZID=Europe/London:20270316T073000
+DTEND;TZID=Europe/London:20270316T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-51@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'What would make next year a great year for us?' W
+ rite down a few ideas together. Pick one to start on.\n\nWHY IT WORKS: Hav
+ ing shared plans\, big or small\, keeps you looking in the same direction.
+ \n\nDay 51 of 60 · Week 8: Make it stick\n\nTCH Works · Better Partner P
+ lan. Everyday relationship ideas\, not therapy or counselling. If things f
+ eel unsafe or overwhelming\, talk to your GP or a relationship counselling
+  service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 51/60: Talk about next year
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 52/60: One shared goal
+DTSTART;TZID=Europe/London:20270317T073000
+DTEND;TZID=Europe/London:20270317T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-52@tchworks.co.uk
+DESCRIPTION:TODAY: Choose one small goal you can work on together over the
+  next month: a savings pot for a weekend away\, a couch-to-5k\, clearing t
+ he loft. Agree the first step today.\n\nWHY IT WORKS: Working towards some
+ thing together builds a sense of being a team.\n\nDay 52 of 60 · Week 8: 
+ Make it stick\n\nTCH Works · Better Partner Plan. Everyday relationship i
+ deas\, not therapy or counselling. If things feel unsafe or overwhelming\,
+  talk to your GP or a relationship counselling service. In an emergency ca
+ ll 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 52/60: One shared goal
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 53/60: Write them a letter
+DTSTART;TZID=Europe/London:20270318T073000
+DTEND;TZID=Europe/London:20270318T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-53@tchworks.co.uk
+DESCRIPTION:TODAY: Write them a short letter by hand: five things you love
+  about them\, and one moment you'll never forget. Give it to them or leave
+  it somewhere they'll find it.\n\nWHY IT WORKS: People reread these letter
+ s for years. It's rare to be told\, in writing\, why you're loved.\n\nDay 
+ 53 of 60 · Week 8: Make it stick\n\nTCH Works · Better Partner Plan. Eve
+ ryday relationship ideas\, not therapy or counselling. If things feel unsa
+ fe or overwhelming\, talk to your GP or a relationship counselling service
+ . In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 53/60: Write them a letter
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 54/60: Be kind to their people
+DTSTART;TZID=Europe/London:20270319T073000
+DTEND;TZID=Europe/London:20270319T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-54@tchworks.co.uk
+DESCRIPTION:TODAY: Do something kind for someone important to them: ring t
+ heir mum\, remember their friend's birthday\, offer to help their brother 
+ move house.\n\nWHY IT WORKS: Looking after the people they love is a way o
+ f looking after them.\n\nDay 54 of 60 · Week 8: Make it stick\n\nTCH Work
+ s · Better Partner Plan. Everyday relationship ideas\, not therapy or cou
+ nselling. If things feel unsafe or overwhelming\, talk to your GP or a rel
+ ationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 54/60: Be kind to their people
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 55/60: A small surprise
+DTSTART;TZID=Europe/London:20270320T073000
+DTEND;TZID=Europe/London:20270320T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-55@tchworks.co.uk
+DESCRIPTION:TODAY: Get them something small\, under a fiver\, linked to so
+ mething they mentioned recently: a magazine\, a plant\, the chocolate they
+  said they missed.\n\nWHY IT WORKS: The point isn't the money. It's the pr
+ oof you were listening.\n\nDay 55 of 60 · Week 8: Make it stick\n\nTCH Wo
+ rks · Better Partner Plan. Everyday relationship ideas\, not therapy or c
+ ounselling. If things feel unsafe or overwhelming\, talk to your GP or a r
+ elationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 55/60: A small surprise
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 56/60: Take the morning
+DTSTART;TZID=Europe/London:20270321T073000
+DTEND;TZID=Europe/London:20270321T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-56@tchworks.co.uk
+DESCRIPTION:TODAY: Give them a lie-in or a slow morning this week. You han
+ dle everything until 10am. Bring a drink up if it's welcome.\n\nWHY IT WOR
+ KS: Rest that's protected by someone else is a different kind of rest.\n\n
+ Day 56 of 60 · Week 8: Make it stick\n\nTCH Works · Better Partner Plan.
+  Everyday relationship ideas\, not therapy or counselling. If things feel 
+ unsafe or overwhelming\, talk to your GP or a relationship counselling ser
+ vice. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 56/60: Take the morning
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 57/60: Thank them for the invisible things
+DTSTART;TZID=Europe/London:20270322T073000
+DTEND;TZID=Europe/London:20270322T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-57@tchworks.co.uk
+DESCRIPTION:TODAY: Thank them today for something nobody usually notices: 
+ remembering everyone's birthdays\, keeping on top of the bills\, always kn
+ owing where the plasters are.\n\nWHY IT WORKS: Invisible work feels lonely
+ . Naming it makes it shared.\n\nDay 57 of 60 · Week 8: Make it stick\n\nT
+ CH Works · Better Partner Plan. Everyday relationship ideas\, not therapy
+  or counselling. If things feel unsafe or overwhelming\, talk to your GP o
+ r a relationship counselling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 57/60: Thank them for the invisible things
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 58/60: Ask the big question
+DTSTART;TZID=Europe/London:20270323T073000
+DTEND;TZID=Europe/London:20270323T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-58@tchworks.co.uk
+DESCRIPTION:TODAY: Ask: 'What's one thing I could do more often that would
+  make you feel looked after?' Write the answer down and set yourself a wee
+ kly reminder to do it.\n\nWHY IT WORKS: Asking directly is better than gue
+ ssing\, and a reminder turns good intentions into a habit.\n\nDay 58 of 60
+  · Week 8: Make it stick\n\nTCH Works · Better Partner Plan. Everyday re
+ lationship ideas\, not therapy or counselling. If things feel unsafe or ov
+ erwhelming\, talk to your GP or a relationship counselling service. In an 
+ emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 58/60: Ask the big question
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 59/60: Repeat your best one
+DTSTART;TZID=Europe/London:20270324T073000
+DTEND;TZID=Europe/London:20270324T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-59@tchworks.co.uk
+DESCRIPTION:TODAY: Look back over the last eight weeks. Which nudge did th
+ ey react to best? Do it again today.\n\nWHY IT WORKS: The ones that worked
+  for your partner are worth more than any list.\n\nDay 59 of 60 · Week 8:
+  Make it stick\n\nTCH Works · Better Partner Plan. Everyday relationship 
+ ideas\, not therapy or counselling. If things feel unsafe or overwhelming
+ \, talk to your GP or a relationship counselling service. In an emergency 
+ call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 59/60: Repeat your best one
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nudge 60/60: Last check-in: keep three
+DTSTART;TZID=Europe/London:20270325T073000
+DTEND;TZID=Europe/London:20270325T074000
+DTSTAMP:20261008T030000Z
+UID:tch-better-partner-they-2027-01-25-60@tchworks.co.uk
+DESCRIPTION:TODAY: Have one more 15-minute check-in. Together\, choose thr
+ ee things from the last 60 days to keep doing. Set each one as a repeating
+  reminder in your phone now\, before you forget.\n\nWHY IT WORKS: Habits l
+ ast when they're scheduled. This is how the 60 days keep working after the
+ y end.\n\nDay 60 of 60 · Week 8: Make it stick\n\nTCH Works · Better Par
+ tner Plan. Everyday relationship ideas\, not therapy or counselling. If th
+ ings feel unsafe or overwhelming\, talk to your GP or a relationship couns
+ elling service. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/185521ab6e704744/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nudge 60/60: Last check-in: keep three
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
