@@ -270,5 +270,13 @@
   "page": "https://www.tchworks.co.uk/shop/ai-tips-pack/",
   "pages": 7,
   "category": "work"
+ },
+ "great-british-christmas-quiz": {
+  "title": "Great British Christmas Quiz",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/fZu7sKdgOazbbsc2rL2881d",
+  "page": "https://www.tchworks.co.uk/shop/great-british-christmas-quiz/",
+  "pages": 16,
+  "category": "seasonal"
  }
 }
