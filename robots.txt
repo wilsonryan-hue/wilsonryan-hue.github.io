@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /f/
 Disallow: /free/dl/
+Disallow: /planners/u/
 
 Sitemap: https://www.tchworks.co.uk/sitemap.xml

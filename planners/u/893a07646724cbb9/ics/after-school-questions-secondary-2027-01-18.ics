@@ -1,0 +1,1456 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TCH Works//Planners 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:12 weeks of better questions than 'How was your day?'. From T
+ CH Works.
+X-WR-CALNAME:After-School Questions (secondary age 11-16)
+X-WR-TIMEZONE:Europe/London
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:Pickup question: Who's the funniest person in your form at the mom
+ ent?
+DTSTART;TZID=Europe/London:20270118T151500
+DTEND;TZID=Europe/London:20270118T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-1@tchworks.co.uk
+DESCRIPTION:ASK: Who's the funniest person in your form at the moment?\n\n
+ IF YOU GET A SHRUG: What do they do that's so funny?\n\nTIP: Give them 10 
+ to 20 minutes and a snack before asking anything. Many children need time 
+ to decompress after school.\n\nSchool day 1 of 60 · Friends and people. O
+ n a school holiday or INSET day\, just skip it.\n\nTCH Works · After-Scho
+ ol Questions. Everyday conversation ideas\, not professional advice. If yo
+ ur child tells you about bullying or harm\, talk to their school. For worr
+ ies about a child's safety\, the NSPCC helpline is 0808 800 5000. In an em
+ ergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Who's the funniest person in your form at the
+  moment?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's one thing you learned today that you think
+  is actually useful?
+DTSTART;TZID=Europe/London:20270119T151500
+DTEND;TZID=Europe/London:20270119T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-2@tchworks.co.uk
+DESCRIPTION:ASK: What's one thing you learned today that you think is actu
+ ally useful?\n\nIF YOU GET A SHRUG: Useful for what?\n\nTIP: Side by side 
+ beats face to face. Talk tends to flow more easily in the car or on a walk
+  than across a table.\n\nSchool day 2 of 60 · Learning. On a school holid
+ ay or INSET day\, just skip it.\n\nTCH Works · After-School Questions. Ev
+ eryday conversation ideas\, not professional advice. If your child tells y
+ ou about bullying or harm\, talk to their school. For worries about a chil
+ d's safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999
+ .
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's one thing you learned today that you t
+ hink is actually useful?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Best bit and worst bit of today. One word each.
+DTSTART;TZID=Europe/London:20270120T151500
+DTEND;TZID=Europe/London:20270120T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-3@tchworks.co.uk
+DESCRIPTION:ASK: Best bit and worst bit of today. One word each.\n\nIF YOU
+  GET A SHRUG: Want to expand on either?\n\nTIP: Ask one question\, not fiv
+ e. Then wait. Count to five in your head before filling the silence.\n\nSc
+ hool day 3 of 60 · Feelings. On a school holiday or INSET day\, just skip
+  it.\n\nTCH Works · After-School Questions. Everyday conversation ideas\,
+  not professional advice. If your child tells you about bullying or harm\,
+  talk to their school. For worries about a child's safety\, the NSPCC help
+ line is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Best bit and worst bit of today. One word eac
+ h.
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the most overrated thing right now?
+DTSTART;TZID=Europe/London:20270121T151500
+DTEND;TZID=Europe/London:20270121T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-4@tchworks.co.uk
+DESCRIPTION:ASK: What's the most overrated thing right now?\n\nIF YOU GET 
+ A SHRUG: And the most underrated?\n\nTIP: Answer it yourself too. Telling 
+ them your best and worst bit of the day makes it a conversation\, not an i
+ nterview.\n\nSchool day 4 of 60 · Just for fun. On a school holiday or IN
+ SET day\, just skip it.\n\nTCH Works · After-School Questions. Everyday c
+ onversation ideas\, not professional advice. If your child tells you about
+  bullying or harm\, talk to their school. For worries about a child's safe
+ ty\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the most overrated thing right now?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the plan for the weekend?
+DTSTART;TZID=Europe/London:20270122T151500
+DTEND;TZID=Europe/London:20270122T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-5@tchworks.co.uk
+DESCRIPTION:ASK: What's the plan for the weekend?\n\nIF YOU GET A SHRUG: D
+ o you need a lift anywhere?\n\nTIP: If you get a one-word answer\, try 'Te
+ ll me more about that' rather than a new question.\n\nSchool day 5 of 60 
+ · Wrapping up the week. On a school holiday or INSET day\, just skip it.
+ \n\nTCH Works · After-School Questions. Everyday conversation ideas\, not
+  professional advice. If your child tells you about bullying or harm\, tal
+ k to their school. For worries about a child's safety\, the NSPCC helpline
+  is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the plan for the weekend?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Any drama today? You don't have to name names.
+DTSTART;TZID=Europe/London:20270125T151500
+DTEND;TZID=Europe/London:20270125T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-6@tchworks.co.uk
+DESCRIPTION:ASK: Any drama today? You don't have to name names.\n\nIF YOU 
+ GET A SHRUG: Whose side are you on?\n\nTIP: Name the feeling before you fi
+ x anything: 'That sounds really frustrating.' Advice lands better once the
+ y feel heard.\n\nSchool day 6 of 60 · Friends and people. On a school hol
+ iday or INSET day\, just skip it.\n\nTCH Works · After-School Questions. 
+ Everyday conversation ideas\, not professional advice. If your child tells
+  you about bullying or harm\, talk to their school. For worries about a ch
+ ild's safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 9
+ 99.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Any drama today? You don't have to name names
+ .
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If you could drop one subject tomorrow\, which wo
+ uld it be? And which would you keep forever?
+DTSTART;TZID=Europe/London:20270126T151500
+DTEND;TZID=Europe/London:20270126T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-7@tchworks.co.uk
+DESCRIPTION:ASK: If you could drop one subject tomorrow\, which would it b
+ e? And which would you keep forever?\n\nIF YOU GET A SHRUG: What makes the
+  good one good? The subject or the teacher?\n\nTIP: Bedtime is often when 
+ the real stuff comes out. If pickup gets a shrug\, try the follow-up at be
+ dtime.\n\nSchool day 7 of 60 · Learning. On a school holiday or INSET day
+ \, just skip it.\n\nTCH Works · After-School Questions. Everyday conversa
+ tion ideas\, not professional advice. If your child tells you about bullyi
+ ng or harm\, talk to their school. For worries about a child's safety\, th
+ e NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If you could drop one subject tomorrow\, whic
+ h would it be? And which would you keep forever?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Out of 10\, how's this week going?
+DTSTART;TZID=Europe/London:20270127T151500
+DTEND;TZID=Europe/London:20270127T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-8@tchworks.co.uk
+DESCRIPTION:ASK: Out of 10\, how's this week going?\n\nIF YOU GET A SHRUG:
+  What would make it a point higher?\n\nTIP: If they tell you something har
+ d\, thank them for telling you first. Save any reaction for later.\n\nScho
+ ol day 8 of 60 · Feelings. On a school holiday or INSET day\, just skip i
+ t.\n\nTCH Works · After-School Questions. Everyday conversation ideas\, n
+ ot professional advice. If your child tells you about bullying or harm\, t
+ alk to their school. For worries about a child's safety\, the NSPCC helpli
+ ne is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Out of 10\, how's this week going?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If you ran the school for a day\, what's the firs
+ t thing you'd change?
+DTSTART;TZID=Europe/London:20270128T151500
+DTEND;TZID=Europe/London:20270128T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-9@tchworks.co.uk
+DESCRIPTION:ASK: If you ran the school for a day\, what's the first thing 
+ you'd change?\n\nIF YOU GET A SHRUG: What would the teachers think?\n\nTIP
+ : Remember the names they mention. Asking about that friend or teacher nex
+ t week shows you listened.\n\nSchool day 9 of 60 · Just for fun. On a sch
+ ool holiday or INSET day\, just skip it.\n\nTCH Works · After-School Ques
+ tions. Everyday conversation ideas\, not professional advice. If your chil
+ d tells you about bullying or harm\, talk to their school. For worries abo
+ ut a child's safety\, the NSPCC helpline is 0808 800 5000. In an emergency
+  call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If you ran the school for a day\, what's the 
+ first thing you'd change?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What was the highlight of your week?
+DTSTART;TZID=Europe/London:20270129T151500
+DTEND;TZID=Europe/London:20270129T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-10@tchworks.co.uk
+DESCRIPTION:ASK: What was the highlight of your week?\n\nIF YOU GET A SHRU
+ G: Who was there?\n\nTIP: A shrug isn't failure. You're showing you're int
+ erested\, every day. That's the point.\n\nSchool day 10 of 60 · Wrapping 
+ up the week. On a school holiday or INSET day\, just skip it.\n\nTCH Works
+  · After-School Questions. Everyday conversation ideas\, not professional
+  advice. If your child tells you about bullying or harm\, talk to their sc
+ hool. For worries about a child's safety\, the NSPCC helpline is 0808 800 
+ 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What was the highlight of your week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Which teacher seems to actually enjoy their job?
+DTSTART;TZID=Europe/London:20270201T151500
+DTEND;TZID=Europe/London:20270201T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-11@tchworks.co.uk
+DESCRIPTION:ASK: Which teacher seems to actually enjoy their job?\n\nIF YO
+ U GET A SHRUG: How can you tell?\n\nTIP: Avoid questions with a 'right' an
+ swer\, like 'Were you good today?'. They teach children to report\, not to
+  talk.\n\nSchool day 11 of 60 · Friends and people. On a school holiday o
+ r INSET day\, just skip it.\n\nTCH Works · After-School Questions. Everyd
+ ay conversation ideas\, not professional advice. If your child tells you a
+ bout bullying or harm\, talk to their school. For worries about a child's 
+ safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Which teacher seems to actually enjoy their j
+ ob?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the best thing a teacher said this week?
+DTSTART;TZID=Europe/London:20270202T151500
+DTEND;TZID=Europe/London:20270202T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-12@tchworks.co.uk
+DESCRIPTION:ASK: What's the best thing a teacher said this week?\n\nIF YOU
+  GET A SHRUG: Did it change your mind about anything?\n\nTIP: Notice the g
+ ood. If they tell you about something they did well\, ask how they did it.
+ \n\nSchool day 12 of 60 · Learning. On a school holiday or INSET day\, ju
+ st skip it.\n\nTCH Works · After-School Questions. Everyday conversation 
+ ideas\, not professional advice. If your child tells you about bullying or
+  harm\, talk to their school. For worries about a child's safety\, the NSP
+ CC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the best thing a teacher said this wee
+ k?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's taking up most of your head space at the m
+ oment?
+DTSTART;TZID=Europe/London:20270203T151500
+DTEND;TZID=Europe/London:20270203T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-13@tchworks.co.uk
+DESCRIPTION:ASK: What's taking up most of your head space at the moment?\n
+ \nIF YOU GET A SHRUG: Is it a good thing or a heavy thing?\n\nTIP: If they
+ 're on their phone or wearing headphones\, ask once and leave it. Try agai
+ n at tea.\n\nSchool day 13 of 60 · Feelings. On a school holiday or INSET
+  day\, just skip it.\n\nTCH Works · After-School Questions. Everyday conv
+ ersation ideas\, not professional advice. If your child tells you about bu
+ llying or harm\, talk to their school. For worries about a child's safety
+ \, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's taking up most of your head space at t
+ he moment?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the best thing you've watched or played th
+ is week?
+DTSTART;TZID=Europe/London:20270204T151500
+DTEND;TZID=Europe/London:20270204T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-14@tchworks.co.uk
+DESCRIPTION:ASK: What's the best thing you've watched or played this week?
+ \n\nIF YOU GET A SHRUG: Should I watch it\, or is it not for me?\n\nTIP: O
+ pinions travel better than reports. 'What do you think about...' gets more
+  than 'What did you do...'.\n\nSchool day 14 of 60 · Just for fun. On a s
+ chool holiday or INSET day\, just skip it.\n\nTCH Works · After-School Qu
+ estions. Everyday conversation ideas\, not professional advice. If your ch
+ ild tells you about bullying or harm\, talk to their school. For worries a
+ bout a child's safety\, the NSPCC helpline is 0808 800 5000. In an emergen
+ cy call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the best thing you've watched or playe
+ d this week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Anything next week I need to know about? Money\, 
+ forms\, kit\, trips?
+DTSTART;TZID=Europe/London:20270205T151500
+DTEND;TZID=Europe/London:20270205T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-15@tchworks.co.uk
+DESCRIPTION:ASK: Anything next week I need to know about? Money\, forms\, 
+ kit\, trips?\n\nIF YOU GET A SHRUG: Let's put it in the calendar now so it
+  doesn't get lost.\n\nTIP: Asking about their friends is often easier for 
+ teenagers than asking about themselves.\n\nSchool day 15 of 60 · Wrapping
+  up the week. On a school holiday or INSET day\, just skip it.\n\nTCH Work
+ s · After-School Questions. Everyday conversation ideas\, not professiona
+ l advice. If your child tells you about bullying or harm\, talk to their s
+ chool. For worries about a child's safety\, the NSPCC helpline is 0808 800
+  5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Anything next week I need to know about? Mone
+ y\, forms\, kit\, trips?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Who did you sit with at lunch? Is that the usual 
+ group?
+DTSTART;TZID=Europe/London:20270208T151500
+DTEND;TZID=Europe/London:20270208T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-16@tchworks.co.uk
+DESCRIPTION:ASK: Who did you sit with at lunch? Is that the usual group?\n
+ \nIF YOU GET A SHRUG: Is the group changing much this year?\n\nTIP: Keep y
+ our reaction small when they tell you something big. A calm reaction makes
+  them more likely to tell you next time.\n\nSchool day 16 of 60 · Friends
+  and people. On a school holiday or INSET day\, just skip it.\n\nTCH Works
+  · After-School Questions. Everyday conversation ideas\, not professional
+  advice. If your child tells you about bullying or harm\, talk to their sc
+ hool. For worries about a child's safety\, the NSPCC helpline is 0808 800 
+ 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Who did you sit with at lunch? Is that the us
+ ual group?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Is there anything you're stuck on that I could he
+ lp with\, or find someone who can?
+DTSTART;TZID=Europe/London:20270209T151500
+DTEND;TZID=Europe/London:20270209T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-17@tchworks.co.uk
+DESCRIPTION:ASK: Is there anything you're stuck on that I could help with
+ \, or find someone who can?\n\nIF YOU GET A SHRUG: No pressure. The offer 
+ stands.\n\nTIP: Give them 10 to 20 minutes and a snack before asking anyth
+ ing. Many children need time to decompress after school.\n\nSchool day 17 
+ of 60 · Learning. On a school holiday or INSET day\, just skip it.\n\nTCH
+  Works · After-School Questions. Everyday conversation ideas\, not profes
+ sional advice. If your child tells you about bullying or harm\, talk to th
+ eir school. For worries about a child's safety\, the NSPCC helpline is 080
+ 8 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Is there anything you're stuck on that I coul
+ d help with\, or find someone who can?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Is there anything you'd like me to just listen to
+ \, no advice?
+DTSTART;TZID=Europe/London:20270210T151500
+DTEND;TZID=Europe/London:20270210T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-18@tchworks.co.uk
+DESCRIPTION:ASK: Is there anything you'd like me to just listen to\, no ad
+ vice?\n\nIF YOU GET A SHRUG: I'm all ears. I'll keep my opinions to myself
+ .\n\nTIP: Side by side beats face to face. Talk tends to flow more easily 
+ in the car or on a walk than across a table.\n\nSchool day 18 of 60 · Fee
+ lings. On a school holiday or INSET day\, just skip it.\n\nTCH Works · Af
+ ter-School Questions. Everyday conversation ideas\, not professional advic
+ e. If your child tells you about bullying or harm\, talk to their school. 
+ For worries about a child's safety\, the NSPCC helpline is 0808 800 5000. 
+ In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Is there anything you'd like me to just liste
+ n to\, no advice?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the funniest thing you've seen online this
+  week? Send it to me.
+DTSTART;TZID=Europe/London:20270211T151500
+DTEND;TZID=Europe/London:20270211T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-19@tchworks.co.uk
+DESCRIPTION:ASK: What's the funniest thing you've seen online this week? S
+ end it to me.\n\nIF YOU GET A SHRUG: Explain why it's funny. Slowly.\n\nTI
+ P: Ask one question\, not five. Then wait. Count to five in your head befo
+ re filling the silence.\n\nSchool day 19 of 60 · Just for fun. On a schoo
+ l holiday or INSET day\, just skip it.\n\nTCH Works · After-School Questi
+ ons. Everyday conversation ideas\, not professional advice. If your child 
+ tells you about bullying or harm\, talk to their school. For worries about
+  a child's safety\, the NSPCC helpline is 0808 800 5000. In an emergency c
+ all 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the funniest thing you've seen online 
+ this week? Send it to me.
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Is there anything you'd like us to do together th
+ is weekend?
+DTSTART;TZID=Europe/London:20270212T151500
+DTEND;TZID=Europe/London:20270212T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-20@tchworks.co.uk
+DESCRIPTION:ASK: Is there anything you'd like us to do together this weeke
+ nd?\n\nIF YOU GET A SHRUG: Your choice\, within reason.\n\nTIP: Answer it 
+ yourself too. Telling them your best and worst bit of the day makes it a c
+ onversation\, not an interview.\n\nSchool day 20 of 60 · Wrapping up the 
+ week. On a school holiday or INSET day\, just skip it.\n\nTCH Works · Aft
+ er-School Questions. Everyday conversation ideas\, not professional advice
+ . If your child tells you about bullying or harm\, talk to their school. F
+ or worries about a child's safety\, the NSPCC helpline is 0808 800 5000. I
+ n an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Is there anything you'd like us to do togethe
+ r this weekend?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Has anyone surprised you lately\, in a good way?
+DTSTART;TZID=Europe/London:20270215T151500
+DTEND;TZID=Europe/London:20270215T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-21@tchworks.co.uk
+DESCRIPTION:ASK: Has anyone surprised you lately\, in a good way?\n\nIF YO
+ U GET A SHRUG: What did they do?\n\nTIP: If you get a one-word answer\, tr
+ y 'Tell me more about that' rather than a new question.\n\nSchool day 21 o
+ f 60 · Friends and people. On a school holiday or INSET day\, just skip i
+ t.\n\nTCH Works · After-School Questions. Everyday conversation ideas\, n
+ ot professional advice. If your child tells you about bullying or harm\, t
+ alk to their school. For worries about a child's safety\, the NSPCC helpli
+ ne is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Has anyone surprised you lately\, in a good w
+ ay?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Explain what you're doing in science like I'm ten
+ .
+DTSTART;TZID=Europe/London:20270216T151500
+DTEND;TZID=Europe/London:20270216T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-22@tchworks.co.uk
+DESCRIPTION:ASK: Explain what you're doing in science like I'm ten.\n\nIF 
+ YOU GET A SHRUG: Okay\, now like I'm a professor.\n\nTIP: Name the feeling
+  before you fix anything: 'That sounds really frustrating.' Advice lands b
+ etter once they feel heard.\n\nSchool day 22 of 60 · Learning. On a schoo
+ l holiday or INSET day\, just skip it.\n\nTCH Works · After-School Questi
+ ons. Everyday conversation ideas\, not professional advice. If your child 
+ tells you about bullying or harm\, talk to their school. For worries about
+  a child's safety\, the NSPCC helpline is 0808 800 5000. In an emergency c
+ all 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Explain what you're doing in science like I'm
+  ten.
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: When did you last feel properly relaxed?
+DTSTART;TZID=Europe/London:20270217T151500
+DTEND;TZID=Europe/London:20270217T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-23@tchworks.co.uk
+DESCRIPTION:ASK: When did you last feel properly relaxed?\n\nIF YOU GET A 
+ SHRUG: What were you doing?\n\nTIP: Bedtime is often when the real stuff c
+ omes out. If pickup gets a shrug\, try the follow-up at bedtime.\n\nSchool
+  day 23 of 60 · Feelings. On a school holiday or INSET day\, just skip it
+ .\n\nTCH Works · After-School Questions. Everyday conversation ideas\, no
+ t professional advice. If your child tells you about bullying or harm\, ta
+ lk to their school. For worries about a child's safety\, the NSPCC helplin
+ e is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: When did you last feel properly relaxed?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If you could swap lives with one teacher for a da
+ y\, who would it be?
+DTSTART;TZID=Europe/London:20270218T151500
+DTEND;TZID=Europe/London:20270218T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-24@tchworks.co.uk
+DESCRIPTION:ASK: If you could swap lives with one teacher for a day\, who 
+ would it be?\n\nIF YOU GET A SHRUG: What would you do with their class?\n
+ \nTIP: If they tell you something hard\, thank them for telling you first.
+  Save any reaction for later.\n\nSchool day 24 of 60 · Just for fun. On a
+  school holiday or INSET day\, just skip it.\n\nTCH Works · After-School 
+ Questions. Everyday conversation ideas\, not professional advice. If your 
+ child tells you about bullying or harm\, talk to their school. For worries
+  about a child's safety\, the NSPCC helpline is 0808 800 5000. In an emerg
+ ency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If you could swap lives with one teacher for 
+ a day\, who would it be?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What did you nail this week?
+DTSTART;TZID=Europe/London:20270219T151500
+DTEND;TZID=Europe/London:20270219T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-25@tchworks.co.uk
+DESCRIPTION:ASK: What did you nail this week?\n\nIF YOU GET A SHRUG: Did a
+ nyone notice?\n\nTIP: Remember the names they mention. Asking about that f
+ riend or teacher next week shows you listened.\n\nSchool day 25 of 60 · W
+ rapping up the week. On a school holiday or INSET day\, just skip it.\n\nT
+ CH Works · After-School Questions. Everyday conversation ideas\, not prof
+ essional advice. If your child tells you about bullying or harm\, talk to 
+ their school. For worries about a child's safety\, the NSPCC helpline is 0
+ 808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What did you nail this week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's everyone at school talking about this week
+ ?
+DTSTART;TZID=Europe/London:20270222T151500
+DTEND;TZID=Europe/London:20270222T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-26@tchworks.co.uk
+DESCRIPTION:ASK: What's everyone at school talking about this week?\n\nIF 
+ YOU GET A SHRUG: What do you think about it?\n\nTIP: A shrug isn't failure
+ . You're showing you're interested\, every day. That's the point.\n\nSchoo
+ l day 26 of 60 · Friends and people. On a school holiday or INSET day\, j
+ ust skip it.\n\nTCH Works · After-School Questions. Everyday conversation
+  ideas\, not professional advice. If your child tells you about bullying o
+ r harm\, talk to their school. For worries about a child's safety\, the NS
+ PCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's everyone at school talking about this 
+ week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the biggest piece of homework you've got t
+ his week?
+DTSTART;TZID=Europe/London:20270223T151500
+DTEND;TZID=Europe/London:20270223T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-27@tchworks.co.uk
+DESCRIPTION:ASK: What's the biggest piece of homework you've got this week
+ ?\n\nIF YOU GET A SHRUG: When are you planning to do it? Do you need anyth
+ ing for it?\n\nTIP: Avoid questions with a 'right' answer\, like 'Were you
+  good today?'. They teach children to report\, not to talk.\n\nSchool day 
+ 27 of 60 · Learning. On a school holiday or INSET day\, just skip it.\n\n
+ TCH Works · After-School Questions. Everyday conversation ideas\, not pro
+ fessional advice. If your child tells you about bullying or harm\, talk to
+  their school. For worries about a child's safety\, the NSPCC helpline is 
+ 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the biggest piece of homework you've g
+ ot this week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's stressing your friends out at the moment?
+DTSTART;TZID=Europe/London:20270224T151500
+DTEND;TZID=Europe/London:20270224T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-28@tchworks.co.uk
+DESCRIPTION:ASK: What's stressing your friends out at the moment?\n\nIF YO
+ U GET A SHRUG: Does any of that affect you too?\n\nTIP: Notice the good. I
+ f they tell you about something they did well\, ask how they did it.\n\nSc
+ hool day 28 of 60 · Feelings. On a school holiday or INSET day\, just ski
+ p it.\n\nTCH Works · After-School Questions. Everyday conversation ideas
+ \, not professional advice. If your child tells you about bullying or harm
+ \, talk to their school. For worries about a child's safety\, the NSPCC he
+ lpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's stressing your friends out at the mome
+ nt?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If you had £100 that you had to spend today\, wh
+ at would you buy?
+DTSTART;TZID=Europe/London:20270225T151500
+DTEND;TZID=Europe/London:20270225T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-29@tchworks.co.uk
+DESCRIPTION:ASK: If you had £100 that you had to spend today\, what would
+  you buy?\n\nIF YOU GET A SHRUG: And if you had to give it away?\n\nTIP: I
+ f they're on their phone or wearing headphones\, ask once and leave it. Tr
+ y again at tea.\n\nSchool day 29 of 60 · Just for fun. On a school holida
+ y or INSET day\, just skip it.\n\nTCH Works · After-School Questions. Eve
+ ryday conversation ideas\, not professional advice. If your child tells yo
+ u about bullying or harm\, talk to their school. For worries about a child
+ 's safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If you had £100 that you had to spend today
+ \, what would you buy?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Anything you'd do differently if you could redo t
+ his week?
+DTSTART;TZID=Europe/London:20270226T151500
+DTEND;TZID=Europe/London:20270226T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-30@tchworks.co.uk
+DESCRIPTION:ASK: Anything you'd do differently if you could redo this week
+ ?\n\nIF YOU GET A SHRUG: What would you change?\n\nTIP: Opinions travel be
+ tter than reports. 'What do you think about...' gets more than 'What did y
+ ou do...'.\n\nSchool day 30 of 60 · Wrapping up the week. On a school hol
+ iday or INSET day\, just skip it.\n\nTCH Works · After-School Questions. 
+ Everyday conversation ideas\, not professional advice. If your child tells
+  you about bullying or harm\, talk to their school. For worries about a ch
+ ild's safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 9
+ 99.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Anything you'd do differently if you could re
+ do this week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Which of your friends do you think I'd get on wit
+ h best?
+DTSTART;TZID=Europe/London:20270301T151500
+DTEND;TZID=Europe/London:20270301T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-31@tchworks.co.uk
+DESCRIPTION:ASK: Which of your friends do you think I'd get on with best?
+ \n\nIF YOU GET A SHRUG: Why them?\n\nTIP: Asking about their friends is of
+ ten easier for teenagers than asking about themselves.\n\nSchool day 31 of
+  60 · Friends and people. On a school holiday or INSET day\, just skip it
+ .\n\nTCH Works · After-School Questions. Everyday conversation ideas\, no
+ t professional advice. If your child tells you about bullying or harm\, ta
+ lk to their school. For worries about a child's safety\, the NSPCC helplin
+ e is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Which of your friends do you think I'd get on
+  with best?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If you could design your own lesson\, what would 
+ it be about?
+DTSTART;TZID=Europe/London:20270302T151500
+DTEND;TZID=Europe/London:20270302T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-32@tchworks.co.uk
+DESCRIPTION:ASK: If you could design your own lesson\, what would it be ab
+ out?\n\nIF YOU GET A SHRUG: Who would you get to teach it?\n\nTIP: Keep yo
+ ur reaction small when they tell you something big. A calm reaction makes 
+ them more likely to tell you next time.\n\nSchool day 32 of 60 · Learning
+ . On a school holiday or INSET day\, just skip it.\n\nTCH Works · After-S
+ chool Questions. Everyday conversation ideas\, not professional advice. If
+  your child tells you about bullying or harm\, talk to their school. For w
+ orries about a child's safety\, the NSPCC helpline is 0808 800 5000. In an
+  emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If you could design your own lesson\, what wo
+ uld it be about?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Is there anything you'd like me to stop asking ab
+ out?
+DTSTART;TZID=Europe/London:20270303T151500
+DTEND;TZID=Europe/London:20270303T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-33@tchworks.co.uk
+DESCRIPTION:ASK: Is there anything you'd like me to stop asking about?\n\n
+ IF YOU GET A SHRUG: Fair enough. Thanks for telling me.\n\nTIP: Give them 
+ 10 to 20 minutes and a snack before asking anything. Many children need ti
+ me to decompress after school.\n\nSchool day 33 of 60 · Feelings. On a sc
+ hool holiday or INSET day\, just skip it.\n\nTCH Works · After-School Que
+ stions. Everyday conversation ideas\, not professional advice. If your chi
+ ld tells you about bullying or harm\, talk to their school. For worries ab
+ out a child's safety\, the NSPCC helpline is 0808 800 5000. In an emergenc
+ y call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Is there anything you'd like me to stop askin
+ g about?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What song have you had on repeat? Put it on in th
+ e car.
+DTSTART;TZID=Europe/London:20270304T151500
+DTEND;TZID=Europe/London:20270304T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-34@tchworks.co.uk
+DESCRIPTION:ASK: What song have you had on repeat? Put it on in the car.\n
+ \nIF YOU GET A SHRUG: What do you like about it?\n\nTIP: Side by side beat
+ s face to face. Talk tends to flow more easily in the car or on a walk tha
+ n across a table.\n\nSchool day 34 of 60 · Just for fun. On a school holi
+ day or INSET day\, just skip it.\n\nTCH Works · After-School Questions. E
+ veryday conversation ideas\, not professional advice. If your child tells 
+ you about bullying or harm\, talk to their school. For worries about a chi
+ ld's safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 99
+ 9.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What song have you had on repeat? Put it on i
+ n the car.
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Who do you want to see this weekend?
+DTSTART;TZID=Europe/London:20270305T151500
+DTEND;TZID=Europe/London:20270305T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-35@tchworks.co.uk
+DESCRIPTION:ASK: Who do you want to see this weekend?\n\nIF YOU GET A SHRU
+ G: Do you need anything sorting for that?\n\nTIP: Ask one question\, not f
+ ive. Then wait. Count to five in your head before filling the silence.\n\n
+ School day 35 of 60 · Wrapping up the week. On a school holiday or INSET 
+ day\, just skip it.\n\nTCH Works · After-School Questions. Everyday conve
+ rsation ideas\, not professional advice. If your child tells you about bul
+ lying or harm\, talk to their school. For worries about a child's safety\,
+  the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Who do you want to see this weekend?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Is there anyone new this year? What are they like
+ ?
+DTSTART;TZID=Europe/London:20270308T151500
+DTEND;TZID=Europe/London:20270308T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-36@tchworks.co.uk
+DESCRIPTION:ASK: Is there anyone new this year? What are they like?\n\nIF 
+ YOU GET A SHRUG: Has anyone made them feel welcome?\n\nTIP: Answer it your
+ self too. Telling them your best and worst bit of the day makes it a conve
+ rsation\, not an interview.\n\nSchool day 36 of 60 · Friends and people. 
+ On a school holiday or INSET day\, just skip it.\n\nTCH Works · After-Sch
+ ool Questions. Everyday conversation ideas\, not professional advice. If y
+ our child tells you about bullying or harm\, talk to their school. For wor
+ ries about a child's safety\, the NSPCC helpline is 0808 800 5000. In an e
+ mergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Is there anyone new this year? What are they 
+ like?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Have you changed your mind about anything lately?
+DTSTART;TZID=Europe/London:20270309T151500
+DTEND;TZID=Europe/London:20270309T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-37@tchworks.co.uk
+DESCRIPTION:ASK: Have you changed your mind about anything lately?\n\nIF Y
+ OU GET A SHRUG: What changed it?\n\nTIP: If you get a one-word answer\, tr
+ y 'Tell me more about that' rather than a new question.\n\nSchool day 37 o
+ f 60 · Learning. On a school holiday or INSET day\, just skip it.\n\nTCH 
+ Works · After-School Questions. Everyday conversation ideas\, not profess
+ ional advice. If your child tells you about bullying or harm\, talk to the
+ ir school. For worries about a child's safety\, the NSPCC helpline is 0808
+  800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Have you changed your mind about anything lat
+ ely?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What helps when you've had a rubbish day?
+DTSTART;TZID=Europe/London:20270310T151500
+DTEND;TZID=Europe/London:20270310T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-38@tchworks.co.uk
+DESCRIPTION:ASK: What helps when you've had a rubbish day?\n\nIF YOU GET A
+  SHRUG: Is there anything I do that makes it worse?\n\nTIP: Name the feeli
+ ng before you fix anything: 'That sounds really frustrating.' Advice lands
+  better once they feel heard.\n\nSchool day 38 of 60 · Feelings. On a sch
+ ool holiday or INSET day\, just skip it.\n\nTCH Works · After-School Ques
+ tions. Everyday conversation ideas\, not professional advice. If your chil
+ d tells you about bullying or harm\, talk to their school. For worries abo
+ ut a child's safety\, the NSPCC helpline is 0808 800 5000. In an emergency
+  call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What helps when you've had a rubbish day?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Which of your friends would last longest in a zom
+ bie film?
+DTSTART;TZID=Europe/London:20270311T151500
+DTEND;TZID=Europe/London:20270311T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-39@tchworks.co.uk
+DESCRIPTION:ASK: Which of your friends would last longest in a zombie film
+ ?\n\nIF YOU GET A SHRUG: And who'd be gone in the first five minutes?\n\nT
+ IP: Bedtime is often when the real stuff comes out. If pickup gets a shrug
+ \, try the follow-up at bedtime.\n\nSchool day 39 of 60 · Just for fun. O
+ n a school holiday or INSET day\, just skip it.\n\nTCH Works · After-Scho
+ ol Questions. Everyday conversation ideas\, not professional advice. If yo
+ ur child tells you about bullying or harm\, talk to their school. For worr
+ ies about a child's safety\, the NSPCC helpline is 0808 800 5000. In an em
+ ergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Which of your friends would last longest in a
+  zombie film?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's one thing you want to get done before Mond
+ ay?
+DTSTART;TZID=Europe/London:20270312T151500
+DTEND;TZID=Europe/London:20270312T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-40@tchworks.co.uk
+DESCRIPTION:ASK: What's one thing you want to get done before Monday?\n\nI
+ F YOU GET A SHRUG: Want a hand\, or a reminder?\n\nTIP: If they tell you s
+ omething hard\, thank them for telling you first. Save any reaction for la
+ ter.\n\nSchool day 40 of 60 · Wrapping up the week. On a school holiday o
+ r INSET day\, just skip it.\n\nTCH Works · After-School Questions. Everyd
+ ay conversation ideas\, not professional advice. If your child tells you a
+ bout bullying or harm\, talk to their school. For worries about a child's 
+ safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's one thing you want to get done before 
+ Monday?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If something went wrong at school\, who would you
+  go to first?
+DTSTART;TZID=Europe/London:20270315T151500
+DTEND;TZID=Europe/London:20270315T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-41@tchworks.co.uk
+DESCRIPTION:ASK: If something went wrong at school\, who would you go to f
+ irst?\n\nIF YOU GET A SHRUG: Is that a teacher\, a friend\, or both?\n\nTI
+ P: Remember the names they mention. Asking about that friend or teacher ne
+ xt week shows you listened.\n\nSchool day 41 of 60 · Friends and people. 
+ On a school holiday or INSET day\, just skip it.\n\nTCH Works · After-Sch
+ ool Questions. Everyday conversation ideas\, not professional advice. If y
+ our child tells you about bullying or harm\, talk to their school. For wor
+ ries about a child's safety\, the NSPCC helpline is 0808 800 5000. In an e
+ mergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If something went wrong at school\, who would
+  you go to first?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What do you think school gets wrong?
+DTSTART;TZID=Europe/London:20270316T151500
+DTEND;TZID=Europe/London:20270316T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-42@tchworks.co.uk
+DESCRIPTION:ASK: What do you think school gets wrong?\n\nIF YOU GET A SHRU
+ G: If you were in charge\, how would you fix it?\n\nTIP: A shrug isn't fai
+ lure. You're showing you're interested\, every day. That's the point.\n\nS
+ chool day 42 of 60 · Learning. On a school holiday or INSET day\, just sk
+ ip it.\n\nTCH Works · After-School Questions. Everyday conversation ideas
+ \, not professional advice. If your child tells you about bullying or harm
+ \, talk to their school. For worries about a child's safety\, the NSPCC he
+ lpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What do you think school gets wrong?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's something you're proud of that nobody noti
+ ced?
+DTSTART;TZID=Europe/London:20270317T151500
+DTEND;TZID=Europe/London:20270317T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-43@tchworks.co.uk
+DESCRIPTION:ASK: What's something you're proud of that nobody noticed?\n\n
+ IF YOU GET A SHRUG: Well\, I've noticed now.\n\nTIP: Avoid questions with 
+ a 'right' answer\, like 'Were you good today?'. They teach children to rep
+ ort\, not to talk.\n\nSchool day 43 of 60 · Feelings. On a school holiday
+  or INSET day\, just skip it.\n\nTCH Works · After-School Questions. Ever
+ yday conversation ideas\, not professional advice. If your child tells you
+  about bullying or harm\, talk to their school. For worries about a child'
+ s safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's something you're proud of that nobody 
+ noticed?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's something adults always get wrong about pe
+ ople your age?
+DTSTART;TZID=Europe/London:20270318T151500
+DTEND;TZID=Europe/London:20270318T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-44@tchworks.co.uk
+DESCRIPTION:ASK: What's something adults always get wrong about people you
+ r age?\n\nIF YOU GET A SHRUG: What should we understand?\n\nTIP: Notice th
+ e good. If they tell you about something they did well\, ask how they did 
+ it.\n\nSchool day 44 of 60 · Just for fun. On a school holiday or INSET d
+ ay\, just skip it.\n\nTCH Works · After-School Questions. Everyday conver
+ sation ideas\, not professional advice. If your child tells you about bull
+ ying or harm\, talk to their school. For worries about a child's safety\, 
+ the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's something adults always get wrong abou
+ t people your age?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's coming up this month that you're looking f
+ orward to?
+DTSTART;TZID=Europe/London:20270319T151500
+DTEND;TZID=Europe/London:20270319T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-45@tchworks.co.uk
+DESCRIPTION:ASK: What's coming up this month that you're looking forward t
+ o?\n\nIF YOU GET A SHRUG: Anything you're dreading?\n\nTIP: If they're on 
+ their phone or wearing headphones\, ask once and leave it. Try again at te
+ a.\n\nSchool day 45 of 60 · Wrapping up the week. On a school holiday or 
+ INSET day\, just skip it.\n\nTCH Works · After-School Questions. Everyday
+  conversation ideas\, not professional advice. If your child tells you abo
+ ut bullying or harm\, talk to their school. For worries about a child's sa
+ fety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's coming up this month that you're looki
+ ng forward to?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the group chat going on about? (You don't 
+ have to show me.)
+DTSTART;TZID=Europe/London:20270322T151500
+DTEND;TZID=Europe/London:20270322T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-46@tchworks.co.uk
+DESCRIPTION:ASK: What's the group chat going on about? (You don't have to 
+ show me.)\n\nIF YOU GET A SHRUG: Is it mostly funny or mostly drama?\n\nTI
+ P: Opinions travel better than reports. 'What do you think about...' gets 
+ more than 'What did you do...'.\n\nSchool day 46 of 60 · Friends and peop
+ le. On a school holiday or INSET day\, just skip it.\n\nTCH Works · After
+ -School Questions. Everyday conversation ideas\, not professional advice. 
+ If your child tells you about bullying or harm\, talk to their school. For
+  worries about a child's safety\, the NSPCC helpline is 0808 800 5000. In 
+ an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the group chat going on about? (You do
+ n't have to show me.)
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What would you like to be really good at in five 
+ years' time?
+DTSTART;TZID=Europe/London:20270323T151500
+DTEND;TZID=Europe/London:20270323T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-47@tchworks.co.uk
+DESCRIPTION:ASK: What would you like to be really good at in five years' t
+ ime?\n\nIF YOU GET A SHRUG: What's the first step?\n\nTIP: Asking about th
+ eir friends is often easier for teenagers than asking about themselves.\n
+ \nSchool day 47 of 60 · Learning. On a school holiday or INSET day\, just
+  skip it.\n\nTCH Works · After-School Questions. Everyday conversation id
+ eas\, not professional advice. If your child tells you about bullying or h
+ arm\, talk to their school. For worries about a child's safety\, the NSPCC
+  helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What would you like to be really good at in f
+ ive years' time?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Is anyone giving you a hard time\, at school or o
+ nline?
+DTSTART;TZID=Europe/London:20270324T151500
+DTEND;TZID=Europe/London:20270324T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-48@tchworks.co.uk
+DESCRIPTION:ASK: Is anyone giving you a hard time\, at school or online?\n
+ \nIF YOU GET A SHRUG: You can always tell me\, and I won't go charging in 
+ without talking to you first.\n\nTIP: Keep your reaction small when they t
+ ell you something big. A calm reaction makes them more likely to tell you 
+ next time.\n\nSchool day 48 of 60 · Feelings. On a school holiday or INSE
+ T day\, just skip it.\n\nTCH Works · After-School Questions. Everyday con
+ versation ideas\, not professional advice. If your child tells you about b
+ ullying or harm\, talk to their school. For worries about a child's safety
+ \, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Is anyone giving you a hard time\, at school 
+ or online?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If you could learn any skill instantly\, what wou
+ ld it be?
+DTSTART;TZID=Europe/London:20270325T151500
+DTEND;TZID=Europe/London:20270325T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-49@tchworks.co.uk
+DESCRIPTION:ASK: If you could learn any skill instantly\, what would it be
+ ?\n\nIF YOU GET A SHRUG: What would you do with it first?\n\nTIP: Give the
+ m 10 to 20 minutes and a snack before asking anything. Many children need 
+ time to decompress after school.\n\nSchool day 49 of 60 · Just for fun. O
+ n a school holiday or INSET day\, just skip it.\n\nTCH Works · After-Scho
+ ol Questions. Everyday conversation ideas\, not professional advice. If yo
+ ur child tells you about bullying or harm\, talk to their school. For worr
+ ies about a child's safety\, the NSPCC helpline is 0808 800 5000. In an em
+ ergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If you could learn any skill instantly\, what
+  would it be?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: If this week was a film\, what would it be called
+ ?
+DTSTART;TZID=Europe/London:20270326T151500
+DTEND;TZID=Europe/London:20270326T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-50@tchworks.co.uk
+DESCRIPTION:ASK: If this week was a film\, what would it be called?\n\nIF 
+ YOU GET A SHRUG: Who would play you?\n\nTIP: Side by side beats face to fa
+ ce. Talk tends to flow more easily in the car or on a walk than across a t
+ able.\n\nSchool day 50 of 60 · Wrapping up the week. On a school holiday 
+ or INSET day\, just skip it.\n\nTCH Works · After-School Questions. Every
+ day conversation ideas\, not professional advice. If your child tells you 
+ about bullying or harm\, talk to their school. For worries about a child's
+  safety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: If this week was a film\, what would it be ca
+ lled?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Which teacher would win a general knowledge quiz?
+DTSTART;TZID=Europe/London:20270329T151500
+DTEND;TZID=Europe/London:20270329T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-51@tchworks.co.uk
+DESCRIPTION:ASK: Which teacher would win a general knowledge quiz?\n\nIF Y
+ OU GET A SHRUG: Who would come last?\n\nTIP: Ask one question\, not five. 
+ Then wait. Count to five in your head before filling the silence.\n\nSchoo
+ l day 51 of 60 · Friends and people. On a school holiday or INSET day\, j
+ ust skip it.\n\nTCH Works · After-School Questions. Everyday conversation
+  ideas\, not professional advice. If your child tells you about bullying o
+ r harm\, talk to their school. For worries about a child's safety\, the NS
+ PCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Which teacher would win a general knowledge q
+ uiz?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's a question you've got that school doesn't 
+ answer?
+DTSTART;TZID=Europe/London:20270330T151500
+DTEND;TZID=Europe/London:20270330T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-52@tchworks.co.uk
+DESCRIPTION:ASK: What's a question you've got that school doesn't answer?
+ \n\nIF YOU GET A SHRUG: Shall we try to find out together?\n\nTIP: Answer 
+ it yourself too. Telling them your best and worst bit of the day makes it 
+ a conversation\, not an interview.\n\nSchool day 52 of 60 · Learning. On 
+ a school holiday or INSET day\, just skip it.\n\nTCH Works · After-School
+  Questions. Everyday conversation ideas\, not professional advice. If your
+  child tells you about bullying or harm\, talk to their school. For worrie
+ s about a child's safety\, the NSPCC helpline is 0808 800 5000. In an emer
+ gency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's a question you've got that school does
+ n't answer?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Honestly\, are you getting enough sleep?
+DTSTART;TZID=Europe/London:20270331T151500
+DTEND;TZID=Europe/London:20270331T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-53@tchworks.co.uk
+DESCRIPTION:ASK: Honestly\, are you getting enough sleep?\n\nIF YOU GET A 
+ SHRUG: What gets in the way?\n\nTIP: If you get a one-word answer\, try 'T
+ ell me more about that' rather than a new question.\n\nSchool day 53 of 60
+  · Feelings. On a school holiday or INSET day\, just skip it.\n\nTCH Work
+ s · After-School Questions. Everyday conversation ideas\, not professiona
+ l advice. If your child tells you about bullying or harm\, talk to their s
+ chool. For worries about a child's safety\, the NSPCC helpline is 0808 800
+  5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Honestly\, are you getting enough sleep?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the worst school dinner of all time?
+DTSTART;TZID=Europe/London:20270401T151500
+DTEND;TZID=Europe/London:20270401T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-54@tchworks.co.uk
+DESCRIPTION:ASK: What's the worst school dinner of all time?\n\nIF YOU GET
+  A SHRUG: And the best?\n\nTIP: Name the feeling before you fix anything: 
+ 'That sounds really frustrating.' Advice lands better once they feel heard
+ .\n\nSchool day 54 of 60 · Just for fun. On a school holiday or INSET day
+ \, just skip it.\n\nTCH Works · After-School Questions. Everyday conversa
+ tion ideas\, not professional advice. If your child tells you about bullyi
+ ng or harm\, talk to their school. For worries about a child's safety\, th
+ e NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the worst school dinner of all time?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What should we have for tea tonight? Your pick.
+DTSTART;TZID=Europe/London:20270402T151500
+DTEND;TZID=Europe/London:20270402T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-55@tchworks.co.uk
+DESCRIPTION:ASK: What should we have for tea tonight? Your pick.\n\nIF YOU
+  GET A SHRUG: Want to help make it?\n\nTIP: Bedtime is often when the real
+  stuff comes out. If pickup gets a shrug\, try the follow-up at bedtime.\n
+ \nSchool day 55 of 60 · Wrapping up the week. On a school holiday or INSE
+ T day\, just skip it.\n\nTCH Works · After-School Questions. Everyday con
+ versation ideas\, not professional advice. If your child tells you about b
+ ullying or harm\, talk to their school. For worries about a child's safety
+ \, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What should we have for tea tonight? Your pic
+ k.
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Who haven't you seen much of lately?
+DTSTART;TZID=Europe/London:20270405T151500
+DTEND;TZID=Europe/London:20270405T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-56@tchworks.co.uk
+DESCRIPTION:ASK: Who haven't you seen much of lately?\n\nIF YOU GET A SHRU
+ G: Do you miss them\, or is it fine?\n\nTIP: If they tell you something ha
+ rd\, thank them for telling you first. Save any reaction for later.\n\nSch
+ ool day 56 of 60 · Friends and people. On a school holiday or INSET day\,
+  just skip it.\n\nTCH Works · After-School Questions. Everyday conversati
+ on ideas\, not professional advice. If your child tells you about bullying
+  or harm\, talk to their school. For worries about a child's safety\, the 
+ NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Who haven't you seen much of lately?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's the next test or deadline coming up?
+DTSTART;TZID=Europe/London:20270406T151500
+DTEND;TZID=Europe/London:20270406T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-57@tchworks.co.uk
+DESCRIPTION:ASK: What's the next test or deadline coming up?\n\nIF YOU GET
+  A SHRUG: How are you feeling about it\, honestly?\n\nTIP: Remember the na
+ mes they mention. Asking about that friend or teacher next week shows you 
+ listened.\n\nSchool day 57 of 60 · Learning. On a school holiday or INSET
+  day\, just skip it.\n\nTCH Works · After-School Questions. Everyday conv
+ ersation ideas\, not professional advice. If your child tells you about bu
+ llying or harm\, talk to their school. For worries about a child's safety
+ \, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's the next test or deadline coming up?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: What's one thing I could do that would make schoo
+ l weeks easier for you?
+DTSTART;TZID=Europe/London:20270407T151500
+DTEND;TZID=Europe/London:20270407T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-58@tchworks.co.uk
+DESCRIPTION:ASK: What's one thing I could do that would make school weeks 
+ easier for you?\n\nIF YOU GET A SHRUG: Deal. Let's try it.\n\nTIP: A shrug
+  isn't failure. You're showing you're interested\, every day. That's the p
+ oint.\n\nSchool day 58 of 60 · Feelings. On a school holiday or INSET day
+ \, just skip it.\n\nTCH Works · After-School Questions. Everyday conversa
+ tion ideas\, not professional advice. If your child tells you about bullyi
+ ng or harm\, talk to their school. For worries about a child's safety\, th
+ e NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: What's one thing I could do that would make s
+ chool weeks easier for you?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: Rate my cooking out of ten. Be honest.
+DTSTART;TZID=Europe/London:20270408T151500
+DTEND;TZID=Europe/London:20270408T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-59@tchworks.co.uk
+DESCRIPTION:ASK: Rate my cooking out of ten. Be honest.\n\nIF YOU GET A SH
+ RUG: What should I make more often?\n\nTIP: Avoid questions with a 'right'
+  answer\, like 'Were you good today?'. They teach children to report\, not
+  to talk.\n\nSchool day 59 of 60 · Just for fun. On a school holiday or I
+ NSET day\, just skip it.\n\nTCH Works · After-School Questions. Everyday 
+ conversation ideas\, not professional advice. If your child tells you abou
+ t bullying or harm\, talk to their school. For worries about a child's saf
+ ety\, the NSPCC helpline is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: Rate my cooking out of ten. Be honest.
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pickup question: How was this week compared with last week?
+DTSTART;TZID=Europe/London:20270409T151500
+DTEND;TZID=Europe/London:20270409T153000
+DTSTAMP:20261008T030000Z
+UID:tch-after-school-questions-secondary-2027-01-18-60@tchworks.co.uk
+DESCRIPTION:ASK: How was this week compared with last week?\n\nIF YOU GET 
+ A SHRUG: What made the difference?\n\nTIP: Notice the good. If they tell y
+ ou about something they did well\, ask how they did it.\n\nSchool day 60 o
+ f 60 · Wrapping up the week. On a school holiday or INSET day\, just skip
+  it.\n\nTCH Works · After-School Questions. Everyday conversation ideas\,
+  not professional advice. If your child tells you about bullying or harm\,
+  talk to their school. For worries about a child's safety\, the NSPCC help
+ line is 0808 800 5000. In an emergency call 999.
+TRANSP:TRANSPARENT
+URL:https://www.tchworks.co.uk/planners/u/893a07646724cbb9/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pickup question: How was this week compared with last week?
+TRIGGER:P0D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

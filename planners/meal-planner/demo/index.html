@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>One List Meal Planner · TCH Works</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F6F7F9">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="One List">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="base.css">
+<style>
+ :root{--accent:#0F766E;--accent-soft:#E6F4F1}
+ .day{display:flex;gap:12px;align-items:flex-start}
+ .day .dname{width:44px;flex:none;text-align:center;padding-top:2px}
+ .day .dname b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink2)}
+ .day .dname span{font-size:22px;font-weight:750;letter-spacing:-.02em}
+ .day.today .dname b,.day.today .dname span{color:var(--accent)}
+ .day .meal{flex:1;min-width:0}
+ .meal-title{font-weight:650;font-size:16px;border:0;background:none;padding:0;text-align:left;color:var(--ink)}
+ .meta{font-size:13px;color:var(--ink2);margin-top:2px}
+ .stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+ .stepper button{border:0;background:#fff;width:34px;height:32px;font-size:18px;font-weight:700;color:var(--accent)}
+ .stepper span{min-width:58px;text-align:center;font-size:13px;font-weight:600}
+ .aisle{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2);font-weight:700;margin:4px 0 2px}
+ .item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ .item:last-child{border-bottom:0}
+ .item .nm{flex:1;min-width:0}
+ .item .nm small{display:block;color:var(--ink2);font-size:12px}
+ .item .qty{font-weight:700;font-size:15px;white-space:nowrap}
+ .item.got .nm,.item.got .qty{color:var(--muted);text-decoration:line-through}
+ .al{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:1px 6px;background:#FEF3C7;color:#92400E;margin:2px 4px 0 0}
+ .tag{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:1px 6px;background:var(--accent-soft);color:var(--accent);margin:2px 4px 0 0}
+ .rcard{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:left}
+ .rcard:last-child{border-bottom:0}
+ .rimg{width:52px;height:52px;border-radius:14px;flex:none;display:grid;place-items:center;font-weight:800;color:#fff;font-size:18px}
+ .ing{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+ .method li{margin:0 0 10px;padding-left:2px}
+ .price-sum{display:grid;grid-template-columns:1fr auto;gap:6px 12px;font-size:14px}
+ .price-sum .best{color:var(--ok);font-weight:700}
+ .pin{display:grid;grid-template-columns:1fr 92px 92px;gap:8px;align-items:center;margin:8px 0}
+ .pin .input{min-height:40px;padding:8px}
+ .search{position:sticky;top:0;z-index:5;background:var(--bg);padding:4px 0 8px}
+ .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+ .chips button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;min-height:34px}
+ .chips button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+<nav class="tabbar" id="tabs" aria-label="Sections"><div class="in">
+ <button data-tab="plan" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Plan</button>
+ <button data-tab="list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg>List</button>
+ <button data-tab="recipes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>Recipes</button>
+ <button data-tab="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>Settings</button>
+</div></nav>
+<script src="config.js"></script>
+<script src="recipes.js"></script>
+<script src="install.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
