@@ -278,5 +278,21 @@
   "page": "https://www.tchworks.co.uk/shop/great-british-christmas-quiz/",
   "pages": 16,
   "category": "seasonal"
+ },
+ "weekly-planner-2027": {
+  "title": "2027 UK Weekly Planner",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/4gM3cudgOdLnfIseat2881s",
+  "page": "https://www.tchworks.co.uk/shop/weekly-planner-2027/",
+  "pages": 138,
+  "category": "life"
+ },
+ "self-employed-log-2027-28": {
+  "title": "UK Self-Employed Income & Expense Log 2027/28",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/eVqcN41y6fTv9k4fex2881t",
+  "page": "https://www.tchworks.co.uk/shop/self-employed-log-2027-28/",
+  "pages": 104,
+  "category": "work"
  }
 }
