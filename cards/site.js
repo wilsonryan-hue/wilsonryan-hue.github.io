@@ -67,3 +67,4 @@ var ty=$('#ty');if(ty){try{var o=JSON.parse(localStorage.getItem('tchlast')||'nu
    var b=getB().filter(function(it){return it.size+'|'+it.speed!==o.group});setB(b);o.paid=true;localStorage.setItem('tchlast',JSON.stringify(o))}
   if(getB().length)ty.innerHTML+='<p>You still have cards in your <a href="/cards/basket/">basket</a> for a different size or delivery speed.</p>'}}catch(e){}}
 })();
+(function(){var n=document.querySelector('.shopnav'),c=n&&n.querySelector('.cw');if(!c)return;function u(){n.classList.toggle('end',c.scrollLeft+c.clientWidth>=c.scrollWidth-4)}c.addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u()})();

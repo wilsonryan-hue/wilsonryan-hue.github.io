@@ -20,5 +20,5 @@ f.addEventListener('submit',async e=>{e.preventDefault();if(!lines().length){ale
  const data={_subject:'Personalised '+k+' design '+code,code,kind:k,colour:g,size,font:v('font'),ink:v('ink'),line1:lines()[0]||'',line2:lines()[1]||'',line3:lines()[2]||'',email:f.querySelector('[name=email]').value,preview_note:'print file is rebuilt at full size from these fields',_captcha:'false',_template:'table'};
  try{await fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})}catch(err){}
  const ref=(k==='tee'?'ctee__'+code+'__'+g+'__'+size:'cmug__'+code).replace(/[^A-Za-z0-9_-]/g,'_');
- location.href=f.dataset.link+'?client_reference_id='+encodeURIComponent(ref)+'&prefilled_email='+encodeURIComponent(data.email)});
+ const LS=JSON.parse(f.dataset.links||'{}');location.href=(LS['ctee|'+g+'|'+size]||f.dataset.link)+'?client_reference_id='+encodeURIComponent(ref)+'&prefilled_email='+encodeURIComponent(data.email)});
 })();
