@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to convert a PDF to Excel (free ways that keep the columns) · TCH Works</title>
+<meta name="description" content="Four free ways to get a table out of a PDF and into Excel or Google Sheets: Excel's own PDF import, Word, Google Drive and copy-paste, plus how to fix scanned PDFs, merged cells and numbers stored as text.">
+<link rel="canonical" href="https://www.tchworks.co.uk/guides/how-to-convert-pdf-to-excel/">
+<meta property="og:title" content="How to convert a PDF to Excel (free ways that keep the columns) · TCH Works">
+<meta property="og:description" content="Four free ways to get a table out of a PDF and into Excel or Google Sheets: Excel's own PDF import, Word, Google Drive and copy-paste, plus how to fix scanned PDFs, merged cells and numbers stored as text.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.tchworks.co.uk/guides/how-to-convert-pdf-to-excel/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/shop.css">
+<style>
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.25rem 0}
+.tier{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.25rem;display:flex;flex-direction:column}
+.tier.best{border:2px solid var(--cobalt)}
+.tier h3{margin:.2rem 0;font-family:var(--display)}
+.tier .amt{font-size:2rem;font-weight:800;color:var(--navy);margin:.25rem 0}
+.tier ul{padding-left:1.1rem;margin:.5rem 0 1rem;flex:1}
+.tier .btn{text-align:center}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.ba figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:.5rem}
+.ba figcaption{font-size:.9rem;color:var(--muted);padding:.4rem .2rem 0}
+.faq dt{font-weight:700;margin-top:1rem} .faq dd{margin:.25rem 0 0}
+@media (max-width:640px){.ba{grid-template-columns:1fr}}
+.sample{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem}
+.sample h4{margin:.1rem 0 .5rem;font-family:var(--display)}
+.sample .meta{font-size:.85rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:.5rem;margin-top:.75rem}
+
+.ex del{color:#b42318} .ex ins{color:#067647;text-decoration:none;font-weight:600}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to convert a PDF to Excel (free ways that keep the columns)", "author": {"@type": "Organization", "name": "TCH Works"}, "datePublished": "2026-10-21", "mainEntityOfPage": "https://www.tchworks.co.uk/guides/how-to-convert-pdf-to-excel/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Excel open a PDF directly?", "acceptedAnswer": {"@type": "Answer", "text": "Excel for Microsoft 365 on Windows can import tables from a PDF through Data, Get Data, From File, From PDF. It reads the tables inside the PDF rather than opening the file like a document. Older versions of Excel and Excel for Mac may not have this option."}}, {"@type": "Question", "name": "Why are my numbers left-aligned and not adding up?", "acceptedAnswer": {"@type": "Answer", "text": "They have come across as text. Select the column, then use Data, Text to Columns, Finish, or multiply them by 1 with Paste Special. Remove any pound signs, spaces or commas that stop Excel seeing them as numbers."}}, {"@type": "Question", "name": "How do I convert a scanned PDF to Excel?", "acceptedAnswer": {"@type": "Answer", "text": "A scan is a picture, so it needs text recognition (OCR) first. Opening the PDF in Google Drive with Google Docs runs OCR for free. Check every figure afterwards, because OCR misreads characters such as 0 and O or 1 and l."}}, {"@type": "Question", "name": "Is it safe to use free online PDF converters?", "acceptedAnswer": {"@type": "Answer", "text": "Read the site's privacy policy before uploading anything with personal or financial details, such as bank statements or payroll. The methods in this guide keep the file on your own computer or your own Google account."}}]}</script>
+</head>
+<body><header class="site-header">
+ <div class="wrap nav">
+  <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+  <nav class="site-nav" aria-label="Primary">
+   <a href="/shop/">Templates</a>
+   <a href="/free/">Free</a>
+   <a href="/daily/">Daily</a>
+   <a href="/guides/">Guides</a>
+  </nav>
+ </div>
+</header>
+<main class="section"><div class="wrap">
+<p class="kicker">Guide · Spreadsheets · About a 6-minute read</p>
+<h1 class="page-h1">How to convert a PDF to Excel without losing the columns</h1>
+<p class="page-lede">Someone has sent you a price list, a bank statement or a report as a PDF, and you need it in a spreadsheet. Copy and paste usually turns it into one long column of mush. Here are the free ways that actually work, best first, and how to tidy up what comes out.</p>
+
+<h2>First, check what kind of PDF you have</h2>
+<p>Open the PDF and try to highlight a single word with your mouse.</p>
+<ul>
+ <li><b>If the word highlights</b>, the PDF has real text in it (it was saved from Word, Excel or an accounts system). Any of the methods below will work.</li>
+ <li><b>If the whole page highlights like a photo</b>, it's a scan. Skip to <a href="#scanned">scanned PDFs</a>, because it needs text recognition first.</li>
+</ul>
+
+<h2>Method 1: Excel's own PDF import (best for tables)</h2>
+<p>If you have Excel for Microsoft 365 on Windows, this is the cleanest route because it reads the table structure, not just the text.</p>
+<ol>
+ <li>Open a blank workbook and go to the <b>Data</b> tab.</li>
+ <li>Choose <b>Get Data</b>, then <b>From File</b>, then <b>From PDF</b>, and pick your file.</li>
+ <li>A Navigator window lists every table and page Excel found. Click each one to preview it and pick the one that looks right.</li>
+ <li>Click <b>Load</b> to drop it straight onto a sheet, or <b>Transform Data</b> to tidy it first in Power Query (remove blank rows, split columns, set number types).</li>
+</ol>
+<p>If a table runs over several pages, Excel often lists each page as a separate table. Load them one by one, or in Power Query use <b>Append Queries</b> to stack them into one.</p>
+<p>Don't see <b>From PDF</b>? Your version of Excel doesn't have it (this is common on Mac and on older versions). Use method 2 or 3.</p>
+
+<h2>Method 2: open it in Word, then copy the table</h2>
+<ol>
+ <li>In Word, go to <b>File</b>, <b>Open</b> and pick the PDF. Word warns that it will convert the file; click OK.</li>
+ <li>Word rebuilds the PDF as an editable document, and tables usually come through as real Word tables.</li>
+ <li>Click inside the table, select it, copy, and paste into Excel. The columns normally survive.</li>
+</ol>
+<p>This works well for simple, neat tables. Complicated layouts with lots of boxes and shading can come out jumbled.</p>
+
+<h2>Method 3: Google Drive (free, and works on any computer)</h2>
+<ol>
+ <li>Upload the PDF to Google Drive.</li>
+ <li>Right-click it and choose <b>Open with</b>, then <b>Google Docs</b>. Google converts it to text, and runs text recognition if it's a scan.</li>
+ <li>Copy the table and paste it into Google Sheets. If everything lands in one column, select the column and use <b>Data</b>, <b>Split text to columns</b>.</li>
+ <li>Download it as Excel with <b>File</b>, <b>Download</b>, <b>Microsoft Excel (.xlsx)</b>.</li>
+</ol>
+
+<h2>Method 4: copy and paste, then split</h2>
+<p>For a short, simple list, select the text in your PDF reader, copy it, paste into column A in Excel, then use <b>Data</b>, <b>Text to Columns</b>. Choose <b>Delimited</b> and tick <b>Space</b> (or whatever separates the values). It's quick, but names with spaces in them will split into extra columns, so check the result.</p>
+
+<h2 id="scanned">Scanned PDFs</h2>
+<p>A scan is a picture of a page, so the computer has to read the letters first. Method 3 (Google Drive) does this for free. Two warnings:</p>
+<ul>
+ <li>Text recognition gets things wrong, especially 0 and O, 1 and l, 5 and S, and anything faint or handwritten. <b>Check every figure</b> if the numbers matter, such as invoices or statements.</li>
+ <li>A crooked or low-quality scan gives poor results. If you can, rescan it straight and at a higher resolution.</li>
+</ul>
+
+<h2>Tidying up what comes out</h2>
+<p>Whichever method you use, the first result is rarely perfect. These are the fixes you'll need most:</p>
+<ul>
+ <li><b>Numbers that won't add up.</b> If they sit on the left of the cell, Excel thinks they're text. Remove pound signs and stray spaces with Find and Replace, then select the column and use <b>Data</b>, <b>Text to Columns</b>, <b>Finish</b> to turn them back into numbers.</li>
+ <li><b>Dates the wrong way round.</b> PDFs from American software may use month/day order. In Text to Columns, step 3 lets you set the column to <b>Date: DMY</b>.</li>
+ <li><b>Merged cells.</b> Select the sheet, click <b>Merge &amp; Center</b> to unmerge, then fill the gaps. Merged cells break sorting and filtering.</li>
+ <li><b>Repeated headings on every page.</b> Turn on a filter, filter the first column for the heading text, delete those rows, then clear the filter.</li>
+ <li><b>Blank rows.</b> Select a column, press F5, choose <b>Special</b>, <b>Blanks</b>, then delete the entire rows.</li>
+ <li><b>Totals that don't match the PDF.</b> Add up a column with <code>=SUM()</code> and compare it to the total printed in the PDF. If it's out, a row is missing or a number came across as text.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<dl class="faq"><dt>Can Excel open a PDF directly?</dt><dd>Excel for Microsoft 365 on Windows can import tables from a PDF through Data, Get Data, From File, From PDF. It reads the tables inside the PDF rather than opening the file like a document. Older versions of Excel and Excel for Mac may not have this option.</dd><dt>Why are my numbers left-aligned and not adding up?</dt><dd>They have come across as text. Select the column, then use Data, Text to Columns, Finish, or multiply them by 1 with Paste Special. Remove any pound signs, spaces or commas that stop Excel seeing them as numbers.</dd><dt>How do I convert a scanned PDF to Excel?</dt><dd>A scan is a picture, so it needs text recognition (OCR) first. Opening the PDF in Google Drive with Google Docs runs OCR for free. Check every figure afterwards, because OCR misreads characters such as 0 and O or 1 and l.</dd><dt>Is it safe to use free online PDF converters?</dt><dd>Read the site's privacy policy before uploading anything with personal or financial details, such as bank statements or payroll. The methods in this guide keep the file on your own computer or your own Google account.</dd></dl>
+
+<h2>Got a big or messy one? We'll do it for you</h2>
+<p>If you've got dozens of pages, a scan, or a PDF that every method turns into a mess, TCH Works will turn it into a clean, checked spreadsheet with proper columns, real numbers and UK dates. Up to 500 rows is £15, up to 10,000 rows is £60, and we total-check the result against the PDF.</p>
+<p style="margin-top:1.25rem"><a class="btn btn-yellow" href="/services/spreadsheet-clean-up/">Get your PDF turned into a spreadsheet · from £15</a></p>
+<p class="meta" style="color:var(--muted);font-size:.9rem;margin-top:2rem">Written by TCH Works, October 2026. Menu names are from current Microsoft 365 and Google Workspace and can differ slightly in older versions.</p>
+</div></main>
+<footer class="site-footer">
+ <div class="wrap foot-grid">
+  <div>
+   <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+   <p class="foot-tag">Printable, fillable templates for UK homes and small businesses.</p>
+  </div>
+  <nav class="foot-links" aria-label="Templates"><a href="/shop/#life">Life admin and home</a><a href="/shop/#meals">Meals and shopping</a><a href="/shop/#money">Money</a><a href="/shop/#study">Study and exams</a><a href="/shop/#fitness">Fitness</a><a href="/shop/#work">Work and freelance</a><a href="/shop/#seasonal">Christmas</a></nav>
+  <nav class="foot-links" aria-label="More"><a href="/free/">Free templates</a><a href="/daily/">Daily</a><a href="/guides/">Guides</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refund.html">Refunds</a><a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></nav>
+ </div>
+ <div class="wrap legal">
+  <p>One-off payments through Stripe. No subscription.</p>
+  <p>Faulty file? We'll fix or refund it under the Consumer Rights Act 2015. Because the download starts straight away, you agree to waive the 14-day cancellation period when you buy.</p>
+  <p>&copy; 2026 TCH Works · Ryan Wilson · England and Wales · <a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></p>
+ </div>
+</footer>
+</body>
+</html>
