@@ -158,3 +158,8 @@ main .trust-row { background: #fff; border: 1px solid var(--line); border-radius
 .tc-meta { font-size: .85rem; color: var(--muted) !important; }
 .tc-actions { margin-top: .8rem !important; }
 @media (max-width: 600px) { .upsell.tpl-card { grid-template-columns: 1fr; } }
+
+/* contrast fix 2026-10-21 */
+main.section .wrap>.kicker{color:#92400e}
+.pc-cat,.ct-count{color:#b45309}
+.site-footer p a{text-decoration:underline}
