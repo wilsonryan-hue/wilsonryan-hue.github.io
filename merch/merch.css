@@ -29,3 +29,4 @@ details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:
 .mnav a{white-space:nowrap}@media(max-width:480px){.mbrand{font-size:18px}.mh-in{gap:12px}.mnav{gap:10px;font-size:13px}}
 .mfield{display:block;margin:10px 0;font-weight:600;font-size:14px}.mfield input,.mfield select{display:block;width:100%;max-width:420px;margin-top:4px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font:16px Inter,sans-serif;background:#fff}
 button.mbtn{border:0;cursor:pointer}.mgal .small{margin:6px 0 0}
+.mfilters{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:10px 0 14px}.mfilters label{font-size:13px;font-weight:600;display:flex;flex-direction:column;gap:3px}.mfilters select{padding:8px 10px;border:1px solid #bbb;border-radius:10px;font:inherit;background:#fff;min-width:120px}.mcount{font-size:13px;color:#555}[hidden]{display:none!important}

@@ -32,7 +32,7 @@ if($('#ed'))data(function(d){var T=d.templates,byId={},pals={};T.forEach(functio
  sd.addEventListener('change',function(){load(byId[sd.value]);history.replaceState(null,'','?d='+sd.value)});
  $('#f-photo').addEventListener('change',function(e){var f=e.target.files[0];if(!f)return;var img=new Image();img.onload=function(){var c=document.createElement('canvas'),s=Math.min(1,1400/Math.max(img.width,img.height));c.width=img.width*s;c.height=img.height*s;c.getContext('2d').drawImage(img,0,0,c.width,c.height);photo=c.toDataURL('image/jpeg',.82);draw()};img.src=URL.createObjectURL(f)});
  $$('.ed-tabs button').forEach(function(b){b.onclick=function(){$$('.ed-tabs button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');$('#pv-front').hidden=b.dataset.v!=='front';$('#pv-inside').hidden=b.dataset.v!=='inside'}});
- $('#f-add').onclick=function(){var b=getB(),it=item(),same=b.filter(function(x){return x.size===it.size&&x.speed===it.speed}).length;if(same>=d.maxq){alert('Up to '+d.maxq+' cards of the same size and delivery per payment. Pay for these first, then add more.');return}b.push(it);if(setB(b))location.href='/cards/basket/'};
+ $('#f-add').onclick=function(){var b=getB(),it=item(),same=b.filter(function(x){return x.size===it.size&&x.speed===it.speed}).length;if(same>=d.maxq){if(confirm('Checkout takes up to '+d.maxq+' cards of the same size and delivery per payment. For more, send a free bulk request and we reply with a fixed quote within 1 working day. Open the bulk order form?'))location.href='/cards/bulk/';return}b.push(it);if(setB(b))location.href='/cards/basket/'};
  load(cur)});
 // ===== basket
 if($('#basket'))data(function(d){var box=$('#basket');
@@ -41,7 +41,7 @@ if($('#basket'))data(function(d){var box=$('#basket');
   var g=groups(b),h='';Object.keys(g).forEach(function(k){var p=k.split('|'),n=g[k].length,price=d.prices[p[0]][p[1]];
    h+='<div class="bgroup"><h2>'+esc(d.sizes[p[0]].label)+', '+esc(d.speeds[p[1]].label)+'</h2>';
    g[k].forEach(function(i){var it=b[i];h+='<div class="bitem">'+svgFor(it,d)+'<div><b>'+esc(it.headline)+'</b><br><small>'+esc(it.name)+'</small><br><small>Inside: '+esc(it.msg).slice(0,80)+'</small></div><div>'+money(price)+'<br><button data-rm="'+i+'">Remove</button> <a href="/cards/create/?d='+it.design+'">Add another</a></div></div>'});
-   h+='<p><b>'+n+' card'+(n>1?'s':'')+': '+money(price*n)+'</b> including delivery to one address.</p><button class="btn wide" data-go="'+k+'">Check proof and pay</button></div>'});
+   h+=(n>=d.maxq?'<p class="small">That is the most for one payment. Need more? <a href="/cards/bulk/">Bulk orders (6+ cards)</a>.</p>':'')+'<p><b>'+n+' card'+(n>1?'s':'')+': '+money(price*n)+'</b> including delivery to one address.</p><button class="btn wide" data-go="'+k+'">Check proof and pay</button></div>'});
   if(Object.keys(g).length>1)h='<p class="small">Cards with different sizes or delivery speeds are paid in separate payments.</p>'+h;
   box.innerHTML=h;$$('[data-rm]',box).forEach(function(x){x.onclick=function(){var b=getB();b.splice(+x.dataset.rm,1);setB(b);render()}});
   $$('[data-go]',box).forEach(function(x){x.onclick=function(){proof(x.dataset.go)}})}

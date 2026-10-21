@@ -1,7 +1,23 @@
+/* per-variant Stripe links (cards worker, 21 Oct): kind|colour|size -> link whose Stripe product name shows colour+size */
+const V={"tee|black|M":"https://buy.stripe.com/3cI5kCa4CgXzao8d6p2882P","mug|white|11oz":"https://buy.stripe.com/6oU6oGdgO36Jao8fex2882Q","mug|midnight|11oz":"https://buy.stripe.com/7sYcN490y5eR53O5DX2882R","tee|black|2XL":"https://buy.stripe.com/6oU00ib8G22F8g0aYh2882S","tee|black|3XL":"https://buy.stripe.com/9B66oG2Ca5eR2VGaYh2882T","tee|black|L":"https://buy.stripe.com/aFa00i0u25eRdAkd6p2882U","tee|black|S":"https://buy.stripe.com/dRm28q0u236Jbsc9Ud2882V","tee|black|XL":"https://buy.stripe.com/6oU4gya4C6iVdAk6I12882W","tee|black|XS":"https://buy.stripe.com/3cIeVc1y65eR0Ny8Q92882X","tee|grey|2XL":"https://buy.stripe.com/14AaEWb8G0YB1RC3vP2882Y","tee|grey|3XL":"https://buy.stripe.com/00w8wO6Sq6iV1RC0jD2882Z","tee|grey|L":"https://buy.stripe.com/cNieVcekSgXz3ZK1nH28830","tee|grey|M":"https://buy.stripe.com/eVq5kC5Om8r3eEo6I128831","tee|grey|S":"https://buy.stripe.com/aFaaEW7Wu0YB7bW0jD28832","tee|grey|XL":"https://buy.stripe.com/8x214mccK7mZ53O1nH28833","tee|grey|XS":"https://buy.stripe.com/28E14m5OmcHj53O4zT28834","tee|navy|2XL":"https://buy.stripe.com/5kQaEWekS9v7bscc2l28835","tee|navy|3XL":"https://buy.stripe.com/bJecN46SqazbfIs4zT28836","tee|navy|L":"https://buy.stripe.com/eVqbJ04Ki8r353O4zT28837","tee|navy|M":"https://buy.stripe.com/aFaeVc90yazbbsceat28838","tee|navy|S":"https://buy.stripe.com/aFa00i6SqcHj67S8Q928839","tee|navy|XL":"https://buy.stripe.com/7sY4gy6Sq8r38g02rL2883a","tee|navy|XS":"https://buy.stripe.com/28EeVc7Wu8r3gMw9Ud2883b","tee|white|2XL":"https://buy.stripe.com/4gMeVc0u26iV7bWeat2883c","tee|white|3XL":"https://buy.stripe.com/cNi6oG0u2dLn2VG3vP2883d","tee|white|L":"https://buy.stripe.com/6oUcN47WucHj2VG2rL2883e","tee|white|M":"https://buy.stripe.com/7sYfZg1y6fTvao89Ud2883f","tee|white|S":"https://buy.stripe.com/eVqcN4foWazb53O2rL2883g","tee|white|XL":"https://buy.stripe.com/00w7sK7Wu8r31RC4zT2883h","tee|white|XS":"https://buy.stripe.com/14A4gyfoW5eR53Oc2l2883i"};
 document.querySelectorAll('.mthumbs button').forEach(b=>b.addEventListener('click',()=>{document.getElementById('mainimg').src=b.dataset.img}));
 const f=document.querySelector('form.mbuy[data-links]');
 if(f){const L=JSON.parse(f.dataset.links),P=JSON.parse(f.dataset.prices),btn=document.getElementById('buybtn'),k=f.dataset.kind;
 function up(){const c=f.querySelector('input[name=col]:checked'),s=f.querySelector('input[name=size]:checked');const t=s?s.dataset.tier:'std';
 document.getElementById('colname').textContent=c.dataset.name;document.getElementById('price').textContent='£'+P[t];document.getElementById('mainimg').src=c.dataset.img;
-let ref=k+'__'+f.dataset.id+'__'+c.value+(s?'__'+s.value:'');btn.href=L[t]+'?client_reference_id='+encodeURIComponent(ref.replace(/[^A-Za-z0-9_-]/g,'_')).slice(0,200);}
+let ref=k+'__'+f.dataset.id+'__'+c.value+(s?'__'+s.value:'');const vk=k+'|'+c.value+'|'+(s?s.value:'11oz');btn.href=(V[vk]||L[t])+'?client_reference_id='+encodeURIComponent(ref.replace(/[^A-Za-z0-9_-]/g,'_')).slice(0,200);}
 f.addEventListener('change',up);up();}
+
+/* collection filter + sort on listing grids (cards worker) */
+(function(){const g=document.querySelector('.mgrid');if(!g)return;const tiles=[...g.querySelectorAll('a.mtile')];if(tiles.length<6)return;
+const C={'british-christmas':'British Christmas','british-weather':'British Weather','food-rituals':'Food Rituals','british-home-life':'British Home Life','retro':'Retro'};
+tiles.forEach((t,i)=>{const slug=t.getAttribute('href').split('/').filter(Boolean).pop();t.dataset.i=i;t.dataset.c=Object.keys(C).find(k=>slug.startsWith(k))||'';t.dataset.n=(t.querySelector('span')||t).textContent.trim().toLowerCase()});
+const cs=[...new Set(tiles.map(t=>t.dataset.c).filter(Boolean))];
+const bar=document.createElement('div');bar.className='mfilters';bar.setAttribute('role','group');bar.setAttribute('aria-label','Filter and sort');
+bar.innerHTML=(cs.length>1?'<label>Collection <select data-k="c"><option value="">All</option>'+cs.map(c=>'<option value="'+c+'">'+C[c]+'</option>').join('')+'</select></label>':'')+'<label>Sort <select data-sort><option value="i">Featured</option><option value="n">Name A to Z</option><option value="z">Name Z to A</option></select></label><span class="mcount" aria-live="polite"></span>';
+g.parentNode.insertBefore(bar,g);
+function ap(){const c=(bar.querySelector('[data-k=c]')||{}).value||'',so=bar.querySelector('[data-sort]').value;let n=0;
+tiles.forEach(t=>{const ok=!c||t.dataset.c===c;t.hidden=!ok;if(ok)n++});
+tiles.slice().sort((a,b)=>so==='n'?a.dataset.n.localeCompare(b.dataset.n):so==='z'?b.dataset.n.localeCompare(a.dataset.n):a.dataset.i-b.dataset.i).forEach(t=>g.appendChild(t));
+bar.querySelector('.mcount').textContent=n+' designs'}
+bar.addEventListener('change',ap);ap();})();
