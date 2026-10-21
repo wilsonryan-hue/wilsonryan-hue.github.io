@@ -1,0 +1,41 @@
+name: Uptime check
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+permissions:
+  issues: write
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl key pages
+        id: c
+        run: |
+          fail=""
+          for p in / /cards/ /cards/birthday/ /cards/create/ /t-shirts/ /mugs/ /personalised/ /shop/ /compare/moonpig-alternative/ /sitemap.xml /robots.txt; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -m 20 --retry 2 "https://www.tchworks.co.uk$p")
+            echo "$p $code"; [ "$code" = "200" ] || fail="$fail $p=$code"
+          done
+          apex=$(curl -s -o /dev/null -w '%{http_code}' -m 20 "http://tchworks.co.uk/")
+          echo "apex http $apex"; case "$apex" in 200|301|302|308) ;; *) fail="$fail apex=$apex";; esac
+          exp=$(echo | openssl s_client -connect www.tchworks.co.uk:443 -servername www.tchworks.co.uk 2>/dev/null | openssl x509 -noout -enddate | cut -d= -f2)
+          days=$(( ( $(date -d "$exp" +%s) - $(date +%s) ) / 86400 )); echo "cert days left $days"
+          [ "$days" -ge 14 ] || fail="$fail cert_days=$days"
+          dexp=$(curl -s -m 20 https://rdap.nominet.uk/uk/domain/tchworks.co.uk | python3 -c 'import sys,json;print([e["eventDate"] for e in json.load(sys.stdin)["events"] if e["eventAction"]=="expiration"][0])' 2>/dev/null || echo "")
+          if [ -n "$dexp" ]; then ddays=$(( ( $(date -d "$dexp" +%s) - $(date +%s) ) / 86400 )); echo "domain days left $ddays"; [ "$ddays" -ge 45 ] || fail="$fail domain_days=$ddays"; fi
+          echo "fail=$fail" >> "$GITHUB_OUTPUT"
+      - name: Open issue on failure
+        if: steps.c.outputs.fail != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FAIL: ${{ steps.c.outputs.fail }}
+        run: |
+          open=$(gh issue list -R "$GITHUB_REPOSITORY" --label uptime --state open --json number -q 'length')
+          if [ "$open" = "0" ]; then
+            gh label create uptime -R "$GITHUB_REPOSITORY" --color d73a4a 2>/dev/null || true
+            gh issue create -R "$GITHUB_REPOSITORY" --label uptime --title "Site check failed: $FAIL" --body "Uptime check failed at $(date -u). Failures: $FAIL. Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          else
+            gh issue comment -R "$GITHUB_REPOSITORY" $(gh issue list -R "$GITHUB_REPOSITORY" --label uptime --state open --json number -q '.[0].number') --body "Still failing $(date -u): $FAIL"
+          fi
