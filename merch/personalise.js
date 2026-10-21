@@ -17,7 +17,7 @@ document.fonts&&document.fonts.load('bold 40px "Bebas Neue"').then(render);['Pop
 setBg();
 f.addEventListener('submit',async e=>{e.preventDefault();if(!lines().length){alert('Type at least one line');return}const msg=document.getElementById('pzmsg'),btn=document.getElementById('pzbuy');btn.disabled=true;msg.textContent='Saving your design…';
  const code='P'+Date.now().toString(36).toUpperCase()+Math.random().toString(36).slice(2,6).toUpperCase(),g=v('g'),size=k==='tee'?v('size'):'';
- const data={_subject:'Personalised '+k+' design '+code,code,kind:k,colour:g,size,font:v('font'),ink:v('ink'),line1:lines()[0]||'',line2:lines()[1]||'',line3:lines()[2]||'',email:f.querySelector('[name=email]').value,print_png_base64:printFile(),_captcha:'false',_template:'table'};
+ const data={_subject:'Personalised '+k+' design '+code,code,kind:k,colour:g,size,font:v('font'),ink:v('ink'),line1:lines()[0]||'',line2:lines()[1]||'',line3:lines()[2]||'',email:f.querySelector('[name=email]').value,preview_note:'print file is rebuilt at full size from these fields',_captcha:'false',_template:'table'};
  try{await fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})}catch(err){}
  const ref=(k==='tee'?'ctee__'+code+'__'+g+'__'+size:'cmug__'+code).replace(/[^A-Za-z0-9_-]/g,'_');
  location.href=f.dataset.link+'?client_reference_id='+encodeURIComponent(ref)+'&prefilled_email='+encodeURIComponent(data.email)});
