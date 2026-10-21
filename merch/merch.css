@@ -54,3 +54,4 @@ main h2::after{content:"";display:block;width:46px;height:8px;margin-top:6px;bac
 
 .mf p,.mf small{color:#e6d6ca}
 .mbtn{background:#c23a1d}
+/* tee worker 21 Oct: stop 5-thumb gallery overflowing on phones */.mgal,.minfo{min-width:0}.mthumbs{flex-wrap:wrap}
