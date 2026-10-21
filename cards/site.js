@@ -24,7 +24,7 @@ if($('#ed'))data(function(d){var T=d.templates,byId={},pals={};T.forEach(functio
  Object.keys(pals).forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k.charAt(0).toUpperCase()+k.slice(1);sp.appendChild(o)});
  function val(n){var r=$('input[name='+n+']:checked');return r?r.value:null}
  function item(){return{design:cur.id,name:cur.name,size:val('size'),speed:val('speed'),headline:$('#f-head').value,sub:$('#f-sub').value,font:$('#f-font').value,palette:sp.value,photo:photo,msg:$('#f-msg').value,ifont:$('#f-ifont').value}}
- function load(t){cur=t;sd.value=t.id;$('#f-head').value=t.headline;$('#f-sub').value=t.sub||'';$('#f-font').value=t.font;sp.value=t.palette;$('#f-msg').value=t.inside;draw()}
+ function load(t){cur=t;sd.value=t.id;$('#f-head').value=t.headline;$('#f-sub').value=(t.kicker!=null?t.kicker:t.sub)||'';$('#f-font').value=t.font;sp.value=t.palette;$('#f-msg').value=t.inside;draw()}
  function draw(){var it=item();$('#pv-front').innerHTML=svgFor(it,d);$('#pv-front').classList.toggle('sq',it.size==='square');$('#ins-text').textContent=it.msg;$('#ins-text').style.fontFamily=IF[it.ifont];
   $('#f-count').textContent=(255-it.msg.length)+' characters left';$('#f-price').innerHTML=money(d.prices[it.size][it.speed])+' <small>card + delivery to one UK address</small>';
   $('#pv-note').textContent=d.sizes[it.size].label+' '+d.sizes[it.size].dims+(it.size==='square'?' (top and bottom of the design are trimmed to square)':'')}

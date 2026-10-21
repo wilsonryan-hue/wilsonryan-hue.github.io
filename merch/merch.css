@@ -33,3 +33,24 @@ button.mbtn{border:0;cursor:pointer}.mgal .small{margin:6px 0 0}
 .mwhy{background:#fff;border-top:1px solid var(--line);margin-top:40px;padding:26px 0}.mwhy h2{margin:0 0 12px;font-size:22px}.mwhy ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));font-size:14px;color:#4a4238}.mwhy b{display:block;color:var(--ink)}.mwhy .small{font-size:13px;color:#5c544b}
 .mlife{margin:14px 0 0}.mlife img{width:100%;height:auto;border-radius:14px;display:block}.mlife figcaption{font-size:12.5px;color:#5c544b;margin-top:6px}
 @media(max-width:700px){.mh-in{flex-wrap:wrap;height:auto;padding:10px 0 0;gap:6px}.mnav{flex-basis:100%;overflow-x:auto;scrollbar-width:none;padding:6px 32px 10px 0;-webkit-mask-image:linear-gradient(90deg,#000 80%,transparent);mask-image:linear-gradient(90deg,#000 80%,transparent)}.mnav::-webkit-scrollbar{display:none}.mh.end .mnav{-webkit-mask-image:none;mask-image:none}.mh-in{position:relative}.mh-in::after{content:"›";position:absolute;right:4px;bottom:12px;font-size:20px;color:var(--acc);pointer-events:none}.mh.end .mh-in::after{content:none}}
+/* warm refresh 21 Oct: colour, playful heads, softer tiles (store pages only) */
+body{background:#fff8f1}
+.mh{background:#fff8f1}
+.mbrand b{color:#c23a1d}
+.mnav a{border-radius:99px;padding:4px 10px}.mnav a:hover{background:#ffe3d6;color:#b83a1f}
+.mhero{position:relative;background:radial-gradient(600px 260px at 92% 0%,#ffe0cf,transparent 70%),radial-gradient(520px 240px at 0% 100%,#e6ddff,transparent 70%);border-radius:28px;padding:28px 24px 22px;margin-top:14px}
+.mhero::after{content:"";position:absolute;right:18px;top:16px;width:84px;height:84px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 8l9 25 26 1-21 16 8 26-22-15-22 15 8-26-21-16 26-1z' fill='%23ffb627'/%3E%3Cpath d='M12 88q14-14 28 0t28 0t28 0' stroke='%23e8553f' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:.9;pointer-events:none}
+.mhello{display:inline-block;background:#fff;color:#b83a1f;font-weight:700;font-size:14px;border-radius:99px;padding:5px 12px;margin:0 0 6px;box-shadow:0 2px 0 #f3d2c2}
+.mhero h1,.mdesc h1,.minfo h1{font-family:Poppins,sans-serif;font-weight:800;letter-spacing:-.02em}
+.mhero h1{background:linear-gradient(transparent 62%,#ffd9c7 62%,#ffd9c7 88%,transparent 88%);display:inline;padding:0 4px}
+.mdesc h2,main h2{font-family:Poppins,sans-serif;font-weight:800}
+main h2::after{content:"";display:block;width:46px;height:8px;margin-top:6px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 8'%3E%3Cpath d='M2 5q5-5 10 0t10 0t10 0t10 0' stroke='%23e8553f' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat}
+.mtile{border-radius:20px;transition:transform .15s}.mtile:hover{transform:translateY(-3px) rotate(-.5deg)}
+.mgrid .mtile:nth-child(4n+1){background:#ffeee5}.mgrid .mtile:nth-child(4n+2){background:#eef6ee}.mgrid .mtile:nth-child(4n+3){background:#f1ecff}.mgrid .mtile:nth-child(4n+4){background:#fff4d6}
+.mtile em{color:#9c4130;font-style:normal;font-weight:600}
+.mbtn{background:#e8553f;border-radius:99px;box-shadow:0 4px 0 #b83a1f}.mbtn:hover{background:#d94a2b}
+.mwhy{background:#fff1e6;border-top:0;border-radius:28px 28px 0 0}
+.mf{background:#2a1a1f;color:#fbe9df}.mf a{color:#ffd2c2}.mf .small{color:#e8cfc4}
+
+.mf p,.mf small{color:#e6d6ca}
+.mbtn{background:#c23a1d}
