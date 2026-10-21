@@ -5,3 +5,4 @@ Disallow: /free/dl/
 
 Sitemap: https://www.tchworks.co.uk/sitemap.xml
 Sitemap: https://www.tchworks.co.uk/cards/sitemap.xml
+Sitemap: https://www.tchworks.co.uk/merch/sitemap.xml
