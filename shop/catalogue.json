@@ -294,5 +294,302 @@
   "page": "https://www.tchworks.co.uk/shop/self-employed-log-2027-28/",
   "pages": 104,
   "category": "work"
+ },
+ "daily-planner-undated": {
+  "title": "Undated Daily Planner",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/8x214m2Ca22F3ZK4zT2890a",
+  "page": "https://www.tchworks.co.uk/shop/daily-planner-undated/",
+  "pages": 95,
+  "category": "life",
+  "calendar": true
+ },
+ "monthly-goal-planner": {
+  "title": "Monthly Goal Planner",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/00w28q0u2dLnfIs3vP2890b",
+  "page": "https://www.tchworks.co.uk/shop/monthly-goal-planner/",
+  "pages": 26,
+  "category": "life",
+  "calendar": true
+ },
+ "kids-chore-chart": {
+  "title": "Kids Chore Chart and Pocket Money Tracker",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/bJeaEW90y22FgMw4zT2890c",
+  "page": "https://www.tchworks.co.uk/shop/kids-chore-chart/",
+  "pages": 15,
+  "category": "life",
+  "calendar": true
+ },
+ "family-chore-rota": {
+  "title": "Family Chore Rota",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/bJecN490ydLn1RC1nH2890d",
+  "page": "https://www.tchworks.co.uk/shop/family-chore-rota/",
+  "pages": 16,
+  "category": "life",
+  "calendar": true
+ },
+ "weekly-cleaning-schedule": {
+  "title": "Weekly Cleaning Schedule",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/9B6cN41y6fTv7bW2rL2890e",
+  "page": "https://www.tchworks.co.uk/shop/weekly-cleaning-schedule/",
+  "pages": 5,
+  "category": "life",
+  "calendar": true
+ },
+ "morning-evening-routine": {
+  "title": "Morning and Evening Routine Planner",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/7sYaEWb8GcHjcwg5DX2890f",
+  "page": "https://www.tchworks.co.uk/shop/morning-evening-routine/",
+  "pages": 12,
+  "category": "life",
+  "calendar": true
+ },
+ "self-care-planner": {
+  "title": "Self-Care Planner",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/00w3cu2Ca8r3eEo8Q92890g",
+  "page": "https://www.tchworks.co.uk/shop/self-care-planner/",
+  "pages": 15,
+  "category": "life",
+  "calendar": true
+ },
+ "medication-appointment-log": {
+  "title": "Medication and Appointment Log",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/14A7sK3Ge22FgMw6I12890h",
+  "page": "https://www.tchworks.co.uk/shop/medication-appointment-log/",
+  "pages": 18,
+  "category": "life",
+  "calendar": true
+ },
+ "pet-care-planner": {
+  "title": "Pet Care Planner",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/eVq28qb8GgXz0Ny5DX2890i",
+  "page": "https://www.tchworks.co.uk/shop/pet-care-planner/",
+  "pages": 7,
+  "category": "life",
+  "calendar": true
+ },
+ "uk-garden-planner": {
+  "title": "UK Garden Planner",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/00w5kCgt08r38g02rL2890j",
+  "page": "https://www.tchworks.co.uk/shop/uk-garden-planner/",
+  "pages": 16,
+  "category": "life",
+  "calendar": true
+ },
+ "holiday-travel-planner": {
+  "title": "Holiday and Travel Planner",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/6oU6oG3GebDfdAkc2l2890k",
+  "page": "https://www.tchworks.co.uk/shop/holiday-travel-planner/",
+  "pages": 5,
+  "category": "life",
+  "calendar": false
+ },
+ "house-move-planner": {
+  "title": "House Move Planner",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/fZu9AS6Sq6iV53Oeat2890l",
+  "page": "https://www.tchworks.co.uk/shop/house-move-planner/",
+  "pages": 7,
+  "category": "life",
+  "calendar": true
+ },
+ "batch-cook-meal-prep-planner": {
+  "title": "Batch Cook and Meal Prep Planner",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/bJeeVc4KiazbdAkaYh2890m",
+  "page": "https://www.tchworks.co.uk/shop/batch-cook-meal-prep-planner/",
+  "pages": 16,
+  "category": "meals",
+  "calendar": true
+ },
+ "recipe-book-template": {
+  "title": "Recipe Book Template",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/14A9ASdgOcHj9k43vP2890n",
+  "page": "https://www.tchworks.co.uk/shop/recipe-book-template/",
+  "pages": 64,
+  "category": "meals",
+  "calendar": false
+ },
+ "monthly-budget-planner": {
+  "title": "Monthly Budget Planner",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/eVqcN490ydLn53OaYh2890o",
+  "page": "https://www.tchworks.co.uk/shop/monthly-budget-planner/",
+  "pages": 15,
+  "category": "money",
+  "calendar": true
+ },
+ "bill-payment-calendar": {
+  "title": "Bill Payment Calendar",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/eVq6oG0u236J2VGd6p2890p",
+  "page": "https://www.tchworks.co.uk/shop/bill-payment-calendar/",
+  "pages": 4,
+  "category": "money",
+  "calendar": true
+ },
+ "no-spend-challenge": {
+  "title": "30-Day No-Spend Challenge",
+  "price": "2.49",
+  "buy": "https://buy.stripe.com/8x200idgOfTv53O7M52890q",
+  "page": "https://www.tchworks.co.uk/shop/no-spend-challenge/",
+  "pages": 4,
+  "category": "money",
+  "calendar": true
+ },
+ "student-weekly-study-planner": {
+  "title": "Student Weekly Study Planner",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/cNi3cub8GgXzgMw7M52890r",
+  "page": "https://www.tchworks.co.uk/shop/student-weekly-study-planner/",
+  "pages": 17,
+  "category": "study",
+  "calendar": true
+ },
+ "12-week-fitness-tracker": {
+  "title": "12-Week Fitness Tracker",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/3cI4gygt036J2VGc2l2890s",
+  "page": "https://www.tchworks.co.uk/shop/12-week-fitness-tracker/",
+  "pages": 15,
+  "category": "fitness",
+  "calendar": true
+ },
+ "beginner-5k-running-plan": {
+  "title": "Beginner 5K Running Plan",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/4gMaEW5Om6iV53Oeat2890t",
+  "page": "https://www.tchworks.co.uk/shop/beginner-5k-running-plan/",
+  "pages": 4,
+  "category": "fitness",
+  "calendar": true
+ },
+ "water-and-wellness-tracker": {
+  "title": "Water and Wellness Tracker",
+  "price": "2.49",
+  "buy": "https://buy.stripe.com/bJe14mfoW36J1RC8Q92890u",
+  "page": "https://www.tchworks.co.uk/shop/water-and-wellness-tracker/",
+  "pages": 13,
+  "category": "fitness",
+  "calendar": true
+ },
+ "sleep-tracker": {
+  "title": "Sleep Tracker and Wind-Down Plan",
+  "price": "2.49",
+  "buy": "https://buy.stripe.com/5kQ6oGdgO6iV2VG0jD2890v",
+  "page": "https://www.tchworks.co.uk/shop/sleep-tracker/",
+  "pages": 11,
+  "category": "fitness",
+  "calendar": true
+ },
+ "wedding-planner-uk": {
+  "title": "Wedding Planner UK",
+  "price": "6.99",
+  "buy": "https://buy.stripe.com/bJe5kC0u2ePrcwg9Ud2890w",
+  "page": "https://www.tchworks.co.uk/shop/wedding-planner-uk/",
+  "pages": 12,
+  "category": "events",
+  "calendar": true
+ },
+ "pregnancy-planner-uk": {
+  "title": "Pregnancy Planner UK",
+  "price": "5.99",
+  "buy": "https://buy.stripe.com/bJeeVcekSbDfeEo0jD2890x",
+  "page": "https://www.tchworks.co.uk/shop/pregnancy-planner-uk/",
+  "pages": 7,
+  "category": "events",
+  "calendar": true
+ },
+ "newborn-feed-sleep-log": {
+  "title": "Newborn Feed, Nappy and Sleep Log",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/9B68wOekSbDffIs2rL2890y",
+  "page": "https://www.tchworks.co.uk/shop/newborn-feed-sleep-log/",
+  "pages": 87,
+  "category": "events",
+  "calendar": true
+ },
+ "kids-birthday-party-planner": {
+  "title": "Kids Birthday Party Planner",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/14A8wO5OmcHjbscd6p2890z",
+  "page": "https://www.tchworks.co.uk/shop/kids-birthday-party-planner/",
+  "pages": 6,
+  "category": "events",
+  "calendar": true
+ },
+ "invoice-template-uk": {
+  "title": "Invoice Template UK",
+  "price": "3.99",
+  "buy": "https://buy.stripe.com/eVq14m4Ki5eRcwg5DX2890A",
+  "page": "https://www.tchworks.co.uk/shop/invoice-template-uk/",
+  "pages": 6,
+  "category": "work",
+  "calendar": false
+ },
+ "cv-template-uk": {
+  "title": "CV Template UK",
+  "price": "4.99",
+  "buy": "https://buy.stripe.com/9B6aEWccKfTvbscd6p2890B",
+  "page": "https://www.tchworks.co.uk/shop/cv-template-uk/",
+  "pages": 7,
+  "category": "work",
+  "calendar": false
+ },
+ "cover-letter-template": {
+  "title": "Cover Letter Template",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/3cI14m3GedLn53O0jD2890C",
+  "page": "https://www.tchworks.co.uk/shop/cover-letter-template/",
+  "pages": 5,
+  "category": "work",
+  "calendar": false
+ },
+ "business-expense-receipt-log": {
+  "title": "Business Expense and Receipt Log",
+  "price": "2.99",
+  "buy": "https://buy.stripe.com/5kQ3cu1y67mZ53O2rL2890D",
+  "page": "https://www.tchworks.co.uk/shop/business-expense-receipt-log/",
+  "pages": 15,
+  "category": "work",
+  "calendar": true
+ },
+ "social-media-content-planner": {
+  "title": "Social Media Content Planner",
+  "price": "3.49",
+  "buy": "https://buy.stripe.com/7sY9AS90y4aNfIs9Ud2890E",
+  "page": "https://www.tchworks.co.uk/shop/social-media-content-planner/",
+  "pages": 18,
+  "category": "work",
+  "calendar": true
+ },
+ "meeting-agenda-notes": {
+  "title": "Meeting Agenda and Minutes Template",
+  "price": "2.49",
+  "buy": "https://buy.stripe.com/cNiaEW2CadLncwg2rL2890F",
+  "page": "https://www.tchworks.co.uk/shop/meeting-agenda-notes/",
+  "pages": 7,
+  "category": "work",
+  "calendar": false
+ },
+ "new-templates-bundle": {
+  "title": "Complete Template Collection (32 templates)",
+  "price": "19.99",
+  "buy": "https://buy.stripe.com/8x2fZg1y66iV1RCgiB2890G",
+  "page": "https://www.tchworks.co.uk/shop/new-templates-bundle/",
+  "pages": 570,
+  "category": "life",
+  "calendar": false
  }
 }
