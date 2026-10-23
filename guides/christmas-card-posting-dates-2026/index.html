@@ -604,6 +604,18 @@ main.section .wrap>.kicker{color:#92400e}
 <tr><td style="padding:.5rem;border-bottom:1px solid #eee"><b>Wednesday 23 December</b></td><td style="padding:.5rem;border-bottom:1px solid #eee">Special Delivery Guaranteed</td></tr>
 </tbody></table>
 <p>Saturday 19 December is also the last date for Royal Mail Tracked Returns 48 to get back to the sender before Christmas.</p>
+<div id="dl-check" style="margin:1.5rem 0;padding:1rem 1.1rem;border:2px solid #14532D;border-radius:12px;background:#F3EEDF">
+<h3 style="margin:0 0 .5rem">How many days have you got?</h3>
+<ul id="dl-list" style="margin:.25rem 0 .75rem;padding-left:1.1rem"></ul>
+<p id="dl-tip" style="margin:0"></p>
+<noscript><p>Turn on JavaScript to see a live countdown, or use the dates in the table above.</p></noscript>
+</div>
+<script>(function(){var S=[["2nd Class","2026-12-18"],["Tracked 48","2026-12-19"],["1st Class and Tracked 24","2026-12-21"],["Special Delivery Guaranteed","2026-12-23"]];
+var n=new Date(),t=Date.UTC(n.getFullYear(),n.getMonth(),n.getDate()),L=document.getElementById("dl-list"),gone=0;
+S.forEach(function(s){var p=s[1].split("-"),d=Math.round((Date.UTC(+p[0],p[1]-1,+p[2])-t)/864e5),li=document.createElement("li");
+li.textContent=s[0]+": "+(d>1?d+" days left":d==1?"post by tomorrow":d==0?"today is the last day":"missed");if(d<0)gone++;L.appendChild(li)});
+document.getElementById("dl-tip").innerHTML=gone==S.length?"Every Christmas posting date has passed. You can still <a href=\"/shop/printable-christmas-cards/\">print a card at home tonight</a> and hand it over.":gone?"Missed some dates? <a href=\"/shop/printable-christmas-cards/\">Print a card at home instead</a>, 15 designs for £2.99.":"Short on cards? <a href=\"/shop/printable-christmas-cards/\">Print your own at home</a>: 15 designs for £2.99, print as many as you need.";})();</script>
+
 
 <h2>Parcelforce Worldwide (UK)</h2>
 <ul>
@@ -636,6 +648,9 @@ main.section .wrap>.kicker{color:#92400e}
 <h2>No time to write and post them yourself?</h2>
 <p>TCH Works sells personalised Christmas cards from £3.99 with UK delivery included. You add your own words on the front and inside, and we print and post it straight to the person. Order a few working days before the Royal Mail date for your delivery speed, so it has time to be printed first.</p>
 <p style="margin-top:1.25rem"><a class="btn btn-yellow" href="/cards/christmas/">See personalised Christmas cards · from £3.99</a></p>
+<h2>Missed the post, or need a card tonight?</h2>
+<p>Print one at home. Our <a href="/shop/printable-christmas-cards/">print-at-home Christmas cards</a> are 15 original designs (Mum, Dad, Nan, Grandad, partner, best friend, teacher, colleague, the dog, the cat and more). Each prints on one A4 sheet and folds to an A5 card that fits a C5 envelope, with a blank or printed message inside. £2.99 for all 15, emailed after payment.</p>
+<p style="margin-top:1rem"><a class="btn btn-yellow" href="/shop/printable-christmas-cards/?src=guide-posting-dates">Print-at-home Christmas cards · £2.99</a></p>
 <p class="meta" style="color:var(--muted);font-size:.9rem;margin-top:2rem">Source: <a href="https://www.royalmail.com/christmas/last-posting-dates" rel="nofollow">Royal Mail, Christmas 2026 last posting dates</a>, checked 21 October 2026. Dates are Royal Mail's, not ours, and can change; check their page before you post.</p>
 </div><div class="wrap"><p style="margin:1.5rem 0"><a href="/guides/what-to-write-in-a-christmas-card/">What to write in your Christmas cards: 60+ message ideas</a></p></div></main>
 <footer class="site-footer">
