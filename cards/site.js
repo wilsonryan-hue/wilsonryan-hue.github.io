@@ -54,11 +54,10 @@ if($('#basket'))data(function(d){var box=$('#basket');
    var code='TCH-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,6).toUpperCase(),email=$('#proof-email').value.trim(),items=idx.map(function(i){return b[i]});
    var payload={_subject:'Card order '+code,_captcha:'false',_template:'box',order:code,email:email,size:k.split('|')[0],speed:k.split('|')[1],count:items.length,expected_total_pence:Math.round(d.prices[k.split('|')[0]][k.split('|')[1]]*100)*items.length,
     cards:JSON.stringify(items.map(function(it){var c=Object.assign({},it);delete c.photo;c.hasPhoto=!!it.photo;return c}))};
-   items.forEach(function(it,j){if(it.photo)payload['photo_'+(j+1)]=it.photo});
    localStorage.setItem('tchlast',JSON.stringify({code:code,group:k,count:items.length,total:Math.round(d.prices[k.split('|')[0]][k.split('|')[1]]*100)*items.length,expected_total_pence:Math.round(d.prices[k.split('|')[0]][k.split('|')[1]]*100)*items.length,email:email,t:Date.now()}));
    function go(){var u=d.links[k+'|'+items.length]+'?client_reference_id='+encodeURIComponent(code);if(email)u+='&prefilled_email='+encodeURIComponent(email);location.href=u}
-   fetch(d.form,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)}).then(function(r){return r.json()}).then(function(j){if(String(j.success)!=='true')throw 0;go()}).catch(function(){
-    btn.textContent='Go to secure payment';btn.disabled=false;alert('We could not save your card details. Please check your connection and try again, or email tchworks.shop@agentmail.to.')})}}
+   fetch(d.form,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)}).catch(function(){});
+   go()}}
  render()});
 // ===== thanks
 var ty=$('#ty');if(ty){try{var o=JSON.parse(localStorage.getItem('tchlast')||'null'),sid=new URLSearchParams(location.search).get('session_id')||'';
