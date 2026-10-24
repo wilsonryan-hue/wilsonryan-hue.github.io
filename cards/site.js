@@ -18,7 +18,7 @@ var D=null;function data(cb){if(D)return cb(D);fetch('/cards/templates.json').th
 function svgFor(it,d){var t=null;d.templates.some(function(x){if(x.id===it.design){t=Object.assign({},x);return true}});if(!t)return'';var pal=null;d.templates.some(function(x){if(x.palette===it.palette){pal=x.pal;return true}});if(pal)t.pal=pal;
  var s=TCHCards.render(t,{headline:it.headline,sub:it.sub,font:it.font,photo:it.photo});if(it.size==='square')s=s.replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ').replace('viewBox="0 0 500 700"','viewBox="0 100 500 500"');return s}
 // ===== editor
-if($('#ed'))data(function(d){var T=d.templates,byId={},pals={};T.forEach(function(t){byId[t.id]=t;pals[t.palette]=t.pal});
+if($('#ed'))data(function(d){var ALL=d.templates,T=ALL.filter(function(t){return !t.hidden}),byId={},pals={};ALL.forEach(function(t){pals[t.palette]=t.pal});T.forEach(function(t){byId[t.id]=t});
  var q=new URLSearchParams(location.search),cur=byId[q.get('d')]||byId[$('#f-design').getAttribute('data-default')]||T[0],photo=null,sd=$('#f-design'),sp=$('#f-pal');
  sd.innerHTML='';T.forEach(function(t){var o=document.createElement('option');o.value=t.id;o.textContent=t.name;sd.appendChild(o)});
  Object.keys(pals).forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k.charAt(0).toUpperCase()+k.slice(1);sp.appendChild(o)});
