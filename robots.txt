@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /f/
 Disallow: /free/dl/
+Disallow: /cards/print/
 
 Sitemap: https://www.tchworks.co.uk/sitemap.xml
 Sitemap: https://www.tchworks.co.uk/cards/sitemap.xml
