@@ -75,7 +75,8 @@ for (const [slug, files] of pageFiles('shop')) {
   const insideList = html.match(/<ul class="inside-list">([\s\S]*?)<\/ul>/);
   const bullets = [...(insideList ? insideList[1] : html).matchAll(/<li>([\s\S]*?)<\/li>/g)].map((m) => decode(m[1])).filter((b) => b.length > 8 && b.length < 110).slice(0, 4);
   // The page's own product picture, when it has one (img/p/<slug>/card.webp)
-  const ownImage = pick(html, /<meta property="og:image" content="https:\/\/www\.tchworks\.co\.uk\/([^"]+)"/);
+  const ownTags = html.replace(/<!-- share:start -->[\s\S]*?<!-- share:end -->/, ''); // ignore the tags this script added
+  const ownImage = pick(ownTags, /<meta property="og:image" content="https:\/\/www\.tchworks\.co\.uk\/([^"]+)"/);
   const photo = ownImage && exists(ownImage) ? ownImage : null;
   const description = pick(html, /<meta name="description" content="([^"]*)"/) || lede;
   const priceNum = parseFloat(price.replace(/[£,]/g, '')) || 0;
