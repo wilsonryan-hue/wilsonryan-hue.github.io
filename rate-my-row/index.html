@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rate My Row</title>
+<meta name="theme-color" content="#14111F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Rate My Row">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FF5C7A'/%3E%3Cpath d='M18 40V24h12a7 7 0 0 1 0 14h-4l10 6M38 24l4 16 4-10 4 10 4-16' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Stuck in a row? Both sides tell their story and everyone else picks who's right.">
+<meta property="og:title" content="Rate My Row"><meta property="og:description" content="Stuck in a row? Let everyone decide."><meta property="og:image" content="icon-512.png">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+:root{color-scheme:dark;--violet:#9C8CFF;--danger:#FF6B6B;--bg:#14111F;--bg2:#1C1830;--card:#231E3A;--card2:#2B2547;--line:#3A3360;--text:#F6F3FF;--muted:#B5ADD6;--dim:#8A82AE;
+--a:#FF5C7A;--b:#3DD6C4;--gold:#FFC857;--ok:#5BE38A;--warn:#FFB14E;--r:18px;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background-color:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+body{background:radial-gradient(1200px 600px at 10% -10%,#3B1F4F 0,transparent 60%),radial-gradient(900px 500px at 110% 0,#123C4A 0,transparent 55%),var(--bg);min-height:100vh}
+button,input,textarea,select{font:inherit;color:inherit}
+a{color:var(--b)}
+.wrap{max-width:760px;margin:0 auto;padding-block:16px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{display:flex;align-items:center;gap:12px;padding:8px 0 18px}
+.logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--a),#B44CFF);display:grid;place-items:center;box-shadow:var(--shadow)}
+.logo svg{width:26px;height:26px}
+.brand b{font-size:20px;letter-spacing:-.02em;display:block;line-height:1.1}
+.brand span{font-size:13px;color:var(--muted)}
+.top .grow{flex:1}
+h1{font-size:28px;letter-spacing:-.03em;line-height:1.15;margin:4px 0 6px}
+h2{font-size:19px;letter-spacing:-.02em;margin:26px 0 10px}
+h3{margin:0;font-size:17px;letter-spacing:-.01em;line-height:1.3}
+p{margin:6px 0}
+.muted{color:var(--muted)}.small{font-size:13.5px}.dim{color:var(--dim)}
+.btn{border:0;border-radius:14px;padding:12px 18px;font-weight:650;cursor:pointer;background:var(--card2);color:var(--text);display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;transition:transform .08s,filter .15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:linear-gradient(135deg,var(--a),#E0479F);color:#fff;box-shadow:0 8px 24px rgba(255,92,122,.35)}
+.btn.teal{background:linear-gradient(135deg,var(--b),#2BA6D9);color:#08201E}
+.btn.ghost{background:transparent;border:1px solid var(--line)}
+.btn.block{width:100%}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:var(--card2);color:var(--muted);font-size:13px;font-weight:600}
+.chip.live{background:rgba(255,92,122,.16);color:#FF9DB0}
+.chip.done{background:rgba(91,227,138,.14);color:var(--ok)}
+.chip.close{background:rgba(255,200,87,.14);color:var(--gold)}
+.dot{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.card{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+.feed{display:grid;gap:14px}
+.case{cursor:pointer;position:relative;overflow:hidden}
+.case:hover{border-color:#574D8C}
+.case .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch;margin-top:12px}
+.side{border-radius:14px;padding:12px;background:rgba(255,255,255,.03);border:1px solid var(--line);font-size:14.5px}
+.side b{display:block;font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.side.a b{color:var(--a)}.side.b b{color:var(--b)}
+.vs .v{align-self:center;font-weight:800;color:var(--dim);font-size:13px}
+.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hero{padding:22px;border-radius:24px;background:linear-gradient(135deg,rgba(255,92,122,.22),rgba(61,214,196,.12));border:1px solid var(--line);margin-bottom:6px}
+.hero p{color:var(--muted)}
+.hero .btn{margin-top:12px}
+.tabs{display:flex;gap:6px;background:var(--bg2);padding:5px;border-radius:14px;border:1px solid var(--line);margin:18px 0 12px;overflow-x:auto}
+.tabs button{flex:1;border:0;background:transparent;color:var(--muted);padding:9px 12px;border-radius:10px;font-weight:650;cursor:pointer;white-space:nowrap}
+.tabs button.on{background:var(--card2);color:var(--text)}
+nav.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(20,17,31,.92);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:4px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));z-index:20}
+nav.bar button{flex:0 1 150px;border:0;background:transparent;color:var(--dim);display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:650;padding:6px;border-radius:12px;cursor:pointer}
+nav.bar button svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+nav.bar button.on{color:var(--text)}
+nav.bar button.new{color:#fff}
+nav.bar button.new span.plus{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--a),#B44CFF);display:grid;place-items:center;margin-top:-20px;box-shadow:0 8px 22px rgba(255,92,122,.45)}
+.back{background:none;border:0;color:var(--muted);font-weight:650;cursor:pointer;padding:6px 0;display:inline-flex;gap:6px;align-items:center}
+.vote{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.vote .btn{min-height:58px;font-size:16px}
+.vote .btn.va{background:rgba(255,92,122,.15);border:1.5px solid rgba(255,92,122,.5)}
+.vote .btn.vb{background:rgba(61,214,196,.12);border:1.5px solid rgba(61,214,196,.5)}
+.vote .btn.sel{outline:3px solid var(--gold);outline-offset:2px}
+.vote .wide{grid-column:span 1;min-height:48px;font-size:14px;line-height:1.2}
+.qa{display:grid;gap:10px}
+.q{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line)}
+.up{border:1px solid var(--line);background:var(--bg2);border-radius:12px;min-width:50px;padding:6px;display:flex;flex-direction:column;align-items:center;cursor:pointer;color:var(--muted);font-weight:700;font-size:13px}
+.up.on{color:var(--gold);border-color:var(--gold)}
+.ans{margin-top:6px;padding-left:10px;border-left:3px solid var(--b);color:var(--muted);font-size:14.5px}
+form .field{margin:14px 0}
+label.l{display:block;font-weight:650;font-size:14px;margin-bottom:6px}
+input[type=text],textarea,select{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
+input[type=text]:focus,textarea:focus,select:focus{border-color:var(--a)}
+textarea{min-height:120px;resize:vertical}
+.count{float:right;color:var(--dim);font-size:12.5px;font-weight:500}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:inline-block;padding:9px 14px;border-radius:12px;background:var(--bg2);border:1px solid var(--line);font-weight:600;font-size:14px}
+.seg input:checked+span{border-color:var(--a);background:rgba(255,92,122,.14)}
+.seg input:focus-visible+span{outline:2px solid var(--b)}
+.steps{display:flex;gap:6px;margin:10px 0 4px}
+.steps i{flex:1;height:5px;border-radius:9px;background:var(--line)}
+.steps i.on{background:linear-gradient(90deg,var(--a),var(--b))}
+.check{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--bg2);cursor:pointer;margin-top:10px}
+.check input{width:22px;height:22px;accent-color:var(--a);margin-top:2px}
+.verdict{text-align:center;padding:26px 18px;border-radius:24px;position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(160deg,#2A1F4A,#1A2B3D)}
+.verdict .crown{font-size:44px;line-height:1}
+.verdict h2{margin:8px 0 4px;font-size:26px}
+.bars{margin:18px 0 6px;display:grid;gap:9px;text-align:left}
+.barrow{display:grid;grid-template-columns:110px 1fr 46px;gap:10px;align-items:center;font-size:14px}
+.bar{height:12px;border-radius:9px;background:rgba(255,255,255,.07);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:9px;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.hidden-tally{display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:14px;background:rgba(255,200,87,.08);border:1px dashed rgba(255,200,87,.4);color:var(--gold);font-size:14px;margin-top:14px}
+.ev{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.evi{width:96px;height:96px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);display:grid;place-items:center;font-size:38px;position:relative}
+.evi small{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:10.5px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);opacity:0;background:#fff;color:#14111F;padding:12px 18px;border-radius:14px;font-weight:650;box-shadow:var(--shadow);transition:.25s;z-index:50;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.help{border-color:rgba(255,177,78,.6);background:linear-gradient(180deg,#3A2A1C,#231E3A)}
+.empty{padding:30px 18px;text-align:center;color:var(--muted)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.spacer{flex:1}
+.confetti{position:absolute;inset:0;pointer-events:none}
+.confetti i{position:absolute;top:-10px;width:8px;height:14px;border-radius:2px;animation:fall 2.4s ease-in forwards}
+@keyframes fall{to{transform:translateY(420px) rotate(540deg);opacity:0}}
+.note{font-size:12.5px;color:var(--dim);margin-top:10px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:520px){h1{font-size:24px}.vs{grid-template-columns:1fr}.vs .v{justify-self:center}.barrow{grid-template-columns:86px 1fr 40px}}
+
+.btn.sm{min-height:36px;padding:6px 12px;font-size:13.5px;border-radius:11px}
+.q .btn.sm{margin-top:8px}
+.btn.danger{background:var(--danger);color:#fff}
+.btn:focus-visible,.up:focus-visible,.case:focus-visible,.tabs button:focus-visible,nav.bar button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+#modal{position:fixed;inset:0;background:rgba(8,6,16,.7);backdrop-filter:blur(4px);display:grid;place-items:end center;z-index:60;padding:16px max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+#modal[hidden]{display:none!important}
+.sheet{width:100%;max-width:520px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
+@media (min-width:600px){#modal{place-items:center}}
+.mode{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-top:12px}
+.ok-dot,.dev-dot{width:9px;height:9px;border-radius:50%;background:var(--ok);flex:none}.dev-dot{background:var(--gold)}
+.install{margin-top:22px}
+.evi{width:110px;height:110px;text-align:center;padding:6px}
+.evi small{line-height:1.2}
+/* 3.0: party-game look, after Heads Up (full-colour decks, huge type), Tinder (swipe), Kahoot (countdown reveal) */
+:root{--display:"Bricolage Grotesque",-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3,.btn,.brand b,.deck,.jbtn,.drumroll b,.kicker{font-family:var(--display)}
+h1{font-weight:800;letter-spacing:-.035em}
+.hero{padding:26px 22px;border-radius:28px;background:radial-gradient(120% 90% at 0% 0%,rgba(255,92,122,.35),transparent 60%),radial-gradient(90% 80% at 100% 100%,rgba(61,214,196,.25),transparent 60%),var(--card)}
+.hero h1{font-size:clamp(30px,8vw,44px);line-height:1.02;margin:6px 0 10px}
+.kicker{margin:0;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--a)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn.play{flex:1 1 260px;justify-content:flex-start;gap:14px;padding:12px 16px;min-height:66px;border-radius:18px;background:var(--gold);color:#1B1430;box-shadow:0 10px 26px rgba(255,200,87,.35);text-align:left}
+.btn.play b{display:block;font-size:19px;line-height:1.1}
+.btn.play small{display:block;font-family:-apple-system,"Segoe UI",sans-serif;font-weight:600;font-size:12.5px;opacity:.75}
+.btn.play .play-icon{font-size:28px;width:44px;height:44px;border-radius:13px;background:rgba(27,20,48,.12);display:grid;place-items:center}
+.hero-actions .btn.primary{flex:0 1 auto;min-height:66px;border-radius:18px;padding:0 22px}
+.decks{display:flex;gap:10px;overflow-x:auto;padding:16px 2px 4px;scrollbar-width:none}
+.decks::-webkit-scrollbar{display:none}
+.deck{flex:0 0 auto;border:0;cursor:pointer;width:116px;height:132px;border-radius:20px;background:var(--deck);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding:12px;font-weight:800;font-size:16px;line-height:1.1;text-align:left;box-shadow:0 8px 20px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.deck span{position:absolute;top:8px;right:8px;font-size:34px}
+.deck small{font-family:-apple-system,"Segoe UI",sans-serif;font-weight:600;font-size:12px;opacity:.85;margin-top:4px}
+.deck:active{transform:scale(.96)}
+.case{padding-left:74px}
+.deck-tile{position:absolute;left:16px;top:18px;width:44px;height:44px;border-radius:14px;background:var(--deck);display:grid;place-items:center;font-size:22px}
+.deck-chip{background:color-mix(in srgb,var(--deck) 22%,transparent);color:#fff}
+.case-q span{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--deck);font-size:20px;vertical-align:-6px;margin-right:4px}
+@media (max-width:520px){.case{padding-left:18px;padding-top:70px}.deck-tile{top:16px}}
+/* Judge: full-screen deck, one row at a time */
+body.judging{overflow:hidden}
+body.judging nav.bar{display:none}
+#judge{position:fixed;inset:0;z-index:40;background:var(--deck);display:flex;flex-direction:column;padding:calc(12px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));transition:background .35s;color:#fff}
+#judge[hidden]{display:none!important}
+.judge-top{display:flex;align-items:center;gap:10px;font-weight:800}
+.judge-top .jdeck{flex:1;text-align:center;font-family:var(--display);font-size:17px}
+.jcount{font-variant-numeric:tabular-nums;background:rgba(0,0,0,.18);padding:6px 10px;border-radius:99px;font-size:13px}
+.jx{border:0;background:rgba(0,0,0,.18);color:#fff;width:40px;height:40px;border-radius:50%;font-size:16px;cursor:pointer}
+.jstage{flex:1;display:grid;place-items:center;padding:14px 0;min-height:0}
+.jcard{width:100%;max-width:520px;max-height:100%;overflow:auto;background:#fff;color:#1B1430;border-radius:28px;padding:24px 20px 18px;box-shadow:0 24px 60px rgba(0,0,0,.35);touch-action:pan-y;user-select:none;cursor:grab;position:relative}
+.jcard h2{font-size:clamp(24px,6.5vw,32px);line-height:1.08;margin:0 0 14px;letter-spacing:-.03em}
+.jside{background:#F4F1FA;border-radius:16px;padding:10px 12px;margin-top:8px;font-size:15px}
+.jside b{font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--deck)}
+.jside p{margin:2px 0 0}
+.jtime{color:#7A7196;font-size:12.5px;margin:10px 0 0;text-align:center}
+.jtag{position:absolute;top:18px;padding:4px 10px;border-radius:10px;font-family:var(--display);font-weight:800;font-size:18px;border:3px solid;opacity:0;transition:opacity .1s;text-transform:uppercase}
+.jtag.left{left:16px;color:var(--a);transform:rotate(-12deg)}
+.jtag.right{right:16px;color:#0E9E8C;transform:rotate(12deg)}
+.jcard.lean-a .jtag.left,.jcard.lean-b .jtag.right{opacity:1}
+.jbuttons{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;width:100%;margin:0 auto}
+.jbtn{border:0;border-radius:20px;min-height:64px;font-weight:800;font-size:19px;cursor:pointer;color:#1B1430;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 12px}
+.jbtn:active{transform:scale(.96)}
+.jminor{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:10px}
+.jminor button{border:0;background:rgba(0,0,0,.18);color:#fff;border-radius:99px;padding:8px 14px;font-weight:700;font-size:13.5px;cursor:pointer}
+.jhint{text-align:center;font-size:12.5px;opacity:.8;margin:8px 0 0}
+.judge-end{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px}
+.judge-end .big{font-size:72px}
+.judge-end h2{font-size:34px;margin:0}
+/* verdict drumroll and stamp, after Kahoot's countdown */
+.verdict.drum>*:not(.drumroll){visibility:hidden}
+.drumroll{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.drumroll b{font-size:110px;line-height:1;animation:pop .75s ease-out}
+.drumroll p{margin:0;color:var(--muted);font-weight:700}
+@keyframes pop{0%{transform:scale(.4);opacity:0}40%{transform:scale(1.15);opacity:1}100%{transform:scale(1)}}
+.verdict.stamp h2{animation:stamp .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes stamp{0%{transform:scale(2.4) rotate(-8deg);opacity:0}100%{transform:none;opacity:1}}
+.verdict h2{font-size:34px}
+.verdict{min-height:300px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+#install-sheet{position:fixed;inset:0;z-index:80;background:rgba(8,6,16,.72);backdrop-filter:blur(4px);display:grid;place-items:end center;padding:16px max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+#install-sheet .sheet{animation:rise .3s ease-out}
+@keyframes rise{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+@media (min-width:600px){#install-sheet{place-items:center}}
+.is-head{display:flex;gap:14px;align-items:center}
+.is-head img{border-radius:14px;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+.is-head h3{margin:0;font-size:22px}
+.is-head p{margin:2px 0 0}
+.is-lead{font-size:16px;margin:16px 0 6px}
+.is-go{width:100%;min-height:58px;font-size:18px;margin-top:10px}
+.is-later{width:100%;margin-top:10px}
+.is-steps{margin:10px 0 0;padding-left:22px;line-height:1.5}
+.is-steps li{margin:8px 0}
+.is-ic{display:inline-grid;place-items:center;min-width:26px;height:26px;border-radius:8px;background:rgba(255,255,255,.12);font-weight:800;vertical-align:-3px;padding:0 4px}
+.is-arrow{text-align:center;font-size:34px;margin:6px 0 0;color:var(--gold);animation:bob 1s ease-in-out infinite alternate}
+@keyframes bob{to{transform:translateY(8px)}}
+</style>
+<div class="wrap">
+  <header class="top">
+    <div class="logo" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M14 44V20h13a8 8 0 0 1 0 16h-5l12 8M36 22l4 18 4-12 4 12 4-18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="brand"><b>Rate My Row</b><span>Let the public settle it</span></div>
+    <span class="grow"></span>
+  </header>
+  <main id="view" aria-live="polite"></main>
+</div>
+<nav class="bar" aria-label="Main">
+  <button data-nav="feed" class="on"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Live rows</button>
+  <button data-nav="new" class="new"><span class="plus"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>Start a row</button>
+  <button data-nav="mine"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>My rows</button>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+<div id="modal" hidden></div>
+<div id="judge" hidden role="dialog" aria-label="Judge"></div>
+
+<script>window.RMR_LIVE = 'https://claude.ai/artifact/GDmfF23hdgKB9cbpLm8GbF';</script>
+<script src="pwa.js"></script>
+<script>window.RMR_URL = 'https://www.tchworks.co.uk/rate-my-row/';</script>
+<script>
+'use strict';
+// Rate My Row. Two modes, same screens:
+//  - Shared: published on claude.ai with the `db` capability, so rows, votes and questions are real and shared between phones.
+//  - On this device: anywhere else (or signed out), everything is kept in this browser and a demo crowd votes on example rows.
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const KEY = 'rate-my-row-v2';
+const HOUR = 3600e3;
+const SHARE_URL = window.RMR_URL || '';
+const CATS = ['Chores', 'Money', 'Plans & time', 'Pets', 'Food', 'Family', 'Going out', 'Tech & telly', 'Holidays', 'Other'];
+const RELS = ['Partners', 'Married', 'Flatmates', 'Siblings', 'Friends', 'Co-parents'];
+// Every category is a colour-coded deck, like the decks in Heads Up.
+const DECK = {'Chores': ['#FF5C7A', '🧽'], 'Money': ['#F5A524', '💷'], 'Plans & time': ['#4D8BFF', '⏰'], 'Pets': ['#22C3A6', '🐶'],
+  'Food': ['#FF7A45', '🍝'], 'Family': ['#A66BFF', '🏠'], 'Going out': ['#FF4FB8', '🍸'], 'Tech & telly': ['#5B6CFF', '📺'],
+  'Holidays': ['#2EBD6B', '🏖️'], 'Other': ['#8A82AE', '💬']};
+const deck = c => DECK[c.cat] || DECK.Other;
+const EVIDENCE = [['📸', 'A photo'], ['💬', 'A message screenshot'], ['🧾', 'A receipt'], ['📅', 'A booking or calendar'], ['✍️', 'Something else']];
+// Stories that need help, not a public vote.
+const SAFETY = /\b(hit|hits|hitting|punch\w*|slap\w*|chok\w*|strangl\w*|hurt me|abus\w*|rape\w*|forced me|threaten\w*|stalk\w*|controls? my (money|phone)|won'?t let me see|kill|suicid\w*|self.?harm|my (son|daughter|child|kid|baby)'?s? (behaviou?r|weight))\b/i;
+const PRIVATE_Q = /\b(address|where (do|does) .* live|work(s)? at|phone number|instagram|snap(chat)?|tiktok|email|surname)\b/i;
+
+// ---------- state ----------
+let local;                 // {cases, me, draft} in this browser
+let shared = null;         // {db, me, rows, votes, questions, ups} when the shared store is on
+const uid = () => Math.random().toString(36).slice(2, 10);
+function loadLocal() {
+  try { local = JSON.parse(localStorage.getItem(KEY)); } catch (e) { local = null; }
+  if (!local || !Array.isArray(local.cases)) { local = {cases: seed(), me: {}}; saveLocal(); }
+}
+function saveLocal() { try { localStorage.setItem(KEY, JSON.stringify(local)); } catch (e) { /* private mode: keep in memory */ } }
+
+function seed() {
+  const now = Date.now();
+  const mk = o => Object.assign({id: uid(), created: now, questions: [], evidence: [], requests: {}, mine: false, example: true, status: 'voting'}, o);
+  return [
+    mk({q: 'Do pans go in the dishwasher or get washed by hand?', cat: 'Chores', rel: 'Partners', a: 'Maya', b: 'Jon',
+      sa: 'Our dishwasher has a pans setting. Jon soaks them in the sink for two days "to loosen them" and the kitchen smells. Put them in, press go, done.',
+      sb: 'The non-stick ones get ruined in the dishwasher, the instructions literally say hand wash. I do wash them, just not the second we finish eating.',
+      closes: now + 5 * HOUR, votes: {a: 212, b: 187, both: 41, split: 23},
+      evidence: [{icon: '📸', label: 'The pan, day two', by: 'a'}, {icon: '🧾', label: 'Pan instructions', by: 'b'}],
+      questions: [{id: uid(), text: 'How many non-stick pans do you actually own?', up: 58, answer: 'Two. The rest are steel. - Jon'},
+        {id: uid(), text: 'Who cooks most nights?', up: 41, answer: ''}]}),
+    mk({q: 'Was being 40 minutes late to my birthday dinner rude?', cat: 'Plans & time', rel: 'Friends', a: 'Priya', b: 'Sam',
+      sa: 'Table booked for 7:30 for six of us. Sam strolled in at 8:10 with no text. The restaurant nearly gave our table away.',
+      sb: 'Trains were cancelled at Piccadilly and my phone died. I ran from the station. I paid for the first round to say sorry.',
+      closes: now + 19 * HOUR, votes: {a: 96, b: 141, both: 12, split: 8},
+      questions: [{id: uid(), text: 'Did anyone else know the trains were down?', up: 22, answer: ''}]}),
+    mk({q: 'Is the dog allowed on the sofa?', cat: 'Pets', rel: 'Married', a: 'Dev', b: 'Omar',
+      sa: 'We agreed when we got Biscuit: no dogs on furniture. Now there is fur on every cushion and I cannot wear black.',
+      sb: 'He is a 7kg cockapoo, he gets cold, and he has his own blanket on one end. The rule was made before we met him.',
+      closes: now + 46 * HOUR, votes: {a: 64, b: 98, both: 15, split: 61}}),
+    mk({q: 'Who should pay for the broken washing machine?', cat: 'Money', rel: 'Flatmates', a: 'Riley', b: 'Chris',
+      sa: 'Chris put trainers in on a 60 wash and the drum came off its bearings the same day. Engineer said it was the load.',
+      sb: 'That machine is 11 years old and it was already banging. Trainers go in every week in most houses. Split it three ways.',
+      closes: now - 2 * HOUR, votes: {a: 402, b: 233, both: 51, split: 140}})
+  ];
+}
+
+// The list every screen draws from. In shared mode: real rows first, then the examples (clearly marked).
+function allCases() {
+  if (!shared) return local.cases;
+  const real = shared.rows.filter(r => r.status !== 'withdrawn').map(r => {
+    const votes = {a: 0, b: 0, both: 0, split: 0};
+    for (const v of shared.votes) if (v.row === r.id && votes[v.choice] !== undefined) votes[v.choice]++;
+    const questions = shared.questions.filter(q => q.row === r.id).map(q => ({id: q.id, text: q.text, answer: q.answer || '',
+      up: shared.ups.filter(u => u.q === q.id).length}));
+    return Object.assign({}, r, {votes, questions, evidence: r.evidence || [], requests: r.requests || {}, mine: r.by === shared.me});
+  });
+  return real.concat(local.cases.filter(c => c.example));
+}
+const findCase = id => allCases().find(c => c.id === id);
+const isShared = c => !!(shared && c && !c.example);
+function myVote(c) {
+  if (isShared(c)) return (shared.votes.find(v => v.row === c.id && v.by === shared.me) || {}).choice;
+  return local.me[c.id];
+}
+function iUpvoted(c, q) { return isShared(c) ? shared.ups.some(u => u.q === q.id && u.by === shared.me) : !!local.me['q' + q.id]; }
+
+// ---------- rules ----------
+const total = c => Object.values(c.votes).reduce((s, n) => s + n, 0);
+const isOpen = c => c.status === 'voting' && Date.now() < c.closes;
+const QUORUM = c => isShared(c) ? 3 : 25;
+function result(c) {
+  const t = total(c), quorum = QUORUM(c);
+  if (t < quorum) return {code: 'inconclusive', title: 'Not enough votes', line: `Only ${t} ${t === 1 ? 'person' : 'people'} voted. A verdict needs at least ${quorum}.`};
+  const share = n => Math.round(100 * n / t);
+  if (c.votes.both > Math.max(c.votes.a, c.votes.b)) return {code: 'both', title: 'You both missed something', line: `${share(c.votes.both)}% of voters think neither of you has it quite right.`};
+  if (c.votes.split > Math.max(c.votes.a, c.votes.b)) return {code: 'split', title: 'Split the difference', line: `${share(c.votes.split)}% of voters say meet in the middle.`};
+  const head = c.votes.a + c.votes.b, lead = c.votes.a >= c.votes.b ? 'a' : 'b';
+  const margin = head ? Math.abs(c.votes.a - c.votes.b) / head : 0;
+  if (margin < 0.1) return {code: 'close', title: 'Too close to call', line: `${c.a} and ${c.b} finished neck and neck. Call it a draw.`};
+  return {code: lead, title: `${c[lead]} wins`, line: `${share(c.votes[lead])}% of ${t.toLocaleString()} voters backed ${c[lead]}.`};
+}
+function timeLeft(c) {
+  const ms = c.closes - Date.now();
+  if (ms <= 0) return 'Closed';
+  const h = Math.floor(ms / HOUR), m = Math.floor(ms % HOUR / 60e3);
+  return h >= 24 ? `${Math.floor(h / 24)}d ${h % 24}h left` : h ? `${h}h ${m}m left` : `${m}m left`;
+}
+function tick() {
+  // The demo crowd only ever votes on the example rows.
+  for (const c of local.cases) {
+    if (!c.example || !isOpen(c) || Math.random() > 0.6) continue;
+    const lean = c.lean ?? (c.lean = Math.random()), r = Math.random();
+    c.votes[r < 0.07 ? 'both' : r < 0.12 ? 'split' : (Math.random() < lean ? 'a' : 'b')] += 1;
+  }
+  saveLocal();
+}
+
+// ---------- in-page dialogs (the claude.ai frame blocks alert/confirm/prompt) ----------
+function dialog({title, text = '', input = false, placeholder = '', ok = 'OK', cancel = 'Cancel', danger = false}) {
+  return new Promise(resolve => {
+    const box = $('#modal');
+    box.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mt"><h3 id="mt">${esc(title)}</h3>${text ? `<p class="muted small">${esc(text)}</p>` : ''}
+      ${input ? `<textarea id="mi" maxlength="500" placeholder="${esc(placeholder)}" style="min-height:90px;margin-top:8px"></textarea>` : ''}
+      <div class="row" style="margin-top:14px;justify-content:flex-end">${cancel ? `<button class="btn ghost" data-m="0">${esc(cancel)}</button>` : ''}<button class="btn ${danger ? 'danger' : 'primary'}" data-m="1">${esc(ok)}</button></div></div>`;
+    box.hidden = false;
+    const field = $('#mi'); (field || box.querySelector('[data-m="1"]')).focus();
+    box.onclick = e => {
+      const b = e.target.closest('[data-m]');
+      if (!b && e.target !== box) return;
+      const yes = b && b.dataset.m === '1';
+      box.hidden = true; box.onclick = null;
+      resolve(input ? (yes ? (field.value.trim() || null) : null) : yes);
+    };
+  });
+}
+async function copyText(text, done) {
+  try { await navigator.clipboard.writeText(text); toast(done); }
+  catch (e) { await dialog({title: 'Copy this', text, cancel: '', ok: 'Done'}); }
+}
+
+// ---------- writes ----------
+async function write(fn, okText) {
+  try { await fn(); if (okText) toast(okText); }
+  catch (e) { toast(e && e.code === 'not_granted' ? 'You can look but not change this. Ask Ryan for edit access.' : 'That did not save. Check your connection and try again.'); }
+}
+const rowDoc = id => shared.db.doc('rows/' + id);
+
+// ---------- views ----------
+let route = {view: 'feed'};
+let feedTab = 'live';
+function go(r) { route = r; render(); window.scrollTo({top: 0, behavior: 'smooth'}); }
+function toast(t) { const el = $('#toast'); el.textContent = t; el.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove('show'), 2800); }
+
+function caseCard(c) {
+  const open = isOpen(c), r = !open && c.status !== 'draft' ? result(c) : null, mine = myVote(c);
+  const [colour, icon] = deck(c);
+  return `<article class="card case" data-open="${c.id}" tabindex="0" role="link" aria-label="${esc(c.q)}" style="--deck:${colour}">
+    <span class="deck-tile" aria-hidden="true">${icon}</span>
+    <div class="meta">${c.status === 'draft' ? `<span class="chip close">Waiting for ${esc(c.b)}</span>` : open ? `<span class="chip live"><i class="dot"></i>${timeLeft(c)}</span>` : `<span class="chip done">Verdict in</span>`}
+      <span class="chip deck-chip">${esc(c.cat)}</span><span class="chip">${esc(c.rel)}</span>${c.example ? '<span class="chip">Example</span>' : ''}${mine ? '<span class="chip close">You voted</span>' : ''}${c.mine ? '<span class="chip close">Your row</span>' : ''}</div>
+    <h3>${esc(c.q)}</h3>
+    ${r ? `<p style="margin-top:8px"><b>${esc(r.title)}.</b> <span class="muted">${esc(r.line)}</span></p>` :
+    c.status === 'draft' ? '<p class="small muted">Not public yet. It goes live when you both agree.</p>' :
+    `<div class="vs"><div class="side a"><b>${esc(c.a)}</b><span class="clamp">${esc(c.sa)}</span></div><span class="v">VS</span><div class="side b"><b>${esc(c.b)}</b><span class="clamp">${esc(c.sb)}</span></div></div>`}
+  </article>`;
+}
+
+function modeNote() {
+  return shared ? '<p class="mode"><span class="ok-dot"></span>Live: rows and votes are shared with everyone who opens this link.</p>'
+    : window.RMR_LIVE ? `<p class="mode"><span class="dev-dot"></span><span>Pass the phone round to judge together, or <a href="${window.RMR_LIVE}" target="_blank" rel="noopener">vote with friends online</a>.</span></p>`
+    : '<p class="mode"><span class="dev-dot"></span>On this device only. Open the shared link to vote with other people.</p>';
+}
+
+function viewFeed() {
+  const cases = allCases().filter(c => c.status !== 'draft');
+  const live = cases.filter(isOpen).sort((x, y) => (x.example - y.example) || (x.closes - y.closes));
+  const done = cases.filter(c => !isOpen(c)).sort((x, y) => (x.example - y.example) || (y.closes - x.closes));
+  const list = feedTab === 'live' ? live : done;
+  const toJudge = judgeQueue().length;
+  return `<section class="hero"><p class="kicker">Rate My Row</p><h1>Stuck in a row?<br>Let everyone decide.</h1>
+    <p>Both of you tell your side. Everyone else picks who's right. When the clock runs out, one verdict.</p>
+    <div class="hero-actions"><button class="btn play" data-judge ${toJudge ? '' : 'disabled'}><span class="play-icon">⚖️</span><span><b>Play Judge</b><small>${toJudge ? `${toJudge} ${toJudge === 1 ? 'row' : 'rows'} waiting · swipe to vote` : 'You have judged every live row'}</small></span></button>
+    <button class="btn primary" data-nav="new">Start a row</button></div>${modeNote()}</section>
+    <div class="decks" aria-label="Decks">${Object.entries(DECK).filter(([k]) => live.some(c => c.cat === k)).map(([k, [col, ic]]) => `<button class="deck" style="--deck:${col}" data-judge="${esc(k)}"><span>${ic}</span>${esc(k)}<small>${live.filter(c => c.cat === k).length} live</small></button>`).join('')}</div>
+    <div class="tabs" role="tablist"><button role="tab" class="${feedTab === 'live' ? 'on' : ''}" data-feedtab="live">Vote now (${live.length})</button><button role="tab" class="${feedTab === 'done' ? 'on' : ''}" data-feedtab="done">Verdicts (${done.length})</button></div>
+    <div class="feed">${list.map(caseCard).join('') || `<div class="card empty">${feedTab === 'live' ? 'No live rows right now. Start one!' : 'No verdicts yet.'}</div>`}</div>
+    ${window.RMR_PWA ? (window.RMR_PWA.installed() ? '' : `<div class="card install"><h3>Put Rate My Row on your phone</h3>
+      <p class="small muted">It goes on your home screen like any other app and works without signal.</p>
+      <div class="row" style="margin-top:10px"><button class="btn primary" data-install>Install the app</button>${SHARE_URL ? `<button class="btn ghost" data-copylink>Copy the link for friends</button>` : ''}</div></div>`) :
+    `<div class="card install"><h3>Put Rate My Row on your phone</h3>
+      <p class="small muted"><b>iPhone:</b> open this link in Safari, tap Share, then <b>Add to Home Screen</b>.<br><b>Android:</b> open it in Chrome, tap the ⋮ menu, then <b>Add to Home screen</b>.</p>
+      ${SHARE_URL ? `<button class="btn ghost" data-copylink>Copy the link to send to friends</button>` : ''}</div>`}`;
+}
+
+function viewMine() {
+  const cases = allCases();
+  const mine = cases.filter(c => c.mine);
+  const voted = cases.filter(c => myVote(c) && !c.mine);
+  return `<h1>My rows</h1><p class="muted">Rows you started, and ones you voted on.</p>
+    <h2>Started by you</h2><div class="feed">${mine.map(caseCard).join('') || `<div class="card empty">You haven't started a row yet.<br><button class="btn primary" style="margin-top:12px" data-nav="new">Start a row</button></div>`}</div>
+    <h2>You voted on</h2><div class="feed">${voted.map(caseCard).join('') || '<div class="card empty">Nothing yet. Go and settle someone else\'s row.</div>'}</div>
+    <h2>This device</h2><div class="card"><p class="small muted">${shared ? 'Shared rows live online. This only resets the example rows and your drafts on this device.' : 'Everything is saved on this phone or computer. Resetting brings back the example rows and removes yours.'}</p>
+    <button class="btn ghost" data-reset style="margin-top:8px">Reset this device</button></div>`;
+}
+
+function viewCase(c) {
+  if (!c) return `<button class="back" data-nav="feed">‹ All rows</button><div class="card empty" style="margin-top:12px">That row has gone, or it hasn't loaded yet.</div>`;
+  if (c.status === 'draft') return viewDraft(c);
+  const open = isOpen(c), my = myVote(c), t = total(c);
+  const qs = [...c.questions].sort((x, y) => y.up - x.up);
+  const label = {a: c.a, b: c.b, both: 'Both missed something', split: 'Split the difference'};
+  let body;
+  if (open) {
+    body = `<div class="vote" role="group" aria-label="Your vote">
+        <button class="btn va ${my === 'a' ? 'sel' : ''}" data-vote="a">${esc(c.a)} is right</button>
+        <button class="btn vb ${my === 'b' ? 'sel' : ''}" data-vote="b">${esc(c.b)} is right</button>
+        <button class="btn ghost wide ${my === 'both' ? 'sel' : ''}" data-vote="both">Both missed something</button>
+        <button class="btn ghost wide ${my === 'split' ? 'sel' : ''}" data-vote="split">Split the difference</button></div>
+      ${c.mine ? '<p class="small muted" style="margin-top:8px">You can\'t vote on your own row, but you can see how the vote is going below.</p>' : ''}
+      <div class="hidden-tally">🔒 <span>${my ? `You voted <b>${esc(label[my])}</b>. You can change it until the close.` : 'Pick a side.'} The score stays hidden until the verdict, so nobody piles on. ${t.toLocaleString()} ${t === 1 ? 'vote' : 'votes'} so far.</span></div>`;
+  } else {
+    const r = result(c);
+    const bar = (k, colour) => { const pct = t ? Math.round(100 * c.votes[k] / t) : 0;
+      return `<div class="barrow"><span>${esc(label[k])}</span><div class="bar"><i style="background:${colour}" data-w="${pct}"></i></div><b>${pct}%</b></div>`; };
+    body = `<div class="verdict" id="verdict"><div class="confetti" id="confetti"></div><div class="crown">${r.code === 'a' || r.code === 'b' ? '👑' : r.code === 'close' ? '🤝' : r.code === 'inconclusive' ? '🤷' : '⚖️'}</div>
+      <p class="small muted">THE VERDICT</p><h2>${esc(r.title)}</h2><p class="muted">${esc(r.line)}</p>
+      <div class="bars">${bar('a', 'var(--a)')}${bar('b', 'var(--b)')}${bar('both', 'var(--gold)')}${bar('split', 'var(--violet)')}</div>
+      ${my ? `<p class="small">You voted: <b>${esc(label[my])}</b></p>` : ''}
+      <div class="row" style="justify-content:center;margin-top:12px"><button class="btn teal" data-share="${c.id}">Copy the verdict</button></div>
+      <p class="note">Just for fun. It isn't advice or a legal decision, and it decides nothing outside this app.</p></div>`;
+  }
+  const req = Object.entries(c.requests || {}).filter(([, n]) => n > 0);
+  return `<button class="back" data-nav="feed">‹ All rows</button>
+    <div class="meta" style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 8px">${open ? `<span class="chip live"><i class="dot"></i>${timeLeft(c)}</span>` : '<span class="chip done">Closed</span>'}<span class="chip">${esc(c.cat)}</span><span class="chip">${esc(c.rel)}</span>${c.example ? '<span class="chip">Example</span>' : ''}</div>
+    <h1 class="case-q" style="--deck:${deck(c)[0]}"><span aria-hidden="true">${deck(c)[1]}</span> ${esc(c.q)}</h1>
+    <div class="vs"><div class="side a"><b>${esc(c.a)}'s side</b>${esc(c.sa)}</div><span class="v">VS</span><div class="side b"><b>${esc(c.b)}'s side</b>${esc(c.sb)}</div></div>
+    ${c.evidence.length ? `<h2>Evidence</h2><div class="ev">${c.evidence.map(e => `<div class="evi" title="${esc(e.label)}">${esc(e.icon)}<small>${esc(e.label)}</small></div>`).join('')}</div>` : ''}
+    ${body}
+    <h2>Questions <span class="small dim">top ones get answered</span></h2>
+    <div class="qa">${qs.map(q => `<div class="q"><button class="up ${iUpvoted(c, q) ? 'on' : ''}" data-up="${q.id}" aria-label="Upvote">▲<span>${q.up}</span></button>
+      <div style="min-width:0"><div>${esc(q.text)}</div>${q.answer ? `<div class="ans">${esc(q.answer)}</div>` : '<div class="small dim">Not answered yet</div>'}
+      ${c.mine && !q.answer ? `<button class="btn ghost sm" data-answer="${q.id}">Answer</button>` : ''}</div></div>`).join('') || '<p class="muted small">No questions yet.</p>'}</div>
+    ${open && !c.mine ? `<form class="row" id="ask" style="margin-top:12px"><label class="sr" for="askq">Ask both of them a question</label><input type="text" id="askq" maxlength="200" placeholder="Ask a fact question, like: what time was the booking?" style="flex:1;min-width:0"><button class="btn">Ask</button></form>` : ''}
+    ${open && !c.mine ? `<h2>Ask for proof</h2><div class="seg">${EVIDENCE.map(([i, l]) => `<button class="btn ghost sm" data-request="${esc(l)}">${i} ${esc(l)}</button>`).join('')}</div>` : ''}
+    ${req.length ? `<p class="small muted" style="margin-top:10px">Voters have asked for: ${req.map(([k, n]) => `${esc(k.toLowerCase())} (${n})`).join(', ')}.${c.mine ? ' Adding it is up to you. Saying no is fine and is never shown as "refused".' : ''}</p>` : ''}
+    ${c.mine && open ? `<h2>Your row</h2><div class="card"><div class="row"><button class="btn" data-addev>Add evidence</button><button class="btn ghost" data-close>End voting now</button><span class="spacer"></span><button class="btn ghost" data-withdraw>Take it down</button></div>
+      <p class="note">Either of you can take it down at any time, no questions asked.</p></div>` : ''}
+    ${c.mine && !open ? `<div class="row" style="margin-top:16px"><button class="btn ghost" data-withdraw>Take it down</button></div>` : ''}`;
+}
+
+function viewDraft(c) {
+  const link = SHARE_URL ? `${SHARE_URL}#row-${c.id}` : '';
+  if (isShared(c) && c.mine) {
+    return `<button class="back" data-nav="mine">‹ My rows</button><div class="steps"><i class="on"></i><i class="on"></i><i></i></div>
+      <h1>Now ${esc(c.b)} tells their side</h1>
+      <p class="muted">Nothing is public yet. Send ${esc(c.b)} the link. They write their side on their own phone, and the vote starts when they agree. They can say no, and that's the end of it.</p>
+      <div class="card" style="margin-top:12px"><p class="small muted">Your question</p><h3>${esc(c.q)}</h3>
+        <div class="row" style="margin-top:12px"><button class="btn teal" data-invite="${c.id}">Copy ${esc(c.b)}'s invite link</button></div>
+        ${link ? `<p class="small dim" style="margin-top:8px;word-break:break-all">${esc(link)}</p>` : ''}</div>
+      <div class="row" style="margin-top:14px"><button class="btn ghost" data-withdraw>Cancel this row</button></div>`;
+  }
+  const both = !isShared(c);   // on one device, both people tick here
+  return `<button class="back" data-nav="${c.mine ? 'mine' : 'feed'}">‹ Back</button>
+    <div class="steps"><i class="on"></i><i class="on"></i><i></i></div>
+    <h1>${isShared(c) ? `${esc(c.a)} wants you to settle a row` : `Now ${esc(c.b)} tells their side`}</h1>
+    <p class="muted">${isShared(c) ? `If you're ${esc(c.b)}, write your side below. You won't see ${esc(c.a)}'s side until you've written yours, so it's fair. Nothing is public until you agree.` : `Nothing is public. Hand ${esc(c.b)} your phone. They can say no, and that's the end of it.`}</p>
+    <div class="card" style="margin-top:12px"><p class="small muted">The question</p><h3>${esc(c.q)}</h3></div>
+    <form id="partner" class="card" style="margin-top:14px">
+      <h3>${esc(c.b)}'s side</h3>
+      <div class="field"><label class="l" for="sb">In your own words <span class="count" id="sbc">0/800</span></label><textarea id="sb" maxlength="800" required placeholder="What happened, and why you're right."></textarea></div>
+      ${both ? `<label class="check"><input type="checkbox" id="ca"><span><b>${esc(c.a)}:</b> I'm happy for this to be published.</span></label>` : ''}
+      <label class="check"><input type="checkbox" id="cb"><span><b>${esc(c.b)}:</b> I'm happy for this to be published.</span></label>
+      <div class="row" style="margin-top:14px"><button class="btn primary">Put it to the vote</button><span class="spacer"></span><button type="button" class="btn ghost" data-decline>No thanks</button></div>
+    </form>`;
+}
+
+function viewNew() {
+  const d = local.draft || {};
+  return `<button class="back" data-nav="feed">‹ Back</button>
+    <div class="steps"><i class="on"></i><i></i><i></i></div>
+    <h1>Start a row</h1><p class="muted">Keep it light and everyday. You both have to agree before anything goes public.</p>
+    <form id="newcase" class="card" style="margin-top:12px" novalidate>
+      <div class="field"><label class="l" for="q">What's the row about? <span class="count" id="qc">0/80</span></label>
+        <input type="text" id="q" maxlength="80" required value="${esc(d.q)}" placeholder="Who should unload the dishwasher this week?"></div>
+      <div class="field"><span class="l">Category</span><div class="seg">${CATS.map((c, i) => `<label><input type="radio" name="cat" value="${c}" ${d.cat ? (d.cat === c ? 'checked' : '') : (i === 0 ? 'checked' : '')}><span>${c}</span></label>`).join('')}</div></div>
+      <div class="field"><span class="l">You two are</span><div class="seg">${RELS.map((r, i) => `<label><input type="radio" name="rel" value="${r}" ${d.rel ? (d.rel === r ? 'checked' : '') : (i === 0 ? 'checked' : '')}><span>${r}</span></label>`).join('')}</div></div>
+      <div class="row" style="gap:12px">
+        <div class="field" style="flex:1;min-width:160px"><label class="l" for="a">Your name on the row</label><input type="text" id="a" maxlength="24" required value="${esc(d.a)}" placeholder="A first name or nickname"></div>
+        <div class="field" style="flex:1;min-width:160px"><label class="l" for="b">Their name on the row</label><input type="text" id="b" maxlength="24" required value="${esc(d.b)}" placeholder="A first name or nickname"></div>
+      </div>
+      <div class="field"><label class="l" for="sa">Your side <span class="count" id="sac">0/800</span></label><textarea id="sa" maxlength="800" required placeholder="What happened, and why you're right.">${esc(d.sa)}</textarea></div>
+      <div class="field"><span class="l">How long can people vote?</span><div class="seg">${[[6, '6 hours'], [24, '24 hours'], [72, '3 days']].map(([h, l]) => `<label><input type="radio" name="win" value="${h}" ${(d.win || 24) == h ? 'checked' : ''}><span>${l}</span></label>`).join('')}</div></div>
+      <label class="check"><input type="checkbox" id="consent"><span>I'm happy for this to be published once the other person agrees.</span></label>
+      <div id="safety"></div>
+      <button class="btn primary block" style="margin-top:14px">Next: their side</button>
+    </form>`;
+}
+function helpSheet() {
+  return `<div class="card help" style="margin-top:12px"><h3>This one needs more than a vote</h3>
+    <p class="small">It sounds like someone may be getting hurt or controlled. That's not something strangers should vote on, and you deserve proper support.</p>
+    <p class="small">UK: <b>National Domestic Abuse Helpline 0808 2000 247</b> (free, 24/7), <b>Samaritans 116 123</b>. In danger now: <b>999</b>.</p>
+    <p class="small muted">If we got this wrong, change the wording and try again.</p></div>`;
+}
+
+function render() {
+  document.querySelectorAll('nav.bar button').forEach(b => b.classList.toggle('on', b.dataset.nav === route.view || (route.view === 'case' && b.dataset.nav === 'feed')));
+  const v = $('#view');
+  if (route.view === 'feed') v.innerHTML = viewFeed();
+  else if (route.view === 'mine') v.innerHTML = viewMine();
+  else if (route.view === 'new') { v.innerHTML = viewNew(); counters(); }
+  else if (route.view === 'case') { v.innerHTML = viewCase(findCase(route.id)); counters(); animateVerdict(); }
+  document.body.classList.toggle('judging', !!judge);
+  try { history.replaceState(null, '', route.view === 'case' ? '#row-' + route.id : '#' + route.view); } catch (e) { /* framed */ }
+}
+// Re-draw after live data or the clock changes, unless the person is typing.
+function refresh() {
+  if (document.activeElement && document.activeElement.matches('input,textarea') || !$('#modal').hidden) return;
+  if (route.view === 'new' || judge) return;
+  const y = window.scrollY;
+  if (route.view === 'case') { const c = findCase(route.id); if (c && !isOpen(c) && c.status !== 'draft' && $('#verdict')) return; }
+  render(); window.scrollTo(0, y);
+}
+function counters() {
+  for (const [f, c, n] of [['#q', '#qc', 80], ['#sa', '#sac', 800], ['#sb', '#sbc', 800]]) {
+    const el = $(f); if (!el) continue;
+    const upd = () => { $(c).textContent = `${el.value.length}/${n}`; }; el.addEventListener('input', upd); upd();
+  }
+}
+function animateVerdict() {
+  const v = $('#verdict'); if (!v) return;
+  const bars = () => requestAnimationFrame(() => setTimeout(() => v.querySelectorAll('.bar i').forEach(i => { i.style.width = i.dataset.w + '%'; }), 60));
+  const c = findCase(route.id), r = result(c);
+  if (local.me['seen' + c.id] || matchMedia('(prefers-reduced-motion: reduce)').matches) { bars(); return; }
+  local.me['seen' + c.id] = 1; saveLocal();
+  // First time this verdict is opened: a three-second drumroll, then the stamp.
+  v.classList.add('drum');
+  const count = document.createElement('div'); count.className = 'drumroll'; v.appendChild(count);
+  let n = 3; const step = () => { if (n === 0) { count.remove(); v.classList.remove('drum'); v.classList.add('stamp'); buzz([30, 40, 80]); bars(); confetti(r); return; }
+    count.innerHTML = `<p>The verdict is in…</p><b>${n}</b>`; buzz(12); n--; setTimeout(step, 750); };
+  step();
+}
+function confetti(r) {
+  if (!['a', 'b'].includes(r.code)) return;
+  const colours = ['#FF5C7A', '#3DD6C4', '#FFC857', '#9C8CFF', '#fff'];
+  $('#confetti').innerHTML = Array.from({length: 60}, (_, i) => `<i style="left:${Math.random() * 100}%;background:${colours[i % 5]};animation-delay:${Math.random() * .6}s"></i>`).join('');
+}
+
+// ---------- voting, and Judge: the Heads Up-style game ----------
+function buzz(pattern) { try { navigator.vibrate && navigator.vibrate(pattern); } catch (e) { /* not on this phone */ } }
+async function castVote(c, choice, okText) {
+  const prev = myVote(c);
+  if (isShared(c)) {
+    await write(() => shared.db.doc(`votes/${c.id}_${shared.me}`).set({row: c.id, by: shared.me, choice, at: Date.now()}), okText);
+    const mine = shared.votes.find(v => v.row === c.id && v.by === shared.me);
+    if (mine) mine.choice = choice; else shared.votes.push({id: `${c.id}_${shared.me}`, row: c.id, by: shared.me, choice});
+  } else {
+    const row = local.cases.find(x => x.id === c.id);
+    if (prev) row.votes[prev] = Math.max(0, row.votes[prev] - 1);
+    row.votes[choice] += 1; local.me[c.id] = choice; saveLocal();
+    if (okText) toast(okText);
+  }
+}
+function judgeQueue(cat = '') {
+  return allCases().filter(c => isOpen(c) && !c.mine && !myVote(c) && (!cat || c.cat === cat))
+    .sort((x, y) => (x.example - y.example) || (x.closes - y.closes));
+}
+let judge = null;   // {queue, at, done, cat}
+function startJudge(cat) {
+  const queue = judgeQueue(cat);
+  if (!queue.length) { toast('Nothing left to judge here. Check back soon.'); return; }
+  judge = {queue: queue.map(c => c.id), at: 0, done: 0, cat};
+  drawJudge();
+}
+function endJudge() { judge = null; $('#judge').hidden = true; $('#judge').innerHTML = ''; document.body.classList.remove('judging'); render(); }
+function drawJudge() {
+  const box = $('#judge');
+  box.hidden = false; document.body.classList.add('judging');
+  if (judge.at >= judge.queue.length) {
+    box.style.setProperty('--deck', '#2B2547');
+    box.innerHTML = `<div class="judge-top"><span></span><button class="jx" data-jquit aria-label="Close">✕</button></div>
+      <div class="judge-end"><div class="big">⚖️</div><h2>${judge.done} ${judge.done === 1 ? 'row' : 'rows'} judged</h2>
+      <p>Verdicts land when each clock runs out. Your votes stay secret until then.</p>
+      <button class="btn primary" data-jquit>Back to the rows</button></div>`;
+    buzz([20, 30, 20]); return;
+  }
+  const c = findCase(judge.queue[judge.at]);
+  if (!c || !isOpen(c)) { judge.at++; drawJudge(); return; }
+  const [colour, icon] = deck(c);
+  box.style.setProperty('--deck', colour);
+  box.innerHTML = `<div class="judge-top"><span class="jcount">${judge.at + 1} / ${judge.queue.length}</span><span class="jdeck">${icon} ${esc(c.cat)}</span><button class="jx" data-jquit aria-label="Close">✕</button></div>
+    <div class="jstage"><article class="jcard" id="jcard" tabindex="-1">
+      <span class="jtag left">${esc(c.a)}</span><span class="jtag right">${esc(c.b)}</span>
+      <h2>${esc(c.q)}</h2>
+      <div class="jside"><b>${esc(c.a)}</b><p>${esc(c.sa)}</p></div>
+      <div class="jside"><b>${esc(c.b)}</b><p>${esc(c.sb)}</p></div>
+      <p class="jtime">${timeLeft(c)}</p>
+    </article></div>
+    <div class="jbuttons"><button class="jbtn a" data-jvote="a">← ${esc(c.a)}</button><button class="jbtn b" data-jvote="b">${esc(c.b)} →</button></div>
+    <div class="jminor"><button data-jvote="both">Both missed something</button><button data-jvote="split">Split it</button><button data-jvote="skip">Skip</button></div>
+    <p class="jhint">Swipe the card left or right, or tap a name.</p>`;
+  bindSwipe($('#jcard'));
+}
+async function judgeVote(choice, card = $('#jcard')) {
+  if (!judge || !card || card.dataset.gone) return;
+  card.dataset.gone = '1';
+  const c = findCase(judge.queue[judge.at]);
+  const fly = {a: 'translate(-130%, 0) rotate(-18deg)', b: 'translate(130%, 0) rotate(18deg)', both: 'translate(0, -120%)', split: 'translate(0, -120%)', skip: 'translate(0, 120%)'}[choice];
+  card.style.transition = 'transform .32s ease-in, opacity .32s'; card.style.transform = fly; card.style.opacity = '0';
+  buzz(choice === 'skip' ? 5 : 18);
+  if (choice !== 'skip' && c) { await castVote(c, choice); judge.done++; }
+  setTimeout(() => { if (!judge) return; judge.at++; drawJudge(); }, 280);
+}
+function bindSwipe(card) {
+  let x0 = null, y0 = 0, dx = 0, dy = 0;
+  card.addEventListener('pointerdown', e => { x0 = e.clientX; y0 = e.clientY; dx = dy = 0; card.setPointerCapture(e.pointerId); card.style.transition = 'none'; });
+  card.addEventListener('pointermove', e => {
+    if (x0 === null) return;
+    dx = e.clientX - x0; dy = e.clientY - y0;
+    card.style.transform = `translate(${dx}px, ${Math.min(0, dy) * 0.4}px) rotate(${dx / 18}deg)`;
+    card.classList.toggle('lean-a', dx < -40); card.classList.toggle('lean-b', dx > 40);
+  });
+  const end = () => {
+    if (x0 === null) return; x0 = null;
+    if (dx < -90) judgeVote('a', card); else if (dx > 90) judgeVote('b', card);
+    else { card.style.transition = 'transform .25s'; card.style.transform = ''; card.classList.remove('lean-a', 'lean-b'); }
+  };
+  card.addEventListener('pointerup', end); card.addEventListener('pointercancel', end);
+}
+document.addEventListener('keydown', e => {
+  if (!judge) return;
+  if (e.key === 'ArrowLeft') judgeVote('a'); else if (e.key === 'ArrowRight') judgeVote('b');
+  else if (e.key === 'ArrowDown') judgeVote('skip'); else if (e.key === 'Escape') endJudge();
+});
+
+// ---------- actions ----------
+document.addEventListener('click', async e => {
+  const t = e.target.closest('[data-judge],[data-jvote],[data-jquit],[data-nav],[data-open],[data-vote],[data-up],[data-request],[data-feedtab],[data-share],[data-close],[data-withdraw],[data-reset],[data-invite],[data-decline],[data-answer],[data-addev],[data-copylink],[data-install]');
+  if (!t) return;
+  const d = t.dataset, c = findCase(route.id);
+  if (d.nav) go({view: d.nav});
+  else if (d.open) go({view: 'case', id: d.open});
+  else if (d.feedtab) { feedTab = d.feedtab; render(); }
+  else if (d.vote && c && isOpen(c)) {
+    if (c.mine) { toast("You can't vote on your own row."); return; }
+    const prev = myVote(c);
+    await castVote(c, d.vote, prev ? 'Vote changed.' : 'Vote in. The verdict lands when the clock runs out.');
+    render();
+  }
+  else if (d.judge !== undefined) startJudge(d.judge || '');
+  else if (d.jvote) judgeVote(d.jvote);
+  else if (d.jquit !== undefined) endJudge();
+  else if (d.up && c) {
+    const q = c.questions.find(x => x.id === d.up);
+    if (isShared(c)) {
+      const ref = shared.db.doc(`upvotes/${q.id}_${shared.me}`);
+      await write(() => iUpvoted(c, q) ? ref.delete() : ref.set({q: q.id, row: c.id, by: shared.me}));
+    } else {
+      const k = 'q' + d.up;
+      if (local.me[k]) { q.up--; delete local.me[k]; } else { q.up++; local.me[k] = 1; }
+      saveLocal(); render();
+    }
+  }
+  else if (d.request && c) {
+    if (isShared(c)) { const requests = Object.assign({}, c.requests); requests[d.request] = (requests[d.request] || 0) + 1;
+      await write(() => rowDoc(c.id).update({requests}), `Asked for ${d.request.toLowerCase()}. It's their choice whether to add it.`); }
+    else { c.requests[d.request] = (c.requests[d.request] || 0) + 1; saveLocal(); render(); toast(`Asked for ${d.request.toLowerCase()}. It's their choice whether to add it.`); }
+  }
+  else if (d.answer && c) {
+    const q = c.questions.find(x => x.id === d.answer);
+    const a = await dialog({title: 'Answer the question', text: q.text, input: true, placeholder: 'Keep it short and factual.', ok: 'Post answer'});
+    if (!a) return;
+    const answer = a.slice(0, 500) + ' - ' + c.a;
+    if (isShared(c)) await write(() => shared.db.doc('questions/' + q.id).update({answer}), 'Answer posted.');
+    else { q.answer = answer; saveLocal(); render(); }
+  }
+  else if (d.addev !== undefined && c) {
+    const pick = await dialog({title: 'Add evidence', text: 'Describe what you are adding, for example "photo of the pan" or "receipt".', input: true, ok: 'Add'});
+    if (!pick) return;
+    const m = EVIDENCE.find(([, l]) => l.toLowerCase().includes(pick.toLowerCase().split(' ').find(w => w.length > 3) || '~')) || EVIDENCE[0];
+    const item = {icon: m[0], label: pick.slice(0, 40), by: 'a'};
+    if (isShared(c)) await write(() => rowDoc(c.id).update({evidence: [...c.evidence, item]}), 'Added.');
+    else { c.evidence.push(item); saveLocal(); render(); toast('Added.'); }
+  }
+  else if (d.close !== undefined && c) {
+    if (!await dialog({title: 'End voting now?', text: 'The verdict is revealed straight away.', ok: 'End voting'})) return;
+    if (isShared(c)) await write(() => rowDoc(c.id).update({closes: Date.now() - 1000}));
+    else { c.closes = Date.now() - 1000; saveLocal(); render(); }
+  }
+  else if (d.withdraw !== undefined && c) {
+    if (!await dialog({title: 'Take this row down?', text: 'It disappears for everyone. Voters only see that it was removed.', ok: 'Take it down', danger: true})) return;
+    if (isShared(c)) await write(() => rowDoc(c.id).update({status: 'withdrawn'}), 'Taken down.');
+    else { local.cases = local.cases.filter(x => x.id !== c.id); saveLocal(); toast('Taken down.'); }
+    go({view: 'mine'});
+  }
+  else if (d.share) { const r = result(c); copyText(`Rate My Row verdict: "${c.q}" - ${r.title}. ${r.line}${SHARE_URL ? ' ' + SHARE_URL : ''}`, 'Verdict copied. Paste it anywhere.'); }
+  else if (d.install !== undefined && window.RMR_PWA) window.RMR_PWA.install();
+  else if (d.copylink) copyText(SHARE_URL, 'Link copied. Send it to anyone.');
+  else if (d.invite) copyText(`I've started a row on Rate My Row and need your side: ${SHARE_URL}#row-${d.invite}`, 'Invite copied. Send it to them.');
+  else if (d.decline !== undefined && c) {
+    if (isShared(c)) await write(() => rowDoc(c.id).update({status: 'withdrawn'}));
+    else { local.cases = local.cases.filter(x => x.id !== c.id); saveLocal(); }
+    go({view: 'feed'}); toast("That's fine. A row only goes public when you both agree.");
+  }
+  else if (d.reset !== undefined) {
+    if (!await dialog({title: 'Reset this device?', text: shared ? 'Example rows and drafts on this device go back to the start.' : 'Your rows and votes on this device will be removed.', ok: 'Reset', danger: true})) return;
+    try { localStorage.removeItem(KEY); } catch (err) { /* ignore */ }
+    loadLocal(); go({view: 'feed'});
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.matches('[data-open]')) go({view: 'case', id: e.target.dataset.open});
+  if (e.key === 'Escape' && !$('#modal').hidden) $('#modal').click();
+});
+document.addEventListener('input', e => {
+  if (!e.target.closest('#newcase')) return;
+  const f = $('#newcase');
+  local.draft = {q: f.q.value, a: f.a.value, b: f.b.value, sa: f.sa.value, cat: f.querySelector('[name=cat]:checked')?.value,
+    rel: f.querySelector('[name=rel]:checked')?.value, win: f.querySelector('[name=win]:checked')?.value};
+  saveLocal();
+  $('#safety').innerHTML = SAFETY.test(f.q.value + ' ' + f.sa.value) ? helpSheet() : '';
+});
+document.addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target;
+  if (f.id === 'newcase') {
+    const q = f.q.value.trim(), a = f.a.value.trim(), b = f.b.value.trim(), sa = f.sa.value.trim();
+    if (!q || !a || !b || !sa) { toast('Fill in the question, both names and your side.'); (!q ? f.q : !a ? f.a : !b ? f.b : f.sa).focus(); return; }
+    if (a.toLowerCase() === b.toLowerCase()) { toast('Use two different names.'); f.b.focus(); return; }
+    if (!f.consent.checked) { toast('Tick the box to say you are happy for it to be published.'); return; }
+    if (SAFETY.test(q + ' ' + sa)) { $('#safety').innerHTML = helpSheet(); $('#safety').scrollIntoView({behavior: 'smooth'}); return; }
+    const row = {id: uid(), q, a, b, sa, sb: '', cat: f.querySelector('[name=cat]:checked').value, rel: f.querySelector('[name=rel]:checked').value,
+      win: Number(f.querySelector('[name=win]:checked').value), created: Date.now(), closes: 0, status: 'draft', evidence: [], requests: {}};
+    if (shared) {
+      let ok = false;
+      await write(async () => { await rowDoc(row.id).set(Object.assign({}, row, {by: shared.me})); ok = true; });
+      if (!ok) return;
+      shared.rows.push(Object.assign({}, row, {by: shared.me}));
+    } else {
+      local.cases.unshift(Object.assign(row, {votes: {a: 0, b: 0, both: 0, split: 0}, questions: [], mine: true}));
+    }
+    delete local.draft; saveLocal(); go({view: 'case', id: row.id});
+  } else if (f.id === 'partner') {
+    const c = findCase(route.id), sb = f.sb.value.trim();
+    if (!sb) { toast(`Write ${c.b}'s side first.`); f.sb.focus(); return; }
+    if ((f.ca && !f.ca.checked) || !f.cb.checked) { toast('Tick "happy for this to be published" to start the vote.'); return; }
+    if (SAFETY.test(sb)) { f.insertAdjacentHTML('beforeend', helpSheet()); return; }
+    const closes = Date.now() + c.win * HOUR;
+    if (isShared(c)) await write(() => rowDoc(c.id).update({sb, status: 'voting', closes}), 'Live! Votes stay hidden until the verdict.');
+    else { Object.assign(local.cases.find(x => x.id === c.id), {sb, status: 'voting', closes}); saveLocal(); toast('Live! Votes stay hidden until the verdict.'); }
+    go({view: 'case', id: c.id});
+  } else if (f.id === 'ask') {
+    const c = findCase(route.id), text = f.askq.value.trim();
+    if (!text) return;
+    if (PRIVATE_Q.test(text)) { toast('Keep questions about the row, not personal details.'); return; }
+    if (isShared(c)) {
+      const id = uid();
+      await write(async () => { await shared.db.doc('questions/' + id).set({row: c.id, text: text.slice(0, 200), answer: '', by: shared.me, at: Date.now()});
+        await shared.db.doc(`upvotes/${id}_${shared.me}`).set({q: id, row: c.id, by: shared.me}); }, 'Question added.');
+    } else {
+      const id = uid(); c.questions.push({id, text: text.slice(0, 200), up: 1, answer: ''}); local.me['q' + id] = 1; saveLocal(); render(); toast('Question added.');
+    }
+  }
+});
+
+// ---------- start ----------
+loadLocal();
+const startHash = location.hash.slice(1);
+if (startHash.startsWith('row-')) route = {view: 'case', id: startHash.slice(4)};
+else if (['feed', 'mine', 'new'].includes(startHash)) route = {view: startHash};
+render();
+setInterval(() => { tick(); refresh(); }, 8000);
+
+// Light up the shared store when this page runs on claude.ai for a signed-in viewer.
+(async () => {
+  if (!window.claude || typeof window.claude.use !== 'function') return;
+  const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+  if (!db || !user) return;
+  const me = await user.id();
+  if (!me) return;
+  shared = {db, me, rows: [], votes: [], questions: [], ups: []};
+  const listen = (name, key) => db.collection(name).onSnapshot(snap => {
+    shared[key] = snap.docs.map(doc => Object.assign({id: doc.id}, doc.data()));
+    refresh();
+  }, () => { /* keep showing what we have */ });
+  listen('rows', 'rows'); listen('votes', 'votes'); listen('questions', 'questions'); listen('upvotes', 'ups');
+  render();
+})();
+</script>
+</body>
+</html>

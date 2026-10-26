@@ -1,0 +1,267 @@
+{
+ "name": "TCH Works · ask us",
+ "colour": "#1f3fbf",
+ "greeting": "Hi, I'm the TCH Works FAQ assistant. I only answer from TCH's own approved answers, so I won't make things up. Try a question, or tap one below.",
+ "fallback": "I don't have an approved answer for that, so I won't guess. Email [tchworks.shop@agentmail.to](mailto:tchworks.shop@agentmail.to) and a person will reply.",
+ "suggest": [
+  0,
+  1,
+  6,
+  9
+ ],
+ "synonyms": {
+  "price": [
+   "cost",
+   "costs",
+   "much",
+   "charge",
+   "fee",
+   "fees",
+   "gbp",
+   "pound",
+   "pounds",
+   "expensive",
+   "cheap"
+  ],
+  "cv": [
+   "resume",
+   "curriculum"
+  ],
+  "chatbot": [
+   "bot",
+   "chat",
+   "assistant",
+   "widget"
+  ],
+  "refund": [
+   "money back",
+   "refunds",
+   "cancel"
+  ],
+  "time": [
+   "long",
+   "quick",
+   "fast",
+   "turnaround",
+   "days",
+   "when",
+   "delivery"
+  ],
+  "speech": [
+   "toast",
+   "speeches",
+   "wedding",
+   "best man"
+  ],
+  "scrape": [
+   "scraping",
+   "extract",
+   "data"
+  ],
+  "transcript": [
+   "transcription",
+   "transcribe",
+   "captions",
+   "subtitles",
+   "srt"
+  ],
+  "proofread": [
+   "proof",
+   "proofing"
+  ]
+ },
+ "faqs": [
+  {
+   "q": "How much does a CV rewrite cost?",
+   "keywords": [
+    "cv",
+    "price",
+    "cover letter",
+    "linkedin"
+   ],
+   "a": "CV rewrites are £25, £40 or £60 depending on the package, with Word and PDF back in 2 working days. Details: [CV rewrite](/services/cv-rewrite/)"
+  },
+  {
+   "q": "What does the FAQ chatbot cost?",
+   "keywords": [
+    "chatbot",
+    "price",
+    "website",
+    "monthly"
+   ],
+   "a": "The Starter chatbot (up to 30 questions) is £60 and the Business one (up to 80 questions, your brand colours, an enquiry form that emails you) is £120. Both are one-off with no monthly fee. Details: [FAQ chatbot](/services/faq-chatbot/)"
+  },
+  {
+   "q": "Is there a monthly fee for the chatbot?",
+   "keywords": [
+    "chatbot",
+    "monthly",
+    "subscription",
+    "ongoing",
+    "hosting"
+   ],
+   "a": "No. You pay once. The chatbot is a small file that runs on your own website, so there's no subscription and no AI bill. Changes later are quoted at a fixed price."
+  },
+  {
+   "q": "Will the chatbot make things up?",
+   "keywords": [
+    "chatbot",
+    "wrong",
+    "hallucinate",
+    "invent",
+    "accurate"
+   ],
+   "a": "No. It only replies with answers you've approved. If a question doesn't match one of them, it says so and points the visitor to your email or phone."
+  },
+  {
+   "q": "Which websites does the chatbot work on?",
+   "keywords": [
+    "chatbot",
+    "wordpress",
+    "wix",
+    "squarespace",
+    "shopify",
+    "website",
+    "install"
+   ],
+   "a": "Any site where you can paste one line of code into the page, which includes WordPress, Wix, Squarespace, Shopify and plain HTML sites. We send step-by-step instructions for your platform."
+  },
+  {
+   "q": "How long does the chatbot take?",
+   "keywords": [
+    "chatbot",
+    "time"
+   ],
+   "a": "Starter: 3 working days after your questions arrive. Business: 5 working days. Both include changes before you go live."
+  },
+  {
+   "q": "Can you write a wedding or best man speech?",
+   "keywords": [
+    "speech",
+    "retirement",
+    "leaving"
+   ],
+   "a": "Yes. Speeches up to 5 minutes are £25 (2 working days) and up to 10 minutes are £45 (next working day). Details: [speech writing](/services/speech-writing/)"
+  },
+  {
+   "q": "Do you proofread documents?",
+   "keywords": [
+    "proofread",
+    "proofreading",
+    "edit",
+    "editing",
+    "grammar",
+    "spelling"
+   ],
+   "a": "Yes, in UK English: £15 up to 3,000 words or £40 up to 10,000 words, returned with tracked changes. We don't do marked coursework. Details: [proofreading](/services/proofreading/)"
+  },
+  {
+   "q": "Can you turn a PDF into a spreadsheet?",
+   "keywords": [
+    "pdf",
+    "excel",
+    "spreadsheet",
+    "clean",
+    "data entry"
+   ],
+   "a": "Yes. Up to 500 rows is £15 and up to 10,000 rows is £60. Details: [spreadsheet clean-up](/services/spreadsheet-clean-up/)"
+  },
+  {
+   "q": "Do you write grant applications?",
+   "keywords": [
+    "grant",
+    "funding",
+    "charity",
+    "cic",
+    "bid"
+   ],
+   "a": "Yes, for UK charities, CICs, community groups and small businesses. Short applications are £49 and full ones £120. Details: [grant writing](/services/grant-writing/)"
+  },
+  {
+   "q": "Can you transcribe a podcast?",
+   "keywords": [
+    "transcript",
+    "podcast",
+    "interview",
+    "video"
+   ],
+   "a": "Yes. Up to 30 minutes is £15; up to 90 minutes with captions and show notes is £35. Details: [transcription](/services/transcription/)"
+  },
+  {
+   "q": "Can you rewrite my website text?",
+   "keywords": [
+    "website",
+    "copy",
+    "homepage",
+    "about page",
+    "words"
+   ],
+   "a": "Yes. One page is £35 and up to 4 pages £95. Details: [website copy](/services/website-copy/)"
+  },
+  {
+   "q": "Can you get data from a website into a spreadsheet?",
+   "keywords": [
+    "scrape",
+    "website",
+    "prices",
+    "list",
+    "csv"
+   ],
+   "a": "Yes, public data only: one site up to 500 rows is £25. Details: [website data](/services/web-scraping/)"
+  },
+  {
+   "q": "Do you sell lead lists?",
+   "keywords": [
+    "lead",
+    "leads",
+    "list",
+    "businesses",
+    "prospects",
+    "emails"
+   ],
+   "a": "Yes, UK business lead lists: 100 for £30 or 300 for £75, with generic business emails only. Details: [lead lists](/services/lead-lists/)"
+  },
+  {
+   "q": "How do I pay?",
+   "keywords": [
+    "pay",
+    "payment",
+    "card",
+    "stripe",
+    "invoice"
+   ],
+   "a": "By card through Stripe on each service page. For anything booked by email we reply with a secure Stripe payment link."
+  },
+  {
+   "q": "Can I get a refund?",
+   "keywords": [
+    "refund",
+    "unhappy",
+    "not happy"
+   ],
+   "a": "If we haven't started, yes, in full. If you're not happy with the work, tell us what to change first. See our [refund policy](/refund.html)."
+  },
+  {
+   "q": "How do I contact you?",
+   "keywords": [
+    "contact",
+    "email",
+    "phone",
+    "talk",
+    "human",
+    "person"
+   ],
+   "a": "Email [tchworks.shop@agentmail.to](mailto:tchworks.shop@agentmail.to). We reply within one working day."
+  },
+  {
+   "q": "Do you use AI?",
+   "keywords": [
+    "ai",
+    "chatgpt",
+    "robot",
+    "human"
+   ],
+   "a": "AI helps with first drafts on some services. Every piece is then checked and edited before it reaches you, and we'll always say how it was used if you ask."
+  }
+ ]
+}

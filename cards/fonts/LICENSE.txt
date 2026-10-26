@@ -1,0 +1,4 @@
+Fonts self-hosted for tchworks.co.uk/cards (latin subsets, converted to WOFF2).
+All families are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org):
+Bricolage Grotesque, DM Sans, Fraunces, Caveat, Poppins, Playfair Display, DM Serif Display, Pacifico, Bebas Neue, Great Vibes, Dancing Script, Amatic SC.
+Source: Google Fonts (fonts.google.com). Copyright remains with the respective authors.

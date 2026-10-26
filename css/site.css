@@ -9,8 +9,8 @@
  --line: #E5E7EB;
  --white: #ffffff;
  --max: 70rem;
- --sans: Inter, "Helvetica Neue", Arial, sans-serif;
- --display: Poppins, Inter, sans-serif;
+ --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --display: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
