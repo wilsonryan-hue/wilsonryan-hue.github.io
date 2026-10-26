@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Secret Santa Generator UK · draw names online, no sign-up | TCH Works</title>
+<meta name="description" content="Free Secret Santa generator for UK offices, families and friends. Draw names, keep couples apart, and send everyone a private link on WhatsApp. No sign-up, no emails, nothing saved.">
+<link rel="canonical" href="https://www.tchworks.co.uk/free/secret-santa-generator/">
+
+<meta property="og:title" content="Free Secret Santa Generator UK · draw names online, no sign-up | TCH Works">
+<meta property="og:description" content="Free Secret Santa generator for UK offices, families and friends. Draw names, keep couples apart, and send everyone a private link on WhatsApp. No sign-up, no emails, nothing saved.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.tchworks.co.uk/img/p/secret-santa-organiser-kit/card.webp">
+<meta property="og:url" content="https://www.tchworks.co.uk/free/secret-santa-generator/">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>/* TCH Works — Made Useful. Navy #0D1323, cobalt #2563EB, yellow #FBBF24 */
+:root {
+ --navy: #0D1323;
+ --cobalt: #2563EB;
+ --yellow: #FBBF24;
+ --paper: #F7F7F8;
+ --ink: #1F2937;
+ --muted: #6B7280;
+ --line: #E5E7EB;
+ --white: #ffffff;
+ --max: 70rem;
+ --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --display: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+ margin: 0;
+ background: var(--paper);
+ color: var(--ink);
+ font-family: var(--sans);
+ font-size: 1.0625rem;
+ line-height: 1.55;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--cobalt); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+
+.site-header {
+ background: var(--navy);
+ color: var(--white);
+ border-bottom: 3px solid var(--yellow);
+}
+.nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+ padding: 0.9rem 0;
+}
+.brand { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.75rem; }
+.brand:hover { text-decoration: none; }
+.logo-stack { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; }
+.logo-tch {
+ position: relative;
+ font-family: var(--display);
+ font-weight: 800;
+ font-size: 1.55rem;
+ letter-spacing: -0.04em;
+}
+.logo-tch .bar {
+ position: absolute;
+ left: 0.18em; right: 0.18em;
+ top: 52%;
+ height: 0.12em;
+ background: var(--cobalt);
+ transform: translateY(-50%);
+ pointer-events: none;
+}
+.logo-works {
+ font-family: var(--display);
+ font-weight: 600;
+ font-size: 0.58rem;
+ letter-spacing: 0.42em;
+ text-transform: uppercase;
+ margin-top: 0.28rem;
+ color: #cbd5e1;
+}
+.site-nav { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+.site-nav a { color: #e5e7eb; font-weight: 500; }
+.site-nav a:hover { color: var(--yellow); text-decoration: none; }
+.site-nav a[aria-current="page"] { color: var(--yellow); }
+
+.hero {
+ background: var(--navy);
+ color: var(--white);
+ padding: 3.5rem 0 3.75rem;
+}
+.kicker {
+ font-family: var(--display);
+ font-weight: 600;
+ font-size: 0.75rem;
+ letter-spacing: 0.28em;
+ text-transform: uppercase;
+ color: var(--yellow);
+ margin: 0;
+}
+h1, h2, h3, h4 {
+ font-family: var(--display);
+ font-weight: 800;
+ letter-spacing: -0.03em;
+ color: var(--navy);
+ line-height: 1.12;
+}
+.hero h1 { color: var(--white); font-size: clamp(2.6rem, 7vw, 4.6rem); margin: 0.4rem 0 0; }
+.hero .pillars { font-size: clamp(1.15rem, 2.4vw, 1.6rem); color: #cbd5e1; margin: 0.7rem 0 0; font-weight: 500; }
+.hero .lede { max-width: 36rem; color: #94a3b8; margin: 1rem 0 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; }
+.trust { font-size: 0.82rem; color: #64748b; margin: 1.1rem 0 0; }
+
+.btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 2.85rem;
+ padding: 0 1.15rem;
+ border-radius: 8px;
+ font-family: var(--display);
+ font-weight: 700;
+ font-size: 0.92rem;
+ border: 0;
+ cursor: pointer;
+ text-decoration: none;
+}
+.btn:hover { text-decoration: none; }
+.btn-primary { background: var(--cobalt); color: var(--white); }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-yellow { background: var(--yellow); color: var(--navy); }
+.btn-yellow:hover { background: #f59e0b; }
+.btn-ghost { background: transparent; color: var(--white); border: 1px solid #334155; }
+.btn-ghost:hover { border-color: var(--yellow); color: var(--yellow); }
+.btn-navy { background: var(--navy); color: var(--white); }
+
+.section { padding: 3rem 0; }
+.section h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0.35rem 0 0; }
+.section-head { margin-bottom: 1.5rem; }
+.section-head p { color: var(--muted); margin: 0.4rem 0 0; max-width: 40rem; }
+
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; }
+.step {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 12px;
+ padding: 1.1rem 1.15rem;
+}
+.step b { display: block; font-family: var(--display); color: var(--cobalt); font-size: 1.35rem; }
+.step p { margin: 0.4rem 0 0; font-size: 0.92rem; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.card {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.3rem 1.35rem;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ overflow: hidden;
+}
+.card::before {
+ content: "";
+ position: absolute;
+ left: 0; top: 0; bottom: 0;
+ width: 5px;
+ background: var(--cobalt);
+}
+.card.free::before { background: var(--yellow); }
+.badge {
+ font-family: var(--display);
+ font-size: 0.68rem;
+ font-weight: 700;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--cobalt);
+ margin: 0;
+}
+.card.free .badge { color: #92400e; }
+.card h3 { margin: 0.35rem 0 0; font-size: 1.35rem; }
+.price { font-family: var(--display); font-weight: 800; font-size: 1.35rem; color: var(--navy); margin: 0.7rem 0 0; }
+.card .problem { margin: 0.45rem 0 0; color: var(--ink); }
+.card .inside { margin: 0.7rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.9rem; }
+.card .inside li { margin: 0.2rem 0; }
+.card .actions { margin-top: auto; padding-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.note { font-size: 0.8rem; color: var(--muted); margin: 0.55rem 0 0; }
+
+.upsell {
+ background: var(--navy);
+ color: var(--white);
+ border-radius: 14px;
+ padding: 1.4rem 1.5rem;
+ margin-top: 2rem;
+}
+.upsell h2, .upsell h3 { color: var(--white); margin: 0.3rem 0 0; }
+.upsell p { color: #cbd5e1; }
+.upsell .kicker { color: var(--yellow); }
+
+.prose { max-width: 42rem; }
+.prose h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 0.4rem 0 0; }
+.prose .lede { font-size: 1.15rem; color: #374151; margin-top: 1rem; }
+.prose ol { padding-left: 1.2rem; }
+.prose li { margin: 0.85rem 0; }
+.prose li strong { color: var(--navy); }
+.article-meta { color: var(--muted); font-size: 0.88rem; margin-top: 0.4rem; }
+
+.site-footer {
+ background: var(--navy);
+ color: #94a3b8;
+ padding: 2.4rem 0 2.6rem;
+ margin-top: 3rem;
+ font-size: 0.88rem;
+}
+.site-footer .brand { margin-bottom: 0.8rem; }
+.site-footer .logo-tch { font-size: 1.3rem; }
+.legal { display: grid; gap: 0.35rem; margin-top: 1rem; max-width: 40rem; }
+.site-footer a { color: #cbd5e1; }
+
+.thanks-box {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.6rem;
+ max-width: 32rem;
+}
+.thanks-box[hidden] { display: none; }
+.error { color: #991b1b; }
+
+
+/* Magnet email gate (Email Funnel S1) */
+.magnet-gate {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.35rem 1.4rem;
+ margin: 1.25rem 0 0;
+ max-width: 28rem;
+}
+.magnet-gate label {
+ display: block;
+ font-size: 0.88rem;
+ font-weight: 600;
+ color: var(--navy);
+ margin: 0.75rem 0 0.3rem;
+}
+.magnet-gate label:first-of-type { margin-top: 0; }
+.magnet-gate input[type="text"],
+.magnet-gate input[type="email"] {
+ width: 100%;
+ padding: 0.65rem 0.75rem;
+ border: 1px solid var(--line);
+ border-radius: 8px;
+ font: inherit;
+ color: var(--ink);
+ background: var(--paper);
+}
+.magnet-gate .consent {
+ display: flex;
+ gap: 0.65rem;
+ align-items: flex-start;
+ margin: 1rem 0 0;
+ font-size: 0.82rem;
+ font-weight: 500;
+ color: var(--muted);
+ line-height: 1.4;
+}
+.magnet-gate .consent input {
+ margin-top: 0.2rem;
+ flex-shrink: 0;
+}
+.magnet-gate .actions { margin-top: 1rem; }
+.magnet-download { margin-top: 1.1rem; }
+.magnet-download[hidden] { display: none !important; }
+
+@media (max-width: 800px) {
+ .steps, .grid { grid-template-columns: 1fr; }
+ .hero { padding: 2.4rem 0 2.6rem; }
+}
+
+/* Magnet email capture (Lane B) */
+.magnet-capture {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.3rem 1.35rem;
+ margin: 1.25rem 0 0;
+ max-width: 28rem;
+ position: relative;
+ overflow: hidden;
+}
+.magnet-capture::before {
+ content: "";
+ position: absolute;
+ left: 0; top: 0; bottom: 0;
+ width: 5px;
+ background: var(--yellow);
+}
+.magnet-capture h2 {
+ font-size: 1.15rem;
+ margin: 0;
+}
+.magnet-capture .field {
+ display: flex;
+ flex-direction: column;
+ gap: 0.35rem;
+ margin-top: 0.85rem;
+}
+.magnet-capture label {
+ font-size: 0.82rem;
+ font-weight: 600;
+ color: var(--navy);
+}
+.magnet-capture input[type="text"],
+.magnet-capture input[type="email"] {
+ min-height: 2.6rem;
+ padding: 0.45rem 0.7rem;
+ border: 1px solid var(--line);
+ border-radius: 8px;
+ font: inherit;
+ color: var(--ink);
+ background: var(--white);
+}
+.magnet-capture input:focus {
+ outline: 2px solid var(--cobalt);
+ outline-offset: 1px;
+}
+.magnet-capture .consent {
+ display: flex;
+ align-items: flex-start;
+ gap: 0.55rem;
+ margin-top: 0.9rem;
+ font-size: 0.85rem;
+ color: var(--ink);
+}
+.magnet-capture .consent input {
+ margin-top: 0.2rem;
+ flex-shrink: 0;
+}
+.magnet-capture .btn {
+ width: 100%;
+ margin-top: 1rem;
+}
+.magnet-capture .btn:disabled {
+ opacity: 0.55;
+ cursor: not-allowed;
+}
+/* MD 2026-09-10: Web3Forms live via data-capture-ready — do not scare users with kit-pending */
+.magnet-capture[data-capture-ready="true"] .kit-pending {
+ display: none !important;
+}
+.magnet-capture[data-kit-ready="false"][data-capture-ready="false"] .kit-pending {
+ display: block;
+}
+
+
+/* Stripe sticky cash bar — MD existential 2026-09-10 */
+.sticky-bar {
+ position: sticky;
+ top: 0;
+ z-index: 40;
+ background: #0D1323;
+ border-bottom: 2px solid #F5C518;
+ padding: 0.65rem 0;
+}
+.sticky-bar .wrap {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.6rem 1rem;
+ align-items: center;
+ justify-content: space-between;
+}
+.sticky-bar p {
+ margin: 0;
+ color: #F7F7F8;
+ font-size: 0.92rem;
+ font-weight: 600;
+}
+.sticky-bar .sticky-actions {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+}
+.sticky-bar .btn {
+ padding: 0.45rem 0.85rem;
+ font-size: 0.85rem;
+}
+/* TCH Works shop: product grid, previews, product pages, downloads. Loads after site.css. */
+:root { --radius: 14px; --shadow: 0 1px 2px rgba(13,19,35,.06), 0 8px 24px rgba(13,19,35,.07); }
+.center { text-align: center; margin-top: 2rem; }
+.section.alt { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border-radius: 10px; font-weight: 600; padding: .7rem 1.15rem; font-family: var(--sans); border: 0; cursor: pointer; text-decoration: none; }
+.btn-sm { padding: .45rem .9rem; font-size: .9rem; }
+.btn-lg { padding: .95rem 1.4rem; font-size: 1.05rem; width: 100%; }
+.btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.page-h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: .3rem 0 0; }
+.page-lede { color: var(--muted); font-size: 1.1rem; margin: .6rem 0 0; max-width: 42rem; }
+.narrow { max-width: 46rem; }
+
+/* hero */
+.hero-shop { padding: 3.5rem 0 3rem; }
+.hero-shop h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); line-height: 1.08; }
+.hero-shop .lede { color: #cbd5e1; font-size: 1.12rem; max-width: 34rem; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 2rem; align-items: center; }
+.hero-stack { position: relative; height: 360px; }
+.hero-stack img { position: absolute; width: 62%; border-radius: 12px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.hero-stack img:nth-child(1) { left: 0; top: 30px; transform: rotate(-5deg); }
+.hero-stack img:nth-child(2) { left: 22%; top: 0; z-index: 2; transform: rotate(1deg); }
+.hero-stack img:nth-child(3) { right: 0; top: 60px; transform: rotate(5deg); }
+.trust-band { background: var(--yellow); }
+.trust-row { list-style: none; margin: 0; padding: .9rem 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; font-size: .92rem; color: var(--navy); }
+.trust-row li b { display: block; font-family: var(--display); }
+main .trust-row { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.4rem 0; }
+
+/* categories */
+.cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.cat-tile { display: grid; grid-template-rows: auto auto 1fr auto; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; color: var(--ink); box-shadow: var(--shadow); transition: transform .15s; }
+.cat-tile:hover { transform: translateY(-3px); text-decoration: none; }
+.cat-tile img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--tint); display: block; }
+.ct-name { font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--navy); padding: .9rem 1rem 0; }
+.ct-blurb { color: var(--muted); font-size: .92rem; padding: .25rem 1rem 0; }
+.ct-count { color: var(--acc); font-weight: 600; font-size: .85rem; padding: .6rem 1rem 1rem; }
+
+/* product grid */
+.pgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+.pgrid.three { grid-template-columns: repeat(3, 1fr); }
+.pgrid.two { grid-template-columns: repeat(2, minmax(0, 420px)); }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
+.pcard:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(13,19,35,.06), 0 14px 32px rgba(13,19,35,.1); }
+.pc-img { position: relative; display: block; background: var(--tint); }
+.pc-img img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.pc-label { position: absolute; top: .7rem; left: .7rem; background: var(--navy); color: var(--yellow); font-size: .75rem; font-weight: 700; letter-spacing: .03em; padding: .25rem .55rem; border-radius: 999px; z-index: 1; }
+.pc-body { padding: .95rem 1rem 1rem; display: flex; flex-direction: column; flex: 1; }
+.pc-cat { color: var(--acc); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin: 0; }
+.pcard h3 { font-size: 1.06rem; margin: .3rem 0 0; line-height: 1.3; }
+.pcard h3 a { color: var(--navy); }
+.pc-pitch { color: var(--ink); font-size: .9rem; margin: .45rem 0 0; flex: 1; }
+.pc-meta { color: var(--muted); font-size: .8rem; margin: .6rem 0 0; }
+.pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: .75rem; }
+.pc-price { font-family: var(--display); font-weight: 800; font-size: 1.25rem; color: var(--navy); }
+
+/* shop page */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.5rem; position: sticky; top: 0; z-index: 5; background: var(--paper); padding: .6rem 0; }
+.chip { border: 1.5px solid var(--line); background: #fff; color: var(--navy); border-radius: 999px; padding: .45rem .95rem; font: 600 .9rem var(--sans); cursor: pointer; }
+.chip.on, .chip:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+.cat-sec { margin-top: 2.2rem; scroll-margin-top: 4rem; }
+.cat-sec[hidden] { display: none; }
+.cat-sec h2 { font-size: 1.5rem; margin: 0; }
+
+/* bundle */
+.bundle { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+.bundle-img img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+.bundle-price span { font-family: var(--display); font-weight: 800; font-size: 2rem; color: var(--navy); }
+.bundle-price s { color: var(--muted); margin-left: .4rem; }
+.how3 { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.how3 li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; }
+.how3 b { font-family: var(--display); font-size: 1.6rem; color: var(--cobalt); }
+.how3 h3 { margin: .3rem 0 0; font-size: 1.1rem; }
+.how3 p { color: var(--muted); margin: .4rem 0 0; font-size: .95rem; }
+.daily-list { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: .6rem; }
+.daily-list li { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; display: flex; justify-content: space-between; gap: 1rem; }
+.daily-list span { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.svc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+.svc-list span { color: var(--muted); font-size: .9rem; }
+
+/* product page */
+.crumbs { font-size: .88rem; color: var(--muted); margin-bottom: 1.2rem; }
+.prod-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; align-items: start; }
+.gal-main { background: var(--tint); border-radius: var(--radius); padding: 1.5rem; display: flex; justify-content: center; }
+.gal-main img { max-height: 640px; width: auto; max-width: 100%; box-shadow: 0 10px 30px rgba(13,19,35,.18); background: #fff; }
+.thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; margin-top: .7rem; }
+.thumb { border: 2px solid transparent; border-radius: 8px; padding: 0; background: #fff; cursor: pointer; overflow: hidden; }
+.thumb img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+.thumb.on { border-color: var(--cobalt); }
+.gal-note { color: var(--muted); font-size: .82rem; margin: .5rem 0 0; }
+.buybox h1 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin: .3rem 0 0; line-height: 1.15; }
+.buybox .pitch { font-size: 1.1rem; margin: .7rem 0 0; }
+.big-price { font-family: var(--display); font-weight: 800; font-size: 2.1rem; color: var(--navy); margin: .8rem 0 .6rem; }
+.ticks { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .35rem; font-size: .95rem; }
+.ticks li::before { content: "✓"; color: #16A34A; font-weight: 700; margin-right: .5rem; }
+.buybox h2 { font-size: 1.15rem; margin: 1.6rem 0 .4rem; }
+.inside-list { margin: 0; padding-left: 1.2rem; }
+.inside-list li { margin: .3rem 0; }
+.prod-more { margin-top: 3rem; }
+.prod-more h2 { font-size: 1.4rem; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; margin: .5rem 0; }
+.faq summary { font-weight: 600; cursor: pointer; color: var(--navy); }
+.faq p { margin: .5rem 0 0; color: var(--ink); }
+.mobile-buy { display: none; }
+
+/* downloads and free */
+.dl-list { display: grid; gap: .7rem; margin: 1.5rem 0; }
+.dl-btn { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; background: #fff; border: 2px solid var(--cobalt); border-radius: 12px; padding: .9rem 1.1rem; color: var(--navy); }
+.dl-btn:hover { background: #EAF1FE; text-decoration: none; }
+.dl-kind { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--cobalt); font-weight: 700; }
+.dl-name { font-weight: 600; word-break: break-all; }
+.dl-go { grid-row: 1 / 3; grid-column: 2; align-self: center; background: var(--cobalt); color: #fff; border-radius: 8px; padding: .5rem .9rem; font-weight: 600; }
+.tips { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: 1.5rem 0 2.5rem; }
+.tips h2 { font-size: 1.15rem; margin: 0; }
+.free-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; margin-top: 1.4rem; display: grid; gap: .35rem; }
+.free-form label { font-weight: 600; font-size: .92rem; margin-top: .4rem; }
+.free-form input[type=email], .free-form input:not([type]) { font: inherit; padding: .7rem .8rem; border: 1.5px solid var(--line); border-radius: 8px; }
+.free-form .consent { display: flex; gap: .5rem; font-weight: 400; font-size: .85rem; color: var(--muted); align-items: flex-start; }
+.free-form .consent input { margin-top: .25rem; }
+.free-form button { margin-top: .8rem; }
+.free-done { background: #FEF4DC; border-radius: var(--radius); padding: 1.2rem; margin-top: 1.4rem; }
+.free-done[hidden], .free-form[hidden] { display: none; }
+
+/* footer */
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.foot-tag { color: #cbd5e1; margin: .5rem 0 0; max-width: 22rem; }
+.foot-links { display: grid; gap: .35rem; align-content: start; font-size: .92rem; }
+.site-footer .legal { margin-top: 2rem; border-top: 1px solid #1f2a44; padding-top: 1rem; font-size: .82rem; color: #94a3b8; max-width: none; }
+.site-footer .legal p { margin: .2rem 0; }
+
+@media (max-width: 1000px) {
+ .pgrid { grid-template-columns: repeat(3, 1fr); }
+ .cat-grid { grid-template-columns: repeat(2, 1fr); }
+ .trust-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+ .hero-grid, .prod-grid, .bundle { grid-template-columns: 1fr; }
+ .hero-stack { height: 220px; }
+ .pgrid, .pgrid.three { grid-template-columns: repeat(2, 1fr); gap: .7rem; }
+ .pgrid.two { grid-template-columns: 1fr; }
+ .pc-pitch { display: none; }
+ .pc-body { padding: .7rem; }
+ .pcard h3 { font-size: .95rem; }
+ .cat-grid, .how3 { grid-template-columns: 1fr; }
+ .foot-grid { grid-template-columns: 1fr; }
+ .mobile-buy { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--navy); color: #fff; padding: .7rem 1rem; align-items: center; justify-content: space-between; gap: .6rem; font-size: .92rem; }
+ .product { padding-bottom: 5rem; }
+ .gal-main { padding: .8rem; }
+ .site-nav { gap: .9rem; font-size: .9rem; }
+}
+.trust-band .trust-row { background: none; border: 0; margin: 0; padding: .9rem 0; }
+/* template card at the end of Daily guides */
+.upsell.tpl-card { display: grid; grid-template-columns: 220px 1fr; gap: 1.2rem; align-items: center; background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow); }
+.upsell.tpl-card h2 { color: var(--navy); font-size: 1.3rem; margin: .2rem 0 0; }
+.upsell.tpl-card p { color: var(--ink); margin: .4rem 0 0; }
+.upsell.tpl-card .kicker { color: var(--cobalt); }
+.tc-img { display: block; background: var(--tint); border-radius: 10px; overflow: hidden; }
+.tc-img img { display: block; width: 100%; }
+.tc-meta { font-size: .85rem; color: var(--muted) !important; }
+.tc-actions { margin-top: .8rem !important; }
+@media (max-width: 600px) { .upsell.tpl-card { grid-template-columns: 1fr; } }
+
+/* contrast fix 2026-10-21 */
+main.section .wrap>.kicker{color:#92400e}
+.pc-cat,.ct-count{color:#b45309}
+.site-footer p a{text-decoration:underline}
+</style>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Secret Santa Generator", "url": "https://www.tchworks.co.uk/free/secret-santa-generator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in the browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"}, "publisher": {"@type": "Organization", "name": "TCH Works", "url": "https://www.tchworks.co.uk/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this Secret Santa generator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, completely free. There's no sign-up, no email addresses and no limit on group size."}}, {"@type": "Question", "name": "Can the organiser see who got who?", "acceptedAnswer": {"@type": "Answer", "text": "Not unless they open other people's links. The matches aren't shown on the organiser's screen; each person's link reveals only their own match. If you want to be fully hands-off, send the links without opening them."}}, {"@type": "Question", "name": "Do you store our names?", "acceptedAnswer": {"@type": "Answer", "text": "No. The draw happens in your own browser and nothing is sent to us or saved. Each person's match lives only inside their own link."}}, {"@type": "Question", "name": "Can I stop couples getting each other?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Add each pair to the \"Keep apart\" box, one pair per line, like \"Mum & Dad\"."}}, {"@type": "Question", "name": "Someone lost their link. What now?", "acceptedAnswer": {"@type": "Answer", "text": "Copy their link again from this page if it's still open. If you've closed it, run a fresh draw and send everyone new links."}}, {"@type": "Question", "name": "How much should we spend on Secret Santa?", "acceptedAnswer": {"@type": "Answer", "text": "Most UK offices go for £5 to £15, with £10 the usual middle ground. Families and friend groups often pick £20 to £30."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tchworks.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Free", "item": "https://www.tchworks.co.uk/free/"}, {"@type": "ListItem", "position": 3, "name": "Secret Santa generator", "item": "https://www.tchworks.co.uk/free/secret-santa-generator/"}]}</script>
+</head>
+<body><style>.tbar{background:#1f1720;color:#fff;font:500 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;position:relative;z-index:50}.tbar-in{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.tbar-brand{color:#fff;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:.01em;white-space:nowrap}.tbar-brand b{color:#ffb4a2}.tbar nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1 1 auto;min-width:0}.tbar nav::-webkit-scrollbar{display:none}.tbar nav a{color:#f3ece7;text-decoration:none;padding:7px 9px;border-radius:7px;white-space:nowrap}.tbar nav a:hover{background:#ffffff1f}.tbar nav a[aria-current]{background:#fff;color:#1f1720}.tbar-s{display:flex;flex:0 1 260px;min-width:180px}.tbar-s input{flex:1;min-width:0;border:0;border-radius:8px 0 0 8px;padding:8px 10px;font:inherit;color:#1f1720;background:#fff}.tbar-s button{border:0;border-radius:0 8px 8px 0;padding:8px 12px;background:#ffb4a2;color:#1f1720;font:inherit;font-weight:700;cursor:pointer}@media(max-width:720px){.tbar-in{gap:8px}.tbar nav{order:3;flex-basis:100%}.tbar-s{flex:1 1 140px}}main p a:not([class]),.crumbs a{text-decoration:underline}</style><div class="tbar"><div class="tbar-in"><a class="tbar-brand" href="/">TCH<b>Works</b></a><nav aria-label="Shop sections"><a href="/cards/">Cards</a><a href="/t-shirts/">T-shirts</a><a href="/hoodies/">Hoodies</a><a href="/sweatshirts/">Sweatshirts</a><a href="/mugs/">Mugs</a><a href="/personalised/">Personalised</a><a href="/shop/" aria-current="page">Templates</a></nav><form class="tbar-s" action="/search/" method="get" role="search"><input type="search" name="q" placeholder="Search cards, tees, templates" aria-label="Search the shop"><button type="submit">Search</button></form></div></div><header class="site-header">
+ <div class="wrap nav">
+  <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+  <nav class="site-nav" aria-label="Primary">
+   <a href="/shop/">Templates</a>
+   <a href="/free/" aria-current="page">Free</a>
+   <a href="/daily/">Daily</a>
+   <a href="/guides/">Guides</a>
+  </nav>
+ </div>
+</header>
+<main class="section"><div class="wrap ss">
+<style>
+.ss h1{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:.2rem 0 .6rem;color:var(--navy)}
+.ss .lede{font-size:1.15rem;color:var(--ink);max-width:46rem}
+.ss .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.25rem;margin:1.2rem 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.ss label{display:block;font-weight:700;margin:.8rem 0 .3rem;color:var(--navy)}
+.ss .hint{font-weight:400;color:var(--muted);font-size:.95rem}
+.ss input,.ss textarea{width:100%;font:inherit;padding:.65rem .75rem;border:1px solid #cbd0d8;border-radius:10px;background:#fff;color:var(--ink)}
+.ss textarea{min-height:9rem;resize:vertical}
+.ss .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:0 1rem}
+.ss .go{margin-top:1rem;font:inherit;font-weight:800;font-size:1.1rem;border:0;border-radius:12px;padding:.85rem 1.4rem;background:var(--yellow);color:var(--navy);cursor:pointer}
+.ss .go:hover{filter:brightness(.96)}
+.ss .err{color:#b42318;font-weight:700;margin-top:.6rem}
+.ss table{width:100%;border-collapse:collapse}
+.ss td{padding:.6rem .4rem;border-top:1px solid var(--line);vertical-align:middle}
+.ss td.n{font-weight:700}
+.ss .sm{font:inherit;font-size:.92rem;font-weight:700;border:1px solid var(--cobalt);background:#fff;color:var(--cobalt);border-radius:8px;padding:.4rem .7rem;cursor:pointer;margin:.15rem .2rem .15rem 0;display:inline-block}
+.ss .sm.wa{border-color:#128C7E;color:#0b6b60}
+.ss .reveal{text-align:center;padding:2rem 1rem}
+.ss .big{font-family:var(--display);font-size:clamp(2rem,7vw,3.4rem);font-weight:800;color:var(--navy);margin:.5rem 0}
+.ss .kit{background:var(--navy);color:#fff;border-radius:14px;padding:1.25rem;margin:1.5rem 0;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.ss .kit img{width:9rem;border-radius:10px;background:#fff}
+.ss .kit p{margin:.3rem 0}
+.ss .kit a.buy{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:800;border-radius:10px;padding:.6rem 1rem;margin-top:.4rem}
+.ss details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin:.5rem 0}
+.ss summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.ss .muted{color:var(--muted);font-size:.95rem}
+.ss [hidden]{display:none!important}
+</style>
+
+<nav class="crumbs muted" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/free/">Free</a> › Secret Santa generator</nav>
+
+<section id="reveal-view" hidden>
+ <div class="card reveal">
+  <p id="rv-hi" class="muted"></p>
+  <p>Your Secret Santa match is ready. Make sure nobody's looking over your shoulder.</p>
+  <button class="go" id="rv-btn" type="button">Show me who I've got</button>
+  <div id="rv-out" hidden>
+   <p>You're buying a present for</p>
+   <p class="big" id="rv-name"></p>
+   <p id="rv-extra"></p>
+   <p class="muted">Keep it secret. Screenshot this if you'll forget.</p>
+  </div>
+ </div>
+ <p class="muted">Want to run your own? <a href="/free/secret-santa-generator/">Start a new Secret Santa draw</a>. It's free.</p>
+</section>
+
+<section id="maker-view">
+<h1>Free Secret Santa generator (UK)</h1>
+<p class="lede">Type in everyone's names, tap draw, then send each person their own private link on WhatsApp, text or email. Nobody sees anyone else's match, not even you. No sign-up, no email addresses, nothing saved.</p>
+
+<form class="card" id="ss-form" autocomplete="off">
+ <div class="row">
+  <div><label for="g">Group name <span class="hint">(optional)</span></label><input id="g" maxlength="60" placeholder="e.g. Office Secret Santa 2026"></div>
+  <div><label for="b">Spend limit <span class="hint">(optional)</span></label><input id="b" maxlength="20" placeholder="e.g. £10"></div>
+  <div><label for="d">Swap date <span class="hint">(optional)</span></label><input id="d" maxlength="40" placeholder="e.g. Friday 18 December"></div>
+ </div>
+ <label for="names">Names <span class="hint">(one per line, 3 or more)</span></label>
+ <textarea id="names" placeholder="Sam&#10;Alex&#10;Priya&#10;Jordan&#10;Mum&#10;Dad"></textarea>
+ <label for="apart">Keep apart <span class="hint">(optional; couples or people who shouldn't get each other, one pair per line, e.g. Mum &amp; Dad)</span></label>
+ <textarea id="apart" style="min-height:5rem" placeholder="Mum &amp; Dad"></textarea>
+ <button class="go" type="submit">Draw names</button>
+ <p class="err" id="err" role="alert"></p>
+</form>
+
+<div class="card" id="results" hidden>
+ <h2 style="margin-top:0">Done. Now send everyone their own link</h2>
+ <p>Each link only shows that one person who they're buying for. Send each link to the right person. Don't open the links yourself if you're playing too.</p>
+ <table id="tbl"><tbody></tbody></table>
+ <p class="muted">Closing this page clears the draw, so send the links first. Need to start again? Just tap Draw names again for a fresh draw.</p>
+</div>
+
+<aside class="kit">
+ <img src="/img/p/secret-santa-organiser-kit/card.webp" alt="Secret Santa Organiser Kit 2026 printable pages" width="800" height="600" loading="lazy">
+ <div style="flex:1;min-width:15rem">
+  <p style="font-weight:800;font-size:1.15rem;color:var(--yellow)">Organising it all? Get the printable kit</p>
+  <p>Secret Santa Organiser Kit 2026: 20 print-at-home pages with a sign-up sheet, rules and budget poster, 24 name-draw slips, wish list cards, 24 gift tags, gift ideas at £5, £10, £20 and £30, a guess-who game and ready-to-send messages.</p>
+  <a class="buy" href="https://buy.stripe.com/7sY5kC2Ca0YBcwg2rL2890V?client_reference_id=free-secret-santa-generator">Get the kit · £2.49</a>
+  <a href="/shop/secret-santa-organiser-kit" style="color:#fff;text-decoration:underline;margin-left:.8rem">See every page</a>
+ </div>
+</aside>
+
+<h2>How the Secret Santa draw works</h2>
+<ol>
+ <li><strong>Add the names.</strong> Everyone taking part, one per line. Use names people will recognise, like "Big Dave" and "Dave from accounts".</li>
+ <li><strong>Add anyone to keep apart.</strong> Couples, flatmates, or the two people who bought each other socks last year.</li>
+ <li><strong>Draw.</strong> The generator shuffles until nobody gets themselves and every keep-apart pair is respected.</li>
+ <li><strong>Send the links.</strong> Tap WhatsApp, Copy or Share next to each name. Each person opens their link and taps to see their match.</li>
+</ol>
+
+<h2>Secret Santa rules that save arguments</h2>
+<ul>
+ <li><strong>Set one spend limit and stick to it.</strong> £10 is the most common office limit in the UK; £5 works for big teams and £20 for families.</li>
+ <li><strong>Draw names by mid-November</strong> so people can order online without paying for fast delivery.</li>
+ <li><strong>Ask for a three-item wish list</strong> (one practical, one fun, one food or drink) so nobody's stuck.</li>
+ <li><strong>Agree the swap date before you draw</strong> and say what happens if someone's off sick (they swap when they're back).</li>
+ <li><strong>Remote team?</strong> Ask everyone to share a delivery address with the person buying for them, or set a gift-card-only rule.</li>
+</ul>
+
+<h2>Questions</h2>
+<details><summary>Is this Secret Santa generator free?</summary><p>Yes, completely free. There's no sign-up, no email addresses and no limit on group size.</p></details>
+<details><summary>Can the organiser see who got who?</summary><p>Not unless they open other people's links. The matches aren't shown on the organiser's screen; each person's link reveals only their own match. If you want to be fully hands-off, send the links without opening them.</p></details>
+<details><summary>Do you store our names?</summary><p>No. The draw happens in your own browser and nothing is sent to us or saved. Each person's match lives only inside their own link.</p></details>
+<details><summary>Can I stop couples getting each other?</summary><p>Yes. Add each pair to the "Keep apart" box, one pair per line, like "Mum &amp; Dad".</p></details>
+<details><summary>Someone lost their link. What now?</summary><p>Copy their link again from this page if it's still open. If you've closed it, run a fresh draw and send everyone new links.</p></details>
+<details><summary>How much should we spend on Secret Santa?</summary><p>Most UK offices go for £5 to £15, with £10 the usual middle ground. Families and friend groups often pick £20 to £30.</p></details>
+</section>
+
+<script>
+(function(){
+ function enc(o){var s=JSON.stringify(o),b=new TextEncoder().encode(s),r="";for(var i=0;i<b.length;i++)r+=String.fromCharCode(b[i]^0x5A);return btoa(r).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");}
+ function dec(t){t=t.replace(/-/g,"+").replace(/_/g,"/");while(t.length%4)t+="=";var r=atob(t),b=new Uint8Array(r.length);for(var i=0;i<r.length;i++)b[i]=r.charCodeAt(i)^0x5A;return JSON.parse(new TextDecoder().decode(b));}
+ function $(i){return document.getElementById(i);}
+ function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+ var base=location.origin+"/free/secret-santa-generator/";
+ var m=location.hash.match(/^#r=([A-Za-z0-9_-]+)$/);
+ if(m){try{var o=dec(m[1]);$("maker-view").hidden=true;$("reveal-view").hidden=false;
+  $("rv-hi").textContent="Hi "+o.n+(o.g?" · "+o.g:"");
+  $("rv-btn").onclick=function(){$("rv-name").textContent=o.t;var x=[];if(o.b)x.push("Spend limit: "+o.b);if(o.d)x.push("Swap date: "+o.d);$("rv-extra").textContent=x.join(" · ");$("rv-out").hidden=false;this.hidden=true;};
+  return;}catch(e){}}
+ function rnd(n){var a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]%n;}
+ function shuffle(a){for(var i=a.length-1;i>0;i--){var j=rnd(i+1),t=a[i];a[i]=a[j];a[j]=t;}return a;}
+ function key(s){return s.trim().toLowerCase();}
+ $("ss-form").addEventListener("submit",function(ev){ev.preventDefault();$("err").textContent="";
+  var names=$("names").value.split(/\n/).map(function(s){return s.trim();}).filter(Boolean);
+  var seen={},dup=null;names.forEach(function(n){if(seen[key(n)])dup=n;seen[key(n)]=1;});
+  if(names.length<3){$("err").textContent="Add at least 3 names, one per line.";return;}
+  if(dup){$("err").textContent="\""+dup+"\" is in the list twice. Make each name different (e.g. Dave B and Dave K).";return;}
+  var bad={},unknown=[];$("apart").value.split(/\n/).forEach(function(l){l=l.trim();if(!l)return;var p=l.split(/\s*(?:&|,|\+|\/| and )\s*/i).filter(Boolean);if(p.length!==2){unknown.push(l);return;}
+   if(!seen[key(p[0])]||!seen[key(p[1])]){unknown.push(l);return;}bad[key(p[0])+"|"+key(p[1])]=1;bad[key(p[1])+"|"+key(p[0])]=1;});
+  if(unknown.length){$("err").textContent="Check this keep-apart line: \""+unknown[0]+"\". Use two names from the list, like Mum & Dad.";return;}
+  var res=null;for(var t=0;t<20000&&!res;t++){var r=shuffle(names.slice()),ok=true;for(var i=0;i<names.length;i++){if(key(names[i])===key(r[i])||bad[key(names[i])+"|"+key(r[i])]){ok=false;break;}}if(ok)res=r;}
+  if(!res){$("err").textContent="Those keep-apart rules make a fair draw impossible. Remove one pair and try again.";return;}
+  var g=$("g").value.trim(),b=$("b").value.trim(),d=$("d").value.trim(),tb=$("tbl").querySelector("tbody");tb.innerHTML="";
+  names.forEach(function(n,i){var link=base+"#r="+enc({g:g,b:b,d:d,n:n,t:res[i]});
+   var msg="Hi "+n+", here's your Secret Santa"+(g?" for "+g:"")+". Open this link to see who you're buying for (keep it secret!): "+link;
+   var tr=document.createElement("tr");
+   tr.innerHTML='<td class="n">'+esc(n)+'</td><td><a class="sm wa" target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(msg)+'">WhatsApp</a><button class="sm" type="button" data-c>Copy message</button><a class="sm" href="mailto:?subject='+encodeURIComponent("Your Secret Santa"+(g?" - "+g:""))+'&body='+encodeURIComponent(msg)+'">Email</a>'+(navigator.share?'<button class="sm" type="button" data-s>Share</button>':'')+'</td>';
+   tr.querySelector("[data-c]").onclick=function(){var btn=this;(navigator.clipboard?navigator.clipboard.writeText(msg):Promise.reject()).then(function(){btn.textContent="Copied";},function(){window.prompt("Copy this message:",msg);});};
+   var sh=tr.querySelector("[data-s]");if(sh)sh.onclick=function(){navigator.share({title:"Your Secret Santa",text:msg}).catch(function(){});};
+   tb.appendChild(tr);});
+  $("results").hidden=false;$("results").scrollIntoView({behavior:"smooth"});
+ });
+})();
+</script>
+</div></main><footer class="site-footer">
+ <div class="wrap foot-grid">
+  <div>
+   <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+   <p class="foot-tag">Printable, fillable templates for UK homes and small businesses.</p>
+  </div>
+  <nav class="foot-links" aria-label="Templates"><a href="/shop/#life">Life admin and home</a><a href="/shop/#meals">Meals and shopping</a><a href="/shop/#money">Money</a><a href="/shop/#study">Study and exams</a><a href="/shop/#fitness">Fitness</a><a href="/shop/#work">Work and freelance</a><a href="/shop/#seasonal">Christmas</a></nav>
+  <nav class="foot-links" aria-label="More"><a href="/free/">Free templates</a><a href="/daily/">Daily</a><a href="/guides/">Guides</a><a href="/compare/">Compare card shops</a><a href="/gifts/">Gift ideas</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refund.html">Refunds</a><a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></nav>
+ </div>
+ <div class="wrap legal">
+  <p>One-off payments through Stripe. Files emailed to you. No subscription.</p>
+  <p>Faulty file? We'll fix or refund it under the Consumer Rights Act 2015. Because these are digital files, you agree to waive the 14-day cancellation period once we email them to you after you buy.</p>
+  <p>&copy; 2026 TCH Works · Ryan Wilson · England and Wales · <a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></p>
+ </div>
+</footer>
+
+</body>
+</html>
