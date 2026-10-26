@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Fair Stall Calculator · plan stalls, prices, profit and floats | TCH Works</title>
+<meta name="description" content="Free Christmas fair calculator for PTAs, schools, churches and clubs. Pick your stalls, set prices and visitor numbers, and see expected takings, profit and the cash float each stall needs. Print the plan. No sign-up.">
+<link rel="canonical" href="https://www.tchworks.co.uk/free/christmas-fair-stall-calculator/">
+
+<meta property="og:title" content="Christmas Fair Stall Calculator · plan stalls, prices, profit and floats | TCH Works">
+<meta property="og:description" content="Free Christmas fair calculator for PTAs, schools, churches and clubs. Pick your stalls, set prices and visitor numbers, and see expected takings, profit and the cash float each stall needs. Print the plan. No sign-up.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.tchworks.co.uk/img/p/christmas-fair-organiser-kit/card.webp">
+<meta property="og:url" content="https://www.tchworks.co.uk/free/christmas-fair-stall-calculator/">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>/* TCH Works — Made Useful. Navy #0D1323, cobalt #2563EB, yellow #FBBF24 */
+:root {
+ --navy: #0D1323;
+ --cobalt: #2563EB;
+ --yellow: #FBBF24;
+ --paper: #F7F7F8;
+ --ink: #1F2937;
+ --muted: #6B7280;
+ --line: #E5E7EB;
+ --white: #ffffff;
+ --max: 70rem;
+ --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --display: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+ margin: 0;
+ background: var(--paper);
+ color: var(--ink);
+ font-family: var(--sans);
+ font-size: 1.0625rem;
+ line-height: 1.55;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--cobalt); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+
+.site-header {
+ background: var(--navy);
+ color: var(--white);
+ border-bottom: 3px solid var(--yellow);
+}
+.nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+ padding: 0.9rem 0;
+}
+.brand { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.75rem; }
+.brand:hover { text-decoration: none; }
+.logo-stack { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; }
+.logo-tch {
+ position: relative;
+ font-family: var(--display);
+ font-weight: 800;
+ font-size: 1.55rem;
+ letter-spacing: -0.04em;
+}
+.logo-tch .bar {
+ position: absolute;
+ left: 0.18em; right: 0.18em;
+ top: 52%;
+ height: 0.12em;
+ background: var(--cobalt);
+ transform: translateY(-50%);
+ pointer-events: none;
+}
+.logo-works {
+ font-family: var(--display);
+ font-weight: 600;
+ font-size: 0.58rem;
+ letter-spacing: 0.42em;
+ text-transform: uppercase;
+ margin-top: 0.28rem;
+ color: #cbd5e1;
+}
+.site-nav { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+.site-nav a { color: #e5e7eb; font-weight: 500; }
+.site-nav a:hover { color: var(--yellow); text-decoration: none; }
+.site-nav a[aria-current="page"] { color: var(--yellow); }
+
+.hero {
+ background: var(--navy);
+ color: var(--white);
+ padding: 3.5rem 0 3.75rem;
+}
+.kicker {
+ font-family: var(--display);
+ font-weight: 600;
+ font-size: 0.75rem;
+ letter-spacing: 0.28em;
+ text-transform: uppercase;
+ color: var(--yellow);
+ margin: 0;
+}
+h1, h2, h3, h4 {
+ font-family: var(--display);
+ font-weight: 800;
+ letter-spacing: -0.03em;
+ color: var(--navy);
+ line-height: 1.12;
+}
+.hero h1 { color: var(--white); font-size: clamp(2.6rem, 7vw, 4.6rem); margin: 0.4rem 0 0; }
+.hero .pillars { font-size: clamp(1.15rem, 2.4vw, 1.6rem); color: #cbd5e1; margin: 0.7rem 0 0; font-weight: 500; }
+.hero .lede { max-width: 36rem; color: #94a3b8; margin: 1rem 0 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; }
+.trust { font-size: 0.82rem; color: #64748b; margin: 1.1rem 0 0; }
+
+.btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 2.85rem;
+ padding: 0 1.15rem;
+ border-radius: 8px;
+ font-family: var(--display);
+ font-weight: 700;
+ font-size: 0.92rem;
+ border: 0;
+ cursor: pointer;
+ text-decoration: none;
+}
+.btn:hover { text-decoration: none; }
+.btn-primary { background: var(--cobalt); color: var(--white); }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-yellow { background: var(--yellow); color: var(--navy); }
+.btn-yellow:hover { background: #f59e0b; }
+.btn-ghost { background: transparent; color: var(--white); border: 1px solid #334155; }
+.btn-ghost:hover { border-color: var(--yellow); color: var(--yellow); }
+.btn-navy { background: var(--navy); color: var(--white); }
+
+.section { padding: 3rem 0; }
+.section h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0.35rem 0 0; }
+.section-head { margin-bottom: 1.5rem; }
+.section-head p { color: var(--muted); margin: 0.4rem 0 0; max-width: 40rem; }
+
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; }
+.step {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 12px;
+ padding: 1.1rem 1.15rem;
+}
+.step b { display: block; font-family: var(--display); color: var(--cobalt); font-size: 1.35rem; }
+.step p { margin: 0.4rem 0 0; font-size: 0.92rem; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.card {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.3rem 1.35rem;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ overflow: hidden;
+}
+.card::before {
+ content: "";
+ position: absolute;
+ left: 0; top: 0; bottom: 0;
+ width: 5px;
+ background: var(--cobalt);
+}
+.card.free::before { background: var(--yellow); }
+.badge {
+ font-family: var(--display);
+ font-size: 0.68rem;
+ font-weight: 700;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--cobalt);
+ margin: 0;
+}
+.card.free .badge { color: #92400e; }
+.card h3 { margin: 0.35rem 0 0; font-size: 1.35rem; }
+.price { font-family: var(--display); font-weight: 800; font-size: 1.35rem; color: var(--navy); margin: 0.7rem 0 0; }
+.card .problem { margin: 0.45rem 0 0; color: var(--ink); }
+.card .inside { margin: 0.7rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.9rem; }
+.card .inside li { margin: 0.2rem 0; }
+.card .actions { margin-top: auto; padding-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.note { font-size: 0.8rem; color: var(--muted); margin: 0.55rem 0 0; }
+
+.upsell {
+ background: var(--navy);
+ color: var(--white);
+ border-radius: 14px;
+ padding: 1.4rem 1.5rem;
+ margin-top: 2rem;
+}
+.upsell h2, .upsell h3 { color: var(--white); margin: 0.3rem 0 0; }
+.upsell p { color: #cbd5e1; }
+.upsell .kicker { color: var(--yellow); }
+
+.prose { max-width: 42rem; }
+.prose h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 0.4rem 0 0; }
+.prose .lede { font-size: 1.15rem; color: #374151; margin-top: 1rem; }
+.prose ol { padding-left: 1.2rem; }
+.prose li { margin: 0.85rem 0; }
+.prose li strong { color: var(--navy); }
+.article-meta { color: var(--muted); font-size: 0.88rem; margin-top: 0.4rem; }
+
+.site-footer {
+ background: var(--navy);
+ color: #94a3b8;
+ padding: 2.4rem 0 2.6rem;
+ margin-top: 3rem;
+ font-size: 0.88rem;
+}
+.site-footer .brand { margin-bottom: 0.8rem; }
+.site-footer .logo-tch { font-size: 1.3rem; }
+.legal { display: grid; gap: 0.35rem; margin-top: 1rem; max-width: 40rem; }
+.site-footer a { color: #cbd5e1; }
+
+.thanks-box {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.6rem;
+ max-width: 32rem;
+}
+.thanks-box[hidden] { display: none; }
+.error { color: #991b1b; }
+
+
+/* Magnet email gate (Email Funnel S1) */
+.magnet-gate {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.35rem 1.4rem;
+ margin: 1.25rem 0 0;
+ max-width: 28rem;
+}
+.magnet-gate label {
+ display: block;
+ font-size: 0.88rem;
+ font-weight: 600;
+ color: var(--navy);
+ margin: 0.75rem 0 0.3rem;
+}
+.magnet-gate label:first-of-type { margin-top: 0; }
+.magnet-gate input[type="text"],
+.magnet-gate input[type="email"] {
+ width: 100%;
+ padding: 0.65rem 0.75rem;
+ border: 1px solid var(--line);
+ border-radius: 8px;
+ font: inherit;
+ color: var(--ink);
+ background: var(--paper);
+}
+.magnet-gate .consent {
+ display: flex;
+ gap: 0.65rem;
+ align-items: flex-start;
+ margin: 1rem 0 0;
+ font-size: 0.82rem;
+ font-weight: 500;
+ color: var(--muted);
+ line-height: 1.4;
+}
+.magnet-gate .consent input {
+ margin-top: 0.2rem;
+ flex-shrink: 0;
+}
+.magnet-gate .actions { margin-top: 1rem; }
+.magnet-download { margin-top: 1.1rem; }
+.magnet-download[hidden] { display: none !important; }
+
+@media (max-width: 800px) {
+ .steps, .grid { grid-template-columns: 1fr; }
+ .hero { padding: 2.4rem 0 2.6rem; }
+}
+
+/* Magnet email capture (Lane B) */
+.magnet-capture {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.3rem 1.35rem;
+ margin: 1.25rem 0 0;
+ max-width: 28rem;
+ position: relative;
+ overflow: hidden;
+}
+.magnet-capture::before {
+ content: "";
+ position: absolute;
+ left: 0; top: 0; bottom: 0;
+ width: 5px;
+ background: var(--yellow);
+}
+.magnet-capture h2 {
+ font-size: 1.15rem;
+ margin: 0;
+}
+.magnet-capture .field {
+ display: flex;
+ flex-direction: column;
+ gap: 0.35rem;
+ margin-top: 0.85rem;
+}
+.magnet-capture label {
+ font-size: 0.82rem;
+ font-weight: 600;
+ color: var(--navy);
+}
+.magnet-capture input[type="text"],
+.magnet-capture input[type="email"] {
+ min-height: 2.6rem;
+ padding: 0.45rem 0.7rem;
+ border: 1px solid var(--line);
+ border-radius: 8px;
+ font: inherit;
+ color: var(--ink);
+ background: var(--white);
+}
+.magnet-capture input:focus {
+ outline: 2px solid var(--cobalt);
+ outline-offset: 1px;
+}
+.magnet-capture .consent {
+ display: flex;
+ align-items: flex-start;
+ gap: 0.55rem;
+ margin-top: 0.9rem;
+ font-size: 0.85rem;
+ color: var(--ink);
+}
+.magnet-capture .consent input {
+ margin-top: 0.2rem;
+ flex-shrink: 0;
+}
+.magnet-capture .btn {
+ width: 100%;
+ margin-top: 1rem;
+}
+.magnet-capture .btn:disabled {
+ opacity: 0.55;
+ cursor: not-allowed;
+}
+/* MD 2026-09-10: Web3Forms live via data-capture-ready — do not scare users with kit-pending */
+.magnet-capture[data-capture-ready="true"] .kit-pending {
+ display: none !important;
+}
+.magnet-capture[data-kit-ready="false"][data-capture-ready="false"] .kit-pending {
+ display: block;
+}
+
+
+/* Stripe sticky cash bar — MD existential 2026-09-10 */
+.sticky-bar {
+ position: sticky;
+ top: 0;
+ z-index: 40;
+ background: #0D1323;
+ border-bottom: 2px solid #F5C518;
+ padding: 0.65rem 0;
+}
+.sticky-bar .wrap {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.6rem 1rem;
+ align-items: center;
+ justify-content: space-between;
+}
+.sticky-bar p {
+ margin: 0;
+ color: #F7F7F8;
+ font-size: 0.92rem;
+ font-weight: 600;
+}
+.sticky-bar .sticky-actions {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+}
+.sticky-bar .btn {
+ padding: 0.45rem 0.85rem;
+ font-size: 0.85rem;
+}
+/* TCH Works shop: product grid, previews, product pages, downloads. Loads after site.css. */
+:root { --radius: 14px; --shadow: 0 1px 2px rgba(13,19,35,.06), 0 8px 24px rgba(13,19,35,.07); }
+.center { text-align: center; margin-top: 2rem; }
+.section.alt { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border-radius: 10px; font-weight: 600; padding: .7rem 1.15rem; font-family: var(--sans); border: 0; cursor: pointer; text-decoration: none; }
+.btn-sm { padding: .45rem .9rem; font-size: .9rem; }
+.btn-lg { padding: .95rem 1.4rem; font-size: 1.05rem; width: 100%; }
+.btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.page-h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: .3rem 0 0; }
+.page-lede { color: var(--muted); font-size: 1.1rem; margin: .6rem 0 0; max-width: 42rem; }
+.narrow { max-width: 46rem; }
+
+/* hero */
+.hero-shop { padding: 3.5rem 0 3rem; }
+.hero-shop h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); line-height: 1.08; }
+.hero-shop .lede { color: #cbd5e1; font-size: 1.12rem; max-width: 34rem; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 2rem; align-items: center; }
+.hero-stack { position: relative; height: 360px; }
+.hero-stack img { position: absolute; width: 62%; border-radius: 12px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.hero-stack img:nth-child(1) { left: 0; top: 30px; transform: rotate(-5deg); }
+.hero-stack img:nth-child(2) { left: 22%; top: 0; z-index: 2; transform: rotate(1deg); }
+.hero-stack img:nth-child(3) { right: 0; top: 60px; transform: rotate(5deg); }
+.trust-band { background: var(--yellow); }
+.trust-row { list-style: none; margin: 0; padding: .9rem 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; font-size: .92rem; color: var(--navy); }
+.trust-row li b { display: block; font-family: var(--display); }
+main .trust-row { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.4rem 0; }
+
+/* categories */
+.cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.cat-tile { display: grid; grid-template-rows: auto auto 1fr auto; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; color: var(--ink); box-shadow: var(--shadow); transition: transform .15s; }
+.cat-tile:hover { transform: translateY(-3px); text-decoration: none; }
+.cat-tile img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--tint); display: block; }
+.ct-name { font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--navy); padding: .9rem 1rem 0; }
+.ct-blurb { color: var(--muted); font-size: .92rem; padding: .25rem 1rem 0; }
+.ct-count { color: var(--acc); font-weight: 600; font-size: .85rem; padding: .6rem 1rem 1rem; }
+
+/* product grid */
+.pgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+.pgrid.three { grid-template-columns: repeat(3, 1fr); }
+.pgrid.two { grid-template-columns: repeat(2, minmax(0, 420px)); }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
+.pcard:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(13,19,35,.06), 0 14px 32px rgba(13,19,35,.1); }
+.pc-img { position: relative; display: block; background: var(--tint); }
+.pc-img img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.pc-label { position: absolute; top: .7rem; left: .7rem; background: var(--navy); color: var(--yellow); font-size: .75rem; font-weight: 700; letter-spacing: .03em; padding: .25rem .55rem; border-radius: 999px; z-index: 1; }
+.pc-body { padding: .95rem 1rem 1rem; display: flex; flex-direction: column; flex: 1; }
+.pc-cat { color: var(--acc); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin: 0; }
+.pcard h3 { font-size: 1.06rem; margin: .3rem 0 0; line-height: 1.3; }
+.pcard h3 a { color: var(--navy); }
+.pc-pitch { color: var(--ink); font-size: .9rem; margin: .45rem 0 0; flex: 1; }
+.pc-meta { color: var(--muted); font-size: .8rem; margin: .6rem 0 0; }
+.pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: .75rem; }
+.pc-price { font-family: var(--display); font-weight: 800; font-size: 1.25rem; color: var(--navy); }
+
+/* shop page */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.5rem; position: sticky; top: 0; z-index: 5; background: var(--paper); padding: .6rem 0; }
+.chip { border: 1.5px solid var(--line); background: #fff; color: var(--navy); border-radius: 999px; padding: .45rem .95rem; font: 600 .9rem var(--sans); cursor: pointer; }
+.chip.on, .chip:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+.cat-sec { margin-top: 2.2rem; scroll-margin-top: 4rem; }
+.cat-sec[hidden] { display: none; }
+.cat-sec h2 { font-size: 1.5rem; margin: 0; }
+
+/* bundle */
+.bundle { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+.bundle-img img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+.bundle-price span { font-family: var(--display); font-weight: 800; font-size: 2rem; color: var(--navy); }
+.bundle-price s { color: var(--muted); margin-left: .4rem; }
+.how3 { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.how3 li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; }
+.how3 b { font-family: var(--display); font-size: 1.6rem; color: var(--cobalt); }
+.how3 h3 { margin: .3rem 0 0; font-size: 1.1rem; }
+.how3 p { color: var(--muted); margin: .4rem 0 0; font-size: .95rem; }
+.daily-list { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: .6rem; }
+.daily-list li { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; display: flex; justify-content: space-between; gap: 1rem; }
+.daily-list span { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.svc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+.svc-list span { color: var(--muted); font-size: .9rem; }
+
+/* product page */
+.crumbs { font-size: .88rem; color: var(--muted); margin-bottom: 1.2rem; }
+.prod-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; align-items: start; }
+.gal-main { background: var(--tint); border-radius: var(--radius); padding: 1.5rem; display: flex; justify-content: center; }
+.gal-main img { max-height: 640px; width: auto; max-width: 100%; box-shadow: 0 10px 30px rgba(13,19,35,.18); background: #fff; }
+.thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; margin-top: .7rem; }
+.thumb { border: 2px solid transparent; border-radius: 8px; padding: 0; background: #fff; cursor: pointer; overflow: hidden; }
+.thumb img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+.thumb.on { border-color: var(--cobalt); }
+.gal-note { color: var(--muted); font-size: .82rem; margin: .5rem 0 0; }
+.buybox h1 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin: .3rem 0 0; line-height: 1.15; }
+.buybox .pitch { font-size: 1.1rem; margin: .7rem 0 0; }
+.big-price { font-family: var(--display); font-weight: 800; font-size: 2.1rem; color: var(--navy); margin: .8rem 0 .6rem; }
+.ticks { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .35rem; font-size: .95rem; }
+.ticks li::before { content: "✓"; color: #16A34A; font-weight: 700; margin-right: .5rem; }
+.buybox h2 { font-size: 1.15rem; margin: 1.6rem 0 .4rem; }
+.inside-list { margin: 0; padding-left: 1.2rem; }
+.inside-list li { margin: .3rem 0; }
+.prod-more { margin-top: 3rem; }
+.prod-more h2 { font-size: 1.4rem; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; margin: .5rem 0; }
+.faq summary { font-weight: 600; cursor: pointer; color: var(--navy); }
+.faq p { margin: .5rem 0 0; color: var(--ink); }
+.mobile-buy { display: none; }
+
+/* downloads and free */
+.dl-list { display: grid; gap: .7rem; margin: 1.5rem 0; }
+.dl-btn { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; background: #fff; border: 2px solid var(--cobalt); border-radius: 12px; padding: .9rem 1.1rem; color: var(--navy); }
+.dl-btn:hover { background: #EAF1FE; text-decoration: none; }
+.dl-kind { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--cobalt); font-weight: 700; }
+.dl-name { font-weight: 600; word-break: break-all; }
+.dl-go { grid-row: 1 / 3; grid-column: 2; align-self: center; background: var(--cobalt); color: #fff; border-radius: 8px; padding: .5rem .9rem; font-weight: 600; }
+.tips { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: 1.5rem 0 2.5rem; }
+.tips h2 { font-size: 1.15rem; margin: 0; }
+.free-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; margin-top: 1.4rem; display: grid; gap: .35rem; }
+.free-form label { font-weight: 600; font-size: .92rem; margin-top: .4rem; }
+.free-form input[type=email], .free-form input:not([type]) { font: inherit; padding: .7rem .8rem; border: 1.5px solid var(--line); border-radius: 8px; }
+.free-form .consent { display: flex; gap: .5rem; font-weight: 400; font-size: .85rem; color: var(--muted); align-items: flex-start; }
+.free-form .consent input { margin-top: .25rem; }
+.free-form button { margin-top: .8rem; }
+.free-done { background: #FEF4DC; border-radius: var(--radius); padding: 1.2rem; margin-top: 1.4rem; }
+.free-done[hidden], .free-form[hidden] { display: none; }
+
+/* footer */
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.foot-tag { color: #cbd5e1; margin: .5rem 0 0; max-width: 22rem; }
+.foot-links { display: grid; gap: .35rem; align-content: start; font-size: .92rem; }
+.site-footer .legal { margin-top: 2rem; border-top: 1px solid #1f2a44; padding-top: 1rem; font-size: .82rem; color: #94a3b8; max-width: none; }
+.site-footer .legal p { margin: .2rem 0; }
+
+@media (max-width: 1000px) {
+ .pgrid { grid-template-columns: repeat(3, 1fr); }
+ .cat-grid { grid-template-columns: repeat(2, 1fr); }
+ .trust-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+ .hero-grid, .prod-grid, .bundle { grid-template-columns: 1fr; }
+ .hero-stack { height: 220px; }
+ .pgrid, .pgrid.three { grid-template-columns: repeat(2, 1fr); gap: .7rem; }
+ .pgrid.two { grid-template-columns: 1fr; }
+ .pc-pitch { display: none; }
+ .pc-body { padding: .7rem; }
+ .pcard h3 { font-size: .95rem; }
+ .cat-grid, .how3 { grid-template-columns: 1fr; }
+ .foot-grid { grid-template-columns: 1fr; }
+ .mobile-buy { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--navy); color: #fff; padding: .7rem 1rem; align-items: center; justify-content: space-between; gap: .6rem; font-size: .92rem; }
+ .product { padding-bottom: 5rem; }
+ .gal-main { padding: .8rem; }
+ .site-nav { gap: .9rem; font-size: .9rem; }
+}
+.trust-band .trust-row { background: none; border: 0; margin: 0; padding: .9rem 0; }
+/* template card at the end of Daily guides */
+.upsell.tpl-card { display: grid; grid-template-columns: 220px 1fr; gap: 1.2rem; align-items: center; background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow); }
+.upsell.tpl-card h2 { color: var(--navy); font-size: 1.3rem; margin: .2rem 0 0; }
+.upsell.tpl-card p { color: var(--ink); margin: .4rem 0 0; }
+.upsell.tpl-card .kicker { color: var(--cobalt); }
+.tc-img { display: block; background: var(--tint); border-radius: 10px; overflow: hidden; }
+.tc-img img { display: block; width: 100%; }
+.tc-meta { font-size: .85rem; color: var(--muted) !important; }
+.tc-actions { margin-top: .8rem !important; }
+@media (max-width: 600px) { .upsell.tpl-card { grid-template-columns: 1fr; } }
+
+/* contrast fix 2026-10-21 */
+main.section .wrap>.kicker{color:#92400e}
+.pc-cat,.ct-count{color:#b45309}
+.site-footer p a{text-decoration:underline}
+</style>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Christmas Fair Stall Calculator", "url": "https://www.tchworks.co.uk/free/christmas-fair-stall-calculator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any (runs in the browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"}, "publisher": {"@type": "Organization", "name": "TCH Works", "url": "https://www.tchworks.co.uk/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the Christmas fair calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. No sign-up and nothing is saved or sent anywhere. It runs on your phone or computer."}}, {"@type": "Question", "name": "Where do the starting numbers come from?", "acceptedAnswer": {"@type": "Answer", "text": "They are our own starting guesses for a typical small school or community fair, not data from your fair. Change every price, cost and 'goes per 100 visitors' figure to match your own event, and the totals update straight away."}}, {"@type": "Question", "name": "How much float does each stall need?", "acceptedAnswer": {"@type": "Answer", "text": "Most stalls run fine on £10 to £20 in mixed coins. If your prices end in 50p, carry more 50p coins; if most prices are whole pounds, carry £1 coins and a few £5 notes. The calculator suggests a float for each stall you pick and adds up the total cash you'll need to get from the bank."}}, {"@type": "Question", "name": "What are the most profitable Christmas fair stalls?", "acceptedAnswer": {"@type": "Answer", "text": "Stalls with donated stock make the most, because almost every penny is profit: tombola, raffle, bottle stall, bake sale, nearly new toys and guessing games. A grotto brings in a lot per child but each gift costs money, so check the profit column, not just the takings."}}, {"@type": "Question", "name": "Do we need a licence for a raffle at a school fair?", "acceptedAnswer": {"@type": "Answer", "text": "A raffle or tombola run at the fair, with tickets sold and drawn on the day, is usually an 'incidental lottery' in Great Britain and doesn't need a licence, as long as the prizes and costs stay within the Gambling Commission's limits. Check the Gambling Commission's current guidance for your event, and keep a simple draw record."}}, {"@type": "Question", "name": "Should we take card payments?", "acceptedAnswer": {"@type": "Answer", "text": "Many visitors carry no cash now, so a card reader on the busiest stalls (grotto, food, entry) usually lifts takings. Card readers charge a fee per payment, so take that into account in your prices."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tchworks.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Free", "item": "https://www.tchworks.co.uk/free/"}, {"@type": "ListItem", "position": 3, "name": "Christmas fair stall calculator", "item": "https://www.tchworks.co.uk/free/christmas-fair-stall-calculator/"}]}</script>
+</head>
+<body><style>.tbar{background:#1f1720;color:#fff;font:500 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;position:relative;z-index:50}.tbar-in{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.tbar-brand{color:#fff;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:.01em;white-space:nowrap}.tbar-brand b{color:#ffb4a2}.tbar nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1 1 auto;min-width:0}.tbar nav::-webkit-scrollbar{display:none}.tbar nav a{color:#f3ece7;text-decoration:none;padding:7px 9px;border-radius:7px;white-space:nowrap}.tbar nav a:hover{background:#ffffff1f}.tbar nav a[aria-current]{background:#fff;color:#1f1720}.tbar-s{display:flex;flex:0 1 260px;min-width:180px}.tbar-s input{flex:1;min-width:0;border:0;border-radius:8px 0 0 8px;padding:8px 10px;font:inherit;color:#1f1720;background:#fff}.tbar-s button{border:0;border-radius:0 8px 8px 0;padding:8px 12px;background:#ffb4a2;color:#1f1720;font:inherit;font-weight:700;cursor:pointer}@media(max-width:720px){.tbar-in{gap:8px}.tbar nav{order:3;flex-basis:100%}.tbar-s{flex:1 1 140px}}main p a:not([class]),.crumbs a{text-decoration:underline}</style><div class="tbar"><div class="tbar-in"><a class="tbar-brand" href="/">TCH<b>Works</b></a><nav aria-label="Shop sections"><a href="/cards/">Cards</a><a href="/t-shirts/">T-shirts</a><a href="/hoodies/">Hoodies</a><a href="/sweatshirts/">Sweatshirts</a><a href="/mugs/">Mugs</a><a href="/personalised/">Personalised</a><a href="/shop/" aria-current="page">Templates</a></nav><form class="tbar-s" action="/search/" method="get" role="search"><input type="search" name="q" placeholder="Search cards, tees, templates" aria-label="Search the shop"><button type="submit">Search</button></form></div></div><header class="site-header">
+ <div class="wrap nav">
+  <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+  <nav class="site-nav" aria-label="Primary">
+   <a href="/shop/">Templates</a>
+   <a href="/free/" aria-current="page">Free</a>
+   <a href="/daily/">Daily</a>
+   <a href="/guides/">Guides</a>
+  </nav>
+ </div>
+</header>
+<main class="section"><div class="wrap ss">
+<style>
+.ss h1{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:.2rem 0 .6rem;color:var(--navy)}
+.ss .lede{font-size:1.15rem;color:var(--ink);max-width:46rem}
+.ss .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.25rem;margin:1.2rem 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.ss label.f{display:block;font-weight:700;color:var(--navy);margin:.2rem 0}
+.ss input[type=number]{font:inherit;border:1.5px solid var(--line);border-radius:8px;padding:.35rem .45rem;width:5.2rem;background:#fff}
+.ss input.big{font-size:1.2rem;width:8rem}
+.ss .go{margin-top:.6rem;font:inherit;font-weight:800;font-size:1.05rem;border:0;border-radius:12px;padding:.75rem 1.2rem;background:var(--yellow);color:var(--navy);cursor:pointer}
+.ss .go.alt{background:var(--navy);color:#fff}
+.ss .tw{overflow-x:auto}
+.ss table{width:100%;border-collapse:collapse;font-size:.95rem}
+.ss th,.ss td{text-align:left;padding:.45rem .35rem;border-top:1px solid var(--line);vertical-align:middle}
+.ss th{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+.ss td.n{font-weight:700;color:var(--navy);min-width:10rem}
+.ss td.n small{display:block;font-weight:400;color:var(--muted)}
+.ss td.r,.ss th.r{text-align:right;white-space:nowrap}
+.ss tr.off td{opacity:.45}
+.ss tr.off td:first-child{opacity:1}
+.ss .sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:.8rem;margin:1rem 0}
+.ss .sum div{background:#F0FDF4;border-left:6px solid #16A34A;border-radius:12px;padding:.8rem 1rem}
+.ss .sum b{display:block;font-size:1.6rem;color:var(--navy)}
+.ss .kit{background:var(--navy);color:#fff;border-radius:14px;padding:1.25rem;margin:1.5rem 0;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.ss .kit img{width:9rem;border-radius:10px;background:#fff}
+.ss .kit p{margin:.3rem 0}
+.ss .kit a.buy{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:800;border-radius:10px;padding:.6rem 1rem;margin-top:.4rem}
+.ss details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin:.5rem 0}
+.ss summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.ss .muted{color:var(--muted);font-size:.95rem}
+@media print{.tbar,.site-header,.site-footer,.crumbs,.kit,.noprint,.lede,h2.np,ul.np,details,.np{display:none!important} tr.off{display:none} input{border:0!important} body{background:#fff} .card{border:0;box-shadow:none}}
+</style>
+<nav class="crumbs muted" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/free/">Free</a> › Christmas fair stall calculator</nav>
+<h1>Christmas fair stall calculator</h1>
+<p class="lede">Planning the school, church or club Christmas fair? Tick your stalls, set your prices and how many people you expect, and see what each stall should take, what it costs, the profit, and how much float to get from the bank. Then print it for the committee. Free, no sign-up.</p>
+
+<div class="card">
+ <label class="f" for="vis">How many visitors do you expect?</label>
+ <input class="big" type="number" id="vis" min="10" max="5000" step="10" value="300" inputmode="numeric">
+ <label class="f" for="fname" style="margin-top:.8rem">Fair name (shows on the printout)</label>
+ <input type="text" id="fname" placeholder="e.g. Oakfield PTA Christmas Fair, Sat 28 Nov" style="font:inherit;border:1.5px solid var(--line);border-radius:8px;padding:.45rem .6rem;width:100%;max-width:28rem">
+ <p class="muted np">Starting numbers are our own guesses for a typical small fair, not your data. Change any price, cost or 'goes per 100 visitors' and everything updates.</p>
+</div>
+
+<div class="card" id="plan">
+ <h2 style="margin-top:0" id="ptitle">Your Christmas fair plan</h2>
+ <div class="sum" aria-live="polite">
+  <div><span>Expected takings</span><b id="s-take">£0</b></div>
+  <div><span>Stall costs</span><b id="s-cost">£0</b></div>
+  <div><span>Expected profit</span><b id="s-prof">£0</b></div>
+  <div><span>Total float to get</span><b id="s-float">£0</b></div>
+ </div>
+ <p class="muted noprint" style="margin:.2rem 0">On a phone, swipe the table sideways to see every column.</p>
+ <div class="tw"><table>
+  <thead><tr><th class="np">Use</th><th>Stall</th><th class="r">Price £</th><th class="r">Cost per go £</th><th class="r">Goes per 100 visitors</th><th class="r">Goes</th><th class="r">Takings</th><th class="r">Profit</th><th class="r">Float £</th></tr></thead>
+  <tbody id="rows"></tbody>
+ </table></div>
+ <p class="muted" id="best"></p>
+ <p class="noprint"><button class="go" type="button" onclick="window.print()">Print or save as PDF</button> <button class="go alt" type="button" id="reset">Reset to starting numbers</button></p>
+</div>
+
+<aside class="kit">
+ <img src="/img/p/christmas-fair-organiser-kit/card.webp" alt="Christmas Fair Organiser Kit printable pages" width="800" height="600" loading="lazy">
+ <div style="flex:1;min-width:15rem">
+  <p style="font-weight:800;font-size:1.15rem;color:var(--yellow)">Now run it without the panic</p>
+  <p>Christmas Fair Organiser Kit: 20 printable A4 pages with an 8-week countdown, volunteer rota, parent and prize request letters, raffle and tombola rules, price and stall signs, guessing games, allergen labels, 40 grotto tickets and a two-signature cash count sheet.</p>
+  <a class="buy" href="https://buy.stripe.com/bJe3cuekS6iV67S9Ud2890W?client_reference_id=free-fair-stall-calculator">Get the kit · £3.49</a>
+  <a href="/shop/christmas-fair-organiser-kit" style="color:#fff;text-decoration:underline;margin-left:.8rem">See every page</a>
+ </div>
+</aside>
+
+<h2 class="np">How to make more at your Christmas fair</h2>
+<ul class="np">
+ <li><strong>Ask for donations early.</strong> Donated stock is pure profit. Send the parent letter four weeks out and a reminder the week before.</li>
+ <li><strong>Put the grotto and food at the back</strong> so people walk past every other stall to get there.</li>
+ <li><strong>Price in round amounts</strong> (50p, £1, £2) so change is quick and queues move.</li>
+ <li><strong>Count every float out and back in with two people</strong>, and write down the totals by stall so you know what to repeat next year.</li>
+ <li><strong>Sell raffle tickets before the day</strong> through the school app or newsletter, then draw at the fair.</li>
+</ul>
+
+<h2 class="np">Questions</h2>
+<details><summary>Is the Christmas fair calculator free?</summary><p>Yes. No sign-up and nothing is saved or sent anywhere. It runs on your phone or computer.</p></details>
+<details><summary>Where do the starting numbers come from?</summary><p>They are our own starting guesses for a typical small school or community fair, not data from your fair. Change every price, cost and 'goes per 100 visitors' figure to match your own event, and the totals update straight away.</p></details>
+<details><summary>How much float does each stall need?</summary><p>Most stalls run fine on £10 to £20 in mixed coins. If your prices end in 50p, carry more 50p coins; if most prices are whole pounds, carry £1 coins and a few £5 notes. The calculator suggests a float for each stall you pick and adds up the total cash you'll need to get from the bank.</p></details>
+<details><summary>What are the most profitable Christmas fair stalls?</summary><p>Stalls with donated stock make the most, because almost every penny is profit: tombola, raffle, bottle stall, bake sale, nearly new toys and guessing games. A grotto brings in a lot per child but each gift costs money, so check the profit column, not just the takings.</p></details>
+<details><summary>Do we need a licence for a raffle at a school fair?</summary><p>A raffle or tombola run at the fair, with tickets sold and drawn on the day, is usually an 'incidental lottery' in Great Britain and doesn't need a licence, as long as the prizes and costs stay within the Gambling Commission's limits. Check the Gambling Commission's current guidance for your event, and keep a simple draw record.</p></details>
+<details><summary>Should we take card payments?</summary><p>Many visitors carry no cash now, so a card reader on the busiest stalls (grotto, food, entry) usually lifts takings. Card readers charge a fee per payment, so take that into account in your prices.</p></details>
+
+<script>
+(function(){
+var D0=[{"n": "Tombola", "p": 1.0, "c": 0.0, "g": 35, "f": 20, "t": "Donated bottles and prizes; ticket ending 0 or 5 wins", "on": true}, {"n": "Raffle (on the day)", "p": 1.0, "c": 0.0, "g": 40, "f": 10, "t": "Strip of 5 tickets is popular at £2", "on": true}, {"n": "Bake sale (per cake/slice)", "p": 0.75, "c": 0.0, "g": 60, "f": 20, "t": "Donated bakes; label allergens", "on": true}, {"n": "Santa's grotto", "p": 3.0, "c": 1.0, "g": 20, "f": 20, "t": "Cost is a small gift per child", "on": true}, {"n": "Hot chocolate", "p": 1.5, "c": 0.4, "g": 30, "f": 20, "t": "Sachets, cups, squirty cream", "on": true}, {"n": "Tea, coffee and squash", "p": 1.0, "c": 0.2, "g": 30, "f": 15, "t": "Urn, cups, milk", "on": false}, {"n": "Mulled drinks (non-alcoholic)", "p": 2.0, "c": 0.5, "g": 15, "f": 15, "t": "Spiced apple or grape", "on": false}, {"n": "Hook a duck", "p": 1.0, "c": 0.3, "g": 25, "f": 15, "t": "Small prize each go", "on": true}, {"n": "Guess the reindeer's name", "p": 0.5, "c": 0.0, "g": 30, "f": 10, "t": "One winner, one prize", "on": true}, {"n": "Sweets in the jar", "p": 0.5, "c": 0.0, "g": 30, "f": 10, "t": "Donated jar of sweets", "on": true}, {"n": "Name the teddy", "p": 0.5, "c": 0.0, "g": 25, "f": 10, "t": "Donated teddy", "on": false}, {"n": "Hoopla", "p": 1.0, "c": 0.2, "g": 20, "f": 15, "t": "Pocket-money prizes", "on": false}, {"n": "Splat the rat", "p": 0.5, "c": 0.0, "g": 20, "f": 10, "t": "Drainpipe and a sock rat", "on": false}, {"n": "Bottle stall", "p": 1.0, "c": 0.0, "g": 25, "f": 15, "t": "Donated bottles, every ticket wins", "on": false}, {"n": "Chocolate tombola", "p": 1.0, "c": 0.0, "g": 25, "f": 15, "t": "Donated chocolate, every ticket wins", "on": false}, {"n": "Nearly new toys and books", "p": 0.5, "c": 0.0, "g": 40, "f": 20, "t": "Donated; lots of 50p", "on": true}, {"n": "Face painting", "p": 2.0, "c": 0.2, "g": 15, "f": 15, "t": "Volunteer painter, wipes", "on": true}, {"n": "Glitter tattoos", "p": 1.5, "c": 0.3, "g": 12, "f": 15, "t": "Stencils and glitter", "on": false}, {"n": "Christmas craft table", "p": 2.0, "c": 0.6, "g": 15, "f": 15, "t": "Make a decoration", "on": false}, {"n": "Christmas cards and wrap", "p": 1.0, "c": 0.4, "g": 10, "f": 10, "t": "Bought in bulk", "on": false}, {"n": "Wreaths and greenery", "p": 8.0, "c": 3.0, "g": 3, "f": 20, "t": "Pre-ordered helps", "on": false}, {"n": "Sweet cones", "p": 1.5, "c": 0.6, "g": 20, "f": 15, "t": "Bagged pick and mix", "on": false}, {"n": "Hot dogs", "p": 2.5, "c": 0.9, "g": 15, "f": 20, "t": "Check food safety rules", "on": false}, {"n": "Secret present room", "p": 2.0, "c": 1.2, "g": 15, "f": 15, "t": "Kids buy a wrapped gift for family", "on": false}];
+var D=JSON.parse(JSON.stringify(D0));
+function $(i){return document.getElementById(i);}
+function gbp(x){var n=Math.round(x*100)/100;return (n<0?"-£":"£")+Math.abs(n).toFixed(Math.abs(n)>=100?0:2);}
+function num(v){var n=parseFloat(v);return isFinite(n)&&n>=0?n:0;}
+function inp(val,step,cb,lbl){var e=document.createElement("input");e.type="number";e.min="0";e.step=step;e.value=val;e.inputMode="decimal";e.setAttribute("aria-label",lbl);e.addEventListener("input",function(){cb(num(e.value));calc();});return e;}
+function build(){var tb=$("rows");tb.innerHTML="";
+ D.forEach(function(s,i){var tr=document.createElement("tr");tr.id="r"+i;
+  var c0=document.createElement("td");c0.className="np";var cb=document.createElement("input");cb.type="checkbox";cb.checked=s.on;cb.setAttribute("aria-label","Use "+s.n);cb.onchange=function(){s.on=cb.checked;calc();};c0.appendChild(cb);
+  var c1=document.createElement("td");c1.className="n";c1.textContent=s.n;var sm=document.createElement("small");sm.textContent=s.t;c1.appendChild(sm);
+  var c2=document.createElement("td");c2.className="r";c2.appendChild(inp(s.p.toFixed(2),"0.5",function(v){s.p=v;},"Price for "+s.n));
+  var c3=document.createElement("td");c3.className="r";c3.appendChild(inp(s.c.toFixed(2),"0.1",function(v){s.c=v;},"Cost per go for "+s.n));
+  var c4=document.createElement("td");c4.className="r";c4.appendChild(inp(s.g,"1",function(v){s.g=v;},"Goes per 100 visitors for "+s.n));
+  var c5=document.createElement("td");c5.className="r";c5.id="g"+i;
+  var c6=document.createElement("td");c6.className="r";c6.id="t"+i;
+  var c7=document.createElement("td");c7.className="r";c7.id="p"+i;
+  var c8=document.createElement("td");c8.className="r";c8.appendChild(inp(s.f,"5",function(v){s.f=v;},"Float for "+s.n));
+  [c0,c1,c2,c3,c4,c5,c6,c7,c8].forEach(function(c){tr.appendChild(c);});tb.appendChild(tr);});calc();}
+function calc(){var v=num($("vis").value),T=0,C=0,F=0,top=[];
+ D.forEach(function(s,i){var goes=Math.round(v*s.g/100),take=goes*s.p,cost=goes*s.c,prof=take-cost;
+  $("g"+i).textContent=goes;$("t"+i).textContent=gbp(take);$("p"+i).textContent=gbp(prof);
+  $("r"+i).className=s.on?"":"off";
+  if(s.on){T+=take;C+=cost;F+=s.f;top.push([prof,s.n]);}});
+ $("s-take").textContent=gbp(T);$("s-cost").textContent=gbp(C);$("s-prof").textContent=gbp(T-C);$("s-float").textContent=gbp(F);
+ top.sort(function(a,b){return b[0]-a[0];});
+ $("best").textContent=top.length?("Biggest earners on these numbers: "+top.slice(0,3).map(function(x){return x[1]+" ("+gbp(x[0])+")";}).join(", ")+". Ask for donations for these first."):"Tick at least one stall to see your totals.";
+ var nm=$("fname").value.trim();$("ptitle").textContent=nm?nm+": stall plan":"Your Christmas fair plan";}
+$("vis").addEventListener("input",calc);$("fname").addEventListener("input",calc);
+$("reset").onclick=function(){D=JSON.parse(JSON.stringify(D0));build();};
+build();
+})();
+</script>
+</div></main><footer class="site-footer">
+ <div class="wrap foot-grid">
+  <div>
+   <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+   <p class="foot-tag">Printable, fillable templates for UK homes and small businesses.</p>
+  </div>
+  <nav class="foot-links" aria-label="Templates"><a href="/shop/#life">Life admin and home</a><a href="/shop/#meals">Meals and shopping</a><a href="/shop/#money">Money</a><a href="/shop/#study">Study and exams</a><a href="/shop/#fitness">Fitness</a><a href="/shop/#work">Work and freelance</a><a href="/shop/#seasonal">Christmas</a></nav>
+  <nav class="foot-links" aria-label="More"><a href="/free/">Free templates</a><a href="/daily/">Daily</a><a href="/guides/">Guides</a><a href="/compare/">Compare card shops</a><a href="/gifts/">Gift ideas</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refund.html">Refunds</a><a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></nav>
+ </div>
+ <div class="wrap legal">
+  <p>One-off payments through Stripe. Files emailed to you. No subscription.</p>
+  <p>Faulty file? We'll fix or refund it under the Consumer Rights Act 2015. Because these are digital files, you agree to waive the 14-day cancellation period once we email them to you after you buy.</p>
+  <p>&copy; 2026 TCH Works · Ryan Wilson · England and Wales · <a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></p>
+ </div>
+</footer>
+
+</body>
+</html>
