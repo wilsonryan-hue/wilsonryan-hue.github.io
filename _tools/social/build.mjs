@@ -1,12 +1,11 @@
-// TCH Works: share pictures, Pinterest auto-post feed, and download pages.
+// TCH Works: share pictures and the Pinterest auto-post feed.
 // Run from the repo root:  node _tools/social/build.mjs
 // Safe to re-run. It only rewrites what it made before.
 //
 // Makes:
 //   img/pins/<kind>-<slug>.jpg   1000x1500 Pinterest picture per shop page and Daily page
-//   img/share/<kind>-<slug>.jpg  1200x630 link-preview picture (WhatsApp, Facebook, X, LinkedIn)
+//   img/share/<kind>-<slug>.jpg  1200x630 link-preview picture, only for pages without their own
 //   pins.xml                     RSS feed Pinterest reads to post new pins by itself
-//   f/<token>/index.html         "Your download" page for each paid-file folder (noindex)
 // and adds share tags between <!-- share:start --> and <!-- share:end --> on each page.
 
 import fs from 'node:fs';
@@ -33,6 +32,7 @@ const decode = (s) => s
   .replace(/<[^>]+>/g, '')
   .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
   .replace(/&quot;/g, '"').replace(/&#39;|&rsquo;|&lsquo;/g, '’').replace(/&nbsp;/g, ' ')
+  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(+d))
   .replace(/&middot;/g, '·').replace(/&pound;/g, '£').replace(/&mdash;/g, '—').replace(/&ndash;/g, '–')
   .replace(/\s+/g, ' ').trim();
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -69,13 +69,18 @@ for (const [slug, files] of pageFiles('shop')) {
   const main = files.find((f) => f.endsWith(`${slug}.html`)) || files[0];
   const html = read(main);
   const title = pick(html, /<h1[^>]*>([\s\S]*?)<\/h1>/);
-  const price = pick(html, /<title>[^<]*?·\s*(£[\d.,]+)/);
-  const lede = pick(html, /<p class="lede">([\s\S]*?)<\/p>/) || pick(html, /<meta name="description" content="([^"]*)"/);
-  const bullets = [...html.matchAll(/<li>([\s\S]*?)<\/li>/g)].map((m) => decode(m[1])).filter((b) => b.length > 8 && b.length < 110).slice(0, 4);
+  const jsonPrice = pick(html, /"price":\s*"?([\d.]+)/);
+  const price = jsonPrice ? `£${jsonPrice}` : pick(html, /<p class="big-price">(£[\d.,]+)/) || pick(html, /<title>[^<]*?·\s*(£[\d.,]+)/);
+  const lede = pick(html, /<p class="pitch">([\s\S]*?)<\/p>/) || pick(html, /<p class="lede">([\s\S]*?)<\/p>/) || pick(html, /<meta name="description" content="([^"]*)"/);
+  const insideList = html.match(/<ul class="inside-list">([\s\S]*?)<\/ul>/);
+  const bullets = [...(insideList ? insideList[1] : html).matchAll(/<li>([\s\S]*?)<\/li>/g)].map((m) => decode(m[1])).filter((b) => b.length > 8 && b.length < 110).slice(0, 4);
+  // The page's own product picture, when it has one (img/p/<slug>/card.webp)
+  const ownImage = pick(html, /<meta property="og:image" content="https:\/\/www\.tchworks\.co\.uk\/([^"]+)"/);
+  const photo = ownImage && exists(ownImage) ? ownImage : null;
   const description = pick(html, /<meta name="description" content="([^"]*)"/) || lede;
   const priceNum = parseFloat(price.replace(/[£,]/g, '')) || 0;
-  if (!title) continue;
-  items.push({ kind: 'shop', slug, files, title, price, priceNum, lede, bullets, description,
+  if (!title || !priceNum) continue; // info pages (no price) are not products
+  items.push({ kind: 'shop', slug, files, title, price, priceNum, lede, bullets, description, photo,
     url: `${SITE}/shop/${slug}`, date: addedDate(main), pin: priceNum > 0 && priceNum <= PIN_MAX_PRICE });
 }
 for (const [slug, files] of pageFiles('daily')) {
@@ -116,7 +121,7 @@ li:before{content:"";position:absolute;left:0;border-radius:4px;background:#2563
 // Services (over PIN_MAX_PRICE) are done-for-you work, not downloads.
 const isService = (it) => it.kind === 'shop' && it.priceNum > PIN_MAX_PRICE;
 const productKicker = (it) => (isService(it) ? 'Done-for-you service · UK' : 'Printable PDF · UK');
-const productButton = (it) => (isService(it) ? 'Book now' : 'Instant PDF');
+const productButton = (it) => (isService(it) ? 'Book now' : 'Shop now');
 
 function fit(text, max) { return text.length > max ? text.slice(0, max - 1).replace(/\s+\S*$/, '') + '…' : text; }
 
@@ -133,8 +138,9 @@ function pinHtml(it) {
 ul{display:flex;flex-direction:column;gap:34px;margin-top:10px}li{font-size:40px;padding-left:54px}li:before{top:14px;width:26px;height:26px}
 .foot{padding:0 0 64px;font-size:34px}.btn{font-size:36px;padding:24px 36px}
 </style><div class="card"><div class="top"><div class="logo"><b>TCH</b><span>Works</span></div>${big && it.price ? `<div class="chip">${esc(it.price)}</div>` : ''}</div>
-<div class="body"><div class="kick">${esc(kicker)}</div><h1>${esc(fit(it.title, 90))}</h1>${big && list.length >= 2 ? '' : `<p>${esc(sub)}</p>`}${!big && list.length ? '<div class="kick" style="margin-top:16px;color:#6B7280">Inside</div>' : ''}
-${list.length ? `<ul>${list.map((b) => `<li>${esc(fit(b, 90))}</li>`).join('')}</ul>` : ''}
+${it.photo ? `<img src="data:image/webp;base64,${fs.readFileSync(path.join(ROOT, it.photo)).toString('base64')}" style="display:block;width:1000px;height:750px;object-fit:cover">` : ''}
+<div class="body"${it.photo ? ' style="padding-top:44px;gap:22px"' : ''}><div class="kick">${esc(kicker)}</div><h1${it.photo ? ' style="font-size:72px"' : ''}>${esc(fit(it.title, 90))}</h1>${big && list.length >= 2 ? '' : `<p>${esc(sub)}</p>`}${!big && list.length ? '<div class="kick" style="margin-top:16px;color:#6B7280">Inside</div>' : ''}
+${list.length ? `<ul${it.photo ? ' style="gap:18px"' : ''}>${list.slice(0, it.photo ? 2 : 4).map((b) => `<li${it.photo ? ' style="font-size:34px"' : ''}>${esc(fit(b, it.photo ? 80 : 90))}</li>`).join('')}</ul>` : ''}
 <div class="foot"><span>tchworks.co.uk</span><span class="btn">${big ? productButton(it) : 'Read free'}</span></div></div></div>`;
 }
 
@@ -165,9 +171,17 @@ for (const it of items) {
   it.pinImg = `img/pins/${it.kind}-${it.slug}.jpg`;
   it.shareImg = `img/share/${it.kind}-${it.slug}.jpg`;
   await shoot(pinHtml(it), 1000, 1500, it.pinImg);
-  await shoot(shareHtml(it), 1200, 630, it.shareImg);
+  if (!it.photo) await shoot(shareHtml(it), 1200, 630, it.shareImg);
+  else if (exists(it.shareImg)) fs.unlinkSync(path.join(ROOT, it.shareImg));
 }
 await browser.close();
+// Pictures this script made for pages that no longer exist are stale
+const wanted = new Set(items.flatMap((it) => [it.pinImg, it.photo ? null : it.shareImg]).filter(Boolean));
+for (const dir of ['img/pins', 'img/share']) {
+  for (const f of fs.readdirSync(path.join(ROOT, dir))) {
+    if (/^(shop|daily)-.*\.jpg$/.test(f) && !wanted.has(`${dir}/${f}`)) fs.unlinkSync(path.join(ROOT, dir, f));
+  }
+}
 
 // ---------- share tags on each page ----------
 for (const it of items) {
@@ -186,7 +200,11 @@ for (const it of items) {
   ].join('\n');
   for (const f of it.files) {
     let html = read(f);
-    if (html.includes('<!-- share:start -->')) {
+    const ownOg = /<meta property="og:image"/.test(html.replace(/<!-- share:start -->[\s\S]*?<!-- share:end -->/, ''));
+    if (ownOg) {
+      // the page already has its own share tags: keep those, drop ours
+      html = html.replace(/\n? *<!-- share:start -->[\s\S]*?<!-- share:end -->/, '');
+    } else if (html.includes('<!-- share:start -->')) {
       html = html.replace(/<!-- share:start -->[\s\S]*?<!-- share:end -->/, block);
     } else if (/<link rel="canonical"[^>]*>/.test(html)) {
       html = html.replace(/(<link rel="canonical"[^>]*>)/, `$1\n ${block}`);
@@ -209,7 +227,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
 ${pinned.map((it) => {
   const img = `${SITE}/${it.pinImg}`;
   const size = fs.statSync(path.join(ROOT, it.pinImg)).size;
-  const desc = it.kind === 'shop' ? `${it.description} ${it.price} printable PDF.` : `${it.description} Free to read.`;
+  const desc = it.kind === 'shop' ? `${it.description}` : `${it.description} Free to read.`;
   return `<item>
 <title>${esc(it.kind === 'shop' && it.price ? `${it.title} · ${it.price}` : it.title)}</title>
 <link>${it.url}?utm_source=pinterest&amp;utm_medium=social</link>
@@ -225,65 +243,5 @@ ${pinned.map((it) => {
 `;
 fs.writeFileSync(path.join(ROOT, 'pins.xml'), rss);
 
-// ---------- download pages ----------
-const shopBySlug = new Map(items.filter((i) => i.kind === 'shop').map((i) => [i.slug, i]));
-const FILE_ALIASES = {
-  'tch-uk-freelancer-invoice-proposals-pack': 'freelancer-ai-invoice',
-  'tch-uk-ltd-ai-admin-prompt-pack': 'ltd-ai-admin',
-  'tch-monthly-wall-calendar-pack': 'monthly-wall-calendar',
-  'tch-free-sunday-reset': null,
-  'tch-free-this-weeks-meal-grid': null,
-};
-const FREE_NAMES = { 'tch-free-sunday-reset': 'Sunday Reset (free)', 'tch-free-this-weeks-meal-grid': 'This Week’s Meal Grid (free)' };
-const human = (n) => (n > 1e6 ? `${(n / 1e6).toFixed(1)} MB` : `${Math.max(1, Math.round(n / 1e3))} KB`);
-const deliveries = [];
-for (const token of fs.readdirSync(path.join(ROOT, 'f'))) {
-  const dir = path.join('f', token);
-  if (!fs.statSync(path.join(ROOT, dir)).isDirectory()) continue;
-  const files = fs.readdirSync(path.join(ROOT, dir)).filter((n) => n !== 'index.html').sort((a, b) => (a.endsWith('.ics') - b.endsWith('.ics')));
-  let product = null; let name = null;
-  for (const f of files) {
-    const base = f.replace(/\.[^.]+$/, '');
-    if (base in FILE_ALIASES) { product = FILE_ALIASES[base] && shopBySlug.get(FILE_ALIASES[base]); name = FREE_NAMES[base] || product?.title; if (name) break; }
-    const s = base.replace(/^tch-/, '');
-    if (shopBySlug.has(s)) { product = shopBySlug.get(s); name = product.title; break; }
-  }
-  name = name || 'Your TCH Works files';
-  const free = files.some((f) => f.startsWith('tch-free-'));
-  const label = (f) => f.endsWith('.ics') ? `${f} (calendar reminders)` : f.endsWith('.zip') ? `${f} (all files, zipped)` : f;
-  const page = `<!DOCTYPE html>
-<html lang="en-GB">
-<head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="robots" content="noindex, nofollow">
- <title>Your download · ${esc(name)} | TCH Works</title>
- <link rel="stylesheet" href="/css/site.css">
- <style>.dl{list-style:none;padding:0;display:grid;gap:.75rem}.dl a{display:flex;justify-content:space-between;gap:1rem;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:600;word-break:break-word}.dl small{color:var(--muted);font-weight:400;white-space:nowrap}</style>
-</head>
-<body>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a></div></header>
-<main class="section"><div class="wrap prose">
- <p class="kicker">${free ? 'Free download' : 'Thank you'}</p>
- <h1>${esc(name)}</h1>
- <p class="lede">Your file is ready. Tap to download, then print on A4 or fill it in on screen.</p>
- <ul class="dl">
-${files.map((f) => `  <li><a href="./${encodeURIComponent(f)}" download>${esc(label(f))}<small>${human(fs.statSync(path.join(ROOT, dir, f)).size)}</small></a></li>`).join('\n')}
- </ul>
-${free
-    ? ' <p>Bookmark this page if you want the file again later.</p>\n <p>Problem with the file? Email hello@tch.works and we will put it right.</p>'
-    : ' <p>Bookmark this page if you want the file again later. Stripe also emails your receipt.</p>\n <p>Problem with the file? Reply to the Stripe receipt and we will put it right.</p>'}
- <p><a href="/">Back to the shop</a></p>
-</div></main>
-</body>
-</html>
-`;
-  fs.writeFileSync(path.join(ROOT, dir, 'index.html'), page);
-  deliveries.push({ token, name, slug: product?.slug || null });
-}
-// The token list is not written into the site: set DELIVERIES_OUT to save it somewhere private.
-if (process.env.DELIVERIES_OUT) fs.writeFileSync(process.env.DELIVERIES_OUT, JSON.stringify(deliveries, null, 1) + '\n');
-
 console.log(`pictures: ${items.length} pages (${items.filter((i) => i.kind === 'shop').length} shop, ${items.filter((i) => i.kind === 'daily').length} daily)`);
 console.log(`pins.xml: ${pinned.length} pins`);
-console.log(`download pages: ${deliveries.length} (${deliveries.filter((d) => !d.slug).length} not tied to a shop page)`);
