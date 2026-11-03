@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Dinner Timing Calculator UK · turkey cooking time and countdown plan | TCH Works</title>
+<meta name="description" content="Free Christmas dinner timing calculator for UK kitchens. Enter your turkey weight and serving time to get a backwards timeline: defrost, oven on, turkey in and out, rest, roast potatoes and gravy. No sign-up.">
+<link rel="canonical" href="https://www.tchworks.co.uk/free/christmas-dinner-timing-calculator/">
+
+<meta property="og:title" content="Christmas Dinner Timing Calculator UK · turkey cooking time and countdown plan | TCH Works">
+<meta property="og:description" content="Free Christmas dinner timing calculator for UK kitchens. Enter your turkey weight and serving time to get a backwards timeline: defrost, oven on, turkey in and out, rest, roast potatoes and gravy. No sign-up.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="TCH Works">
+<meta property="og:url" content="https://www.tchworks.co.uk/free/christmas-dinner-timing-calculator/">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>/* TCH Works — Made Useful. Navy #0D1323, cobalt #2563EB, yellow #FBBF24 */
+:root {
+ --navy: #0D1323;
+ --cobalt: #2563EB;
+ --yellow: #FBBF24;
+ --paper: #F7F7F8;
+ --ink: #1F2937;
+ --muted: #6B7280;
+ --line: #E5E7EB;
+ --white: #ffffff;
+ --max: 70rem;
+ --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --display: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+ margin: 0;
+ background: var(--paper);
+ color: var(--ink);
+ font-family: var(--sans);
+ font-size: 1.0625rem;
+ line-height: 1.55;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--cobalt); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+
+.site-header {
+ background: var(--navy);
+ color: var(--white);
+ border-bottom: 3px solid var(--yellow);
+}
+.nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+ padding: 0.9rem 0;
+}
+.brand { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.75rem; }
+.brand:hover { text-decoration: none; }
+.logo-stack { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; }
+.logo-tch {
+ position: relative;
+ font-family: var(--display);
+ font-weight: 800;
+ font-size: 1.55rem;
+ letter-spacing: -0.04em;
+}
+.logo-tch .bar {
+ position: absolute;
+ left: 0.18em; right: 0.18em;
+ top: 52%;
+ height: 0.12em;
+ background: var(--cobalt);
+ transform: translateY(-50%);
+ pointer-events: none;
+}
+.logo-works {
+ font-family: var(--display);
+ font-weight: 600;
+ font-size: 0.58rem;
+ letter-spacing: 0.42em;
+ text-transform: uppercase;
+ margin-top: 0.28rem;
+ color: #cbd5e1;
+}
+.site-nav { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+.site-nav a { color: #e5e7eb; font-weight: 500; }
+.site-nav a:hover { color: var(--yellow); text-decoration: none; }
+.site-nav a[aria-current="page"] { color: var(--yellow); }
+
+.hero {
+ background: var(--navy);
+ color: var(--white);
+ padding: 3.5rem 0 3.75rem;
+}
+.kicker {
+ font-family: var(--display);
+ font-weight: 600;
+ font-size: 0.75rem;
+ letter-spacing: 0.28em;
+ text-transform: uppercase;
+ color: var(--yellow);
+ margin: 0;
+}
+h1, h2, h3, h4 {
+ font-family: var(--display);
+ font-weight: 800;
+ letter-spacing: -0.03em;
+ color: var(--navy);
+ line-height: 1.12;
+}
+.hero h1 { color: var(--white); font-size: clamp(2.6rem, 7vw, 4.6rem); margin: 0.4rem 0 0; }
+.hero .pillars { font-size: clamp(1.15rem, 2.4vw, 1.6rem); color: #cbd5e1; margin: 0.7rem 0 0; font-weight: 500; }
+.hero .lede { max-width: 36rem; color: #94a3b8; margin: 1rem 0 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.6rem; }
+.trust { font-size: 0.82rem; color: #64748b; margin: 1.1rem 0 0; }
+
+.btn {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 2.85rem;
+ padding: 0 1.15rem;
+ border-radius: 8px;
+ font-family: var(--display);
+ font-weight: 700;
+ font-size: 0.92rem;
+ border: 0;
+ cursor: pointer;
+ text-decoration: none;
+}
+.btn:hover { text-decoration: none; }
+.btn-primary { background: var(--cobalt); color: var(--white); }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-yellow { background: var(--yellow); color: var(--navy); }
+.btn-yellow:hover { background: #f59e0b; }
+.btn-ghost { background: transparent; color: var(--white); border: 1px solid #334155; }
+.btn-ghost:hover { border-color: var(--yellow); color: var(--yellow); }
+.btn-navy { background: var(--navy); color: var(--white); }
+
+.section { padding: 3rem 0; }
+.section h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0.35rem 0 0; }
+.section-head { margin-bottom: 1.5rem; }
+.section-head p { color: var(--muted); margin: 0.4rem 0 0; max-width: 40rem; }
+
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; }
+.step {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 12px;
+ padding: 1.1rem 1.15rem;
+}
+.step b { display: block; font-family: var(--display); color: var(--cobalt); font-size: 1.35rem; }
+.step p { margin: 0.4rem 0 0; font-size: 0.92rem; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.card {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.3rem 1.35rem;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ overflow: hidden;
+}
+.card::before {
+ content: "";
+ position: absolute;
+ left: 0; top: 0; bottom: 0;
+ width: 5px;
+ background: var(--cobalt);
+}
+.card.free::before { background: var(--yellow); }
+.badge {
+ font-family: var(--display);
+ font-size: 0.68rem;
+ font-weight: 700;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--cobalt);
+ margin: 0;
+}
+.card.free .badge { color: #92400e; }
+.card h3 { margin: 0.35rem 0 0; font-size: 1.35rem; }
+.price { font-family: var(--display); font-weight: 800; font-size: 1.35rem; color: var(--navy); margin: 0.7rem 0 0; }
+.card .problem { margin: 0.45rem 0 0; color: var(--ink); }
+.card .inside { margin: 0.7rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.9rem; }
+.card .inside li { margin: 0.2rem 0; }
+.card .actions { margin-top: auto; padding-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.note { font-size: 0.8rem; color: var(--muted); margin: 0.55rem 0 0; }
+
+.upsell {
+ background: var(--navy);
+ color: var(--white);
+ border-radius: 14px;
+ padding: 1.4rem 1.5rem;
+ margin-top: 2rem;
+}
+.upsell h2, .upsell h3 { color: var(--white); margin: 0.3rem 0 0; }
+.upsell p { color: #cbd5e1; }
+.upsell .kicker { color: var(--yellow); }
+
+.prose { max-width: 42rem; }
+.prose h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 0.4rem 0 0; }
+.prose .lede { font-size: 1.15rem; color: #374151; margin-top: 1rem; }
+.prose ol { padding-left: 1.2rem; }
+.prose li { margin: 0.85rem 0; }
+.prose li strong { color: var(--navy); }
+.article-meta { color: var(--muted); font-size: 0.88rem; margin-top: 0.4rem; }
+
+.site-footer {
+ background: var(--navy);
+ color: #94a3b8;
+ padding: 2.4rem 0 2.6rem;
+ margin-top: 3rem;
+ font-size: 0.88rem;
+}
+.site-footer .brand { margin-bottom: 0.8rem; }
+.site-footer .logo-tch { font-size: 1.3rem; }
+.legal { display: grid; gap: 0.35rem; margin-top: 1rem; max-width: 40rem; }
+.site-footer a { color: #cbd5e1; }
+
+.thanks-box {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.6rem;
+ max-width: 32rem;
+}
+.thanks-box[hidden] { display: none; }
+.error { color: #991b1b; }
+
+
+/* Magnet email gate (Email Funnel S1) */
+.magnet-gate {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.35rem 1.4rem;
+ margin: 1.25rem 0 0;
+ max-width: 28rem;
+}
+.magnet-gate label {
+ display: block;
+ font-size: 0.88rem;
+ font-weight: 600;
+ color: var(--navy);
+ margin: 0.75rem 0 0.3rem;
+}
+.magnet-gate label:first-of-type { margin-top: 0; }
+.magnet-gate input[type="text"],
+.magnet-gate input[type="email"] {
+ width: 100%;
+ padding: 0.65rem 0.75rem;
+ border: 1px solid var(--line);
+ border-radius: 8px;
+ font: inherit;
+ color: var(--ink);
+ background: var(--paper);
+}
+.magnet-gate .consent {
+ display: flex;
+ gap: 0.65rem;
+ align-items: flex-start;
+ margin: 1rem 0 0;
+ font-size: 0.82rem;
+ font-weight: 500;
+ color: var(--muted);
+ line-height: 1.4;
+}
+.magnet-gate .consent input {
+ margin-top: 0.2rem;
+ flex-shrink: 0;
+}
+.magnet-gate .actions { margin-top: 1rem; }
+.magnet-download { margin-top: 1.1rem; }
+.magnet-download[hidden] { display: none !important; }
+
+@media (max-width: 800px) {
+ .steps, .grid { grid-template-columns: 1fr; }
+ .hero { padding: 2.4rem 0 2.6rem; }
+}
+
+/* Magnet email capture (Lane B) */
+.magnet-capture {
+ background: var(--white);
+ border: 1px solid var(--line);
+ border-radius: 14px;
+ padding: 1.25rem 1.3rem 1.35rem;
+ margin: 1.25rem 0 0;
+ max-width: 28rem;
+ position: relative;
+ overflow: hidden;
+}
+.magnet-capture::before {
+ content: "";
+ position: absolute;
+ left: 0; top: 0; bottom: 0;
+ width: 5px;
+ background: var(--yellow);
+}
+.magnet-capture h2 {
+ font-size: 1.15rem;
+ margin: 0;
+}
+.magnet-capture .field {
+ display: flex;
+ flex-direction: column;
+ gap: 0.35rem;
+ margin-top: 0.85rem;
+}
+.magnet-capture label {
+ font-size: 0.82rem;
+ font-weight: 600;
+ color: var(--navy);
+}
+.magnet-capture input[type="text"],
+.magnet-capture input[type="email"] {
+ min-height: 2.6rem;
+ padding: 0.45rem 0.7rem;
+ border: 1px solid var(--line);
+ border-radius: 8px;
+ font: inherit;
+ color: var(--ink);
+ background: var(--white);
+}
+.magnet-capture input:focus {
+ outline: 2px solid var(--cobalt);
+ outline-offset: 1px;
+}
+.magnet-capture .consent {
+ display: flex;
+ align-items: flex-start;
+ gap: 0.55rem;
+ margin-top: 0.9rem;
+ font-size: 0.85rem;
+ color: var(--ink);
+}
+.magnet-capture .consent input {
+ margin-top: 0.2rem;
+ flex-shrink: 0;
+}
+.magnet-capture .btn {
+ width: 100%;
+ margin-top: 1rem;
+}
+.magnet-capture .btn:disabled {
+ opacity: 0.55;
+ cursor: not-allowed;
+}
+/* MD 2026-09-10: Web3Forms live via data-capture-ready — do not scare users with kit-pending */
+.magnet-capture[data-capture-ready="true"] .kit-pending {
+ display: none !important;
+}
+.magnet-capture[data-kit-ready="false"][data-capture-ready="false"] .kit-pending {
+ display: block;
+}
+
+
+/* Stripe sticky cash bar — MD existential 2026-09-10 */
+.sticky-bar {
+ position: sticky;
+ top: 0;
+ z-index: 40;
+ background: #0D1323;
+ border-bottom: 2px solid #F5C518;
+ padding: 0.65rem 0;
+}
+.sticky-bar .wrap {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.6rem 1rem;
+ align-items: center;
+ justify-content: space-between;
+}
+.sticky-bar p {
+ margin: 0;
+ color: #F7F7F8;
+ font-size: 0.92rem;
+ font-weight: 600;
+}
+.sticky-bar .sticky-actions {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+}
+.sticky-bar .btn {
+ padding: 0.45rem 0.85rem;
+ font-size: 0.85rem;
+}
+/* TCH Works shop: product grid, previews, product pages, downloads. Loads after site.css. */
+:root { --radius: 14px; --shadow: 0 1px 2px rgba(13,19,35,.06), 0 8px 24px rgba(13,19,35,.07); }
+.center { text-align: center; margin-top: 2rem; }
+.section.alt { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border-radius: 10px; font-weight: 600; padding: .7rem 1.15rem; font-family: var(--sans); border: 0; cursor: pointer; text-decoration: none; }
+.btn-sm { padding: .45rem .9rem; font-size: .9rem; }
+.btn-lg { padding: .95rem 1.4rem; font-size: 1.05rem; width: 100%; }
+.btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.page-h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: .3rem 0 0; }
+.page-lede { color: var(--muted); font-size: 1.1rem; margin: .6rem 0 0; max-width: 42rem; }
+.narrow { max-width: 46rem; }
+
+/* hero */
+.hero-shop { padding: 3.5rem 0 3rem; }
+.hero-shop h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); line-height: 1.08; }
+.hero-shop .lede { color: #cbd5e1; font-size: 1.12rem; max-width: 34rem; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 2rem; align-items: center; }
+.hero-stack { position: relative; height: 360px; }
+.hero-stack img { position: absolute; width: 62%; border-radius: 12px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.hero-stack img:nth-child(1) { left: 0; top: 30px; transform: rotate(-5deg); }
+.hero-stack img:nth-child(2) { left: 22%; top: 0; z-index: 2; transform: rotate(1deg); }
+.hero-stack img:nth-child(3) { right: 0; top: 60px; transform: rotate(5deg); }
+.trust-band { background: var(--yellow); }
+.trust-row { list-style: none; margin: 0; padding: .9rem 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; font-size: .92rem; color: var(--navy); }
+.trust-row li b { display: block; font-family: var(--display); }
+main .trust-row { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.4rem 0; }
+
+/* categories */
+.cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.cat-tile { display: grid; grid-template-rows: auto auto 1fr auto; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; color: var(--ink); box-shadow: var(--shadow); transition: transform .15s; }
+.cat-tile:hover { transform: translateY(-3px); text-decoration: none; }
+.cat-tile img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--tint); display: block; }
+.ct-name { font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: var(--navy); padding: .9rem 1rem 0; }
+.ct-blurb { color: var(--muted); font-size: .92rem; padding: .25rem 1rem 0; }
+.ct-count { color: var(--acc); font-weight: 600; font-size: .85rem; padding: .6rem 1rem 1rem; }
+
+/* product grid */
+.pgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+.pgrid.three { grid-template-columns: repeat(3, 1fr); }
+.pgrid.two { grid-template-columns: repeat(2, minmax(0, 420px)); }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
+.pcard:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(13,19,35,.06), 0 14px 32px rgba(13,19,35,.1); }
+.pc-img { position: relative; display: block; background: var(--tint); }
+.pc-img img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.pc-label { position: absolute; top: .7rem; left: .7rem; background: var(--navy); color: var(--yellow); font-size: .75rem; font-weight: 700; letter-spacing: .03em; padding: .25rem .55rem; border-radius: 999px; z-index: 1; }
+.pc-body { padding: .95rem 1rem 1rem; display: flex; flex-direction: column; flex: 1; }
+.pc-cat { color: var(--acc); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin: 0; }
+.pcard h3 { font-size: 1.06rem; margin: .3rem 0 0; line-height: 1.3; }
+.pcard h3 a { color: var(--navy); }
+.pc-pitch { color: var(--ink); font-size: .9rem; margin: .45rem 0 0; flex: 1; }
+.pc-meta { color: var(--muted); font-size: .8rem; margin: .6rem 0 0; }
+.pc-foot { display: flex; align-items: center; justify-content: space-between; margin-top: .75rem; }
+.pc-price { font-family: var(--display); font-weight: 800; font-size: 1.25rem; color: var(--navy); }
+
+/* shop page */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.5rem; position: sticky; top: 0; z-index: 5; background: var(--paper); padding: .6rem 0; }
+.chip { border: 1.5px solid var(--line); background: #fff; color: var(--navy); border-radius: 999px; padding: .45rem .95rem; font: 600 .9rem var(--sans); cursor: pointer; }
+.chip.on, .chip:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+.cat-sec { margin-top: 2.2rem; scroll-margin-top: 4rem; }
+.cat-sec[hidden] { display: none; }
+.cat-sec h2 { font-size: 1.5rem; margin: 0; }
+
+/* bundle */
+.bundle { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+.bundle-img img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+.bundle-price span { font-family: var(--display); font-weight: 800; font-size: 2rem; color: var(--navy); }
+.bundle-price s { color: var(--muted); margin-left: .4rem; }
+.how3 { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.how3 li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; }
+.how3 b { font-family: var(--display); font-size: 1.6rem; color: var(--cobalt); }
+.how3 h3 { margin: .3rem 0 0; font-size: 1.1rem; }
+.how3 p { color: var(--muted); margin: .4rem 0 0; font-size: .95rem; }
+.daily-list { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: .6rem; }
+.daily-list li { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; display: flex; justify-content: space-between; gap: 1rem; }
+.daily-list span { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.svc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+.svc-list span { color: var(--muted); font-size: .9rem; }
+
+/* product page */
+.crumbs { font-size: .88rem; color: var(--muted); margin-bottom: 1.2rem; }
+.prod-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; align-items: start; }
+.gal-main { background: var(--tint); border-radius: var(--radius); padding: 1.5rem; display: flex; justify-content: center; }
+.gal-main img { max-height: 640px; width: auto; max-width: 100%; box-shadow: 0 10px 30px rgba(13,19,35,.18); background: #fff; }
+.thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; margin-top: .7rem; }
+.thumb { border: 2px solid transparent; border-radius: 8px; padding: 0; background: #fff; cursor: pointer; overflow: hidden; }
+.thumb img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+.thumb.on { border-color: var(--cobalt); }
+.gal-note { color: var(--muted); font-size: .82rem; margin: .5rem 0 0; }
+.buybox h1 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin: .3rem 0 0; line-height: 1.15; }
+.buybox .pitch { font-size: 1.1rem; margin: .7rem 0 0; }
+.big-price { font-family: var(--display); font-weight: 800; font-size: 2.1rem; color: var(--navy); margin: .8rem 0 .6rem; }
+.ticks { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .35rem; font-size: .95rem; }
+.ticks li::before { content: "✓"; color: #16A34A; font-weight: 700; margin-right: .5rem; }
+.buybox h2 { font-size: 1.15rem; margin: 1.6rem 0 .4rem; }
+.inside-list { margin: 0; padding-left: 1.2rem; }
+.inside-list li { margin: .3rem 0; }
+.prod-more { margin-top: 3rem; }
+.prod-more h2 { font-size: 1.4rem; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; margin: .5rem 0; }
+.faq summary { font-weight: 600; cursor: pointer; color: var(--navy); }
+.faq p { margin: .5rem 0 0; color: var(--ink); }
+.mobile-buy { display: none; }
+
+/* downloads and free */
+.dl-list { display: grid; gap: .7rem; margin: 1.5rem 0; }
+.dl-btn { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; background: #fff; border: 2px solid var(--cobalt); border-radius: 12px; padding: .9rem 1.1rem; color: var(--navy); }
+.dl-btn:hover { background: #EAF1FE; text-decoration: none; }
+.dl-kind { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--cobalt); font-weight: 700; }
+.dl-name { font-weight: 600; word-break: break-all; }
+.dl-go { grid-row: 1 / 3; grid-column: 2; align-self: center; background: var(--cobalt); color: #fff; border-radius: 8px; padding: .5rem .9rem; font-weight: 600; }
+.tips { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: 1.5rem 0 2.5rem; }
+.tips h2 { font-size: 1.15rem; margin: 0; }
+.free-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; margin-top: 1.4rem; display: grid; gap: .35rem; }
+.free-form label { font-weight: 600; font-size: .92rem; margin-top: .4rem; }
+.free-form input[type=email], .free-form input:not([type]) { font: inherit; padding: .7rem .8rem; border: 1.5px solid var(--line); border-radius: 8px; }
+.free-form .consent { display: flex; gap: .5rem; font-weight: 400; font-size: .85rem; color: var(--muted); align-items: flex-start; }
+.free-form .consent input { margin-top: .25rem; }
+.free-form button { margin-top: .8rem; }
+.free-done { background: #FEF4DC; border-radius: var(--radius); padding: 1.2rem; margin-top: 1.4rem; }
+.free-done[hidden], .free-form[hidden] { display: none; }
+
+/* footer */
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.foot-tag { color: #cbd5e1; margin: .5rem 0 0; max-width: 22rem; }
+.foot-links { display: grid; gap: .35rem; align-content: start; font-size: .92rem; }
+.site-footer .legal { margin-top: 2rem; border-top: 1px solid #1f2a44; padding-top: 1rem; font-size: .82rem; color: #94a3b8; max-width: none; }
+.site-footer .legal p { margin: .2rem 0; }
+
+@media (max-width: 1000px) {
+ .pgrid { grid-template-columns: repeat(3, 1fr); }
+ .cat-grid { grid-template-columns: repeat(2, 1fr); }
+ .trust-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+ .hero-grid, .prod-grid, .bundle { grid-template-columns: 1fr; }
+ .hero-stack { height: 220px; }
+ .pgrid, .pgrid.three { grid-template-columns: repeat(2, 1fr); gap: .7rem; }
+ .pgrid.two { grid-template-columns: 1fr; }
+ .pc-pitch { display: none; }
+ .pc-body { padding: .7rem; }
+ .pcard h3 { font-size: .95rem; }
+ .cat-grid, .how3 { grid-template-columns: 1fr; }
+ .foot-grid { grid-template-columns: 1fr; }
+ .mobile-buy { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--navy); color: #fff; padding: .7rem 1rem; align-items: center; justify-content: space-between; gap: .6rem; font-size: .92rem; }
+ .product { padding-bottom: 5rem; }
+ .gal-main { padding: .8rem; }
+ .site-nav { gap: .9rem; font-size: .9rem; }
+}
+.trust-band .trust-row { background: none; border: 0; margin: 0; padding: .9rem 0; }
+/* template card at the end of Daily guides */
+.upsell.tpl-card { display: grid; grid-template-columns: 220px 1fr; gap: 1.2rem; align-items: center; background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow); }
+.upsell.tpl-card h2 { color: var(--navy); font-size: 1.3rem; margin: .2rem 0 0; }
+.upsell.tpl-card p { color: var(--ink); margin: .4rem 0 0; }
+.upsell.tpl-card .kicker { color: var(--cobalt); }
+.tc-img { display: block; background: var(--tint); border-radius: 10px; overflow: hidden; }
+.tc-img img { display: block; width: 100%; }
+.tc-meta { font-size: .85rem; color: var(--muted) !important; }
+.tc-actions { margin-top: .8rem !important; }
+@media (max-width: 600px) { .upsell.tpl-card { grid-template-columns: 1fr; } }
+
+/* contrast fix 2026-10-21 */
+main.section .wrap>.kicker{color:#92400e}
+.pc-cat,.ct-count{color:#b45309}
+.site-footer p a{text-decoration:underline}
+</style>
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Christmas Dinner Timing Calculator", "url": "https://www.tchworks.co.uk/free/christmas-dinner-timing-calculator/", "description": "Free Christmas dinner timing calculator for UK kitchens. Enter your turkey weight and serving time to get a backwards timeline: defrost, oven on, turkey in and out, rest, roast potatoes and gravy. No sign-up.", "inLanguage": "en-GB", "applicationCategory": "LifestyleApplication", "operatingSystem": "Any (runs in the browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"}, "publisher": {"@type": "Organization", "name": "TCH Works", "url": "https://www.tchworks.co.uk/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does a 5kg turkey take to cook?", "acceptedAnswer": {"@type": "Answer", "text": "For an unstuffed 5kg whole turkey, the Food Standards Agency says allow 40 minutes per kg in an oven preheated to 180°C (160°C fan), which is 200 minutes, or 3 hours 20 minutes. Then rest it for 30 to 45 minutes under foil. Always follow the pack label first, and check the thickest part reaches 75°C with a meat thermometer. The calculator also adds a little spare oven time in case the bird needs longer."}}, {"@type": "Question", "name": "How long does a turkey take to defrost in the fridge?", "acceptedAnswer": {"@type": "Answer", "text": "The Food Standards Agency says to allow around 10 to 12 hours per kg in the fridge, on the bottom shelf, covered, in a dish that catches the drips. A whole turkey typically takes 3 to 5 days, and a 6 to 7kg bird could take as much as 4 days. Never defrost it at room temperature, and check there are no ice crystals in the cavity before you cook it. If the packaging gives defrosting instructions, follow those."}}, {"@type": "Question", "name": "How long should I rest the turkey?", "acceptedAnswer": {"@type": "Answer", "text": "BBC Good Food says to rest a turkey for 30 to 45 minutes before carving, in a warm place, tented loosely with foil. It will not go cold, and the meat becomes juicier and easier to carve. Resting also frees the oven for the roast potatoes and trimmings."}}, {"@type": "Question", "name": "What temperature should the turkey reach?", "acceptedAnswer": {"@type": "Answer", "text": "Check the thickest part of the bird, between the leg and the breast, with a probe thermometer. Food Standards Scotland says it should reach 75°C or above, with no pink meat and clear juices. The Food Standards Agency lists 70°C held for 2 minutes and 75°C held for 30 seconds as equivalent ways to be sure it is cooked. BBC Good Food gives 75°C to 80°C for poultry on its roast timer. If a reading is low, return it to the oven for 10 to 15 minutes and test again."}}, {"@type": "Question", "name": "Can I cook the turkey the day before?", "acceptedAnswer": {"@type": "Answer", "text": "You can, but treat it as a food safety job. The Food Standards Agency and Food Standards Scotland say to cool cooked turkey as quickly as possible, within one to two hours, then cover it and refrigerate it. When you reheat it, make sure it is steaming hot all the way through, and do not reheat it more than once. Many people prefer to cook on the day for the best texture. The calculator is built around cooking on the day."}}, {"@type": "Question", "name": "How early should I put the roast potatoes on?", "acceptedAnswer": {"@type": "Answer", "text": "BBC Good Food's roast potato recipe uses about 50 minutes in a hot oven, with the potatoes boiled for about 2 minutes first and then steamed dry for at least 15 minutes. This calculator starts the par-boil about 25 minutes before the turkey comes out and puts the potatoes in just after, so they finish as the turkey is carved. You can also par-boil the day before and chill them, as BBC Good Food suggests."}}, {"@type": "Question", "name": "Should I stuff the turkey?", "acceptedAnswer": {"@type": "Answer", "text": "The Food Standards Agency advises cooking stuffing in a separate roasting tin, not inside the bird. A stuffed turkey takes longer and may not cook through to the middle. If you do stuff it, weigh the bird with the stuffing in, use a thermometer, and tick 'stuffed' on the calculator, which adds extra spare time and a warning."}}, {"@type": "Question", "name": "How long does a turkey crown take to cook?", "acceptedAnswer": {"@type": "Answer", "text": "BBC Good Food, passing on advice from British Turkey, says cook a crown at 190°C (170°C fan, gas 5): for under 4kg allow 20 minutes per kg plus 70 minutes, and for over 4kg allow 20 minutes per kg plus 90 minutes. A 2.5kg crown works out at 2 hours. Crowns often come with their own instructions on the pack, so use those if you have them."}}, {"@type": "Question", "name": "Should I wash the turkey, or cook it from frozen?", "acceptedAnswer": {"@type": "Answer", "text": "Do not wash it: the Food Standards Agency says this spreads germs onto your hands, worktops and utensils. Cook from frozen only if the manufacturer's instructions on the pack say that bird can be. Most frozen turkeys need to be fully defrosted first, because a bird that is still partly frozen can cook unevenly and leave harmful bacteria alive."}}, {"@type": "Question", "name": "How big a turkey do I need?", "acceptedAnswer": {"@type": "Answer", "text": "BBC Good Food's size guide says 2 to 2.5kg serves 4 to 6, 3kg serves 6 to 7, 3.5kg serves 7 to 8, 4 to 4.5kg serves 8 to 10, 5 to 5.5kg serves 10 to 12, and 6 to 6.5kg serves 12 to 15. If you put in the number of guests, the calculator compares it with that guide."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tchworks.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Free", "item": "https://www.tchworks.co.uk/free/"}, {"@type": "ListItem", "position": 3, "name": "Christmas dinner timing calculator", "item": "https://www.tchworks.co.uk/free/christmas-dinner-timing-calculator/"}]}</script>
+</head>
+<body><style>.tbar{background:#1f1720;color:#fff;font:500 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;position:relative;z-index:50}.tbar-in{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.tbar-brand{color:#fff;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:.01em;white-space:nowrap}.tbar-brand b{color:#ffb4a2}.tbar nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1 1 auto;min-width:0}.tbar nav::-webkit-scrollbar{display:none}.tbar nav a{color:#f3ece7;text-decoration:none;padding:7px 9px;border-radius:7px;white-space:nowrap}.tbar nav a:hover{background:#ffffff1f}.tbar nav a[aria-current]{background:#fff;color:#1f1720}.tbar-s{display:flex;flex:0 1 260px;min-width:180px}.tbar-s input{flex:1;min-width:0;border:0;border-radius:8px 0 0 8px;padding:8px 10px;font:inherit;color:#1f1720;background:#fff}.tbar-s button{border:0;border-radius:0 8px 8px 0;padding:8px 12px;background:#ffb4a2;color:#1f1720;font:inherit;font-weight:700;cursor:pointer}@media(max-width:720px){.tbar-in{gap:8px}.tbar nav{order:3;flex-basis:100%}.tbar-s{flex:1 1 140px}}main p a:not([class]),.crumbs a{text-decoration:underline}</style><div class="tbar"><div class="tbar-in"><a class="tbar-brand" href="/">TCH<b>Works</b></a><nav aria-label="Shop sections"><a href="/cards/">Cards</a><a href="/t-shirts/">T-shirts</a><a href="/hoodies/">Hoodies</a><a href="/sweatshirts/">Sweatshirts</a><a href="/mugs/">Mugs</a><a href="/personalised/">Personalised</a><a href="/shop/" aria-current="page">Templates</a></nav><form class="tbar-s" action="/search/" method="get" role="search"><input type="search" name="q" placeholder="Search cards, tees, templates" aria-label="Search the shop"><button type="submit">Search</button></form></div></div><header class="site-header">
+ <div class="wrap nav">
+  <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+  <nav class="site-nav" aria-label="Primary">
+   <a href="/shop/">Templates</a>
+   <a href="/free/" aria-current="page">Free</a>
+   <a href="/daily/">Daily</a>
+   <a href="/guides/">Guides</a>
+  </nav>
+ </div>
+</header>
+<main class="section"><div class="wrap ss">
+<style>
+.ss h1{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:.2rem 0 .6rem;color:var(--navy)}
+.ss .lede{font-size:1.15rem;color:var(--ink);max-width:46rem}
+.ss .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.25rem;margin:1.2rem 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.ss label.f{display:block;font-weight:700;color:var(--navy);margin:.2rem 0}
+.ss .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem 1.2rem}
+.ss input[type=number],.ss input[type=date],.ss input[type=time],.ss select{font:inherit;border:1.5px solid var(--line);border-radius:8px;padding:.4rem .5rem;background:#fff;max-width:100%}
+.ss input.big{font-size:1.2rem;width:7rem}
+.ss .opt{display:block;margin:.3rem 0;font-weight:500}
+.ss .opt input{margin-right:.4rem}
+.ss fieldset{border:0;padding:0;margin:0}
+.ss legend{font-weight:700;color:var(--navy);padding:0;margin-bottom:.2rem}
+.ss .go{margin-top:.6rem;font:inherit;font-weight:800;font-size:1.05rem;border:0;border-radius:12px;padding:.75rem 1.2rem;background:var(--yellow);color:var(--navy);cursor:pointer}
+.ss .go.alt{background:var(--navy);color:#fff}
+.ss .sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.8rem;margin:1rem 0}
+.ss .sum div{background:#F0FDF4;border-left:6px solid #16A34A;border-radius:12px;padding:.8rem 1rem}
+.ss .sum b{display:block;font-size:1.35rem;color:var(--navy)}
+.ss .warn{background:#FEF3C7;border-left:6px solid #D97706;border-radius:10px;padding:.7rem 1rem;margin:.6rem 0}
+.ss .safe{background:#EFF6FF;border-left:6px solid var(--cobalt);border-radius:10px;padding:.7rem 1rem;margin:.8rem 0}
+.ss table{width:100%;border-collapse:collapse;font-size:.97rem}
+.ss th,.ss td{text-align:left;padding:.5rem .4rem;border-top:1px solid var(--line);vertical-align:top}
+.ss th{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+.ss td.tm{white-space:nowrap;width:7.5rem}
+.ss td.tt{font-weight:700;color:var(--navy)}
+.ss td.tt small{display:block;font-weight:400;color:var(--ink);font-size:.88rem;margin-top:.15rem}
+.ss tr.day td{background:#F3F4F6;font-weight:800;color:var(--navy);border-top:2px solid var(--navy)}
+.ss tr.edited td.tm input{border-color:var(--cobalt);background:#EFF6FF}
+.ss tr.serve td{background:#FEF9E7}
+.ss .printhead{display:none}
+.ss .upsell{background:var(--navy);color:#fff;border-radius:14px;padding:1.25rem;margin:1.5rem 0}
+.ss .upsell p{margin:.3rem 0}
+.ss .upsell a.buy{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:800;border-radius:10px;padding:.6rem 1rem;margin-top:.5rem}
+.ss details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;margin:.5rem 0}
+.ss summary{font-weight:700;cursor:pointer;color:var(--navy)}
+.ss .muted{color:var(--muted);font-size:.95rem}
+.ss .src li{margin:.35rem 0;overflow-wrap:anywhere}
+@media(max-width:560px){.ss table,.ss tbody,.ss tr,.ss td{display:block;width:100%}.ss thead{display:none}.ss tr{border-top:1px solid var(--line);padding:.4rem 0}.ss td{border:0;padding:.15rem 0}.ss td.tm{width:auto}.ss tr.day{border-top:2px solid var(--navy);padding:0}.ss tr.day td{padding:.4rem}}
+@media print{.tbar,.site-header,.site-footer,.crumbs,.upsell,.noprint,.lede,.np,details,.card.inputs{display:none!important}.ss .printhead{display:block;margin-bottom:.6rem}.ss .printhead h2{margin:0 0 .2rem}body{background:#fff}.ss .card{border:0;box-shadow:none;padding:0}.ss input[type=time]{border:0!important;background:none!important;font-weight:700;padding:0;appearance:none}.ss table,.ss tbody,.ss tr,.ss td{display:revert}.ss thead{display:table-header-group}.ss tr{padding:0;break-inside:avoid}.ss td.tt small{font-size:.8rem}.ss .sum div{background:#fff;border:1px solid #999}}
+</style>
+<nav class="crumbs muted" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/free/">Free</a> › Christmas dinner timing calculator</nav>
+<h1>Christmas dinner timing calculator</h1>
+<p class="lede">Tell us the weight of your turkey and when you want to eat. We work backwards and give you a timeline for the whole kitchen: defrosting, oven on, turkey in and out, resting, roast potatoes, trimmings and gravy. Edit any time, then print it for the fridge door. Free, no sign-up, and nothing leaves your device.</p>
+<noscript><p class="warn">This calculator needs JavaScript. You can still use the published guidance below to plan by hand.</p></noscript>
+
+<div class="card inputs">
+ <div class="grid">
+  <fieldset><legend>What are you cooking?</legend>
+   <label class="opt"><input type="radio" name="type" value="whole" checked> Whole turkey</label>
+   <label class="opt"><input type="radio" name="type" value="crown"> Turkey crown</label></fieldset>
+  <div><label class="f" for="kg">Weight in kg (as on the pack)</label><input class="big" type="number" id="kg" min="0.5" max="15" step="0.1" value="5" inputmode="decimal"></div>
+  <div><label class="f" for="sdate">Serving date</label><input type="date" id="sdate" value="2026-12-25"></div>
+  <div><label class="f" for="stime">Serving time</label><input type="time" id="stime" value="14:00" step="300"></div>
+  <fieldset><legend>Stuffing</legend>
+   <label class="opt"><input type="radio" name="stuf" value="no" checked> Cooked separately (advised)</label>
+   <label class="opt"><input type="radio" name="stuf" value="yes"> Inside the bird</label></fieldset>
+  <fieldset><legend>Oven (optional)</legend>
+   <label class="opt"><input type="radio" name="oven" value="fan" checked> Fan</label>
+   <label class="opt"><input type="radio" name="oven" value="conv"> Conventional</label></fieldset>
+  <div><label class="f" for="guests">Guests (optional)</label><input type="number" id="guests" min="1" max="60" step="1" placeholder="e.g. 8" inputmode="numeric" style="width:6rem"></div>
+  <fieldset><legend>Frozen or fresh?</legend>
+   <label class="opt"><input type="checkbox" id="frozen"> It's frozen and needs defrosting</label>
+   <label class="opt"><input type="checkbox" id="fridge" checked> Take it out of the fridge before cooking</label></fieldset>
+ </div>
+ <fieldset style="margin-top:1rem"><legend>What else is on the table?</legend>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="potatoes" checked> Roast potatoes</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="parsnips" checked> Parsnips and roast veg</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="pigs" checked> Pigs in blankets</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="stuffing" checked> Stuffing</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="yorkshires"> Yorkshire puddings</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="sprouts" checked> Sprouts and boiled veg</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="gravy" checked> Gravy</label>
+  <label class="opt" style="display:inline-block;margin-right:1rem"><input type="checkbox" data-side="plates" checked> Warm the plates</label>
+ </fieldset>
+ <details style="margin-top:1rem"><summary>Adjust rest time, spare time and fridge time</summary>
+  <div class="grid" style="margin-top:.6rem">
+   <div><label class="f" for="rest">Rest under foil (minutes)</label><input type="number" id="rest" min="20" max="120" step="5" value="45"></div>
+   <div><label class="f" for="carve">Carving allowance (minutes)</label><input type="number" id="carve" min="0" max="45" step="5" value="10"></div>
+   <div><label class="f" for="spare">Spare oven time (minutes)</label><input type="number" id="spare" min="0" max="90" step="5" placeholder="auto"><p class="muted" style="margin:.2rem 0">Blank = 15 (30 if stuffed). If the turkey needs longer, this is your buffer. BBC Good Food says to allow 10 to 15 minutes, then test again.</p></div>
+   <div><label class="f" for="fridgemin">Out of the fridge before it goes in (minutes)</label><input type="number" id="fridgemin" min="15" max="120" step="5" value="60"></div>
+  </div>
+ </details>
+</div>
+
+<div class="card" id="planbox">
+ <div class="printhead"><h2>Christmas dinner timings</h2><p id="ph"></p></div>
+ <h2 style="margin-top:0" class="np">Your timeline</h2>
+ <p class="warn" id="err" hidden></p>
+ <div id="out">
+  <div class="sum" aria-live="polite">
+   <div><span>Oven setting</span><b id="s-oven"></b></div>
+   <div><span>Guide cooking time</span><b id="s-cook"></b></div>
+   <div><span>Turkey in at</span><b id="s-in"></b></div>
+   <div><span>Serves (BBC Good Food guide)</span><b id="s-serves"></b></div>
+  </div>
+  <div id="warns"></div>
+  <p id="guestnote" class="muted"></p>
+  <table>
+   <thead><tr><th>Time (editable)</th><th>What to do</th></tr></thead>
+   <tbody id="rows"></tbody>
+  </table>
+  <div class="safe"><b>Always check the pack label and use a meat thermometer.</b> These times are estimates. Push the probe into the thickest part of the turkey, between the leg and the breast. Aim for 75°C or more, with no pink meat and clear juices. The Food Standards Agency says 70°C held for 2 minutes is also safe. Never wash the turkey, and wash your hands after touching it raw. If your pack gives different timings, follow the pack.</div>
+  <p class="noprint"><button class="go" type="button" onclick="window.print()">Print or save as PDF</button> <button class="go alt" type="button" id="reset">Reset edited times</button></p>
+  <p class="muted noprint">Change any time box to suit your kitchen; the list re-sorts and your edits stay until you change the weight, serving time or options, or press reset. Nothing is saved or sent anywhere.</p>
+ </div>
+</div>
+
+<aside class="upsell">
+ <p style="font-weight:800;font-size:1.15rem;color:var(--yellow)">Want it as a printable one-page countdown for the fridge door?</p>
+ <p>The Christmas Dinner Countdown &amp; Timing Planner is a printable A4 PDF with a reverse timing sheet that works back from your serving time, a turkey roasting guide with UK oven temperatures, a guest and dietary needs list, a shopping list by shop and day, a prep-ahead plan for the 23rd, 24th and Christmas morning, and a notes page for next year. You can print it as often as you like.</p>
+ <a class="buy" href="https://tchworks.gumroad.com/l/tdiitb?utm_source=tchworks&amp;utm_medium=free-page&amp;utm_campaign=dinner-free-instant" rel="noopener">Instant download · £2.99</a>
+ <p style="font-size:.9rem;margin-top:.6rem">This calculator stays free either way.</p>
+</aside>
+
+<h2 class="np">The advice behind the timings</h2>
+<div class="np">
+<ul>
+ <li><strong>Defrosting:</strong> in the fridge, allow around 10 to 12 hours per kg. A whole turkey can take 3 to 5 days, and a 6 to 7kg bird up to 4 days. Never at room temperature.</li>
+ <li><strong>Whole turkey, unstuffed, 180°C (160°C fan):</strong> under 4.5kg, 45 minutes per kg plus 20 minutes; 4.5kg to 6.5kg, 40 minutes per kg; over 6.5kg, 35 minutes per kg. For birds over 6.5kg, BBC Good Food's 40 minutes per kg is longer, so the calculator plans with the longer figure and tells you the first time to check.</li>
+ <li><strong>Turkey crown, 190°C (170°C fan):</strong> under 4kg, 20 minutes per kg plus 70 minutes; over 4kg, 20 minutes per kg plus 90 minutes.</li>
+ <li><strong>Cooked:</strong> 75°C or above in the thickest part, steaming hot, no pink meat, clear juices. The Food Standards Agency lists 70°C for 2 minutes as equivalent.</li>
+ <li><strong>Rest:</strong> 30 to 45 minutes, tented with foil.</li>
+ <li><strong>Our own allowances</strong> (not official guidance): 20 minutes to heat the oven, 10 minutes carving, 15 minutes spare oven time (30 if stuffed), and the side-dish timings (parsnips, pigs in blankets, stuffing, gravy, plates and sprouts). Check each against its own pack or recipe.</li>
+</ul>
+<p class="muted">Where the sources differ, we use the safer, longer figure. Checked against the published guidance on 3 November 2026. This is general guidance, not a guarantee: ovens vary, so always check the pack label and use a meat thermometer.</p>
+<h3>Sources</h3>
+<ul class="src">
+ <li>Food Standards Agency, Christmas food hygiene (defrosting, cooking times, temperature combinations, stuffing): <a href="https://www.gov.uk/government/publications/christmas-food-hygiene/christmas-food-hygiene" rel="noopener">https://www.gov.uk/government/publications/christmas-food-hygiene/christmas-food-hygiene</a></li>
+ <li>Food Standards Scotland, Turkey cooking guide (75°C in the thickest part, foil, basting, leftovers): <a href="https://www.foodstandards.gov.scot/consumer-advice/food-safety/food-safety-in-the-kitchen/parties-and-events/christmas-food-safety/turkey-cooking-guide" rel="noopener">https://www.foodstandards.gov.scot/consumer-advice/food-safety/food-safety-in-the-kitchen/parties-and-events/christmas-food-safety/turkey-cooking-guide</a></li>
+ <li>BBC Good Food, The foolproof turkey guide (rest, crown timings, size guide, taking the bird out of the fridge): <a href="https://www.bbcgoodfood.com/howto/guide/foolproof-turkey-guide" rel="noopener">https://www.bbcgoodfood.com/howto/guide/foolproof-turkey-guide</a></li>
+ <li>BBC Good Food, Roast timer (40 minutes per kg, 75°C to 80°C for poultry, retest after 10 to 15 minutes): <a href="https://www.bbcgoodfood.com/howto/guide/roast-timer" rel="noopener">https://www.bbcgoodfood.com/howto/guide/roast-timer</a></li>
+ <li>BBC Good Food, Your Christmas lunch time plan (the shape of a Christmas Day timeline): <a href="https://www.bbcgoodfood.com/howto/guide/your-christmas-timeplan" rel="noopener">https://www.bbcgoodfood.com/howto/guide/your-christmas-timeplan</a></li>
+ <li>BBC Good Food, Ultimate roast potatoes (par-boil, steam dry, 50 minutes): <a href="https://www.bbcgoodfood.com/recipes/ultimate-roast-potatoes" rel="noopener">https://www.bbcgoodfood.com/recipes/ultimate-roast-potatoes</a></li>
+</ul>
+</div>
+
+<h2 class="np">Questions</h2>
+<details><summary>How long does a 5kg turkey take to cook?</summary><p>For an unstuffed 5kg whole turkey, the Food Standards Agency says allow 40 minutes per kg in an oven preheated to 180°C (160°C fan), which is 200 minutes, or 3 hours 20 minutes. Then rest it for 30 to 45 minutes under foil. Always follow the pack label first, and check the thickest part reaches 75°C with a meat thermometer. The calculator also adds a little spare oven time in case the bird needs longer.</p></details>
+<details><summary>How long does a turkey take to defrost in the fridge?</summary><p>The Food Standards Agency says to allow around 10 to 12 hours per kg in the fridge, on the bottom shelf, covered, in a dish that catches the drips. A whole turkey typically takes 3 to 5 days, and a 6 to 7kg bird could take as much as 4 days. Never defrost it at room temperature, and check there are no ice crystals in the cavity before you cook it. If the packaging gives defrosting instructions, follow those.</p></details>
+<details><summary>How long should I rest the turkey?</summary><p>BBC Good Food says to rest a turkey for 30 to 45 minutes before carving, in a warm place, tented loosely with foil. It will not go cold, and the meat becomes juicier and easier to carve. Resting also frees the oven for the roast potatoes and trimmings.</p></details>
+<details><summary>What temperature should the turkey reach?</summary><p>Check the thickest part of the bird, between the leg and the breast, with a probe thermometer. Food Standards Scotland says it should reach 75°C or above, with no pink meat and clear juices. The Food Standards Agency lists 70°C held for 2 minutes and 75°C held for 30 seconds as equivalent ways to be sure it is cooked. BBC Good Food gives 75°C to 80°C for poultry on its roast timer. If a reading is low, return it to the oven for 10 to 15 minutes and test again.</p></details>
+<details><summary>Can I cook the turkey the day before?</summary><p>You can, but treat it as a food safety job. The Food Standards Agency and Food Standards Scotland say to cool cooked turkey as quickly as possible, within one to two hours, then cover it and refrigerate it. When you reheat it, make sure it is steaming hot all the way through, and do not reheat it more than once. Many people prefer to cook on the day for the best texture. The calculator is built around cooking on the day.</p></details>
+<details><summary>How early should I put the roast potatoes on?</summary><p>BBC Good Food's roast potato recipe uses about 50 minutes in a hot oven, with the potatoes boiled for about 2 minutes first and then steamed dry for at least 15 minutes. This calculator starts the par-boil about 25 minutes before the turkey comes out and puts the potatoes in just after, so they finish as the turkey is carved. You can also par-boil the day before and chill them, as BBC Good Food suggests.</p></details>
+<details><summary>Should I stuff the turkey?</summary><p>The Food Standards Agency advises cooking stuffing in a separate roasting tin, not inside the bird. A stuffed turkey takes longer and may not cook through to the middle. If you do stuff it, weigh the bird with the stuffing in, use a thermometer, and tick 'stuffed' on the calculator, which adds extra spare time and a warning.</p></details>
+<details><summary>How long does a turkey crown take to cook?</summary><p>BBC Good Food, passing on advice from British Turkey, says cook a crown at 190°C (170°C fan, gas 5): for under 4kg allow 20 minutes per kg plus 70 minutes, and for over 4kg allow 20 minutes per kg plus 90 minutes. A 2.5kg crown works out at 2 hours. Crowns often come with their own instructions on the pack, so use those if you have them.</p></details>
+<details><summary>Should I wash the turkey, or cook it from frozen?</summary><p>Do not wash it: the Food Standards Agency says this spreads germs onto your hands, worktops and utensils. Cook from frozen only if the manufacturer's instructions on the pack say that bird can be. Most frozen turkeys need to be fully defrosted first, because a bird that is still partly frozen can cook unevenly and leave harmful bacteria alive.</p></details>
+<details><summary>How big a turkey do I need?</summary><p>BBC Good Food's size guide says 2 to 2.5kg serves 4 to 6, 3kg serves 6 to 7, 3.5kg serves 7 to 8, 4 to 4.5kg serves 8 to 10, 5 to 5.5kg serves 10 to 12, and 6 to 6.5kg serves 12 to 15. If you put in the number of guests, the calculator compares it with that guide.</p></details>
+
+<script>
+(function(root){
+"use strict";
+var DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
+function pad(n){return (n<10?"0":"")+n;}
+function hhmm(d){return pad(d.getHours())+":"+pad(d.getMinutes());}
+function dayLabel(d){return DAYS[d.getDay()]+" "+d.getDate()+" "+MONTHS[d.getMonth()];}
+function dur(m){m=Math.round(m);var h=Math.floor(m/60),r=m%60;if(h===0)return r+" min";return h+" hr"+(r?" "+r+" min":"");}
+function add(d,min){return new Date(d.getTime()+min*60000);}
+/* Cooking time in minutes. fsa = published guidance figure; plan = the longer figure we plan with. */
+function cookTimes(kg,type){
+ var f,p,t;
+ if(type==="crown"){ /* BBC Good Food, advice from British Turkey: under 4kg 20 min/kg + 70; over 4kg 20 min/kg + 90; 190C / 170C fan */
+  f=kg<4?20*kg+70:20*kg+90; p=f; t={c:190,fan:170,gas:5};
+ } else { /* Food Standards Agency, unstuffed, preheated 180C / 160C fan / gas 4 */
+  f=kg<4.5?45*kg+20:(kg<=6.5?40*kg:35*kg);
+  p=Math.max(f,40*kg); /* BBC Good Food: 40 min per kg for a standard bird; use the longer of the two */
+  t={c:180,fan:160,gas:4};
+ }
+ return {fsa:Math.round(f),plan:Math.round(p),temps:t};
+}
+/* BBC Good Food "what size turkey to buy" */
+function serves(kg){
+ if(kg<2)return null; if(kg<3)return "4 to 6"; if(kg<3.5)return "6 to 7"; if(kg<4)return "7 to 8";
+ if(kg<5)return "8 to 10"; if(kg<6)return "10 to 12"; if(kg<=6.5)return "12 to 15"; return "12 to 15 or more";
+}
+function weightForGuests(g){
+ if(g<=4)return 2; if(g<=6)return 2.5; if(g<=7)return 3; if(g<=8)return 3.5; if(g<=10)return 4; if(g<=12)return 5; if(g<=15)return 6; return null;
+}
+function plan(o){
+ var kg=o.kg,S=o.serve,type=o.type==="crown"?"crown":"whole";
+ var rest=o.rest!=null?o.rest:45,carve=o.carve!=null?o.carve:10;
+ var spare=o.spare!=null?o.spare:(o.stuffed?30:15);
+ var ct=cookTimes(kg,type),temps=ct.temps;
+ var ovenTxt=(o.fan?temps.fan+"°C fan":temps.c+"°C conventional")+" (gas mark "+temps.gas+")";
+ var Tout=add(S,-(rest+carve));
+ var Tin=add(Tout,-(ct.plan+spare));
+ var Tcheck=add(Tin,ct.fsa);
+ var rows=[],W=[];
+ function row(id,when,title,note,tag){rows.push({id:id,when:when,title:title,note:note,tag:tag||"",ord:rows.length});}
+ var fridgeOut=o.fridgeOut>0?add(Tin,-o.fridgeOut):null;
+ if(o.frozen){
+  var hrsLo=Math.round(10*kg),hrsHi=Math.round(12*kg);
+  var base=fridgeOut||Tin;
+  var start=add(base,-(12*kg*60+24*60));
+  start=new Date(start.getFullYear(),start.getMonth(),start.getDate(),start.getHours(),Math.floor(start.getMinutes()/15)*15);
+  row("defrost",start,"Move the frozen turkey from the freezer to the fridge",
+   "Bottom shelf, covered, in a large dish to catch drips. The Food Standards Agency says allow around 10 to 12 hours per kg in the fridge, so about "+hrsLo+" to "+hrsHi+" hours (roughly "+(Math.round(hrsLo/24*10)/10)+" to "+(Math.round(hrsHi/24*10)/10)+" days) for "+kg+" kg. This time uses 12 hours per kg plus a spare day. Pour away the liquid regularly. If the pack gives defrosting instructions, follow those instead.","defrost");
+ }
+ if(fridgeOut){
+  row("fridge",fridgeOut,"Take the turkey out of the fridge",
+   "BBC Good Food suggests an hour or more for a fresh bird. Check your pack: some retailers say to cook straight from the fridge. Check a frozen bird has no ice crystals in the cavity. Never wash the turkey.","prep");
+ }
+ row("ovenon",add(Tin,-20),"Oven on",
+  "Preheat to "+ovenTxt+". The Food Standards Agency times assume a preheated oven. The 20 minutes is our allowance, so edit it for your oven.","oven");
+ row("in",Tin,"Turkey in the oven",
+  (type==="crown"?"Crown":"Whole bird")+", "+kg+" kg"+(o.stuffed?", stuffed (weigh it including the stuffing)":"")+". Guide cooking time "+dur(ct.fsa)+(ct.plan>ct.fsa?" (Food Standards Agency) or "+dur(ct.plan)+" (BBC Good Food, 40 minutes per kg); we plan with the longer one":"")+", plus "+spare+" minutes spare. Cover with foil, baste about every hour, and uncover for the last 30 minutes to brown the skin.","turkey");
+ if(ct.fsa>75){row("uncover",add(Tin,ct.fsa-30),"Take the foil off to brown the skin","Last 30 minutes of the guide time (Food Standards Scotland).","turkey");}
+ if(o.sides.potatoes){
+  row("parboil",add(Tout,-25),"Start par-boiling the potatoes",
+   "Simmer for about 2 minutes once the water reaches a full boil (BBC Good Food), drain, shake to rough up the edges, then leave to steam dry for at least 15 minutes. You can par-boil the day before and chill them.","veg");
+ }
+ row("check",Tcheck,"First temperature check: is the turkey ready?",
+  "Push a probe into the thickest part, between the leg and the breast, and read the lowest figure. Aim for 75°C or more. Juices should run clear with no pink meat. If it isn't there, give it 10 to 15 minutes and test again (BBC Good Food). Fan ovens can cook faster, so check around now rather than later.","check");
+ row("out",Tout,"Latest turkey out: rest under foil",
+  "Tent it with foil in a warm place for "+rest+" minutes. BBC Good Food says rest for 30 to 45 minutes; it will not get cold. If it was ready at the first check, it simply rests a little longer. Turn the oven up for the potatoes and trimmings.","turkey");
+ if(o.sides.potatoes) row("potatoes",add(Tout,5),"Roast potatoes into hot fat",
+  "Allow about 50 minutes, turning twice (BBC Good Food roast potato recipe: 200°C, 180°C fan, 50 minutes). Heat the fat first and put the potatoes in while it is hot.","veg");
+ if(o.sides.parsnips) row("parsnips",add(S,-40),"Parsnips and other roast veg in","Allowance of about 40 minutes. Follow your own recipe.","veg");
+ if(o.sides.pigs) row("pigs",add(S,-35),"Pigs in blankets in","Allowance of about 30 minutes. Always follow the pack label, and check they are piping hot and cooked through.","veg");
+ if(o.sides.stuffing&&!o.stuffed) row("stuffing",add(S,-35),"Stuffing in its own tin","Allowance of about 30 minutes. The Food Standards Agency advises cooking stuffing in a separate tin rather than inside the bird.","veg");
+ if(o.sides.yorkshires) row("yorkies",add(S,-25),"Yorkshire puddings in","Follow the pack or your recipe for time and oven temperature.","veg");
+ if(o.sides.gravy) row("gravy",add(S,-25),"Make the gravy","Use the juices from the roasting tin. Allowance of about 15 minutes.","hob");
+ if(o.sides.plates) row("plates",add(S,-20),"Warm the plates and serving dishes","Low oven, warming drawer or a rinse of hot water.","prep");
+ if(o.sides.sprouts) row("sprouts",add(S,-15),"Sprouts and other boiled veg on","Allowance of about 10 minutes including bringing the pan to the boil.","hob");
+ row("carve",add(S,-carve),"Carve and plate","Carve the turkey, drain the veg, and bring everything together.","serve");
+ row("serve",S,"Serve","Dinner is on the table.","serve");
+ rows.sort(function(a,b){return a.when-b.when||a.ord-b.ord;});
+ if(kg>0&&type==="whole"&&kg<2.5)W.push("That is small for a whole turkey. If it is a crown, switch to 'Turkey crown'.");
+ if(type==="crown"&&kg>4.5)W.push("That is large for a crown. Check your pack label and consider a whole bird.");
+ if(type==="whole"&&kg>12)W.push("That is a very large bird. Check your pack label and that it fits your oven.");
+ if(type==="whole"&&kg>=4.3&&kg<=4.7)W.push("The Food Standards Agency's bands change at 4.5 kg, so the time drops by about 40 minutes there. If your bird is close to 4.5 kg, plan for the longer time and rely on the thermometer.");
+ if(o.stuffed)W.push("The Food Standards Agency says to cook stuffing in a separate tin, not inside the turkey. A stuffed bird takes longer and may not cook through. If you do stuff it, weigh it with the stuffing, use a thermometer in the thickest part, and check the stuffing itself is piping hot all the way through.");
+ if(rest+carve<50&&o.sides.potatoes)W.push("With this short a rest, the roast potatoes get fewer than 45 minutes in the oven. Give the turkey a longer rest, or start the potatoes on a lower shelf while it is still cooking.");
+ var sv=type==="whole"?serves(kg):null;
+ var mw=(type==="whole"&&o.guests>0)?weightForGuests(o.guests):null;
+ var guestNote=null;
+ if(type==="whole"&&o.guests>0){
+  if(mw===null)guestNote="For "+o.guests+" guests BBC Good Food's size guide runs out at 6 to 6.5 kg (12 to 15 people). You may want two smaller birds or a bird plus a joint.";
+  else if(kg<mw)guestNote="For "+o.guests+" guests, BBC Good Food's size guide suggests about "+mw+" kg or more. "+kg+" kg may be tight.";
+  else guestNote=kg+" kg should be plenty for "+o.guests+" guests on BBC Good Food's size guide.";
+ }
+ return {type:type,cook:ct,temps:temps,oven:ovenTxt,spare:spare,rest:rest,carve:carve,rows:rows,warnings:W,serves:sv,guestNote:guestNote,
+  tin:Tin,tcheck:Tcheck,tout:Tout};
+}
+var api={plan:plan,cookTimes:cookTimes,serves:serves,weightForGuests:weightForGuests,hhmm:hhmm,dayLabel:dayLabel,dur:dur,add:add};
+if(typeof module!=="undefined"&&module.exports)module.exports=api;else root.DinnerPlan=api;
+})(typeof window!=="undefined"?window:this);
+
+(function(){
+var P=window.DinnerPlan;
+var edits={},lastKey="";
+function $(i){return document.getElementById(i);}
+function val(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:"";}
+function numv(id){var v=parseFloat($(id).value);return isFinite(v)?v:NaN;}
+function pdate(){var d=$("sdate").value,t=$("stime").value;if(!d||!t)return null;var a=d.split("-"),b=t.split(":");return new Date(+a[0],+a[1]-1,+a[2],+b[0],+b[1]);}
+function opts(){var sides={};Array.prototype.forEach.call(document.querySelectorAll("[data-side]"),function(c){sides[c.getAttribute("data-side")]=c.checked;});
+ var sp=numv("spare"),g=numv("guests"),r=numv("rest"),cv=numv("carve"),fm=numv("fridgemin");
+ return {type:val("type"),kg:numv("kg"),stuffed:val("stuf")==="yes",fan:val("oven")==="fan",frozen:$("frozen").checked,
+  serve:pdate(),rest:isFinite(r)?r:45,carve:isFinite(cv)?cv:10,spare:isFinite(sp)?sp:null,fridgeOut:$("fridge").checked?(isFinite(fm)?fm:60):0,guests:isFinite(g)?g:0,sides:sides};}
+function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+function render(){
+ var o=opts(),err=$("err"),out=$("out");
+ var key=JSON.stringify(o);if(key!==lastKey){var k0=lastKey;lastKey=key;
+  /* editing a time must not clear edits: the key excludes edits, so any option change here clears them */
+  if(k0!=="")edits={};}
+ if(!(o.kg>=0.5&&o.kg<=15)||!o.serve){err.hidden=false;err.textContent=!o.serve?"Choose a serving date and time.":"Enter the turkey weight in kg, between 0.5 and 15.";out.hidden=true;return;}
+ err.hidden=true;out.hidden=false;
+ var p=P.plan(o);
+ $("s-oven").textContent=p.oven;
+ $("s-cook").textContent=P.dur(p.cook.fsa)+(p.cook.plan>p.cook.fsa?" (to "+P.dur(p.cook.plan)+")":"");
+ var tin=edits.in||p.tin;
+ $("s-in").textContent=P.dayLabel(tin).slice(0,3)+" "+P.hhmm(tin);
+ $("s-serves").textContent=p.serves?p.serves+" people":(p.type==="crown"?"see your pack":"n/a");
+ var w=$("warns");w.innerHTML="";p.warnings.forEach(function(t){w.appendChild(mk("p","warn",t));});
+ $("guestnote").textContent=p.guestNote||"";
+ var rows=p.rows.map(function(r){var x=edits[r.id];return {id:r.id,when:x||r.when,title:r.title,note:r.note,edited:!!x,ord:r.ord};});
+ rows.sort(function(a,b){return a.when-b.when||a.ord-b.ord;});
+ var tb=$("rows");tb.innerHTML="";var lastDay="";
+ rows.forEach(function(r){
+  var dl=P.dayLabel(r.when);
+  if(dl!==lastDay){lastDay=dl;var dr=mk("tr","day");var dc=mk("td",null,dl);dc.colSpan=2;dr.appendChild(dc);tb.appendChild(dr);}
+  var tr=mk("tr",(r.edited?"edited ":"")+(r.id==="serve"?"serve":""));
+  var c1=mk("td","tm");var inp=document.createElement("input");inp.type="time";inp.value=P.hhmm(r.when);inp.setAttribute("aria-label","Time for: "+r.title);
+  (function(r,inp){inp.addEventListener("change",function(){var a=inp.value.split(":");if(a.length<2||inp.value==="")return;
+   var nd=new Date(r.when.getFullYear(),r.when.getMonth(),r.when.getDate(),+a[0],+a[1]);edits[r.id]=nd;render();});})(r,inp);
+  c1.appendChild(inp);
+  var c2=mk("td","tt",r.title);c2.appendChild(mk("small",null,r.note));
+  tr.appendChild(c1);tr.appendChild(c2);tb.appendChild(tr);});
+ $("ph").textContent=(p.type==="crown"?"Turkey crown, ":"Whole turkey, ")+o.kg+" kg"+(o.stuffed?", stuffed":"")+", serving "+P.dayLabel(o.serve)+" at "+P.hhmm(o.serve)+". Oven "+p.oven+". Always check the pack label and use a meat thermometer: 75°C or more in the thickest part.";
+}
+Array.prototype.forEach.call(document.querySelectorAll(".inputs input"),function(e){e.addEventListener("input",render);e.addEventListener("change",render);});
+$("reset").onclick=function(){edits={};render();};
+render();
+})();
+</script>
+</div></main><footer class="site-footer">
+ <div class="wrap foot-grid">
+  <div>
+   <a class="brand" href="/" aria-label="TCH Works home"><span class="logo-stack"><span class="logo-tch">TCH<span class="bar" aria-hidden="true"></span></span><span class="logo-works">Works</span></span></a>
+   <p class="foot-tag">Printable, fillable templates for UK homes and small businesses.</p>
+  </div>
+  <nav class="foot-links" aria-label="Templates"><a href="/shop/#life">Life admin and home</a><a href="/shop/#meals">Meals and shopping</a><a href="/shop/#money">Money</a><a href="/shop/#study">Study and exams</a><a href="/shop/#fitness">Fitness</a><a href="/shop/#work">Work and freelance</a><a href="/shop/#seasonal">Christmas</a></nav>
+  <nav class="foot-links" aria-label="More"><a href="/free/">Free templates</a><a href="/daily/">Daily</a><a href="/guides/">Guides</a><a href="/compare/">Compare card shops</a><a href="/gifts/">Gift ideas</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refund.html">Refunds</a><a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></nav>
+ </div>
+ <div class="wrap legal">
+  <p>One-off payments through Stripe. Files emailed to you. No subscription.</p>
+  <p>Faulty file? We'll fix or refund it under the Consumer Rights Act 2015. Because these are digital files, you agree to waive the 14-day cancellation period once we email them to you after you buy.</p>
+  <p>&copy; 2026 TCH Works · Ryan Wilson · England and Wales · <a href="mailto:hello@tchworks.co.uk">hello@tchworks.co.uk</a></p>
+ </div>
+</footer>
+
+</body>
+</html>
