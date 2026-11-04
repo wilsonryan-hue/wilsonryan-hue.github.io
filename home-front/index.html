@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Home Front</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Home Front">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#14213d">
+<style>
+  :root {
+    --font-anthropic-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-anthropic-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --color-bg: #f7f6f2;
+    --color-panel: #ffffff;
+    --color-fg: #1d1d1b;
+    --color-fg-muted: #5f5e5a;
+    --color-border-line: #e3e1da;
+    --color-ok: #2e7d4f;
+    --color-warn: #a86400;
+    --color-bad: #c0392b;
+    --cds-font-size-caption: 0.8125rem;
+    --cds-font-size-body: 0.9375rem;
+    --cds-font-size-heading: 1.0625rem;
+    --cds-font-size-title: 1.75rem;
+    --cds-font-weight-medium: 600;
+    --cds-gap-xs: 0.25rem;
+    --cds-gap-sm: 0.5rem;
+    --cds-gap-md: 0.875rem;
+    --cds-gap-lg: 1.5rem;
+    --cds-gap-xl: 2.25rem;
+    --cds-pad-xs: 0.25rem;
+    --cds-pad-sm: 0.5rem;
+    --cds-pad-md: 0.75rem;
+    --cds-pad-lg: 1rem;
+    --cds-pad-xl: 1.5rem;
+    --cds-radius: 8px;
+    --cds-chart-muted: #b9b6ac;
+    --cds-chart-grid: #ecebe6;
+    --cds-chart-axis: #9a978d;
+    --cds-chart-reference: #8a877d;
+    --cds-chart-status-critical: #c0392b;
+    --cds-surface-popover: #ffffff;
+    --cds-border: #e3e1da;
+    --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --cds-text-secondary: #5f5e5a;
+    --cds-dur-slow: 0.4s;
+    --cds-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-bg: #1b1b19;
+      --color-panel: #252522;
+      --color-fg: #ecebe6;
+      --color-fg-muted: #a9a79f;
+      --color-border-line: #3a3935;
+      --color-ok: #5cc28a;
+      --color-warn: #e0a43a;
+      --color-bad: #ef6b5b;
+      --cds-chart-muted: #6b6962;
+      --cds-chart-grid: #33322e;
+      --cds-chart-axis: #7c7a72;
+      --cds-chart-reference: #8f8d85;
+      --cds-chart-status-critical: #ef6b5b;
+      --cds-surface-popover: #2c2c29;
+      --cds-border: #3a3935;
+      --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, 0.5);
+      --cds-text-secondary: #a9a79f;
+    }
+  }
+  html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
+  body { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); -webkit-text-size-adjust: 100%; }
+  #dash-root { padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 24px max(16px, env(safe-area-inset-left)); }
+  .status { min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; text-align: center; }
+  .status-card { max-width: 22rem; }
+  .status-card img { width: 72px; height: 72px; border-radius: 16px; }
+  .status-card h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 1.75rem; margin: 12px 0 6px; }
+  .status-card p { color: var(--color-fg-muted); margin: 0; line-height: 1.45; }
+  .foot { padding: 12px 16px 28px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border-top: 1px solid var(--color-border-line); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+  <main class="status" id="status">
+    <div class="status-card">
+      <img src="icon-192.png" alt="">
+      <h1>Home Front</h1>
+      <p id="msg" role="status" aria-live="polite">Opening…</p>
+    </div>
+  </main>
+  <div id="dash-root" hidden></div>
+  <footer class="foot" id="foot" hidden>Family copy, updated every 3 hours. Opens offline with the last copy it saw.</footer>
+  <script src="d3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
