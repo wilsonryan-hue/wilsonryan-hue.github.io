@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deposit on a quote UK trades sole trader | TCH Works</title>
+<meta name="description" content="Fillable deposit request for a UK sole trader trades quote. Short page. Named buyer. Not legal advice. Ends on Admin Pack.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<style>
+:root { --navy: #0B1C2C; --gold: #C4A35A; --bg: #f7f5f0; --text: #1a1a1a; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.5 system-ui, -apple-system, sans-serif; color: var(--text); background: var(--bg); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); margin: 0 0 12px; }
+h1 { font-size: 2.1rem; line-height: 1.15; }
+h2 { font-size: 1.4rem; margin-top: 28px; }
+.lede { font-size: 1.15rem; color: var(--navy); margin-bottom: 20px; }
+label { display: block; font-weight: 600; margin: 14px 0 4px; color: var(--navy); }
+input, textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 4px; font: inherit; background: #fff; }
+textarea { min-height: 72px; resize: vertical; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+.out { background: #fff; border: 1px solid #ddd; border-left: 4px solid var(--gold); padding: 16px; margin: 20px 0; white-space: pre-wrap; font-family: Georgia, serif; font-size: 15px; min-height: 160px; }
+.btn { background: var(--navy); color: #fff; border: 0; padding: 12px 18px; font: inherit; font-weight: 600; border-radius: 4px; cursor: pointer; }
+.btn:hover { background: #16324a; }
+.note { font-size: 0.92rem; color: #555; margin-top: 8px; }
+.till { background: var(--navy); color: #fff; padding: 20px; border-radius: 6px; margin-top: 32px; text-align: center; }
+.till a { color: var(--gold); font-weight: 700; font-size: 1.15rem; }
+.till small { display: block; margin-top: 8px; opacity: 0.85; }
+footer { margin-top: 40px; font-size: 0.9rem; color: #666; border-top: 1px solid #ddd; padding-top: 16px; }
+footer a { color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Deposit on a quote</h1>
+<p class="lede">UK sole trader. Trades. Fill the boxes. The deposit request is on the page. Not legal advice. Draft to check.</p>
+
+<form id="f">
+<div class="row">
+<div>
+<label>Your name / trading name</label>
+<input id="from" required placeholder="e.g. James Lindsay">
+</div>
+<div>
+<label>Client name</label>
+<input id="client" required placeholder="Full name or company">
+</div>
+</div>
+<div class="row">
+<div>
+<label>Quote number / reference</label>
+<input id="quote" required placeholder="e.g. Q-2026-042">
+</div>
+<div>
+<label>Quote total £</label>
+<input id="total" type="number" step="0.01" required placeholder="0.00">
+</div>
+</div>
+<div class="row">
+<div>
+<label>Deposit amount £ (or leave for %)</label>
+<input id="depamt" type="number" step="0.01" placeholder="or use percent">
+</div>
+<div>
+<label>Deposit percent %</label>
+<input id="depperc" type="number" step="0.1" value="25" placeholder="25">
+</div>
+</div>
+<label>What the deposit covers</label>
+<input id="covers" required placeholder="e.g. materials order and booking the start date">
+<div class="row">
+<div>
+<label>Due date for deposit</label>
+<input id="due" type="date">
+</div>
+<div>
+<label>How to pay</label>
+<input id="pay" required placeholder="e.g. bank transfer to the details on the quote">
+</div>
+</div>
+<button class="btn" type="button" onclick="build()">Build the deposit request</button>
+</form>
+
+<div class="out" id="letter">Fill the form and build the deposit request. Copy it onto the quote or send it with the quote.</div>
+<p class="note">A deposit on a UK trades quote is usually 10–25% to cover materials and hold the date. There is no fixed statutory maximum. Put the same terms on the quote itself. Only take a deposit your terms allow. Not legal advice. Draft to check.</p>
+
+<div class="till">
+<strong>Small Business Admin Pack · £39.99</strong><br>
+The quote, the invoice with unique number, and the tracker. One payment. Emailed. Print forever.<br>
+<a href="https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d">Pay £39.99 on Stripe</a>
+<small>TCH Works · <a href="https://wilsonryan-hue.github.io/" style="color:var(--gold)">shop</a> · Not legal advice · Not a subscription</small>
+</div>
+
+<footer>
+TCH Works. Standalone paper for UK sole traders. Not Treun Roc. Not Replit. Not Template Vault. Live Stripe. GBP.<br>
+Named buyer: UK sole trader tradesperson. Named problem: quote accepted, need the deposit written so materials can be ordered and the date held. Fillable fields above. One next step: the Admin Pack till. No income claim.
+</footer>
+</div>
+
+<script>
+function build() {
+  const from = document.getElementById('from').value || '[Your name]';
+  const client = document.getElementById('client').value || '[Client]';
+  const quote = document.getElementById('quote').value || '[Quote number]';
+  const total = parseFloat(document.getElementById('total').value) || 0;
+  let dep = parseFloat(document.getElementById('depamt').value);
+  const perc = parseFloat(document.getElementById('depperc').value) || 0;
+  if (!dep && perc) dep = total * (perc / 100);
+  if (!dep) dep = total * 0.25;
+  const covers = document.getElementById('covers').value || 'materials and booking the start date';
+  const due = document.getElementById('due').value || '[due date]';
+  const pay = document.getElementById('pay').value || 'the payment details on the quote';
+  const text = `Deposit request against quote ${quote}
+
+From: ${from}
+To: ${client}
+
+A deposit of £${dep.toFixed(2)} (${perc ? perc + '%' : 'fixed'} of the quoted total £${total.toFixed(2)}) is due on ${due} to secure the booking and cover ${covers}.
+
+Work starts when the deposit is received using ${pay}.
+
+The balance is due as set out on the quote.
+
+This deposit request is part of the quote. Acceptance of the quote includes these terms.
+
+---
+Draft only. Put the same wording on the quote. Check it. Not legal advice.`;
+  document.getElementById('letter').textContent = text;
+}
+</script>
+</body>
+</html>
