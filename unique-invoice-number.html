@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unique invoice number sole trader UK | TCH Works</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<style>
+body { margin:0; background:#0B1C2C; color:#fff; font-family:Georgia,serif; }
+h1,h2 { color:#C4A35A; }
+.container { max-width:700px; margin:0 auto; padding:20px; }
+input,button { padding:8px; margin:5px 0; width:100%; box-sizing:border-box; }
+.out { background:#1a2a3a; padding:15px; margin:15px 0; border-left:4px solid #C4A35A; }
+.till { background:#C4A35A; color:#0B1C2C; padding:15px; text-align:center; font-weight:bold; }
+a { color:#C4A35A; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Unique invoice number</h1>
+<p>UK sole trader. Fill the boxes. The next number is on the page. Not legal advice. Draft to check.</p>
+
+<label>Prefix (optional, e.g. INV- or 2026-)</label>
+<input type="text" id="prefix" value="INV-" placeholder="INV-">
+
+<label>Last number used (digits only)</label>
+<input type="number" id="last" value="0" min="0">
+
+<button onclick="generate()">Show next unique number</button>
+
+<div class="out" id="result">Next number appears here.</div>
+
+<p>Every invoice needs a unique identification number. Sequential series keep the record clean. Never reuse a number. If you cancel one, issue a credit note with a new number. Not legal advice.</p>
+
+<div class="till">
+Small Business Admin Pack · £39.99<br>
+The quote, the invoice with unique number, and the tracker. One payment. Emailed. Print forever.
+</div>
+<p style="text-align:center"><a href="https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d">Pay £39.99 on Stripe</a></p>
+<p style="text-align:center"><a href="https://wilsonryan-hue.github.io/">Shop</a> · Not legal advice · Not a subscription</p>
+</div>
+<script>
+function generate() {
+  const p = document.getElementById('prefix').value || '';
+  const l = parseInt(document.getElementById('last').value) || 0;
+  const next = l + 1;
+  const padded = String(next).padStart(3, '0');
+  document.getElementById('result').innerHTML = '<strong>Next unique number:</strong> ' + p + padded + '<br><br>Example header:<br>Invoice ' + p + padded + '<br>Date: [today]<br>Supply date: [date of work]<br>From: [your name / trading name]<br>To: [client]<br>Description: [work done]<br>Total: £[amount]';
+}
+</script>
+</body>
+</html>
