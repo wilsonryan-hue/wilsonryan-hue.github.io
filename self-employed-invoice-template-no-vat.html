@@ -1,98 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Self employed invoice template UK no VAT | TCH Works</title>
+<meta name="description" content="Fillable self-employed invoice template for a UK sole trader not registered for VAT. Unique number, named fields. Not legal advice. Ends on Admin Pack.">
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <style>
-body { margin:0; background:#0B1C2C; color:#fff; font-family:Georgia,serif; }
-h1,h2 { color:#C4A35A; }
-.container { max-width:700px; margin:0 auto; padding:20px; }
-input,textarea,button { padding:8px; margin:5px 0; width:100%; box-sizing:border-box; font-family:inherit; }
-textarea { min-height:60px; }
-.out { background:#1a2a3a; padding:15px; margin:15px 0; border-left:4px solid #C4A35A; white-space:pre-wrap; }
-.till { background:#C4A35A; color:#0B1C2C; padding:15px; text-align:center; font-weight:bold; }
-a { color:#C4A35A; }
+:root { --navy: #0B1C2C; --gold: #C4A35A; --bg: #f7f5f0; --text: #1a1a1a; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.5 system-ui, -apple-system, sans-serif; color: var(--text); background: var(--bg); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); margin: 0 0 12px; }
+h1 { font-size: 2.1rem; line-height: 1.15; }
+h2 { font-size: 1.4rem; margin-top: 28px; }
+.lede { font-size: 1.15rem; color: var(--navy); margin-bottom: 20px; }
+label { display: block; font-weight: 600; margin: 14px 0 4px; color: var(--navy); }
+input, textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 4px; font: inherit; background: #fff; }
+textarea { min-height: 72px; resize: vertical; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+.out { background: #fff; border: 1px solid #ddd; border-left: 4px solid var(--gold); padding: 16px; margin: 20px 0; white-space: pre-wrap; font-family: Georgia, serif; font-size: 15px; min-height: 180px; }
+.btn { background: var(--navy); color: #fff; border: 0; padding: 12px 18px; font: inherit; font-weight: 600; border-radius: 4px; cursor: pointer; }
+.btn:hover { background: #16324a; }
+.note { font-size: 0.92rem; color: #555; margin-top: 8px; }
+.till { background: var(--navy); color: #fff; padding: 20px; border-radius: 6px; margin-top: 32px; text-align: center; }
+.till a { color: var(--gold); font-weight: 700; font-size: 1.15rem; }
+.till small { display: block; margin-top: 8px; opacity: 0.85; }
+footer { margin-top: 40px; font-size: 0.9rem; color: #666; border-top: 1px solid #ddd; padding-top: 16px; }
+footer a { color: var(--gold); }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
 <h1>Self employed invoice template UK no VAT</h1>
-<p>UK sole trader. Not VAT registered. Fill the boxes. The invoice is on the page. Not legal advice. Draft to check.</p>
+<p class="lede">UK sole trader. Not VAT registered. Fill the boxes. The invoice is on the page. Not legal advice. Draft to check.</p>
 
-<label>Your name</label>
-<input type="text" id="name" placeholder="Your full name">
-
-<label>Trading name (optional)</label>
-<input type="text" id="trading" placeholder="Trading name if used">
-
+<form id="f">
+<div class="row">
+<div>
+<label>Your name / trading name</label>
+<input id="from" required placeholder="e.g. James Lindsay">
+</div>
+<div>
 <label>Your address for legal documents</label>
-<textarea id="address" placeholder="Street, town, postcode"></textarea>
-
-<label>Client name</label>
-<input type="text" id="client" placeholder="Client name or company">
-
+<input id="fromaddr" required placeholder="Street, town, postcode">
+</div>
+</div>
+<div class="row">
+<div>
+<label>Your phone (optional)</label>
+<input id="phone" placeholder="07...">
+</div>
+<div>
+<label>Your email (optional)</label>
+<input id="email" type="email" placeholder="you@...">
+</div>
+</div>
+<label>Client full name (or company name)</label>
+<input id="to" required placeholder="Full legal name">
 <label>Client address</label>
-<textarea id="clientaddress" placeholder="Client address"></textarea>
-
+<input id="toaddr" placeholder="Where they are">
+<div class="row">
+<div>
 <label>Invoice number (unique)</label>
-<input type="text" id="number" placeholder="INV-001">
-
+<input id="inv" required placeholder="e.g. 2026-014">
+</div>
+<div>
 <label>Invoice date</label>
-<input type="date" id="invdate">
-
+<input id="invdate" type="date">
+</div>
+</div>
+<div class="row">
+<div>
 <label>Supply date (date of work)</label>
-<input type="date" id="supplydate">
-
+<input id="supply" type="date">
+</div>
+<div>
+<label>Due date</label>
+<input id="due" type="date">
+</div>
+</div>
 <label>Description of the work</label>
-<textarea id="desc" placeholder="What was supplied"></textarea>
-
+<textarea id="work" required placeholder="e.g. bathroom tiling at 12 High Street — materials and labour"></textarea>
 <label>Amount £</label>
-<input type="number" id="amount" step="0.01" placeholder="0.00">
+<input id="amount" type="number" step="0.01" required placeholder="0.00">
+<label>How to pay (bank details)</label>
+<input id="bank" required placeholder="Sort code XX-XX-XX Account XXXXXXXX Name as on account">
+<button class="btn" type="button" onclick="build()">Build the invoice</button>
+</form>
 
-<label>Bank details (sort code and account)</label>
-<input type="text" id="bank" placeholder="Sort code XX-XX-XX Account XXXXXXXX">
-
-<label>Due date (optional)</label>
-<input type="date" id="duedate">
-
-<button onclick="generate()">Build the invoice</button>
-
-<div class="out" id="result">The invoice appears here.</div>
-
-<p>Do not add a VAT number or a VAT line. Only a VAT-registered business can charge VAT. A unique sequential number, your name, an address, the client, the work, the amount, and how to pay. Keep a copy. Not legal advice.</p>
+<div class="out" id="invoice">Fill the form and build the invoice. Copy it. Check it. Send it.</div>
+<p class="note">Do not add a VAT number or a VAT line. Only a VAT-registered business can charge VAT. A unique sequential number, your name, an address for legal documents, the client, the work, the amount, and how to pay. Keep a copy. Not legal advice. Not a tax filing.</p>
 
 <div class="till">
-Small Business Admin Pack · £39.99<br>
-The quote, the invoice with unique number, and the tracker. One payment. Emailed. Print forever.
+<strong>Small Business Admin Pack · £39.99</strong><br>
+The quote, the invoice with unique number, and the tracker. One payment. Emailed. Print forever.<br>
+<a href="https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d">Pay £39.99 on Stripe</a>
+<small>TCH Works · <a href="https://wilsonryan-hue.github.io/" style="color:var(--gold)">shop</a> · Not legal advice · Not a subscription</small>
 </div>
-<p style="text-align:center"><a href="https://buy.stripe.com/bJeaEWekS6iVdAk0jD2880d">Pay £39.99 on Stripe</a></p>
-<p style="text-align:center"><a href="https://wilsonryan-hue.github.io/">Shop</a> · Not legal advice · Not a subscription</p>
+
+<footer>
+TCH Works. Standalone paper for UK sole traders. Not Treun Roc. Not Replit. Not Template Vault. Live Stripe. GBP.<br>
+Named buyer: UK sole trader not registered for VAT. Named problem: need a complete invoice with unique number and no VAT line. Fillable fields above. One next step: the Admin Pack till. No income claim.
+</footer>
 </div>
+
 <script>
-function generate() {
-  const name = document.getElementById('name').value || '[your name]';
-  const trading = document.getElementById('trading').value;
-  const address = document.getElementById('address').value || '[your address]';
-  const client = document.getElementById('client').value || '[client]';
-  const clientaddress = document.getElementById('clientaddress').value || '[client address]';
-  const number = document.getElementById('number').value || '[number]';
+function build() {
+  const from = document.getElementById('from').value || '[Your name]';
+  const fromaddr = document.getElementById('fromaddr').value || '[Your address]';
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const to = document.getElementById('to').value || '[Client name]';
+  const toaddr = document.getElementById('toaddr').value || '[Client address]';
+  const inv = document.getElementById('inv').value || '[number]';
   const invdate = document.getElementById('invdate').value || '[invoice date]';
-  const supplydate = document.getElementById('supplydate').value || '[supply date]';
-  const desc = document.getElementById('desc').value || '[description]';
-  const amount = document.getElementById('amount').value || '0.00';
+  const supply = document.getElementById('supply').value || '[supply date]';
+  const due = document.getElementById('due').value;
+  const work = document.getElementById('work').value || '[the work]';
+  const amount = parseFloat(document.getElementById('amount').value) || 0;
   const bank = document.getElementById('bank').value || '[bank details]';
-  const duedate = document.getElementById('duedate').value;
-
-  let from = name;
-  if (trading) from += ' trading as ' + trading;
-
-  let dueLine = duedate ? 'Due: ' + duedate + '\n' : '';
-
-  const invoice = `INVOICE ${number}\n\nFrom: ${from}\n${address}\n\nTo: ${client}\n${clientaddress}\n\nInvoice date: ${invdate}\nSupply date: ${supplydate}\n${dueLine}\nDescription:\n${desc}\n\nTotal: £${parseFloat(amount).toFixed(2)}\n\nHow to pay: ${bank}\n\nThis invoice does not include VAT. The supplier is not registered for VAT.\n\nNot legal advice. Draft to check. Keep a copy for your records.`;
-
-  document.getElementById('result').textContent = invoice;
+  const contact = [phone ? 'Phone: ' + phone : '', email ? 'Email: ' + email : ''].filter(Boolean).join('\n');
+  const dueLine = due ? 'Due: ' + due + '\n' : '';
+  const invoice = `${from}\n${fromaddr}\n${contact}\n\n${new Date().toLocaleDateString('en-GB')}\n\n${to}\n${toaddr}\n\nINVOICE ${inv}\n\nInvoice date: ${invdate}\nSupply date: ${supply}\n${dueLine}\nDescription of the work:\n${work}\n\nTotal: £${amount.toFixed(2)}\n\nHow to pay: ${bank}\n\nThis invoice does not include VAT. The supplier is not registered for VAT.\n\n---\nDraft only. Check the number is unique and sequential. Keep a copy. Not legal advice.`;
+  document.getElementById('invoice').textContent = invoice;
 }
 </script>
 </body>
