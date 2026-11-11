@@ -757,6 +757,18 @@ render();
   </div>
  </div>
 </aside>
+<!-- tch-wa-share -->
+<aside class="tch-wa-share" aria-label="Share this page" style="max-width:70rem;margin:1.5rem auto;padding:0 1rem">
+ <div style="display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;border:2px solid #25D366;border-radius:14px;padding:1rem 1.25rem;background:#F0FDF4">
+  <p style="margin:0;font-weight:700;color:#0D1323;flex:1 1 16rem">Sorting Christmas with family or friends? Send this to the group chat.</p>
+  <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+   <a href="https://wa.me/?text=Last%20posting%20dates%20for%20Christmas%20cards%20this%20year%3A%20https%3A//www.tchworks.co.uk/free/christmas-card-posting-dates-2026/%3Fsrc%3Dwhatsapp" target="_blank" rel="noopener" data-src="whatsapp" style="display:inline-block;background:#25D366;color:#06281a;font-weight:800;padding:.6rem 1rem;border-radius:10px;text-decoration:none">Send on WhatsApp</a>
+   <button type="button" class="tch-wa-copy" data-url="https://www.tchworks.co.uk/free/christmas-card-posting-dates-2026/?src=copylink" style="background:#fff;border:2px solid #0D1323;color:#0D1323;font-weight:700;padding:.5rem .9rem;border-radius:10px;cursor:pointer">Copy link</button>
+  </div>
+ </div>
+</aside>
+<script>document.querySelectorAll('.tch-wa-copy').forEach(function(b){b.addEventListener('click',function(){var u=b.getAttribute('data-url');if(navigator.share){navigator.share({url:u}).catch(function(){});return;}if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.textContent='Link copied';});}else{prompt('Copy this link',u);}});});</script>
+
 <!-- tch-print-promo -->
 <style>.tch-pp{display:none}@media print{.tch-pp{display:flex!important;gap:10px;align-items:center;margin-top:14px;padding-top:8px;border-top:1px solid #bbb;font:9pt/1.35 system-ui,Arial,sans-serif;color:#333;break-inside:avoid;page-break-inside:avoid}.tch-pp img{width:56px;height:56px;flex:0 0 56px}}</style>
 <div class="tch-pp" aria-hidden="true"><img src="/img/qr-christmas-bundle-print.svg" alt=""><div><strong>Free from tchworks.co.uk.</strong> Planning the whole of Christmas? The UK Christmas 2026 Family Planner Bundle has 5 planners (budget and gifts, dinner timings, kids' Advent activities, word search and colouring, New Year goals) plus 5 bonus printables in one download for £5.99. Scan the code or go to <strong>tchworks.co.uk/bundle</strong></div></div>
