@@ -1,0 +1,121 @@
+# TCH Works
+
+> TCH Works is a small UK business selling printable PDF planners, Christmas kits and templates (instant download, priced in GBP, paid by card through Stripe or Gumroad), plus fixed-price writing and admin services for small UK businesses and individuals. Everything is written in UK English for UK dates, money and school terms.
+
+Facts for assistants: prices below are the live prices on 11 November 2026 and include no subscription. Digital files are emailed or downloaded straight after payment and are printed at home on A4. Services are one-off fixed prices with delivery times stated on each page. Christmas Day 2026 is Friday 25 December. Refunds follow https://www.tchworks.co.uk/refund.html.
+
+## Christmas 2026 (UK)
+- [UK Christmas 2026 Planner: free printables, calculators and kits](https://www.tchworks.co.uk/christmas/): Everything for a UK Christmas 2026 in one place: free budget, dinner timing, posting date, elf, advent, Santa letter, quiz and Secret Santa tools, plus printable kits from £2.49.
+- [UK Christmas 2026 Family Planner Bundle](https://www.tchworks.co.uk/shop/uk-christmas-2026-family-planner-bundle/): Five Christmas and New Year planners (£13.95 bought singly) plus five bonus printables, all for £5.99. Instant A4 PDF download, print at home.
+- [Great British Christmas Quiz: Printable](https://www.tchworks.co.uk/shop/great-british-christmas-quiz/): Great British Christmas Quiz: 60 original questions in 6 rounds, with host answers and team answer sheets. Print it or host from your phone. Instant download, £3.99.
+- [The Great British Christmas Pub Quiz – Host Pack](https://www.tchworks.co.uk/shop/christmas-pub-quiz-host-pack-2026/): Forty original rounds and 400 questions for a proper Christmas quiz night: quizmaster sheets with answers, plus photocopiable team answer sheets. 85-page printable A4 PDF, instant download, £7.99.
+- [Christmas Elf Ideas Kit: 24 Nights, Arrival Letter, Notes & Props (Printable UK)](https://www.tchworks.co.uk/shop/christmas-elf-visit-kit/): Printable Christmas elf kit for 1 to 24 December: arrival letter, elf certificate, 24-night idea calendar, 40 two-minute ideas, 24 elf notes, kindness cards, elf-sized props, report card, goodbye letter and oops notes. Works with any elf toy. 16 A4 pages, £2.49.
+- [Printable Christmas Cards: 15 Designs to Print at Home (A5)](https://www.tchworks.co.uk/shop/printable-christmas-cards/): 15 original Christmas cards to print at home: A4 sheet, folds to A5, blank or with a printed message inside. Too late to post a card? Print one tonight. £2.99 from TCH Works.
+- [School Christmas Fair Organiser Kit: PTA Printables, Raffle Rules, Signs, Rota (UK)](https://www.tchworks.co.uk/shop/christmas-fair-organiser-kit/): Printable Christmas fair kit for PTAs, PTFAs, churches and clubs: 8-week countdown, 24 stall ideas, volunteer rota, parent and prize letters, raffle rules, price signs, games, allergen labels, grotto tickets and cash count sheets. 20 A4 pages, £3.49.
+
+## Writing and admin services (fixed price, UK)
+- [Blog articles for small UK business websites, from £35](https://www.tchworks.co.uk/services/blog-articles/): Helpful, well-researched blog posts in UK English that answer the questions your customers type into Google. One article up to 1,200 words £35, four articles £120. Title, meta description and headings included.
+- [UK CV Rewrite from £25](https://www.tchworks.co.uk/services/cv-rewrite/): Your CV rewritten into a clear UK format with a simple ATS-readable layout, by email in 2 working days. CV £25, CV and cover letter £40, full pack with LinkedIn £60. One-off Stripe payment.
+- [AI FAQ chatbot for your website, from £60, no monthly fee](https://www.tchworks.co.uk/services/faq-chatbot/): A chat assistant for your small business website that answers visitors from your own approved answers, so it never makes things up. One line of code, no subscription. Starter £60, Business £120.
+- [Grant application writing for UK charities and community groups, from £49](https://www.tchworks.co.uk/services/grant-writing/): Funding applications written from your answers for UK charities, CICs, community groups and small businesses. Short small-grant forms £49 in 3 working days; full applications £120 in 5.
+- [UK business lead lists, 100 for £30](https://www.tchworks.co.uk/services/lead-lists/): Checked lists of UK businesses in the trade and area you choose: name, address, website, public phone and generic business email, with the source for every field. 100 for £30, 300 for £75. CSV or Excel by email.
+- [Market research and competitor price checks for small UK businesses](https://www.tchworks.co.uk/services/market-research/): Source-checked competitor research for small UK businesses. Competitor brief £35 (3 rivals, 2 working days), price snapshot £45, full report £120. Every figure links to its source.
+- [Email newsletters and welcome emails written for small UK businesses](https://www.tchworks.co.uk/services/newsletters/): We write welcome email sequences and monthly newsletters for small UK businesses, ready to paste into Mailchimp, Klaviyo or Shopify Email. Welcome sequence £35, two newsletters £60. See a full sample pack.
+- [Pitch decks, sales decks and loan decks for small UK businesses](https://www.tchworks.co.uk/services/pitch-decks/): We write and design clear pitch, sales and start-up loan decks for small UK businesses. Tidy up your deck for £35 or get a new 15-slide deck for £90. See a full sample.
+- [UK product description rewrites from £20 for 10](https://www.tchworks.co.uk/services/product-descriptions/): Your online shop's product descriptions rewritten into clear, benefit-led copy with bullet specs and an SEO meta line. 10 products £20, 25 products £45. Spreadsheet by email, one-off Stripe payment.
+- [Proofreading and editing in UK English from £15](https://www.tchworks.co.uk/services/proofreading/): Your document proofread in UK English: spelling, grammar, punctuation, consistency and clarity. Up to 3,000 words £15 in 2 working days, up to 10,000 words £40 in 3. Tracked changes in Word plus a clean copy.
+- [Social media posts written for you: a month of Facebook and Instagram content](https://www.tchworks.co.uk/services/social-media-content/): We write a month of Facebook and Instagram posts for small UK businesses, with photo ideas, hashtags and posting times. 12 posts £30, a full month £75. See a full sample month.
+- [Wedding, best man and retirement speeches written for you from £25](https://www.tchworks.co.uk/services/speech-writing/): A personal speech written from your stories: best man, father of the bride, groom, maid of honour, retirement, leaving do or Christmas party. Up to 5 minutes £25, up to 10 minutes next working day £45. Word + PDF with cue cards.
+- [PDF to Excel and spreadsheet clean-up from £15](https://www.tchworks.co.uk/services/spreadsheet-clean-up/): PDFs, scans and messy spreadsheets turned into clean, sorted, de-duplicated Excel or Google Sheets. Up to 500 rows £15, up to 10,000 rows £60. Back by email, one-off Stripe payment.
+- [Audio and video transcription, from £15](https://www.tchworks.co.uk/services/transcription/): Accurate transcripts of podcasts, interviews, meetings and videos, with speaker names and timestamps. Up to 30 minutes £15 in 2 working days, up to 90 minutes with SRT captions and show notes £35 in 3.
+- [Website data to spreadsheet, from £25](https://www.tchworks.co.uk/services/web-scraping/): We collect public data from any website (products, prices, directory listings, events, job ads) into a clean Excel or CSV file. One site up to 500 rows £25 in 2 working days, up to 3 sites and 5,000 rows £60 in 3.
+- [Website copy that turns visitors into enquiries, from £35](https://www.tchworks.co.uk/services/website-copy/): Your Home, About or Services page rewritten in clear UK English so visitors know what you do, trust you and get in touch. One page £35 in 2 working days, up to 4 pages £95 in 4. Page titles and meta descriptions included.
+- [YouTube scripts written for faceless and voiceover channels](https://www.tchworks.co.uk/services/youtube-scripts/): Researched, sourced YouTube scripts with hooks, timecodes, B-roll cues, titles and a thumbnail brief. One script £35, four for £120. Read a full sample script.
+
+## Money and budgeting printables (UK)
+- [UK Payday Budget Pack](https://www.tchworks.co.uk/shop/uk-payday-budget-pack/): Bills first, envelopes next, then see what's left. Built for weekly, four-weekly and monthly pay. 10-page fillable PDF, emailed after payment, £9.99.
+- [52-Week Savings Challenge UK](https://www.tchworks.co.uk/shop/52-week-savings-challenge-uk/): Save £1,378 a pound at a time, with a tracker you'll enjoy ticking. 6-page fillable PDF, emailed after payment, £4.99.
+- [Debt Snowball Payoff Pack](https://www.tchworks.co.uk/shop/debt-snowball-payoff-uk/): Every debt on one page, a payoff order, and a tracker to colour in as it shrinks. 8-page fillable PDF, emailed after payment, £9.99.
+- [Sinking Funds Tracker Bundle](https://www.tchworks.co.uk/shop/sinking-funds-tracker-bundle/): The MOT, Christmas and the boiler aren't surprises. Save for them in named pots. 8-page fillable PDF, emailed after payment, £7.99.
+- [Monthly Budget Planner](https://www.tchworks.co.uk/shop/monthly-budget-planner/): Give every pound a job from payday: bills, spending, savings, then see the year add up. 15-page fillable PDF, emailed after payment, £3.99.
+- [Bill Payment Calendar](https://www.tchworks.co.uk/shop/bill-payment-calendar/): Every bill and direct debit on one page, with a tick for each month and every renewal date. 4-page fillable PDF, emailed after payment, £2.99.
+- [30-Day No-Spend Challenge](https://www.tchworks.co.uk/shop/no-spend-challenge/): Thirty days, essentials only. Track it, park the wants, and see what you saved. 4-page fillable PDF, emailed after payment, £2.49.
+
+## Work, freelance and small business templates (UK)
+- [Quote Template](https://www.tchworks.co.uk/shop/quote-template/): Stop quoting in a WhatsApp paragraph. One clear page that heads off arguments on site. 6-page fillable PDF, emailed after payment, £4.99.
+- [Invoice Tracker](https://www.tchworks.co.uk/shop/invoice-tracker/): Know at a glance who owes you, how late it is, and when you last chased. 7-page fillable PDF, emailed after payment, £4.99.
+- [Project Tracker](https://www.tchworks.co.uk/shop/project-tracker/): Every project with a clear finish line and a written next action. 11-page fillable PDF, emailed after payment, £4.99.
+- [Freelancer Invoice Starter](https://www.tchworks.co.uk/shop/freelancer-starter/): Ten paste-ready AI prompts from first enquiry to testimonial. 4-page fillable PDF, emailed after payment, £7.00.
+- [UK Ltd Invoice Chase Swipe File](https://www.tchworks.co.uk/shop/ltd-invoice-swipe/): Six copy-ready chase emails, a phone script and a record, for overdue B2B invoices. 6-page fillable PDF, emailed after payment, £14.99.
+- [UK Freelancer AI Invoice and Proposals Pack](https://www.tchworks.co.uk/shop/freelancer-ai-invoice/): Proposals, quotes, invoices, reminders and scope replies in UK English, without the AI inventing your prices. 9-page fillable PDF, emailed after payment, £29.
+- [UK Ltd AI Admin Prompt Pack](https://www.tchworks.co.uk/shop/ltd-ai-admin/): Invoice chasing, waiting-on lists, meeting actions and a Monday skim for UK directors. 9-page fillable PDF, emailed after payment, £37.
+- [AI Tips Pack](https://www.tchworks.co.uk/shop/ai-tips-pack/): 32 paste-ready prompts for work, admin, study and home. 7-page fillable PDF, emailed after payment, £4.99.
+- [UK Self-Employed Income & Expense Log 2027/28](https://www.tchworks.co.uk/shop/self-employed-log-2027-28/): Log every sale, cost and business mile for the 2027/28 tax year, month by month, with quarter totals ready for Making Tax Digital. 104-page printable PDF, emailed after payment, £4.99.
+- [Invoice Template UK](https://www.tchworks.co.uk/shop/invoice-template-uk/): Professional fillable invoices that meet UK rules, VAT-registered or not. 6-page fillable PDF, emailed after payment, £3.99.
+- [CV Template UK](https://www.tchworks.co.uk/shop/cv-template-uk/): Three clean UK CV layouts with a writing guide built to get past the first seven seconds. 7-page fillable PDF, emailed after payment, £4.99.
+- [Cover Letter Template](https://www.tchworks.co.uk/shop/cover-letter-template/): A four-paragraph cover letter formula, with three examples to adapt in minutes. 5-page fillable PDF, emailed after payment, £2.99.
+- [Business Expense and Receipt Log](https://www.tchworks.co.uk/shop/business-expense-receipt-log/): Log every business expense and mile as you go, so the tax return takes an hour, not a weekend. 15-page fillable PDF, emailed after payment, £2.99.
+- [Social Media Content Planner](https://www.tchworks.co.uk/shop/social-media-content-planner/): Plan a quarter of posts in an afternoon: pillars, 52 ideas, a monthly calendar and a weekly plan. 18-page fillable PDF, emailed after payment, £3.49.
+- [Meeting Agenda and Minutes Template](https://www.tchworks.co.uk/shop/meeting-agenda-notes/): Agendas that keep meetings short, minutes that record decisions, and an action log people follow. 7-page fillable PDF, emailed after payment, £2.49.
+
+## Home, family and life admin printables
+- [Weekly Planner](https://www.tchworks.co.uk/shop/weekly-planner/): The week starts in your head and ends in your notes app. Put it on one page instead. 14-page fillable PDF, emailed after payment, £12.99.
+- [Life Admin Checklist](https://www.tchworks.co.uk/shop/life-admin-checklist/): MOT, dentist, boiler service, passport: all due 'at some point'. Get them on one list. 7-page fillable PDF, emailed after payment, £4.99.
+- [Life Admin Bundle](https://www.tchworks.co.uk/shop/life-admin-bundle/): The four life admin templates together: £35.96 bought separately, £21.99 here. 46-page fillable PDF, emailed after payment, £21.99.
+- [Sunday Reset Workbook](https://www.tchworks.co.uk/shop/sunday-reset-workbook/): Eight Sundays of timed, 90-minute resets so Monday stops ambushing you. 12-page fillable PDF, emailed after payment, £9.99.
+- [Reset Routine](https://www.tchworks.co.uk/shop/reset-routine/): Daily, weekly, monthly and seasonal resets, so the house never needs a whole-weekend blitz. 15-page fillable PDF, emailed after payment, £11.99.
+- [Habit Tracker](https://www.tchworks.co.uk/shop/habit-tracker/): New habits last until the first messy Wednesday. This one plans for the bad days. 7-page fillable PDF, emailed after payment, £5.99.
+- [Habit and Mood 90-Day Tracker](https://www.tchworks.co.uk/shop/habit-mood-90-day/): Track habits, mood, energy and sleep together and see what actually helps. 17-page fillable PDF, emailed after payment, £6.99.
+- [Waiting-On Tracker](https://www.tchworks.co.uk/shop/waiting-on-tracker/): The GP letter, the school form, the refund. Track every reply you're waiting for. 7-page fillable PDF, emailed after payment, £4.99.
+- [Family Week Command](https://www.tchworks.co.uk/shop/family-week-command/): Clubs, lifts, PE kit and teas for the whole house on one fridge page. 11-page fillable PDF, emailed after payment, £4.99.
+- [ADHD Weekend Reset Mini](https://www.tchworks.co.uk/shop/adhd-weekend-reset-mini/): A low-pressure weekend reset for busy, distractible brains. Done is enough. 6-page fillable PDF, emailed after payment, £9.99.
+- [Monthly Life Admin Calendar](https://www.tchworks.co.uk/shop/monthly-life-admin-calendar/): A renewals map for the year and twelve months with a Friday admin strip. 14-page fillable PDF, emailed after payment, £12.99.
+- [Monthly Wall Calendar](https://www.tchworks.co.uk/shop/monthly-wall-calendar/): Twelve undated months for the fridge, big enough to read across the kitchen. 14-page fillable PDF, emailed after payment, £4.99.
+- [Book TBR and Reading Log](https://www.tchworks.co.uk/shop/book-tbr-reading-log/): Every recommendation in one place, and a log of what you actually read. 22-page fillable PDF, emailed after payment, £5.99.
+- [2027 UK Weekly Planner](https://www.tchworks.co.uk/shop/weekly-planner-2027/): Every week of 2027 on its own spread, with UK bank holidays and England school terms already marked. 138-page printable PDF, emailed after payment, £4.99.
+- [Undated Daily Planner](https://www.tchworks.co.uk/shop/daily-planner-undated/): One page a day: top three, time blocks from 6am to 10pm, and a two-minute review before bed. 95-page fillable PDF, emailed after payment, £3.99.
+- [Monthly Goal Planner](https://www.tchworks.co.uk/shop/monthly-goal-planner/): Turn one big goal a month into four weekly steps, with a review that tells you what to change. 26-page fillable PDF, emailed after payment, £3.99.
+- [Kids Chore Chart and Pocket Money Tracker](https://www.tchworks.co.uk/shop/kids-chore-chart/): Age-by-age chore ideas, a star chart that goes on the fridge, and pocket money that adds itself up. 15-page fillable PDF, emailed after payment, £2.99.
+- [Family Chore Rota](https://www.tchworks.co.uk/shop/family-chore-rota/): Who does what, rotated fairly every week, so nobody keeps the bins forever. 16-page fillable PDF, emailed after payment, £3.49.
+- [Weekly Cleaning Schedule](https://www.tchworks.co.uk/shop/weekly-cleaning-schedule/): One zone a day, fifteen minutes. The whole house stays clean without a weekend lost to it. 5-page fillable PDF, emailed after payment, £3.49.
+- [Morning and Evening Routine Planner](https://www.tchworks.co.uk/shop/morning-evening-routine/): Build a morning and evening routine that fits your actual life, and track it for eight weeks. 12-page fillable PDF, emailed after payment, £2.99.
+- [Self-Care Planner](https://www.tchworks.co.uk/shop/self-care-planner/): Practical self-care, not bubble baths: a weekly menu, mood check-ins and a plan for bad days. 15-page fillable PDF, emailed after payment, £2.99.
+- [Medication and Appointment Log](https://www.tchworks.co.uk/shop/medication-appointment-log/): Every medicine, repeat prescription and appointment on paper, ready for the GP or A&E. 18-page fillable PDF, emailed after payment, £2.99.
+- [Pet Care Planner](https://www.tchworks.co.uk/shop/pet-care-planner/): Vaccinations, flea and worm dates, vet visits and a sitter sheet for your dog or cat. 7-page fillable PDF, emailed after payment, £2.99.
+- [UK Garden Planner](https://www.tchworks.co.uk/shop/uk-garden-planner/): What to sow, plant and do each month in a UK garden, with a plot plan and plant log. 16-page fillable PDF, emailed after payment, £3.49.
+- [Holiday and Travel Planner](https://www.tchworks.co.uk/shop/holiday-travel-planner/): Budget, bookings, itinerary and packing lists for every trip, from a UK weekend to a fortnight abroad. 5-page fillable PDF, emailed after payment, £3.49.
+- [House Move Planner](https://www.tchworks.co.uk/shop/house-move-planner/): Eight weeks to moving day, every address change, and a box log so nothing goes missing. 7-page fillable PDF, emailed after payment, £3.99.
+- [Complete Template Collection (32 templates)](https://www.tchworks.co.uk/shop/new-templates-bundle/): All 32 new templates, every PDF and every phone calendar, for £19.99 instead of £113.68. 570-page fillable PDF, emailed after payment, £19.99.
+
+## Meal planning printables
+- [Meal Planner](https://www.tchworks.co.uk/shop/meal-planner/): It's six o'clock and nobody's decided what's for tea. Twelve weeks that fix that. 17-page fillable PDF, emailed after payment, £12.99.
+- [School-Night Teas Under 30](https://www.tchworks.co.uk/shop/school-night-teas-under-30/): Twenty family teas on proper recipe cards, all on the table in under 30 minutes. 9-page fillable PDF, emailed after payment, £4.99.
+- [Grocery List](https://www.tchworks.co.uk/shop/grocery-list/): In for milk, out with three bags and no onions? Shop in aisle order. 8-page fillable PDF, emailed after payment, £4.99.
+- [Fridge-First Meal System](https://www.tchworks.co.uk/shop/fridge-first-meal-system/): Plan the week from what's already in the fridge, then shop only for the gaps. 11-page fillable PDF, emailed after payment, £9.99.
+- [Overlapping Bag Planner](https://www.tchworks.co.uk/shop/overlapping-bag-planner/): Five teas that share ingredients from one shop, so nothing goes in the bin half-used. 12-page fillable PDF, emailed after payment, £4.99.
+- [Shopping Planner](https://www.tchworks.co.uk/shop/shopping-planner/): Big shop, top-ups and the online order, planned so they stop overlapping. 8-page fillable PDF, emailed after payment, £4.99.
+- [Batch Cook and Meal Prep Planner](https://www.tchworks.co.uk/shop/batch-cook-meal-prep-planner/): Cook on Sunday, eat all week: prep timeline, shopping list and a freezer log. 16-page fillable PDF, emailed after payment, £3.99.
+- [Recipe Book Template](https://www.tchworks.co.uk/shop/recipe-book-template/): Save Nan's recipes and your own favourites in one fillable, printable book. 64-page fillable PDF, emailed after payment, £2.99.
+
+## Events, weddings and family milestones
+- [Wedding Planner UK](https://www.tchworks.co.uk/shop/wedding-planner-uk/): Budget, guest list, suppliers and a 12-month countdown, with every deadline in your phone. 12-page fillable PDF, emailed after payment, £6.99.
+- [Pregnancy Planner UK](https://www.tchworks.co.uk/shop/pregnancy-planner-uk/): Every usual NHS appointment and to-do worked out from your due date, plus the hospital bag and birth preferences. 7-page fillable PDF, emailed after payment, £5.99.
+- [Newborn Feed, Nappy and Sleep Log](https://www.tchworks.co.uk/shop/newborn-feed-sleep-log/): Feeds, nappies and sleep on one page a day, for the blurry first twelve weeks. 87-page fillable PDF, emailed after payment, £2.99.
+- [Kids Birthday Party Planner](https://www.tchworks.co.uk/shop/kids-birthday-party-planner/): Six weeks to party day: guests, budget, food, games and party bags, with every to-do as a reminder. 6-page fillable PDF, emailed after payment, £3.49.
+
+## Study and exam printables
+- [Revision Timetable](https://www.tchworks.co.uk/shop/revision-timetable/): A revision plan weighted by exam date and grade gap, with the timetables already ruled up. 11-page fillable PDF, emailed after payment, £7.99.
+- [Exam Countdown](https://www.tchworks.co.uk/shop/exam-countdown/): The last 30 days before an exam, planned one small focus at a time. 8-page fillable PDF, emailed after payment, £4.99.
+- [Student Weekly Study Planner](https://www.tchworks.co.uk/shop/student-weekly-study-planner/): Timetable, deadlines and study blocks for a whole term, for GCSE, A level or uni. 17-page fillable PDF, emailed after payment, £3.49.
+
+## Fitness and wellbeing trackers
+- [Weekly Training Plan](https://www.tchworks.co.uk/shop/training-plan-weekly/): Three ready-made beginner weeks, twelve blank weeks and a progress log. 16-page fillable PDF, emailed after payment, £4.99.
+- [12-Week Fitness Tracker](https://www.tchworks.co.uk/shop/12-week-fitness-tracker/): Twelve weeks of workouts, measurements and steps, with a beginner three-day plan built in. 15-page fillable PDF, emailed after payment, £3.99.
+- [Beginner 5K Running Plan](https://www.tchworks.co.uk/shop/beginner-5k-running-plan/): Nine weeks from walking to running 5K, three runs a week, every session in your phone. 4-page fillable PDF, emailed after payment, £3.49.
+- [Water and Wellness Tracker](https://www.tchworks.co.uk/shop/water-and-wellness-tracker/): Water, steps, sleep and five-a-day on one page a week. Small habits, tracked. 13-page fillable PDF, emailed after payment, £2.49.
+- [Sleep Tracker and Wind-Down Plan](https://www.tchworks.co.uk/shop/sleep-tracker/): Log your sleep for eight weeks and find out what's really keeping you up. 11-page fillable PDF, emailed after payment, £2.49.
+
+## Optional
+- [Shop: all printable templates](https://www.tchworks.co.uk/shop/): the full catalogue with filters by category.
+- [Free UK guides and tools](https://www.tchworks.co.uk/free/): free calculators, checklists and printables.
+- [Affiliate programme](https://www.tchworks.co.uk/affiliates/): 30% commission for UK bloggers and newsletters who recommend the Christmas kits.

@@ -10,3 +10,6 @@ Sitemap: https://www.tchworks.co.uk/merch/sitemap.xml
 Sitemap: https://www.tchworks.co.uk/shop/sitemap.xml
 Sitemap: https://www.tchworks.co.uk/services/sitemap.xml
 Sitemap: https://www.tchworks.co.uk/sitemap-pages.xml
+
+# AI assistants: plain-text guide to products and prices
+# https://www.tchworks.co.uk/llms.txt
