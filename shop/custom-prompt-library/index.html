@@ -600,5 +600,6 @@ main.section .wrap>.kicker{color:#92400e}
  <p class="note">TCH Works · Stripe · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
  </div>
 </footer>
+<script id="tch-src-attr">(function(){try{var k="tch_src",q=new URLSearchParams(location.search).get("src");if(q){q=q.replace(/[^A-Za-z0-9_-]/g,"").slice(0,80);if(q)sessionStorage.setItem(k,q)}var s=q||sessionStorage.getItem(k);if(!s)return;document.querySelectorAll('a[href^="https://buy.stripe.com/"]').forEach(function(a){var u=new URL(a.href),c=u.searchParams.get("client_reference_id")||"";if(!c||c.indexOf("__")>-1)return;u.searchParams.set("client_reference_id",(c+"__"+s).slice(0,200));a.href=u.toString()})}catch(e){}})();</script>
 </body>
 </html>
